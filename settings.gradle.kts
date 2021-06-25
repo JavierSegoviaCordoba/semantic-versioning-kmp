@@ -20,3 +20,5 @@ dependencyResolutionManagement {
         }
     }
 }
+
+include(":semantic-versioning-core")

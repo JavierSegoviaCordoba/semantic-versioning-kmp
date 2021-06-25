@@ -1,0 +1,101 @@
+name: publish
+
+on:
+  push:
+    tags:
+      - '**'
+
+env:
+  OSS_USER: '${{ secrets.OSS_USER }}'
+  OSS_TOKEN: '${{ secrets.OSS_TOKEN }}'
+  OSS_STAGING_PROFILE_ID: '${{ secrets.OSS_STAGING_PROFILE_ID }}'
+  GPG_KEY_NAME: '${{ secrets.GPG_KEY_NAME }}'
+  GPG_PASSPHRASE: '${{ secrets.GPG_PASSPHRASE }}'
+  GPG_PRIVATE_KEY: '${{ secrets.GPG_PRIVATE_KEY }}'
+
+jobs:
+  publish:
+    strategy:
+      matrix:
+        os: [ macOS-latest, windows-latest, ubuntu-latest ]
+
+    runs-on: ${{matrix.os}}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Set up Java
+        uses: actions/setup-java@v1
+        with:
+          java-version: 11
+
+      - name: Gradle cache
+        uses: actions/cache@v2
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+            ~/.konan
+          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*') }}-${{ hashFiles('**/gradle.properties') }}
+          restore-keys: |
+            ${{ runner.os }}-gradle-
+
+      - name: Gradle build
+        run: ./gradlew build
+
+      - name: Generate Site docs
+        if: ${{ matrix.os == 'ubuntu-latest' }}
+        run: ./gradlew buildDocs
+
+      - name: Import GPG key
+        uses: crazy-max/ghaction-import-gpg@v3
+        with:
+          gpg-private-key: ${{ secrets.GPG_PRIVATE_KEY }}
+          passphrase: ${{ secrets.GPG_PASSPHRASE }}
+
+      - name: Publish release
+        run: ./gradlew publishToSonatype closeSonatypeStagingRepository -P"signing.gnupg.keyName"="${{ secrets.GPG_KEY_NAME }}" -P"signing.gnupg.passphrase"="${{ secrets.GPG_PASSPHRASE }}"
+
+      - name: Deploy release docs to Github Pages
+        if: ${{ matrix.os == 'ubuntu-latest' && !contains(github.ref, 'alpha') && !contains(github.ref, 'beta') && !contains(github.ref, 'rc') }}
+        uses: JamesIves/github-pages-deploy-action@4.1.1
+        with:
+          branch: 'gh-pages'
+          folder: 'build/docs/_site'
+          clean: false
+          single-commit: true
+
+  github-release:
+    runs-on: ubuntu-latest
+
+    needs:
+      - publish
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Set pre-release
+        shell: bash
+        id: pre_release
+        run: |
+          if [[ ${{ contains(github.ref, 'alpha') || contains(github.ref, 'beta') || contains(github.ref, 'rc') }} ]]
+          then
+            echo ::set-output name=is_pre_release::true
+          else
+            echo ::set-output name=is_pre_release::false
+          fi
+
+      - name: Release
+        uses: docker://antonyurchenko/git-release:latest
+        env:
+          GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
+          DRAFT_RELEASE: true
+          PRE_RELEASE: '${{ steps.pre_release.outputs.is_pre_release }}'
+          CHANGELOG_FILE: 'CHANGELOG.md'
+          ALLOW_EMPTY_CHANGELOG: false

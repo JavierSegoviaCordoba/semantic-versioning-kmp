@@ -3,55 +3,7 @@ package com.javiersc.semanticVersioning
 import kotlin.contracts.ExperimentalContracts
 import kotlin.contracts.contract
 
-public class Version private constructor(private val value: String) : Comparable<Version> {
-
-    public class Stage private constructor(private val value: String) : Comparable<Stage> {
-
-        init {
-            checkStage(value)
-        }
-
-        private val name: String = value.split(".").first()
-
-        private val num: Int = value.split(".")[1].toInt()
-
-        override fun compareTo(other: Stage): Int =
-            when {
-                name > other.name -> 1
-                name < other.name -> -1
-                num > other.num -> 1
-                num < other.num -> -1
-                else -> 0
-            }
-
-        override fun equals(other: Any?): Boolean {
-            val otherStage = other as? Stage
-            return when {
-                otherStage == null -> false
-                compareTo(otherStage) == 0 -> true
-                else -> false
-            }
-        }
-
-        override fun hashCode(): Int = value.hashCode()
-
-        public companion object {
-            public operator fun invoke(stage: String): Stage {
-                checkVersion(stage.contains(".")) { "`stage` format is incorrect" }
-                val localStage = stage.split(".")
-                checkVersion(localStage.first().matches(wordRegex)) { "`stage` should be a word" }
-                checkVersion(localStage.getOrNull(1) != null && localStage[1].all(Char::isDigit)) {
-                    "`num` should be a number"
-                }
-                return Stage("${localStage.first()}.${localStage[1]}")
-            }
-
-            public operator fun invoke(stage: String, num: Int): Stage {
-                checkVersion(stage.matches(wordRegex)) { "`stage` should be a word" }
-                return Stage("$stage.$num")
-            }
-        }
-    }
+public class Version private constructor(public val value: String) : Comparable<Version> {
 
     init {
         checkFullVersion(value)
@@ -95,6 +47,9 @@ public class Version private constructor(private val value: String) : Comparable
     override fun hashCode(): Int = value.hashCode()
 
     public companion object {
+
+        public val regex: Regex = "^(\\d+.\\d+)(.\\d+)?(-[a-zA-Z]+.\\d+)?\$".toRegex()
+
         public operator fun invoke(value: String): Version {
             checkFullVersion(value)
             return Version(value)
@@ -137,17 +92,65 @@ public class Version private constructor(private val value: String) : Comparable
 
     private val stageAndNum: String?
         get() = value.split("-").getOrNull(1)
+
+    public class Stage private constructor(private val value: String) : Comparable<Stage> {
+
+        init {
+            checkStage(value)
+        }
+
+        private val name: String = value.split(".").first()
+
+        private val num: Int = value.split(".")[1].toInt()
+
+        override fun compareTo(other: Stage): Int =
+            when {
+                name > other.name -> 1
+                name < other.name -> -1
+                num > other.num -> 1
+                num < other.num -> -1
+                else -> 0
+            }
+
+        override fun equals(other: Any?): Boolean {
+            val otherStage = other as? Stage
+            return when {
+                otherStage == null -> false
+                compareTo(otherStage) == 0 -> true
+                else -> false
+            }
+        }
+
+        override fun hashCode(): Int = value.hashCode()
+
+        public companion object {
+            public val regex: Regex = "^[a-zA-Z]+.\\d+\$".toRegex()
+
+            public operator fun invoke(stage: String): Stage {
+                checkVersion(stage.contains(".")) { "`stage` format is incorrect" }
+                val localStage = stage.split(".")
+                checkVersion(localStage.first().matches(wordRegex)) { "`stage` should be a word" }
+                checkVersion(localStage.getOrNull(1) != null && localStage[1].all(Char::isDigit)) {
+                    "`num` should be a number"
+                }
+                return Stage("${localStage.first()}.${localStage[1]}")
+            }
+
+            public operator fun invoke(stage: String, num: Int): Stage {
+                checkVersion(stage.matches(wordRegex)) { "`stage` should be a word" }
+                return Stage("$stage.$num")
+            }
+        }
+    }
 }
 
 private fun String.red() = "$RED$this$RESET"
 
-private val fullRegex = "^(\\d+.\\d+)(.\\d+)?(-[a-zA-Z]+.\\d+)?\$".toRegex()
 private val shortVersionRegex = "^(\\d+.\\d+)(.\\d+)?\$".toRegex()
-private val stageRegex = "^[a-zA-Z]+.\\d+\$".toRegex()
 private val wordRegex = "^[a-zA-Z]+$".toRegex()
 
 private fun checkFullVersion(version: String) {
-    checkVersion(version.matches(fullRegex)) {
+    checkVersion(version.matches(Version.regex)) {
         val headerError =
             "Version format is incorrect, " +
                 "major and minor are required, " +
@@ -182,7 +185,7 @@ private fun checkShortVersion(version: String) {
 }
 
 private fun checkStage(stage: String) {
-    checkVersion(stage.matches(stageRegex)) {
+    checkVersion(stage.matches(Version.Stage.regex)) {
         """`|stage` provided has an incorrect format
             | 
             |Samples

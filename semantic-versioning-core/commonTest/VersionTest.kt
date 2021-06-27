@@ -52,6 +52,12 @@ class VersionTest {
     }
 
     @Test
+    fun `Value is correct`() {
+        Version("12.23.34", "alpha.5").value shouldBe "12.23.34-alpha.5"
+        Version(1, 2, 3, "alpha", 1).value shouldBe "1.2.3-alpha.1"
+    }
+
+    @Test
     fun `Public properties and constructors`() {
         with(Version("1.2.3")) {
             major shouldBe 1

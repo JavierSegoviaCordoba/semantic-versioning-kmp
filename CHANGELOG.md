@@ -5,6 +5,7 @@
 ### Added
 
 ### Changed
+- override `toString` in both, `Version` and `Stage`
 
 ### Deprecated
 

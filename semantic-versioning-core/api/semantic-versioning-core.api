@@ -10,6 +10,7 @@ public final class com/javiersc/semanticVersioning/Version : java/lang/Comparabl
 	public final fun getStage ()Lcom/javiersc/semanticVersioning/Version$Stage;
 	public final fun getValue ()Ljava/lang/String;
 	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
 }
 
 public final class com/javiersc/semanticVersioning/Version$Companion {
@@ -26,6 +27,7 @@ public final class com/javiersc/semanticVersioning/Version$Stage : java/lang/Com
 	public synthetic fun compareTo (Ljava/lang/Object;)I
 	public fun equals (Ljava/lang/Object;)Z
 	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
 }
 
 public final class com/javiersc/semanticVersioning/Version$Stage$Companion {

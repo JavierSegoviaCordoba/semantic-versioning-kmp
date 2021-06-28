@@ -44,6 +44,8 @@ public class Version private constructor(public val value: String) : Comparable<
         }
     }
 
+    override fun toString(): String = value
+
     override fun hashCode(): Int = value.hashCode()
 
     public companion object {
@@ -120,6 +122,8 @@ public class Version private constructor(public val value: String) : Comparable<
                 else -> false
             }
         }
+
+        override fun toString(): String = value
 
         override fun hashCode(): Int = value.hashCode()
 

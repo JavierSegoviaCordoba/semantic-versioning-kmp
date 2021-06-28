@@ -5,7 +5,6 @@
 ### Added
 
 ### Changed
-- override `toString` in both, `Version` and `Stage`
 
 ### Deprecated
 
@@ -15,6 +14,11 @@
 
 ### Updated
 
+
+## [0.1.0-alpha.3] - 2021-06-28
+
+### Changed
+- override `toString` in both, `Version` and `Stage`
 
 ## [0.1.0-alpha.2] - 2021-06-27
 

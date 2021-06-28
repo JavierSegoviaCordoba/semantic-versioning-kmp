@@ -18,9 +18,11 @@ dependencies {
         implementation(javiersc.gradlePlugins.codeFormatter)
         implementation(javiersc.gradlePlugins.dependencyUpdates)
         implementation(javiersc.gradlePlugins.docs)
+        implementation(javiersc.gradlePlugins.gradleWrapperUpdater)
         implementation(javiersc.gradlePlugins.kotlinMultiplatform)
-        implementation(javiersc.gradlePlugins.publishKotlinMultiplatform)
+        implementation(javiersc.gradlePlugins.massiveCatalogsUpdater)
         implementation(javiersc.gradlePlugins.nexus)
+        implementation(javiersc.gradlePlugins.publishKotlinMultiplatform)
         implementation(javiersc.gradlePlugins.readmeBadges)
         implementation(javiersc.gradlePlugins.versioning)
 

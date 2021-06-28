@@ -1,11 +1,7 @@
-name: update-gradle-wrapper
+name: update-massive-catalogs
 
 on:
   workflow_dispatch:
-    inputs:
-      version_stage:
-        description: "Gradle Wrapper version stage, empty or one of [current, rc, nightly]"
-        required: false
   schedule:
     - cron: '0 0 * * *'
 
@@ -36,19 +32,19 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gradle-
 
-      - name: Update Gradle Wrapper
-        run: ./gradlew updateGradleWrapper -P"gradlew.stage"="${{ github.event.inputs.version_stage }}" --stacktrace
+      - name: Update Massive Catalogs
+        run: ./gradlew updateMassiveCatalogs
 
-      - name: Save Gradle Wrapper version
-        id: gradle_wrapper
-        run: echo "::set-output name=version::$(cat build/versions/gradle-wrapper.txt)"
+      - name: Save Gradle Massive Catalogs version
+        id: massive_catalogs
+        run: echo "::set-output name=version::$(cat build/versions/massive-catalogs.txt)"
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
         continue-on-error: true
         with:
           token: ${{ secrets.TOKEN_GITHUB_ACTION }}
-          commit-message: "Bump Gradle Wrapper version to ${{ steps.gradle_wrapper.outputs.version }}"
-          title: "Bump Gradle Wrapper version to ${{ steps.gradle_wrapper.outputs.version }}"
-          body: "Changelog: https://docs.gradle.org/${{ steps.gradle_wrapper.outputs.version }}/release-notes.html"
-          branch: "bump-gradle-wrapper--${{ steps.gradle_wrapper.outputs.version }}"
+          commit-message: "Bump Massive Catalogs version to ${{ steps.massive_catalogs.outputs.version }}"
+          title: "Bump Massive Catalogs version to ${{ steps.massive_catalogs.outputs.version }}"
+          body: "Changelog: https://massive-catalogs.javiersc.com/CHANGELOG/"
+          branch: "bump-massive-catalogs--${{ steps.massive_catalogs.outputs.version }}"

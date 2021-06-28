@@ -7,6 +7,8 @@ plugins {
     `javiersc-dependency-updates`
     `javiersc-docs`
     `binary-compatibility-validator`
+    `javiersc-gradle-wrapper-updater`
+    `javiersc-massive-catalogs-updater`
     `javiersc-nexus`
     `javiersc-readme-badges-generator`
 }

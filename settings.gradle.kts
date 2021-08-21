@@ -1,24 +1,33 @@
-@file:OptIn(ExperimentalStdlibApi::class)
-
 rootProject.name = providers.gradleProperty("allProjects.name").forUseAtConfigurationTime().get()
 
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 enableFeaturePreview("VERSION_CATALOGS")
 
-dependencyResolutionManagement {
+pluginManagement {
     repositories {
         mavenCentral()
     }
 
-    versionCatalogs {
-        val massiveCatalogs: String by settings
+    plugins {
+        val buildVersionCatalogs: String by settings
 
-        create("libs") { from("com.javiersc.massive-catalogs:libs-catalog:$massiveCatalogs") }
-
-        create("pluginLibs") {
-            from("com.javiersc.massive-catalogs:plugins-catalog:$massiveCatalogs")
-        }
+        id("com.javiersc.gradle.plugins.build.version.catalogs") version buildVersionCatalogs
     }
 }
+
+plugins {
+    id("com.javiersc.gradle.plugins.build.version.catalogs")
+}
+
+dependencyResolutionManagement {
+    repositories {
+        mavenCentral()
+    }
+}
+
+include(
+    ":a--catalogs:libs",
+    ":a--catalogs:plugins",
+)
 
 include(":semantic-versioning-core")

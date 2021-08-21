@@ -1,4 +1,3 @@
-
 plugins {
     `javiersc-versioning`
     `javiersc-all-projects`
@@ -8,7 +7,7 @@ plugins {
     `javiersc-docs`
     `binary-compatibility-validator`
     `javiersc-gradle-wrapper-updater`
-    `javiersc-massive-catalogs-updater`
     `javiersc-nexus`
     `javiersc-readme-badges-generator`
+    `javiersc-build-version-catalogs-updater`
 }

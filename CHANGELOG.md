@@ -11,6 +11,8 @@
 ### Removed
 
 ### Fixed
+- versions with same `major` and `minor` but with `patch = null` compared to `patch = 0` are not 
+  equals
 
 ### Updated
 

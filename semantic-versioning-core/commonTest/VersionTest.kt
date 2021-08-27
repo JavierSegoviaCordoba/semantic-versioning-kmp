@@ -10,6 +10,7 @@ class VersionTest {
 
     @Test
     fun `Same version`() {
+        Version("1.0") shouldBe Version("1.0.0")
         Version("1.0.0") shouldBe Version("1.0.0")
         Version("1.1.0") shouldBe Version("1.1.0")
         Version("1.1.1") shouldBe Version("1.1.1")
@@ -21,6 +22,8 @@ class VersionTest {
 
     @Test
     fun `Greater major`() {
+        Version("2.0") shouldBeGreaterThan Version("1.0.0")
+        Version("2.0.0") shouldBeGreaterThan Version("1.0")
         Version("2.0.0") shouldBeGreaterThan Version("1.0.1")
         Version("2.0.0") shouldBeGreaterThan Version("1.1.0")
         Version("2.0.0") shouldBeGreaterThan Version("1.1.1")
@@ -34,9 +37,13 @@ class VersionTest {
 
     @Test
     fun `Greater minor with same major`() {
+        Version("1.1") shouldBeGreaterThan Version("1.0")
+        Version("1.1") shouldBeGreaterThan Version("1.0.1")
         Version("1.1.0") shouldBeGreaterThan Version("1.0.1")
         Version("1.1.0") shouldBeGreaterThan Version("1.0.0-alpha.2")
         Version("1.1.0") shouldBeGreaterThan Version("1.1.0-alpha.2")
+        Version("1.1-alpha.2") shouldBeGreaterThan Version("1.1-alpha.1")
+        Version("1.1-alpha.2") shouldBeGreaterThan Version("1.1.0-alpha.1")
         Version("1.1.1-alpha.2") shouldBeGreaterThan Version("1.1.0-alpha.1")
         Version("1.1.1-alpha.1") shouldBeGreaterThan Version("1.1.0-alpha.2")
         Version("1.1.1-alpha.1") shouldBeGreaterThan Version("1.1.0-beta.2")
@@ -58,7 +65,14 @@ class VersionTest {
     }
 
     @Test
-    fun `Public properties and constructors`() {
+    fun `Public properties and constructors with correct versions`() {
+        with(Version("1.2")) {
+            major shouldBe 1
+            minor shouldBe 2
+            patch shouldBe 0
+            stage.shouldBeNull()
+        }
+
         with(Version("1.2.3")) {
             major shouldBe 1
             minor shouldBe 2
@@ -73,13 +87,23 @@ class VersionTest {
             stage.shouldBeNull()
         }
 
-        with(Version("1.2.3", "alpha.3")) {
+        with(Version("1.2.3-alpha.3")) {
             major shouldBe 1
             minor shouldBe 2
             patch shouldBe 3
             stage shouldBe Version.Stage("alpha.3")
         }
 
+        with(Version("1.2.3", "alpha.3")) {
+            major shouldBe 1
+            minor shouldBe 2
+            patch shouldBe 3
+            stage shouldBe Version.Stage("alpha.3")
+        }
+    }
+
+    @Test
+    fun `Public properties and constructors with incorrect versions`() {
         shouldThrow<VersionException> { Version("1a.2") }
         shouldThrow<VersionException> { Version("1a.2a") }
         shouldThrow<VersionException> { Version("1.2a") }

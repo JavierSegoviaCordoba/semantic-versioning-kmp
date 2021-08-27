@@ -13,7 +13,7 @@ public class Version private constructor(public val value: String) : Comparable<
 
     public val minor: Int = preStage.split(".")[1].toInt()
 
-    public val patch: Int? = preStage.split(".").getOrNull(2)?.toInt()
+    public val patch: Int = preStage.split(".").getOrNull(2)?.toInt() ?: 0
 
     public val stage: Stage? = stageAndNum?.let { Stage(it) }
 
@@ -24,10 +24,8 @@ public class Version private constructor(public val value: String) : Comparable<
             major < other.major -> -1
             minor > other.minor -> 1
             minor < other.minor -> -1
-            patch == null && other.patch != null -> 1
-            patch != null && other.patch == null -> -1
-            patch != null && other.patch != null && patch > other.patch -> 1
-            patch != null && other.patch != null && patch < other.patch -> -1
+            patch > other.patch -> 1
+            patch < other.patch -> -1
             stage == null && other.stage != null -> 1
             stage != null && other.stage == null -> -1
             stage != null && other.stage != null && stage > other.stage -> 1
@@ -50,7 +48,7 @@ public class Version private constructor(public val value: String) : Comparable<
 
     public companion object {
 
-        public val regex: Regex = "^(\\d+.\\d+)(.\\d+)?(-[a-zA-Z]+.\\d+)?\$".toRegex()
+        public val regex: Regex = VersionFormat.Default.regex
 
         public operator fun invoke(value: String): Version {
             checkFullVersion(value)

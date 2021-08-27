@@ -6,7 +6,7 @@ public final class com/javiersc/semanticVersioning/Version : java/lang/Comparabl
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getMajor ()I
 	public final fun getMinor ()I
-	public final fun getPatch ()Ljava/lang/Integer;
+	public final fun getPatch ()I
 	public final fun getStage ()Lcom/javiersc/semanticVersioning/Version$Stage;
 	public final fun getValue ()Ljava/lang/String;
 	public fun hashCode ()I

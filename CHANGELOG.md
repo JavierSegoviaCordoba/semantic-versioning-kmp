@@ -3,6 +3,8 @@
 ## [Unreleased]
 
 ### Added
+- `SNAPSHOT` versions are higher than non-final versions if they have the same `major`, `minor` and
+  `patch`
 
 ### Changed
 

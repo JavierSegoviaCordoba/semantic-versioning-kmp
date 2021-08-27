@@ -18,6 +18,7 @@ class VersionTest {
         Version("1.1.1-beta.1") shouldBe Version("1.1.1-beta.1")
         Version("0.1.0-beta.1") shouldBe Version("0.1.0-beta.1")
         Version("10.1.0-rc.3") shouldBe Version("10.1.0-rc.3")
+        Version("1.0.0-SNAPSHOT") shouldBe Version("1.0.0-SNAPSHOT")
     }
 
     @Test
@@ -33,6 +34,10 @@ class VersionTest {
         Version("2.0.0-alpha.2") shouldBeGreaterThan Version("1.1.1-alpha.1")
         Version("2.0.0-alpha.1") shouldBeGreaterThan Version("1.1.1-alpha.2")
         Version("2.0.0-alpha.1") shouldBeGreaterThan Version("1.1.1-beta.2")
+        Version("2.0.0") shouldBeGreaterThan Version("1.0.0-SNAPSHOT")
+        Version("2.0.0-SNAPSHOT") shouldBeGreaterThan Version("1.0.0")
+        Version("2.0.0-SNAPSHOT") shouldBeGreaterThan Version("1.0.0-alpha.1")
+        Version("2.0.0-alpha.1") shouldBeGreaterThan Version("1.0.0-SNAPSHOT")
     }
 
     @Test
@@ -47,6 +52,7 @@ class VersionTest {
         Version("1.1.1-alpha.2") shouldBeGreaterThan Version("1.1.0-alpha.1")
         Version("1.1.1-alpha.1") shouldBeGreaterThan Version("1.1.0-alpha.2")
         Version("1.1.1-alpha.1") shouldBeGreaterThan Version("1.1.0-beta.2")
+        Version("1.1.1-SNAPSHOT") shouldBeGreaterThan Version("1.1.0-beta.2")
     }
 
     @Test
@@ -56,6 +62,16 @@ class VersionTest {
         Version("1.1.1-alpha.2") shouldBeGreaterThan Version("1.1.0-alpha.1")
         Version("1.1.1-alpha.1") shouldBeGreaterThan Version("1.1.0-alpha.2")
         Version("1.1.1-alpha.1") shouldBeGreaterThan Version("1.1.0-beta.2")
+        Version("1.1.1-SNAPSHOT") shouldBeGreaterThan Version("1.1.0-beta.2")
+    }
+
+    @Test
+    fun `Greater stage with same major, minor and patch`() {
+        Version("1.0.0-beta.1") shouldBeGreaterThan Version("1.0.0-alpha.1")
+        Version("1.0.0-rc.1") shouldBeGreaterThan Version("1.0.0-alpha.1")
+        Version("1.0.0-SNAPSHOT") shouldBeGreaterThan Version("1.0.0-alpha.1")
+        Version("1.0.0-SNAPSHOT") shouldBeGreaterThan Version("1.0.0-rc.1")
+        Version("1.0.0") shouldBeGreaterThan Version("1.0.0-SNAPSHOT")
     }
 
     @Test
@@ -91,14 +107,24 @@ class VersionTest {
             major shouldBe 1
             minor shouldBe 2
             patch shouldBe 3
-            stage shouldBe Version.Stage("alpha.3")
+            stage?.name shouldBe "alpha"
+            stage?.num shouldBe 3
         }
 
         with(Version("1.2.3", "alpha.3")) {
             major shouldBe 1
             minor shouldBe 2
             patch shouldBe 3
-            stage shouldBe Version.Stage("alpha.3")
+            stage?.name shouldBe "alpha"
+            stage?.num shouldBe 3
+        }
+
+        with(Version("1.2.3", "SNAPSHOT")) {
+            major shouldBe 1
+            minor shouldBe 2
+            patch shouldBe 3
+            stage?.name shouldBe "SNAPSHOT"
+            stage?.num.shouldBeNull()
         }
     }
 

@@ -26,6 +26,8 @@ public final class com/javiersc/semanticVersioning/Version$Stage : java/lang/Com
 	public fun compareTo (Lcom/javiersc/semanticVersioning/Version$Stage;)I
 	public synthetic fun compareTo (Ljava/lang/Object;)I
 	public fun equals (Ljava/lang/Object;)Z
+	public final fun getName ()Ljava/lang/String;
+	public final fun getNum ()Ljava/lang/Integer;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
 }

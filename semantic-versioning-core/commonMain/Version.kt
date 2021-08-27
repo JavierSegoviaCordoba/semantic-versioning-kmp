@@ -50,17 +50,10 @@ public class Version private constructor(public val value: String) : Comparable<
 
         public val regex: Regex = VersionFormat.Default.regex
 
-        public operator fun invoke(value: String): Version {
-            checkFullVersion(value)
-            return Version(value)
-        }
+        public operator fun invoke(value: String): Version = Version(value)
 
         public operator fun invoke(version: String, stage: String): Version {
-            checkShortVersion(version)
-            return if (stage.isNotBlank()) {
-                checkStage(stage)
-                Version("$version-$stage")
-            } else Version(version)
+            return if (stage.isNotBlank()) Version("$version-$stage") else Version(version)
         }
 
         public operator fun invoke(
@@ -75,13 +68,7 @@ public class Version private constructor(public val value: String) : Comparable<
                 append(".")
                 append(minor)
                 patch?.let { append(".$patch") }
-                stage?.let {
-                    checkVersion(stage.matches(wordRegex)) { "`stage` should be a word" }
-                    checkVersion(num != null) {
-                        "`num` should be provided if `patch` is provided".red()
-                    }
-                    append("-$stage.$num")
-                }
+                stage?.let { Stage("$stage.$num").apply { append("-${this.name}.${this.num}") } }
             }
             return Version(version)
         }
@@ -99,16 +86,21 @@ public class Version private constructor(public val value: String) : Comparable<
             checkStage(value)
         }
 
-        private val name: String = value.split(".").first()
+        public val name: String = value.split(".").first()
 
-        private val num: Int = value.split(".")[1].toInt()
+        public val num: Int? = value.split(".").getOrNull(1)?.toInt()
 
+        @Suppress("ComplexMethod")
         override fun compareTo(other: Stage): Int =
             when {
+                name.equals("SNAPSHOT", true) && other.name.equals("SNAPSHOT", true).not() -> 1
+                name.equals("SNAPSHOT", true).not() && other.name.equals("SNAPSHOT", true) -> -1
                 name > other.name -> 1
                 name < other.name -> -1
-                num > other.num -> 1
-                num < other.num -> -1
+                num != null && other.num == null -> 1
+                num == null && other.num != null -> -1
+                num != null && other.num != null && num > other.num -> 1
+                num != null && other.num != null && num < other.num -> -1
                 else -> 0
             }
 
@@ -126,30 +118,16 @@ public class Version private constructor(public val value: String) : Comparable<
         override fun hashCode(): Int = value.hashCode()
 
         public companion object {
-            public val regex: Regex = "^[a-zA-Z]+.\\d+\$".toRegex()
+            public val regex: Regex = """([a-zA-Z]+(\.\d+)|\bSNAPSHOT\b)?$""".toRegex()
 
-            public operator fun invoke(stage: String): Stage {
-                checkVersion(stage.contains(".")) { "`stage` format is incorrect" }
-                val localStage = stage.split(".")
-                checkVersion(localStage.first().matches(wordRegex)) { "`stage` should be a word" }
-                checkVersion(localStage.getOrNull(1) != null && localStage[1].all(Char::isDigit)) {
-                    "`num` should be a number"
-                }
-                return Stage("${localStage.first()}.${localStage[1]}")
-            }
+            public operator fun invoke(stage: String): Stage = Stage(stage)
 
-            public operator fun invoke(stage: String, num: Int): Stage {
-                checkVersion(stage.matches(wordRegex)) { "`stage` should be a word" }
-                return Stage("$stage.$num")
-            }
+            public operator fun invoke(stage: String, num: Int): Stage = Stage("$stage.$num")
         }
     }
 }
 
 private fun String.red() = "$RED$this$RESET"
-
-private val shortVersionRegex = "^(\\d+.\\d+)(.\\d+)?\$".toRegex()
-private val wordRegex = "^[a-zA-Z]+$".toRegex()
 
 private fun checkFullVersion(version: String) {
     checkVersion(version.matches(Version.regex)) {
@@ -170,19 +148,6 @@ private fun checkFullVersion(version: String) {
             """
             .trimMargin()
             .red()
-    }
-}
-
-private fun checkShortVersion(version: String) {
-    checkVersion(version.matches(shortVersionRegex)) {
-        """|`version` provided has an incorrect format
-           |
-           |Samples:
-           | 1.0.0
-           | 1.0
-           | 12.23.34
-           | 12.23
-        """.trimMargin()
     }
 }
 

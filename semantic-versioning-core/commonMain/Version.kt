@@ -52,9 +52,8 @@ public class Version private constructor(public val value: String) : Comparable<
 
         public operator fun invoke(value: String): Version = Version(value)
 
-        public operator fun invoke(version: String, stage: String): Version {
-            return if (stage.isNotBlank()) Version("$version-$stage") else Version(version)
-        }
+        public operator fun invoke(version: String, stage: String?): Version =
+            if (stage.isNullOrBlank()) Version(version) else Version("$version-$stage")
 
         public operator fun invoke(
             major: Int,
@@ -67,8 +66,10 @@ public class Version private constructor(public val value: String) : Comparable<
                 append(major)
                 append(".")
                 append(minor)
-                patch?.let { append(".$patch") }
-                stage?.let { Stage("$stage.$num").apply { append("-${this.name}.${this.num}") } }
+                if (patch != null) append(".$patch")
+                if (stage.isNullOrBlank().not()) {
+                    Stage("$stage.$num").apply { append("-${this.name}.${this.num}") }
+                }
             }
             return Version(version)
         }

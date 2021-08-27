@@ -34,7 +34,7 @@ Version("1.0.0-alpha.1")
 Version("12.23.34-alpha.45")
 ``` 
 
-#### Passing a `version: String?` and a `stage: String?`
+#### Passing a `version: String` and a `stage: String?`
 
 ```kotlin
 Version("1.0", "alpha.1")

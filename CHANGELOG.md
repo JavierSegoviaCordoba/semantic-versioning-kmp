@@ -3,8 +3,6 @@
 ## [Unreleased]
 
 ### Added
-- `SNAPSHOT` versions are higher than non-final versions if they have the same `major`, `minor` and
-  `patch`
 
 ### Changed
 
@@ -13,11 +11,19 @@
 ### Removed
 
 ### Fixed
-- versions with same `major` and `minor` but with `patch = null` compared to `patch = 0` are not 
-  equals
 
 ### Updated
 
+
+## [0.1.0-alpha.4] - 2021-08-31
+
+### Added
+- `SNAPSHOT` versions are higher than non-final versions if they have the same `major`, `minor` and
+  `patch`
+
+### Fixed
+- versions with same `major` and `minor` but with `patch = null` compared to `patch = 0` are not 
+  equals
 
 ## [0.1.0-alpha.3] - 2021-06-28
 

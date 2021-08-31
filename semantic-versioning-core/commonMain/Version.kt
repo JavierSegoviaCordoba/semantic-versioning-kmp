@@ -136,9 +136,11 @@ private fun checkFullVersion(version: String) {
             "Version format is incorrect, " +
                 "major and minor are required, " +
                 "rest are optional, " +
-                "except num which is required if stage is present"
+                "except num which is required if stage is present and it is not SNAPSHOT"
 
         """|$headerError
+               |
+               |Current version: $version
                |
                |Samples of correct versions:
                |1.0
@@ -159,6 +161,7 @@ private fun checkStage(stage: String) {
             |Samples
             |alpha.1
             |beta.23
+            |SNAPSHOT
         """
             .trimMargin()
             .red()

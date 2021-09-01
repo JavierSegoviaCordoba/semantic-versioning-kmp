@@ -3,6 +3,10 @@
 ## [Unreleased]
 
 ### Added
+- `iosSimulatorArm64` target
+- `macosArm64` target
+- `tvosSimulatorArm64` target
+- `watchosSimulatorArm64` target
 
 ### Changed
 

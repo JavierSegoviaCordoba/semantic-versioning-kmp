@@ -33,6 +33,29 @@ public class Version private constructor(public val value: String) : Comparable<
             else -> 0
         }
 
+    public fun inc(number: Increase): Version =
+        when (number) {
+            Increase.Major -> invoke(major.inc(), 0, 0, null, null)
+            Increase.Minor -> invoke(major, minor.inc(), 0, null, null)
+            Increase.Patch -> invoke(major, minor, patch.inc(), null, null)
+            Increase.Num -> invoke(major, minor, patch, stage?.name, stage?.num?.inc())
+        }
+
+    public fun copy(
+        major: Int = this.major,
+        minor: Int = this.minor,
+        patch: Int? = this.patch,
+        stageName: String? = this.stage?.name,
+        stageNum: Int? = this.stage?.num,
+    ): Version =
+        Version(
+            major,
+            minor,
+            patch,
+            stageName,
+            if (stageName.equals("SNAPSHOT", ignoreCase = true)) null else stageNum
+        )
+
     override fun equals(other: Any?): Boolean {
         val otherVersion = other as? Version
         return when {
@@ -59,16 +82,17 @@ public class Version private constructor(public val value: String) : Comparable<
             major: Int,
             minor: Int,
             patch: Int?,
-            stage: String?,
-            num: Int?,
+            stageName: String?,
+            stageNum: Int?,
         ): Version {
             val version = buildString {
                 append(major)
                 append(".")
                 append(minor)
                 if (patch != null) append(".$patch")
-                if (stage.isNullOrBlank().not()) {
-                    Stage("$stage.$num").apply { append("-${this.name}.${this.num}") }
+                if (!stageName.isNullOrBlank()) {
+                    append("-")
+                    append(Stage(stageName, stageNum).toString())
                 }
             }
             return Version(version)
@@ -123,8 +147,16 @@ public class Version private constructor(public val value: String) : Comparable<
 
             public operator fun invoke(stage: String): Stage = Stage(stage)
 
-            public operator fun invoke(stage: String, num: Int): Stage = Stage("$stage.$num")
+            public operator fun invoke(name: String, num: Int?): Stage =
+                if (num != null) Stage("$name.$num") else Stage(name)
         }
+    }
+
+    public enum class Increase {
+        Major,
+        Minor,
+        Patch,
+        Num
     }
 }
 

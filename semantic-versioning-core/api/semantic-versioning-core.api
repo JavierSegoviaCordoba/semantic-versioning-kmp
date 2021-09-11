@@ -3,6 +3,8 @@ public final class com/javiersc/semanticVersioning/Version : java/lang/Comparabl
 	public synthetic fun <init> (Ljava/lang/String;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public fun compareTo (Lcom/javiersc/semanticVersioning/Version;)I
 	public synthetic fun compareTo (Ljava/lang/Object;)I
+	public final fun copy (IILjava/lang/Integer;Ljava/lang/String;Ljava/lang/Integer;)Lcom/javiersc/semanticVersioning/Version;
+	public static synthetic fun copy$default (Lcom/javiersc/semanticVersioning/Version;IILjava/lang/Integer;Ljava/lang/String;Ljava/lang/Integer;ILjava/lang/Object;)Lcom/javiersc/semanticVersioning/Version;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getMajor ()I
 	public final fun getMinor ()I
@@ -10,6 +12,7 @@ public final class com/javiersc/semanticVersioning/Version : java/lang/Comparabl
 	public final fun getStage ()Lcom/javiersc/semanticVersioning/Version$Stage;
 	public final fun getValue ()Ljava/lang/String;
 	public fun hashCode ()I
+	public final fun inc (Lcom/javiersc/semanticVersioning/Version$Increase;)Lcom/javiersc/semanticVersioning/Version;
 	public fun toString ()Ljava/lang/String;
 }
 
@@ -18,6 +21,15 @@ public final class com/javiersc/semanticVersioning/Version$Companion {
 	public final fun invoke (IILjava/lang/Integer;Ljava/lang/String;Ljava/lang/Integer;)Lcom/javiersc/semanticVersioning/Version;
 	public final fun invoke (Ljava/lang/String;)Lcom/javiersc/semanticVersioning/Version;
 	public final fun invoke (Ljava/lang/String;Ljava/lang/String;)Lcom/javiersc/semanticVersioning/Version;
+}
+
+public final class com/javiersc/semanticVersioning/Version$Increase : java/lang/Enum {
+	public static final field Major Lcom/javiersc/semanticVersioning/Version$Increase;
+	public static final field Minor Lcom/javiersc/semanticVersioning/Version$Increase;
+	public static final field Num Lcom/javiersc/semanticVersioning/Version$Increase;
+	public static final field Patch Lcom/javiersc/semanticVersioning/Version$Increase;
+	public static fun valueOf (Ljava/lang/String;)Lcom/javiersc/semanticVersioning/Version$Increase;
+	public static fun values ()[Lcom/javiersc/semanticVersioning/Version$Increase;
 }
 
 public final class com/javiersc/semanticVersioning/Version$Stage : java/lang/Comparable {
@@ -35,7 +47,7 @@ public final class com/javiersc/semanticVersioning/Version$Stage : java/lang/Com
 public final class com/javiersc/semanticVersioning/Version$Stage$Companion {
 	public final fun getRegex ()Lkotlin/text/Regex;
 	public final fun invoke (Ljava/lang/String;)Lcom/javiersc/semanticVersioning/Version$Stage;
-	public final fun invoke (Ljava/lang/String;I)Lcom/javiersc/semanticVersioning/Version$Stage;
+	public final fun invoke (Ljava/lang/String;Ljava/lang/Integer;)Lcom/javiersc/semanticVersioning/Version$Stage;
 }
 
 public final class com/javiersc/semanticVersioning/VersionException : java/lang/Exception {

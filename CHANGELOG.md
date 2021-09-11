@@ -3,6 +3,8 @@
 ## [Unreleased]
 
 ### Added
+- `inc` function to increase the `Version`
+- `copy` function to create a new `Version` based on another one
 
 ### Changed
 

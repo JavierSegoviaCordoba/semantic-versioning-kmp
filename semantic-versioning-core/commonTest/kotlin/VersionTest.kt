@@ -256,7 +256,8 @@ class VersionTest {
         Version("1.1.0-alpha.1").copy(major = 3) shouldBe Version("3.1.0-alpha.1")
         Version("1.1.0-alpha.1").copy(minor = 3) shouldBe Version("1.3.0-alpha.1")
         Version("1.1.0-alpha.1").copy(patch = 3) shouldBe Version("1.1.3-alpha.1")
-        Version("1.1.0-alpha.1").copy(stageName = "beta", stageNum = 3) shouldBe Version("1.1.0-beta.3")
+        Version("1.1.0-alpha.1").copy(stageName = "beta", stageNum = 3) shouldBe
+            Version("1.1.0-beta.3")
         Version("1.1.0-alpha.1").copy(stageName = "SNAPSHOT") shouldBe Version("1.1.0-SNAPSHOT")
     }
 }

@@ -1,0 +1,7 @@
+[versions]
+kotest = "4.6.2"
+
+[libraries]
+jetbrains-kotlin-kotlinTestCommon = { module = "org.jetbrains.kotlin:kotlin-test-common" }
+jetbrains-kotlin-kotlinTestJunit = { module = "org.jetbrains.kotlin:kotlin-test-junit" }
+kotest-kotestAssertionsCore = { module = "io.kotest:kotest-assertions-core", version.ref = "kotest" }

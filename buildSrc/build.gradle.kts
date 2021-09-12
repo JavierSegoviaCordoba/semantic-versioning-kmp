@@ -22,7 +22,7 @@ dependencies {
         implementation(javiersc.gradlePlugins.codeAnalysis)
         implementation(javiersc.gradlePlugins.codeFormatter)
         implementation(javiersc.gradlePlugins.docs)
-        implementation(javiersc.gradlePlugins.kotlinMultiplatform)
+        implementation(javiersc.gradlePlugins.kotlinMultiplatformNoAndroid)
         implementation(javiersc.gradlePlugins.nexus)
         implementation(javiersc.gradlePlugins.publishKotlinMultiplatform)
         implementation(javiersc.gradlePlugins.readmeBadges)

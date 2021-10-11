@@ -23,6 +23,8 @@ class VersionTest {
         Version("0.1.0-beta.1") shouldBe Version("0.1.0-beta.1")
         Version("10.1.0-rc.3") shouldBe Version("10.1.0-rc.3")
         Version("1.0.0-SNAPSHOT") shouldBe Version("1.0.0-SNAPSHOT")
+        Version("2.1.0-SNAPSHOT") shouldBe Version("2.1.0-SNAPSHOT")
+        Version("3.4.2-SNAPSHOT") shouldBe Version("3.4.2-SNAPSHOT")
     }
 
     @Test
@@ -73,8 +75,8 @@ class VersionTest {
     fun `Greater stage with same major, minor and patch`() {
         Version("1.0.0-beta.1") shouldBeGreaterThan Version("1.0.0-alpha.1")
         Version("1.0.0-rc.1") shouldBeGreaterThan Version("1.0.0-alpha.1")
-        Version("1.0.0-SNAPSHOT") shouldBeGreaterThan Version("1.0.0-alpha.1")
-        Version("1.0.0-SNAPSHOT") shouldBeGreaterThan Version("1.0.0-rc.1")
+        Version("1.0.0-alpha.1") shouldBeGreaterThan Version("1.0.0-SNAPSHOT")
+        Version("1.0.0-rc.1") shouldBeGreaterThan Version("1.0.0-SNAPSHOT")
         Version("1.0.0") shouldBeGreaterThan Version("1.0.0-SNAPSHOT")
     }
 

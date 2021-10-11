@@ -118,8 +118,6 @@ public class Version private constructor(public val value: String) : Comparable<
         @Suppress("ComplexMethod")
         override fun compareTo(other: Stage): Int =
             when {
-                name.equals("SNAPSHOT", true) && other.name.equals("SNAPSHOT", true).not() -> 1
-                name.equals("SNAPSHOT", true).not() && other.name.equals("SNAPSHOT", true) -> -1
                 name > other.name -> 1
                 name < other.name -> -1
                 num != null && other.num == null -> 1

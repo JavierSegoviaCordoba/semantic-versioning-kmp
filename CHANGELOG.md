@@ -7,6 +7,7 @@
 - `copy` function to create a new `Version` based on another one
 
 ### Changed
+- `SNAPSHOT` feature respects alphabetical order
 
 ### Deprecated
 

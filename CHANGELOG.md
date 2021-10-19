@@ -16,6 +16,17 @@
 ### Fixed
 
 ### Updated
+- `com.javiersc.gradle-plugins:versioning -> 0.1.0-alpha.71`
+- `com.javiersc.gradle-plugins:readme-badges -> 0.1.0-alpha.71`
+- `com.javiersc.gradle-plugins:publish-kotlin-multiplatform -> 0.1.0-alpha.71`
+- `com.javiersc.gradle-plugins:plugin-accessors -> 0.1.0-alpha.71`
+- `com.javiersc.gradle-plugins:nexus -> 0.1.0-alpha.71`
+- `com.javiersc.gradle-plugins:kotlin-multiplatform-no-android -> 0.1.0-alpha.71`
+- `com.javiersc.gradle-plugins:docs -> 0.1.0-alpha.71`
+- `com.javiersc.gradle-plugins:code-formatter -> 0.1.0-alpha.71`
+- `com.javiersc.gradle-plugins:code-analysis -> 0.1.0-alpha.71`
+- `com.javiersc.gradle-plugins:changelog -> 0.1.0-alpha.71`
+- `com.javiersc.gradle-plugins:all-projects -> 0.1.0-alpha.71`
 
 
 ## [0.1.0-alpha.4] - 2021-08-31

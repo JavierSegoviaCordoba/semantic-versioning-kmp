@@ -17,17 +17,7 @@ dependencies {
     implementation(files(pluginLibs.javaClass.superclass.protectionDomain.codeSource.location))
 
     pluginLibs.apply {
-        implementation(javiersc.gradlePlugins.allProjects)
-        implementation(javiersc.gradlePlugins.changelog)
-        implementation(javiersc.gradlePlugins.codeAnalysis)
-        implementation(javiersc.gradlePlugins.codeFormatter)
-        implementation(javiersc.gradlePlugins.docs)
-        implementation(javiersc.gradlePlugins.kotlinMultiplatformNoAndroid)
-        implementation(javiersc.gradlePlugins.nexus)
-        implementation(javiersc.gradlePlugins.publishKotlinMultiplatform)
-        implementation(javiersc.gradlePlugins.readmeBadges)
-        implementation(javiersc.gradlePlugins.versioning)
-
+        implementation(javiersc.gradlePlugins.allPluginsX)
         implementation(jetbrains.kotlin.kotlinGradlePluginX)
         implementation(jetbrains.kotlinx.binaryCompatibilityValidator)
     }

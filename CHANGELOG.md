@@ -3,17 +3,26 @@
 ## [Unreleased]
 
 ### Added
-- `inc` function to increase the `Version`
-- `copy` function to create a new `Version` based on another one
 
 ### Changed
-- `SNAPSHOT` feature respects alphabetical order
 
 ### Deprecated
 
 ### Removed
 
 ### Fixed
+
+### Updated
+
+
+## [0.1.0-beta.1] - 2021-11-01
+
+### Added
+- `inc` function to increase the `Version`
+- `copy` function to create a new `Version` based on another one
+
+### Changed
+- `SNAPSHOT` feature respects alphabetical order
 
 ### Updated
 - `com.javiersc.gradle-plugins:versioning -> 0.1.0-alpha.71`
@@ -27,7 +36,6 @@
 - `com.javiersc.gradle-plugins:code-analysis -> 0.1.0-alpha.71`
 - `com.javiersc.gradle-plugins:changelog -> 0.1.0-alpha.71`
 - `com.javiersc.gradle-plugins:all-projects -> 0.1.0-alpha.71`
-
 
 ## [0.1.0-alpha.4] - 2021-08-31
 

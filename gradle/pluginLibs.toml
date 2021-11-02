@@ -1,5 +1,5 @@
 [versions]
-javierscGradlePlugins = "0.1.0-rc.2"
+javierscGradlePlugins = "0.1.0-rc.4"
 kotlin = "1.5.31"
 kotlinBinaryValidator = "0.7.1"
 

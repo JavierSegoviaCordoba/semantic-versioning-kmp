@@ -84,19 +84,15 @@ public class Version private constructor(public val value: String) : Comparable<
             patch: Int?,
             stageName: String?,
             stageNum: Int?,
-        ): Version {
-            val version = buildString {
-                append(major)
-                append(".")
-                append(minor)
-                if (patch != null) append(".$patch")
-                if (!stageName.isNullOrBlank()) {
-                    append("-")
-                    append(Stage(stageName, stageNum).toString())
-                }
-            }
-            return Version(version)
-        }
+        ): Version = Version(buildVersion(major, minor, patch, stageName, stageNum))
+
+        public fun safe(
+            major: Int,
+            minor: Int,
+            patch: Int?,
+            stageName: String?,
+            stageNum: Int?,
+        ): Result<Version> = runCatching { Version(major, minor, patch, stageName, stageNum) }
     }
 
     private val preStage: String
@@ -162,23 +158,22 @@ private fun String.red() = "$RED$this$RESET"
 
 private fun checkFullVersion(version: String) {
     checkVersion(version.matches(Version.regex)) {
-        val headerError =
-            "Version format is incorrect, " +
-                "major and minor are required, " +
-                "rest are optional, " +
-                "except num which is required if stage is present and it is not SNAPSHOT"
-
-        """|$headerError
-               |
-               |Current version: $version
-               |
-               |Samples of correct versions:
-               |1.0
-               |1.0.0
-               |1.0-alpha.1
-               |1.0.0-alpha.1
-               |12.23.34-alpha.45
-            """
+        """|The version is not semantic, rules:
+           |  - `major` and `minor` are required, rest are optional
+           |  - `num` is required if `stage` is present and it is not snapshot
+           |
+           |Current version: $version
+           |
+           |Samples of semantic versions:
+           |1.0
+           |1.0.0
+           |1.0-alpha.1
+           |1.0.0-SNAPSHOT
+           |1.0.0-alpha.1
+           |12.23.34-alpha.45
+           |12.23.34-SNAPSHOT
+           |
+        """
             .trimMargin()
             .red()
     }
@@ -198,14 +193,28 @@ private fun checkStage(stage: String) {
     }
 }
 
-public class VersionException(override val message: String) : Exception(message)
+public class SemanticVersionException(override val message: String) : Exception(message)
 
 @OptIn(ExperimentalContracts::class)
 private inline fun checkVersion(value: Boolean, lazyMessage: () -> Any) {
     contract { returns() implies value }
-    if (!value) {
-        val message = lazyMessage()
-        throw VersionException(message.toString())
+    if (!value) throw SemanticVersionException(lazyMessage().toString())
+}
+
+private fun buildVersion(
+    major: Int,
+    minor: Int,
+    patch: Int?,
+    stageName: String?,
+    stageNum: Int?,
+): String = buildString {
+    append(major)
+    append(".")
+    append(minor)
+    if (patch != null) append(".$patch")
+    if (!stageName.isNullOrBlank()) {
+        append("-")
+        append(Version.Stage(stageName, stageNum).toString())
     }
 }
 

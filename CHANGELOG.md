@@ -3,6 +3,7 @@
 ## [Unreleased]
 
 ### Added
+- `safe` function which returns `Result<Version>` instead of crashing
 
 ### Changed
 

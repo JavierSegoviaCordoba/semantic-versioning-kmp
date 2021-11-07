@@ -139,46 +139,46 @@ class VersionTest {
 
     @Test
     fun `Public properties and constructors with incorrect versions`() {
-        shouldThrow<VersionException> { Version("1.0-SNAPSHOT.1") }
-        shouldThrow<VersionException> { Version("1.0.0-SNAPSHOT.1") }
-        shouldThrow<VersionException> { Version("1.0.0-SNAPSHOT.1") }
-        shouldThrow<VersionException> { Version("1.0", "SNAPSHOT.1") }
-        shouldThrow<VersionException> { Version("1.0.0", "SNAPSHOT.1") }
-        shouldThrow<VersionException> { Version(1, 2, 3, "SNAPSHOT", 1) }
-        shouldThrow<VersionException> { Version("1a.2") }
-        shouldThrow<VersionException> { Version("1a.2a") }
-        shouldThrow<VersionException> { Version("1.2a") }
-        shouldThrow<VersionException> { Version("1a.2.3") }
-        shouldThrow<VersionException> { Version("1.2a.3a") }
-        shouldThrow<VersionException> { Version("1.2.3a") }
-        shouldThrow<VersionException> { Version("1a.2a.3") }
-        shouldThrow<VersionException> { Version("1a.2.3a") }
-        shouldThrow<VersionException> { Version("1a.2a.3a") }
-        shouldThrow<VersionException> { Version("a1.2.3") }
-        shouldThrow<VersionException> { Version("1.a2.3") }
-        shouldThrow<VersionException> { Version("1.2.a3") }
-        shouldThrow<VersionException> { Version("1.1.1.alpha.1") }
-        shouldThrow<VersionException> { Version("1.1.1-alpha-1") }
-        shouldThrow<VersionException> { Version("1-1.1.alpha-1") }
-        shouldThrow<VersionException> { Version("1.1-1.alpha-1") }
-        shouldThrow<VersionException> { Version("1-1-1.alpha-1") }
-        shouldThrow<VersionException> { Version("1.2", "alpha.") }
-        shouldThrow<VersionException> { Version("1.2", "alpha") }
-        shouldThrow<VersionException> { Version("1.2", "11alpha") }
-        shouldThrow<VersionException> { Version("1.2", "11alpha.2220s") }
-        shouldThrow<VersionException> { Version("1.2", "alpha.2220s") }
-        shouldThrow<VersionException> { Version("1.2.3", "alpha.2220s") }
-        shouldThrow<VersionException> { Version("1.2.3", "alpha") }
-        shouldThrow<VersionException> { Version("1.2.3", "alpha.") }
-        shouldThrow<VersionException> { Version("1.2.3", "223alpha") }
-        shouldThrow<VersionException> { Version("1.2.3", "223alpha.") }
-        shouldThrow<VersionException> { Version(1, 2, 3, "-alpha", 1) }
-        shouldThrow<VersionException> { Version(1, 2, 3, "alpha-", 1) }
-        shouldThrow<VersionException> { Version(1, 2, 3, ".alpha", 1) }
-        shouldThrow<VersionException> { Version(1, 2, 3, "alpha.", 1) }
-        shouldThrow<VersionException> { Version(1, 2, 3, "alpha3232", 1) }
-        shouldThrow<VersionException> { Version(1, 2, 3, "232alpha", 1) }
-        shouldThrow<VersionException> { Version("1.0").copy(stageName = "alpha") }
+        shouldThrow<SemanticVersionException> { Version("1.0-SNAPSHOT.1") }
+        shouldThrow<SemanticVersionException> { Version("1.0.0-SNAPSHOT.1") }
+        shouldThrow<SemanticVersionException> { Version("1.0.0-SNAPSHOT.1") }
+        shouldThrow<SemanticVersionException> { Version("1.0", "SNAPSHOT.1") }
+        shouldThrow<SemanticVersionException> { Version("1.0.0", "SNAPSHOT.1") }
+        shouldThrow<SemanticVersionException> { Version(1, 2, 3, "SNAPSHOT", 1) }
+        shouldThrow<SemanticVersionException> { Version("1a.2") }
+        shouldThrow<SemanticVersionException> { Version("1a.2a") }
+        shouldThrow<SemanticVersionException> { Version("1.2a") }
+        shouldThrow<SemanticVersionException> { Version("1a.2.3") }
+        shouldThrow<SemanticVersionException> { Version("1.2a.3a") }
+        shouldThrow<SemanticVersionException> { Version("1.2.3a") }
+        shouldThrow<SemanticVersionException> { Version("1a.2a.3") }
+        shouldThrow<SemanticVersionException> { Version("1a.2.3a") }
+        shouldThrow<SemanticVersionException> { Version("1a.2a.3a") }
+        shouldThrow<SemanticVersionException> { Version("a1.2.3") }
+        shouldThrow<SemanticVersionException> { Version("1.a2.3") }
+        shouldThrow<SemanticVersionException> { Version("1.2.a3") }
+        shouldThrow<SemanticVersionException> { Version("1.1.1.alpha.1") }
+        shouldThrow<SemanticVersionException> { Version("1.1.1-alpha-1") }
+        shouldThrow<SemanticVersionException> { Version("1-1.1.alpha-1") }
+        shouldThrow<SemanticVersionException> { Version("1.1-1.alpha-1") }
+        shouldThrow<SemanticVersionException> { Version("1-1-1.alpha-1") }
+        shouldThrow<SemanticVersionException> { Version("1.2", "alpha.") }
+        shouldThrow<SemanticVersionException> { Version("1.2", "alpha") }
+        shouldThrow<SemanticVersionException> { Version("1.2", "11alpha") }
+        shouldThrow<SemanticVersionException> { Version("1.2", "11alpha.2220s") }
+        shouldThrow<SemanticVersionException> { Version("1.2", "alpha.2220s") }
+        shouldThrow<SemanticVersionException> { Version("1.2.3", "alpha.2220s") }
+        shouldThrow<SemanticVersionException> { Version("1.2.3", "alpha") }
+        shouldThrow<SemanticVersionException> { Version("1.2.3", "alpha.") }
+        shouldThrow<SemanticVersionException> { Version("1.2.3", "223alpha") }
+        shouldThrow<SemanticVersionException> { Version("1.2.3", "223alpha.") }
+        shouldThrow<SemanticVersionException> { Version(1, 2, 3, "-alpha", 1) }
+        shouldThrow<SemanticVersionException> { Version(1, 2, 3, "alpha-", 1) }
+        shouldThrow<SemanticVersionException> { Version(1, 2, 3, ".alpha", 1) }
+        shouldThrow<SemanticVersionException> { Version(1, 2, 3, "alpha.", 1) }
+        shouldThrow<SemanticVersionException> { Version(1, 2, 3, "alpha3232", 1) }
+        shouldThrow<SemanticVersionException> { Version(1, 2, 3, "232alpha", 1) }
+        shouldThrow<SemanticVersionException> { Version("1.0").copy(stageName = "alpha") }
     }
 
     @Test

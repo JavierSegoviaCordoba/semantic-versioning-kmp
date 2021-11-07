@@ -1,3 +1,8 @@
+public final class com/javiersc/semanticVersioning/SemanticVersionException : java/lang/Exception {
+	public fun <init> (Ljava/lang/String;)V
+	public fun getMessage ()Ljava/lang/String;
+}
+
 public final class com/javiersc/semanticVersioning/Version : java/lang/Comparable {
 	public static final field Companion Lcom/javiersc/semanticVersioning/Version$Companion;
 	public synthetic fun <init> (Ljava/lang/String;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
@@ -21,6 +26,7 @@ public final class com/javiersc/semanticVersioning/Version$Companion {
 	public final fun invoke (IILjava/lang/Integer;Ljava/lang/String;Ljava/lang/Integer;)Lcom/javiersc/semanticVersioning/Version;
 	public final fun invoke (Ljava/lang/String;)Lcom/javiersc/semanticVersioning/Version;
 	public final fun invoke (Ljava/lang/String;Ljava/lang/String;)Lcom/javiersc/semanticVersioning/Version;
+	public final fun safe-yxL6bBk (IILjava/lang/Integer;Ljava/lang/String;Ljava/lang/Integer;)Ljava/lang/Object;
 }
 
 public final class com/javiersc/semanticVersioning/Version$Increase : java/lang/Enum {
@@ -48,10 +54,5 @@ public final class com/javiersc/semanticVersioning/Version$Stage$Companion {
 	public final fun getRegex ()Lkotlin/text/Regex;
 	public final fun invoke (Ljava/lang/String;)Lcom/javiersc/semanticVersioning/Version$Stage;
 	public final fun invoke (Ljava/lang/String;Ljava/lang/Integer;)Lcom/javiersc/semanticVersioning/Version$Stage;
-}
-
-public final class com/javiersc/semanticVersioning/VersionException : java/lang/Exception {
-	public fun <init> (Ljava/lang/String;)V
-	public fun getMessage ()Ljava/lang/String;
 }
 

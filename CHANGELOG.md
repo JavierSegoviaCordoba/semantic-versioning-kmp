@@ -3,7 +3,6 @@
 ## [Unreleased]
 
 ### Added
-- `safe` function which returns `Result<Version>` instead of crashing
 
 ### Changed
 
@@ -14,8 +13,15 @@
 ### Fixed
 
 ### Updated
-- `com.javiersc.gradle-plugins:all-plugins -> 0.1.0-rc.4`
 
+
+## [0.1.0-beta.2] - 2021-11-07
+
+### Added
+- `safe` function which returns `Result<Version>` instead of crashing
+
+### Updated
+- `com.javiersc.gradle-plugins:all-plugins -> 0.1.0-rc.4`
 
 ## [0.1.0-beta.1] - 2021-11-01
 

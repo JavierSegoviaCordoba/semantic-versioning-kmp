@@ -75,8 +75,14 @@ public class Version private constructor(public val value: String) : Comparable<
 
         public operator fun invoke(value: String): Version = Version(value)
 
+        public fun safe(value: String): Result<Version> = runCatching { Version(value) }
+
         public operator fun invoke(version: String, stage: String?): Version =
             if (stage.isNullOrBlank()) Version(version) else Version("$version-$stage")
+
+        public fun safe(version: String, stage: String?): Result<Version> = runCatching {
+            if (stage.isNullOrBlank()) Version(version) else Version("$version-$stage")
+        }
 
         public operator fun invoke(
             major: Int,

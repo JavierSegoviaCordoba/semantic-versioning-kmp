@@ -26,6 +26,8 @@ public final class com/javiersc/semanticVersioning/Version$Companion {
 	public final fun invoke (IILjava/lang/Integer;Ljava/lang/String;Ljava/lang/Integer;)Lcom/javiersc/semanticVersioning/Version;
 	public final fun invoke (Ljava/lang/String;)Lcom/javiersc/semanticVersioning/Version;
 	public final fun invoke (Ljava/lang/String;Ljava/lang/String;)Lcom/javiersc/semanticVersioning/Version;
+	public final fun safe-IoAF18A (Ljava/lang/String;)Ljava/lang/Object;
+	public final fun safe-gIAlu-s (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;
 	public final fun safe-yxL6bBk (IILjava/lang/Integer;Ljava/lang/String;Ljava/lang/Integer;)Ljava/lang/Object;
 }
 

@@ -3,6 +3,7 @@
 ## [Unreleased]
 
 ### Added
+- `safe` functions to every type of `invoke` function
 
 ### Changed
 

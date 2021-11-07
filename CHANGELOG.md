@@ -3,7 +3,6 @@
 ## [Unreleased]
 
 ### Added
-- `safe` functions to every type of `invoke` function
 
 ### Changed
 
@@ -15,6 +14,11 @@
 
 ### Updated
 
+
+## [0.1.0-beta.3] - 2021-11-07
+
+### Added
+- `safe` functions to every type of `invoke` function
 
 ## [0.1.0-beta.2] - 2021-11-07
 

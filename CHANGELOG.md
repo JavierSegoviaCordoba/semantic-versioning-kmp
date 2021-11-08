@@ -5,17 +5,23 @@
 ### Added
 
 ### Changed
-- `fun inc` accepts `stageName`
 
 ### Deprecated
 
 ### Removed
-- `num` from `Version.Increase`
 
 ### Fixed
 
 ### Updated
 
+
+## [0.1.0-beta.5] - 2021-11-08
+
+### Changed
+- `fun inc` accepts `stageName`
+
+### Removed
+- `num` from `Version.Increase`
 
 ## [0.1.0-beta.4] - 2021-11-08
 

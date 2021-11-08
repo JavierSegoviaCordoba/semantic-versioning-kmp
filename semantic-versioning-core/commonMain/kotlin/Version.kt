@@ -35,11 +35,37 @@ public class Version private constructor(public val value: String) : Comparable<
 
     public fun inc(number: Increase): Version =
         when (number) {
-            Increase.Major -> invoke(major.inc(), 0, 0, null, null)
-            Increase.Minor -> invoke(major, minor.inc(), 0, null, null)
-            Increase.Patch -> invoke(major, minor, patch.inc(), null, null)
-            Increase.Num -> invoke(major, minor, patch, stage?.name, stage?.num?.inc())
+            is Increase.Major -> invoke(major.inc(), 0, 0, null, null)
+            is Increase.Minor -> invoke(major, minor.inc(), 0, null, null)
+            is Increase.Patch -> invoke(major, minor, patch.inc(), null, null)
+            is Increase.Stage -> {
+                when {
+                    number.name.isBlank() -> {
+                        semverError("`Increase::Stage::name` must not be empty")
+                    }
+                    number.name.equals("SNAPSHOT", ignoreCase = true) -> {
+                        semverError("`Increase::Stage::name` must not be `SNAPSHOT` or `snapshot`")
+                    }
+                    stage == null || number.name == stage.name -> {
+                        invoke(major, minor, patch, number.name, stage?.num?.inc() ?: 1)
+                    }
+                    number.name > stage.name -> {
+                        invoke(major, minor, patch, number.name, 1)
+                    }
+                    number.name < stage.name -> {
+                        semverError("`Increase::Stage::name` must be higher than previos name")
+                    }
+                    else -> semverError("This can't happens")
+                }
+            }
+            is Increase.Num -> invoke(major, minor, patch, stage?.name, stage?.num?.inc())
         }
+
+    public fun nextSnapshotMajor(): Version = invoke(major.inc(), 0, 0, "SNAPSHOT", null)
+
+    public fun nextSnapshotMinor(): Version = invoke(major, minor.inc(), 0, "SNAPSHOT", null)
+
+    public fun nextSnapshotPatch(): Version = invoke(major, minor, patch.inc(), "SNAPSHOT", null)
 
     public fun copy(
         major: Int = this.major,
@@ -49,11 +75,11 @@ public class Version private constructor(public val value: String) : Comparable<
         stageNum: Int? = this.stage?.num,
     ): Version =
         Version(
-            major,
-            minor,
-            patch,
-            stageName,
-            if (stageName.equals("SNAPSHOT", ignoreCase = true)) null else stageNum
+            major = major,
+            minor = minor,
+            patch = patch,
+            stageName = stageName,
+            stageNum = if (stageName.equals("SNAPSHOT", ignoreCase = true)) null else stageNum
         )
 
     override fun equals(other: Any?): Boolean {
@@ -152,11 +178,12 @@ public class Version private constructor(public val value: String) : Comparable<
         }
     }
 
-    public enum class Increase {
-        Major,
-        Minor,
-        Patch,
-        Num
+    public sealed interface Increase {
+        public object Major : Increase
+        public object Minor : Increase
+        public object Patch : Increase
+        public data class Stage(val name: String) : Increase
+        public object Num : Increase
     }
 }
 
@@ -201,10 +228,12 @@ private fun checkStage(stage: String) {
 
 public class SemanticVersionException(override val message: String) : Exception(message)
 
+internal fun semverError(message: String): Nothing = throw SemanticVersionException(message)
+
 @OptIn(ExperimentalContracts::class)
 private inline fun checkVersion(value: Boolean, lazyMessage: () -> Any) {
     contract { returns() implies value }
-    if (!value) throw SemanticVersionException(lazyMessage().toString())
+    if (!value) semverError(lazyMessage().toString())
 }
 
 private fun buildVersion(

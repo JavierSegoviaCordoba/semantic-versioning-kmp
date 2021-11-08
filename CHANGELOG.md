@@ -3,6 +3,10 @@
 ## [Unreleased]
 
 ### Added
+- stage name support to `fun inc`
+- `fun nextSnapshotPatch` to get the next snapshot based on the patch
+- `fun nextSnapshotMinor` to get the next snapshot based on the minor
+- `fun nextSnapshotMajor` to get the next snapshot based on the major
 
 ### Changed
 

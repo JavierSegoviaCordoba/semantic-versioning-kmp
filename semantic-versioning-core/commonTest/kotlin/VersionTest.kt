@@ -4,6 +4,7 @@ import com.javiersc.semanticVersioning.Version.Increase.Major
 import com.javiersc.semanticVersioning.Version.Increase.Minor
 import com.javiersc.semanticVersioning.Version.Increase.Num
 import com.javiersc.semanticVersioning.Version.Increase.Patch
+import com.javiersc.semanticVersioning.Version.Increase.Stage
 import io.kotest.assertions.throwables.shouldThrow
 import io.kotest.matchers.comparables.shouldBeGreaterThan
 import io.kotest.matchers.nulls.shouldBeNull
@@ -18,6 +19,7 @@ class VersionTest {
         Version("1.0.0") shouldBe Version("1.0.0")
         Version("1.1.0") shouldBe Version("1.1.0")
         Version("1.1.1") shouldBe Version("1.1.1")
+        Version("1.1-alpha.1") shouldBe Version("1.1.0-alpha.1")
         Version("1.1.1-alpha.1") shouldBe Version("1.1.1-alpha.1")
         Version("1.1.1-beta.1") shouldBe Version("1.1.1-beta.1")
         Version("0.1.0-beta.1") shouldBe Version("0.1.0-beta.1")
@@ -195,6 +197,19 @@ class VersionTest {
     }
 
     @Test
+    fun `Increase stage`() {
+        Version("1.0").inc(Stage("alpha")) shouldBe Version("1.0.0-alpha.1")
+        Version("1.0").inc(Stage("alpha")) shouldBe Version("1.0-alpha.1")
+        Version("1.0-alpha.1").inc(Stage("alpha")) shouldBe Version("1.0.0-alpha.2")
+        Version("1.0-alpha.1").inc(Stage("beta")) shouldBe Version("1.0.0-beta.1")
+        Version("1.0.0").inc(Stage("alpha")) shouldBe Version("1.0.0-alpha.1")
+        Version("1.1.0").inc(Stage("rc")) shouldBe Version("1.1.0-rc.1")
+        Version("1.1.0-rc.4").inc(Stage("rc")) shouldBe Version("1.1.0-rc.5")
+        shouldThrow<SemanticVersionException> { Version("1.0.0-beta.1").inc(Stage("alpha")) }
+        shouldThrow<SemanticVersionException> { Version("1.0.0-SNAPSHOT").inc(Stage("SNAPSHOT")) }
+    }
+
+    @Test
     fun `Increase patch`() {
         Version("1.0").inc(Patch) shouldBe Version("1.0.1")
         Version("1.0.0").inc(Patch) shouldBe Version("1.0.1")
@@ -261,5 +276,35 @@ class VersionTest {
         Version("1.1.0-alpha.1").copy(stageName = "beta", stageNum = 3) shouldBe
             Version("1.1.0-beta.3")
         Version("1.1.0-alpha.1").copy(stageName = "SNAPSHOT") shouldBe Version("1.1.0-SNAPSHOT")
+    }
+
+    @Test
+    fun `Next snapshot`() {
+        Version("1.0").nextSnapshotPatch() shouldBe Version("1.0.1-SNAPSHOT")
+        Version("1.0.0").nextSnapshotPatch() shouldBe Version("1.0.1-SNAPSHOT")
+        Version("1.0.1").nextSnapshotPatch() shouldBe Version("1.0.2-SNAPSHOT")
+        Version("1.1.1").nextSnapshotPatch() shouldBe Version("1.1.2-SNAPSHOT")
+        Version("1.0.0-alpha.1").nextSnapshotPatch() shouldBe Version("1.0.1-SNAPSHOT")
+        Version("1.0.0-alpha.3").nextSnapshotPatch() shouldBe Version("1.0.1-SNAPSHOT")
+        Version("1.1.1-beta.1").nextSnapshotPatch() shouldBe Version("1.1.2-SNAPSHOT")
+        Version("2.1.1-beta.1").nextSnapshotPatch() shouldBe Version("2.1.2-SNAPSHOT")
+        Version("1.0").nextSnapshotMinor() shouldBe Version("1.1-SNAPSHOT")
+        Version("1.0").nextSnapshotMinor() shouldBe Version("1.1.0-SNAPSHOT")
+        Version("1.0.0").nextSnapshotMinor() shouldBe Version("1.1.0-SNAPSHOT")
+        Version("1.0.1").nextSnapshotMinor() shouldBe Version("1.1.0-SNAPSHOT")
+        Version("1.1.1").nextSnapshotMinor() shouldBe Version("1.2.0-SNAPSHOT")
+        Version("1.0.0-alpha.1").nextSnapshotMinor() shouldBe Version("1.1.0-SNAPSHOT")
+        Version("1.0.0-alpha.3").nextSnapshotMinor() shouldBe Version("1.1.0-SNAPSHOT")
+        Version("1.1.1-beta.1").nextSnapshotMinor() shouldBe Version("1.2.0-SNAPSHOT")
+        Version("2.1.1-beta.1").nextSnapshotMinor() shouldBe Version("2.2.0-SNAPSHOT")
+        Version("1.0").nextSnapshotMajor() shouldBe Version("2.0-SNAPSHOT")
+        Version("1.0").nextSnapshotMajor() shouldBe Version("2.0.0-SNAPSHOT")
+        Version("1.0.0").nextSnapshotMajor() shouldBe Version("2.0.0-SNAPSHOT")
+        Version("1.0.1").nextSnapshotMajor() shouldBe Version("2.0.0-SNAPSHOT")
+        Version("1.1.1").nextSnapshotMajor() shouldBe Version("2.0.0-SNAPSHOT")
+        Version("1.0.0-alpha.1").nextSnapshotMajor() shouldBe Version("2.0.0-SNAPSHOT")
+        Version("1.0.0-alpha.3").nextSnapshotMajor() shouldBe Version("2.0.0-SNAPSHOT")
+        Version("1.1.1-beta.1").nextSnapshotMajor() shouldBe Version("2.0.0-SNAPSHOT")
+        Version("2.1.1-beta.1").nextSnapshotMajor() shouldBe Version("3.0.0-SNAPSHOT")
     }
 }

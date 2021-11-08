@@ -69,9 +69,7 @@ Version("1.0.0") == Version("1.0.0") // true
 ### Increase a `Version`
 
 ```kotlin
-Version("2.4.6-alpha.1").inc(Version.Increase.Num) // 2.4.6-alpha.2
 Version("2.4.6-alpha.1").inc(Version.Increase.Patch) // 2.4.7 (stage and num are removed)
-Version("2.4.6").inc(Version.Increase.Num) // 2.4.6 (there is no num, so it keeps the same)
 Version("2.4.6").inc(Version.Increase.Patch) // 2.4.7
 Version("2.4.6").inc(Version.Increase.Minor) // 2.5.0 (patch is reset to 0)
 Version("2.4.6").inc(Version.Increase.Major) // 3.0.0 (minor and patch are reset to 0)

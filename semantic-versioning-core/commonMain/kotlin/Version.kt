@@ -33,33 +33,60 @@ public class Version private constructor(public val value: String) : Comparable<
             else -> 0
         }
 
-    public fun inc(number: Increase): Version =
-        when (number) {
-            is Increase.Major -> invoke(major.inc(), 0, 0, null, null)
-            is Increase.Minor -> invoke(major, minor.inc(), 0, null, null)
-            is Increase.Patch -> invoke(major, minor, patch.inc(), null, null)
-            is Increase.Stage -> {
-                when {
-                    number.name.isBlank() -> {
-                        semverError("`Increase::Stage::name` must not be empty")
-                    }
-                    number.name.equals("SNAPSHOT", ignoreCase = true) -> {
-                        semverError("`Increase::Stage::name` must not be `SNAPSHOT` or `snapshot`")
-                    }
-                    stage == null || number.name == stage.name -> {
-                        invoke(major, minor, patch, number.name, stage?.num?.inc() ?: 1)
-                    }
-                    number.name > stage.name -> {
-                        invoke(major, minor, patch, number.name, 1)
-                    }
-                    number.name < stage.name -> {
-                        semverError("`Increase::Stage::name` must be higher than previos name")
-                    }
-                    else -> semverError("This can't happens")
+    public fun inc(number: Increase? = null, stageName: String = ""): Version {
+        val nextVersion: Version =
+            when {
+                number == null && stageName.isBlank() && !stage?.name.isNullOrBlank() -> {
+                    invoke(major, minor, patch, null, null)
                 }
+                number == null && stageName.isBlank() -> {
+                    invoke(major, minor, patch.inc(), null, null)
+                }
+                number == null && stageName.isNotBlank() && stage?.name.isNullOrBlank() -> {
+                    invoke(major, minor, patch.inc(), stageName, 1)
+                }
+                number == null && stageName.isNotBlank() && stageName == stage?.name -> {
+                    invoke(major, minor, patch, stageName, stage.num?.inc())
+                }
+                number == null && stageName.isNotBlank() && stageName != stage?.name -> {
+                    invoke(major, minor, patch, stageName, 1)
+                }
+                number is Increase.Major && stageName.isBlank() -> {
+                    invoke(major.inc(), 0, 0, null, null)
+                }
+                number is Increase.Minor && stageName.isBlank() -> {
+                    invoke(major, minor.inc(), 0, null, null)
+                }
+                number is Increase.Patch && stageName.isBlank() -> {
+                    invoke(major, minor, patch.inc(), null, null)
+                }
+                number is Increase.Major && stageName.isNotBlank() && stage?.name == stageName -> {
+                    invoke(major.inc(), 0, 0, stageName, stage.num?.inc())
+                }
+                number is Increase.Minor && stageName.isNotBlank() && stage?.name == stageName -> {
+                    invoke(major, minor.inc(), 0, stageName, stage.num?.inc())
+                }
+                number is Increase.Patch && stageName.isNotBlank() && stage?.name == stageName -> {
+                    invoke(major, minor, patch.inc(), stageName, stage.num?.inc())
+                }
+                number is Increase.Major && stageName.isNotBlank() && stage?.name != stageName -> {
+                    invoke(major.inc(), 0, 0, stageName, 1)
+                }
+                number is Increase.Minor && stageName.isNotBlank() && stage?.name != stageName -> {
+                    invoke(major, minor.inc(), 0, stageName, 1)
+                }
+                number is Increase.Patch && stageName.isNotBlank() && stage?.name != stageName -> {
+                    invoke(major, minor, patch.inc(), stageName, 1)
+                }
+                else -> null
             }
-            is Increase.Num -> invoke(major, minor, patch, stage?.name, stage?.num?.inc())
+                ?: semverError("There were an error configuring the version")
+
+        if (nextVersion < this) {
+            semverError("Next version ($nextVersion) should be higher than the current one ($this)")
         }
+        return nextVersion
+    }
 
     public fun nextSnapshotMajor(): Version = invoke(major.inc(), 0, 0, "SNAPSHOT", null)
 
@@ -169,7 +196,7 @@ public class Version private constructor(public val value: String) : Comparable<
         override fun hashCode(): Int = value.hashCode()
 
         public companion object {
-            public val regex: Regex = """([a-zA-Z]+(\.\d+)|\bSNAPSHOT\b)?$""".toRegex()
+            public val regex: Regex = """([a-zA-Z]+(\.\d+)|\b(?i)SNAPSHOT\b)?$""".toRegex()
 
             public operator fun invoke(stage: String): Stage = Stage(stage)
 
@@ -182,8 +209,6 @@ public class Version private constructor(public val value: String) : Comparable<
         public object Major : Increase
         public object Minor : Increase
         public object Patch : Increase
-        public data class Stage(val name: String) : Increase
-        public object Num : Increase
     }
 }
 

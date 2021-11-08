@@ -8,7 +8,7 @@ package com.javiersc.semanticVersioning
  */
 internal enum class VersionFormat(val regex: Regex) {
     Default(
-        """^(\d+.\d+)(\.\d+)?(-(?!SNAPSHOT\.\d)([a-zA-Z]+(\.\d+)|\bSNAPSHOT\b)?)?$""".toRegex()
+        """^(\d+.\d+)(\.\d+)?(-(?!(?i)SNAPSHOT\.\d)([a-zA-Z]+(\.\d+)|\b(?i)SNAPSHOT\b)?)?$""".toRegex()
     ),
     NoDot("""^(\d+.\d+)(\.\d+)?(-[a-zA-Z]+(\d+))?$""".toRegex()),
 }

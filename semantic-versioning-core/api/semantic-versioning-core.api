@@ -17,7 +17,8 @@ public final class com/javiersc/semanticVersioning/Version : java/lang/Comparabl
 	public final fun getStage ()Lcom/javiersc/semanticVersioning/Version$Stage;
 	public final fun getValue ()Ljava/lang/String;
 	public fun hashCode ()I
-	public final fun inc (Lcom/javiersc/semanticVersioning/Version$Increase;)Lcom/javiersc/semanticVersioning/Version;
+	public final fun inc (Lcom/javiersc/semanticVersioning/Version$Increase;Ljava/lang/String;)Lcom/javiersc/semanticVersioning/Version;
+	public static synthetic fun inc$default (Lcom/javiersc/semanticVersioning/Version;Lcom/javiersc/semanticVersioning/Version$Increase;Ljava/lang/String;ILjava/lang/Object;)Lcom/javiersc/semanticVersioning/Version;
 	public final fun nextSnapshotMajor ()Lcom/javiersc/semanticVersioning/Version;
 	public final fun nextSnapshotMinor ()Lcom/javiersc/semanticVersioning/Version;
 	public final fun nextSnapshotPatch ()Lcom/javiersc/semanticVersioning/Version;
@@ -45,23 +46,8 @@ public final class com/javiersc/semanticVersioning/Version$Increase$Minor : com/
 	public static final field INSTANCE Lcom/javiersc/semanticVersioning/Version$Increase$Minor;
 }
 
-public final class com/javiersc/semanticVersioning/Version$Increase$Num : com/javiersc/semanticVersioning/Version$Increase {
-	public static final field INSTANCE Lcom/javiersc/semanticVersioning/Version$Increase$Num;
-}
-
 public final class com/javiersc/semanticVersioning/Version$Increase$Patch : com/javiersc/semanticVersioning/Version$Increase {
 	public static final field INSTANCE Lcom/javiersc/semanticVersioning/Version$Increase$Patch;
-}
-
-public final class com/javiersc/semanticVersioning/Version$Increase$Stage : com/javiersc/semanticVersioning/Version$Increase {
-	public fun <init> (Ljava/lang/String;)V
-	public final fun component1 ()Ljava/lang/String;
-	public final fun copy (Ljava/lang/String;)Lcom/javiersc/semanticVersioning/Version$Increase$Stage;
-	public static synthetic fun copy$default (Lcom/javiersc/semanticVersioning/Version$Increase$Stage;Ljava/lang/String;ILjava/lang/Object;)Lcom/javiersc/semanticVersioning/Version$Increase$Stage;
-	public fun equals (Ljava/lang/Object;)Z
-	public final fun getName ()Ljava/lang/String;
-	public fun hashCode ()I
-	public fun toString ()Ljava/lang/String;
 }
 
 public final class com/javiersc/semanticVersioning/Version$Stage : java/lang/Comparable {

@@ -5,10 +5,12 @@
 ### Added
 
 ### Changed
+- `fun inc` accepts `stageName`
 
 ### Deprecated
 
 ### Removed
+- `num` from `Version.Increase`
 
 ### Fixed
 

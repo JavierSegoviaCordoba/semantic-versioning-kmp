@@ -8,8 +8,8 @@ public final class com/javiersc/semanticVersioning/Version : java/lang/Comparabl
 	public synthetic fun <init> (Ljava/lang/String;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public fun compareTo (Lcom/javiersc/semanticVersioning/Version;)I
 	public synthetic fun compareTo (Ljava/lang/Object;)I
-	public final fun copy (IILjava/lang/Integer;Ljava/lang/String;Ljava/lang/Integer;)Lcom/javiersc/semanticVersioning/Version;
-	public static synthetic fun copy$default (Lcom/javiersc/semanticVersioning/Version;IILjava/lang/Integer;Ljava/lang/String;Ljava/lang/Integer;ILjava/lang/Object;)Lcom/javiersc/semanticVersioning/Version;
+	public final fun copy (IIILjava/lang/String;Ljava/lang/Integer;)Lcom/javiersc/semanticVersioning/Version;
+	public static synthetic fun copy$default (Lcom/javiersc/semanticVersioning/Version;IIILjava/lang/String;Ljava/lang/Integer;ILjava/lang/Object;)Lcom/javiersc/semanticVersioning/Version;
 	public fun equals (Ljava/lang/Object;)Z
 	public final fun getMajor ()I
 	public final fun getMinor ()I
@@ -27,12 +27,12 @@ public final class com/javiersc/semanticVersioning/Version : java/lang/Comparabl
 
 public final class com/javiersc/semanticVersioning/Version$Companion {
 	public final fun getRegex ()Lkotlin/text/Regex;
-	public final fun invoke (IILjava/lang/Integer;Ljava/lang/String;Ljava/lang/Integer;)Lcom/javiersc/semanticVersioning/Version;
+	public final fun invoke (IIILjava/lang/String;Ljava/lang/Integer;)Lcom/javiersc/semanticVersioning/Version;
 	public final fun invoke (Ljava/lang/String;)Lcom/javiersc/semanticVersioning/Version;
 	public final fun invoke (Ljava/lang/String;Ljava/lang/String;)Lcom/javiersc/semanticVersioning/Version;
 	public final fun safe-IoAF18A (Ljava/lang/String;)Ljava/lang/Object;
 	public final fun safe-gIAlu-s (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;
-	public final fun safe-yxL6bBk (IILjava/lang/Integer;Ljava/lang/String;Ljava/lang/Integer;)Ljava/lang/Object;
+	public final fun safe-yxL6bBk (IIILjava/lang/String;Ljava/lang/Integer;)Ljava/lang/Object;
 }
 
 public abstract interface class com/javiersc/semanticVersioning/Version$Increase {

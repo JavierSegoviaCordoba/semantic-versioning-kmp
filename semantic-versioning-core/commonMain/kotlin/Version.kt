@@ -33,6 +33,7 @@ public class Version private constructor(public val value: String) : Comparable<
             else -> 0
         }
 
+    @Suppress("ComplexMethod")
     public fun inc(number: Increase? = null, stageName: String = ""): Version {
         val nextVersion: Version =
             when {
@@ -97,7 +98,7 @@ public class Version private constructor(public val value: String) : Comparable<
     public fun copy(
         major: Int = this.major,
         minor: Int = this.minor,
-        patch: Int? = this.patch,
+        patch: Int = this.patch,
         stageName: String? = this.stage?.name,
         stageNum: Int? = this.stage?.num,
     ): Version =
@@ -140,7 +141,7 @@ public class Version private constructor(public val value: String) : Comparable<
         public operator fun invoke(
             major: Int,
             minor: Int,
-            patch: Int?,
+            patch: Int,
             stageName: String?,
             stageNum: Int?,
         ): Version = Version(buildVersion(major, minor, patch, stageName, stageNum))
@@ -148,7 +149,7 @@ public class Version private constructor(public val value: String) : Comparable<
         public fun safe(
             major: Int,
             minor: Int,
-            patch: Int?,
+            patch: Int,
             stageName: String?,
             stageNum: Int?,
         ): Result<Version> = runCatching { Version(major, minor, patch, stageName, stageNum) }
@@ -217,13 +218,12 @@ private fun String.red() = "$RED$this$RESET"
 private fun checkFullVersion(version: String) {
     checkVersion(version.matches(Version.regex)) {
         """|The version is not semantic, rules:
-           |  - `major` and `minor` are required, rest are optional
+           |  - `major`, `minor` and `patch` are required, rest are optional
            |  - `num` is required if `stage` is present and it is not snapshot
            |
            |Current version: $version
            |
            |Samples of semantic versions:
-           |1.0
            |1.0.0
            |1.0-alpha.1
            |1.0.0-SNAPSHOT
@@ -241,7 +241,7 @@ private fun checkStage(stage: String) {
     checkVersion(stage.matches(Version.Stage.regex)) {
         """`|stage` provided has an incorrect format
             | 
-            |Samples
+            |Samples of stages:
             |alpha.1
             |beta.23
             |SNAPSHOT

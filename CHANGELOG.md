@@ -9,6 +9,7 @@
 ### Deprecated
 
 ### Removed
+- support of versions with no patch
 
 ### Fixed
 

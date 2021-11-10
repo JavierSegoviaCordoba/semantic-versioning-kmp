@@ -13,11 +13,10 @@ class VersionTest {
 
     @Test
     fun `Same version`() {
-        Version("1.0") shouldBe Version("1.0.0")
         Version("1.0.0") shouldBe Version("1.0.0")
         Version("1.1.0") shouldBe Version("1.1.0")
         Version("1.1.1") shouldBe Version("1.1.1")
-        Version("1.1-alpha.1") shouldBe Version("1.1.0-alpha.1")
+        Version("1.1.0-alpha.1") shouldBe Version("1.1.0-alpha.1")
         Version("1.1.1-alpha.1") shouldBe Version("1.1.1-alpha.1")
         Version("1.1.1-beta.1") shouldBe Version("1.1.1-beta.1")
         Version("0.1.0-beta.1") shouldBe Version("0.1.0-beta.1")
@@ -29,8 +28,7 @@ class VersionTest {
 
     @Test
     fun `Greater major`() {
-        Version("2.0") shouldBeGreaterThan Version("1.0.0")
-        Version("2.0.0") shouldBeGreaterThan Version("1.0")
+        Version("2.0.0") shouldBeGreaterThan Version("1.0.0")
         Version("2.0.0") shouldBeGreaterThan Version("1.0.1")
         Version("2.0.0") shouldBeGreaterThan Version("1.1.0")
         Version("2.0.0") shouldBeGreaterThan Version("1.1.1")
@@ -48,13 +46,10 @@ class VersionTest {
 
     @Test
     fun `Greater minor with same major`() {
-        Version("1.1") shouldBeGreaterThan Version("1.0")
-        Version("1.1") shouldBeGreaterThan Version("1.0.1")
         Version("1.1.0") shouldBeGreaterThan Version("1.0.1")
         Version("1.1.0") shouldBeGreaterThan Version("1.0.0-alpha.2")
         Version("1.1.0") shouldBeGreaterThan Version("1.1.0-alpha.2")
-        Version("1.1-alpha.2") shouldBeGreaterThan Version("1.1-alpha.1")
-        Version("1.1-alpha.2") shouldBeGreaterThan Version("1.1.0-alpha.1")
+        Version("1.1.0-alpha.2") shouldBeGreaterThan Version("1.1.0-alpha.1")
         Version("1.1.1-alpha.2") shouldBeGreaterThan Version("1.1.0-alpha.1")
         Version("1.1.1-alpha.1") shouldBeGreaterThan Version("1.1.0-alpha.2")
         Version("1.1.1-alpha.1") shouldBeGreaterThan Version("1.1.0-beta.2")
@@ -91,7 +86,7 @@ class VersionTest {
 
     @Test
     fun `Public properties and constructors with correct versions`() {
-        with(Version("1.2")) {
+        with(Version("1.2.0")) {
             major shouldBe 1
             minor shouldBe 2
             patch shouldBe 0
@@ -139,6 +134,10 @@ class VersionTest {
 
     @Test
     fun `Public properties and constructors with incorrect versions`() {
+        shouldThrow<SemanticVersionException> { Version("1.0") }
+        shouldThrow<SemanticVersionException> { Version("3.53") }
+        shouldThrow<SemanticVersionException> { Version("222.22") }
+        shouldThrow<SemanticVersionException> { Version("4223.4343") }
         shouldThrow<SemanticVersionException> { Version("1.0-snapshot.1") }
         shouldThrow<SemanticVersionException> { Version("1.0-SNAPSHOT.1") }
         shouldThrow<SemanticVersionException> { Version("1.0.0-SNAPSHOT.1") }
@@ -184,7 +183,6 @@ class VersionTest {
 
     @Test
     fun `Increase stage`() {
-        Version("1.0").inc(stageName = "alpha") shouldBe Version("1.0.1-alpha.1")
         Version("1.0.0").inc(stageName = "alpha") shouldBe Version("1.0.1-alpha.1")
         Version("1.0.0-alpha.1").inc(stageName = "alpha") shouldBe Version("1.0.0-alpha.2")
         Version("1.0.0-alpha.1").inc() shouldBe Version("1.0.0")
@@ -200,7 +198,6 @@ class VersionTest {
 
     @Test
     fun `Increase stage and patch`() {
-        Version("1.0").inc(Patch, "alpha") shouldBe Version("1.0.1-alpha.1")
         Version("1.0.0").inc(Patch, "alpha") shouldBe Version("1.0.1-alpha.1")
         Version("1.0.0-alpha.1").inc(Patch, "alpha") shouldBe Version("1.0.1-alpha.2")
         Version("1.0.0-alpha.1").inc(Patch, "") shouldBe Version("1.0.1")
@@ -216,7 +213,6 @@ class VersionTest {
 
     @Test
     fun `Increase stage and minor`() {
-        Version("1.0").inc(Minor, "alpha") shouldBe Version("1.1.0-alpha.1")
         Version("1.0.0").inc(Minor, "alpha") shouldBe Version("1.1.0-alpha.1")
         Version("1.0.0-alpha.1").inc(Minor, "alpha") shouldBe Version("1.1.0-alpha.2")
         Version("1.0.0-alpha.1").inc(Minor, "") shouldBe Version("1.1.0")
@@ -232,7 +228,6 @@ class VersionTest {
 
     @Test
     fun `Increase stage and major`() {
-        Version("1.0").inc(Major, "alpha") shouldBe Version("2.0.0-alpha.1")
         Version("1.0.0").inc(Major, "alpha") shouldBe Version("2.0.0-alpha.1")
         Version("1.0.0-alpha.1").inc(Major, "alpha") shouldBe Version("2.0.0-alpha.2")
         Version("1.0.0-alpha.1").inc(Major, "") shouldBe Version("2.0.0")
@@ -248,7 +243,6 @@ class VersionTest {
 
     @Test
     fun `Increase patch`() {
-        Version("1.0").inc(Patch) shouldBe Version("1.0.1")
         Version("1.0.0").inc(Patch) shouldBe Version("1.0.1")
         Version("1.1.0").inc(Patch) shouldBe Version("1.1.1")
         Version("1.1.1").inc(Patch) shouldBe Version("1.1.2")
@@ -261,7 +255,6 @@ class VersionTest {
 
     @Test
     fun `Increase minor`() {
-        Version("1.0").inc(Minor) shouldBe Version("1.1")
         Version("1.0.0").inc(Minor) shouldBe Version("1.1.0")
         Version("1.1.0").inc(Minor) shouldBe Version("1.2.0")
         Version("1.1.1").inc(Minor) shouldBe Version("1.2.0")
@@ -274,7 +267,6 @@ class VersionTest {
 
     @Test
     fun `Increase major`() {
-        Version("1.0").inc(Major) shouldBe Version("2.0")
         Version("1.0.0").inc(Major) shouldBe Version("2.0.0")
         Version("1.1.0").inc(Major) shouldBe Version("2.0.0")
         Version("1.1.1").inc(Major) shouldBe Version("2.0.0")
@@ -287,13 +279,8 @@ class VersionTest {
 
     @Test
     fun `Copy all versions`() {
-        Version("1.0").copy(major = 3) shouldBe Version("3.0")
-        Version("1.0").copy(minor = 3) shouldBe Version("1.3")
-        Version("1.0").copy(patch = 3) shouldBe Version("1.0.3")
-        Version("1.0").copy(stageName = "alpha", stageNum = 3) shouldBe Version("1.0.0-alpha.3")
-        Version("1.0").copy(stageName = "SNAPSHOT") shouldBe Version("1.0.0-SNAPSHOT")
-        Version("1.0.0").copy(major = 3) shouldBe Version("3.0")
-        Version("1.0.0").copy(minor = 3) shouldBe Version("1.3")
+        Version("1.0.0").copy(major = 3) shouldBe Version("3.0.0")
+        Version("1.0.0").copy(minor = 3) shouldBe Version("1.3.0")
         Version("1.0.0").copy(patch = 3) shouldBe Version("1.0.3")
         Version("1.0.0").copy(stageName = "alpha", stageNum = 3) shouldBe Version("1.0.0-alpha.3")
         Version("1.0.0").copy(stageName = "SNAPSHOT") shouldBe Version("1.0.0-SNAPSHOT")
@@ -302,8 +289,8 @@ class VersionTest {
         Version("1.0.1").copy(patch = 3) shouldBe Version("1.0.3")
         Version("1.0.1").copy(stageName = "alpha", stageNum = 3) shouldBe Version("1.0.1-alpha.3")
         Version("1.0.1").copy(stageName = "SNAPSHOT") shouldBe Version("1.0.1-SNAPSHOT")
-        Version("1.1.0").copy(major = 3) shouldBe Version("3.1")
-        Version("1.1.0").copy(minor = 3) shouldBe Version("1.3")
+        Version("1.1.0").copy(major = 3) shouldBe Version("3.1.0")
+        Version("1.1.0").copy(minor = 3) shouldBe Version("1.3.0")
         Version("1.1.0").copy(patch = 3) shouldBe Version("1.1.3")
         Version("1.1.0").copy(stageName = "alpha", stageNum = 3) shouldBe Version("1.1.0-alpha.3")
         Version("1.1.0").copy(stageName = "SNAPSHOT") shouldBe Version("1.1.0-SNAPSHOT")
@@ -317,7 +304,6 @@ class VersionTest {
 
     @Test
     fun `Next snapshot`() {
-        Version("1.0").nextSnapshotPatch() shouldBe Version("1.0.1-SNAPSHOT")
         Version("1.0.0").nextSnapshotPatch() shouldBe Version("1.0.1-SNAPSHOT")
         Version("1.0.1").nextSnapshotPatch() shouldBe Version("1.0.2-SNAPSHOT")
         Version("1.1.1").nextSnapshotPatch() shouldBe Version("1.1.2-SNAPSHOT")
@@ -325,8 +311,6 @@ class VersionTest {
         Version("1.0.0-alpha.3").nextSnapshotPatch() shouldBe Version("1.0.1-SNAPSHOT")
         Version("1.1.1-beta.1").nextSnapshotPatch() shouldBe Version("1.1.2-SNAPSHOT")
         Version("2.1.1-beta.1").nextSnapshotPatch() shouldBe Version("2.1.2-SNAPSHOT")
-        Version("1.0").nextSnapshotMinor() shouldBe Version("1.1-SNAPSHOT")
-        Version("1.0").nextSnapshotMinor() shouldBe Version("1.1.0-SNAPSHOT")
         Version("1.0.0").nextSnapshotMinor() shouldBe Version("1.1.0-SNAPSHOT")
         Version("1.0.1").nextSnapshotMinor() shouldBe Version("1.1.0-SNAPSHOT")
         Version("1.1.1").nextSnapshotMinor() shouldBe Version("1.2.0-SNAPSHOT")
@@ -334,8 +318,6 @@ class VersionTest {
         Version("1.0.0-alpha.3").nextSnapshotMinor() shouldBe Version("1.1.0-SNAPSHOT")
         Version("1.1.1-beta.1").nextSnapshotMinor() shouldBe Version("1.2.0-SNAPSHOT")
         Version("2.1.1-beta.1").nextSnapshotMinor() shouldBe Version("2.2.0-SNAPSHOT")
-        Version("1.0").nextSnapshotMajor() shouldBe Version("2.0-SNAPSHOT")
-        Version("1.0").nextSnapshotMajor() shouldBe Version("2.0.0-SNAPSHOT")
         Version("1.0.0").nextSnapshotMajor() shouldBe Version("2.0.0-SNAPSHOT")
         Version("1.0.1").nextSnapshotMajor() shouldBe Version("2.0.0-SNAPSHOT")
         Version("1.1.1").nextSnapshotMajor() shouldBe Version("2.0.0-SNAPSHOT")

@@ -1,3 +1,5 @@
+@file:Suppress("MaxLineLength")
+
 package com.javiersc.semanticVersioning
 
 /**
@@ -8,7 +10,6 @@ package com.javiersc.semanticVersioning
  */
 internal enum class VersionFormat(val regex: Regex) {
     Default(
-        """^(\d+.\d+)(\.\d+)?(-(?!(?i)SNAPSHOT\.\d)([a-zA-Z]+(\.\d+)|\b(?i)SNAPSHOT\b)?)?$""".toRegex()
-    ),
-    NoDot("""^(\d+.\d+)(\.\d+)?(-[a-zA-Z]+(\d+))?$""".toRegex()),
+        """^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(-(?!(?i)SNAPSHOT\.\d)([a-zA-Z]+(\.\d+)|\b(?i)SNAPSHOT\b)?)?${'$'}""".toRegex()
+    )
 }

@@ -25,8 +25,6 @@ There are 3 options to build a `Version`.
 #### Passing a `version: String`
 
 ```kotlin
-Version("1.0")
-
 Version("1.0.0")
 
 Version("1.0.0-alpha.1")
@@ -37,8 +35,6 @@ Version("12.23.34-alpha.45")
 #### Passing a `version: String` and a `stage: String?`
 
 ```kotlin
-Version("1.0", "alpha.1")
-
 Version("1.0.0", "alpha.1")
 
 Version("12.23.34", "alpha.45")
@@ -47,8 +43,6 @@ Version("12.23.34", "alpha.45")
 #### Passing all params; `major: Int`, `minor: Int`, `patch: Int?`, `stage: String?`, and `num: Int?`
 
 ```kotlin
-Version(1, 0)
-
 Version(1, 0, 0)
 
 Version(1, 0, 0, "alpha", 1)

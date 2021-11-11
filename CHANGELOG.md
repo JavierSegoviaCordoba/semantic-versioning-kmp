@@ -9,15 +9,21 @@
 ### Deprecated
 
 ### Removed
-- support of versions with no patch
 
 ### Fixed
+
+### Updated
+
+
+## [0.1.0-beta.6] - 2021-11-11
+
+### Removed
+- support of versions with no patch
 
 ### Updated
 - `gradle -> 7.3`
 - `com.javiersc.gradle-plugins:all-plugins -> 0.1.0-rc.8`
 - `org.jetbrains.kotlinx:binary-compatibility-validator -> 0.8.0`
-
 
 ## [0.1.0-beta.5] - 2021-11-08
 

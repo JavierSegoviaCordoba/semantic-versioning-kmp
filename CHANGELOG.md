@@ -13,6 +13,7 @@
 ### Fixed
 
 ### Updated
+- `org.jetbrains.kotlin:kotlin-gradle-plugin -> 1.6.0`
 
 
 ## [0.1.0-beta.6] - 2021-11-11

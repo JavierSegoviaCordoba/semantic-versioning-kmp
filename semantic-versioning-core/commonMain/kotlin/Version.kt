@@ -124,8 +124,9 @@ public class Version private constructor(public val value: String) : Comparable<
     override fun hashCode(): Int = value.hashCode()
 
     public companion object {
-
         public val regex: Regex = VersionFormat.Default.regex
+
+        public val scopeRegex: Regex = VersionFormat.Default.scope
 
         public operator fun invoke(value: String): Version = Version(value)
 
@@ -197,7 +198,7 @@ public class Version private constructor(public val value: String) : Comparable<
         override fun hashCode(): Int = value.hashCode()
 
         public companion object {
-            public val regex: Regex = """([a-zA-Z]+(\.\d+)|\b(?i)SNAPSHOT\b)?$""".toRegex()
+            public val stageRegex: Regex = VersionFormat.Default.stage
 
             public operator fun invoke(stage: String): Stage = Stage(stage)
 
@@ -238,7 +239,7 @@ private fun checkFullVersion(version: String) {
 }
 
 private fun checkStage(stage: String) {
-    checkVersion(stage.matches(Version.Stage.regex)) {
+    checkVersion(stage.matches(Version.Stage.stageRegex)) {
         """`|stage` provided has an incorrect format
             | 
             |Samples of stages:

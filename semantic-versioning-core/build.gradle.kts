@@ -13,6 +13,11 @@ kotlin {
 
     jvm()
 
+    js(BOTH) {
+        browser()
+        nodejs()
+    }
+
     linuxX64()
     mingwX64()
     macosX64()
@@ -26,8 +31,7 @@ kotlin {
     sourceSets {
         commonTest {
             dependencies {
-                implementation(libs.jetbrains.kotlin.kotlinTestCommon)
-                implementation(libs.jetbrains.kotlin.kotlinTestJunit)
+                implementation(libs.jetbrains.kotlin.kotlinTest)
                 implementation(libs.kotest.kotestAssertionsCore)
             }
         }

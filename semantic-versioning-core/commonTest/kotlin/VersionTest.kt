@@ -1,8 +1,6 @@
 package com.javiersc.semanticVersioning
 
-import com.javiersc.semanticVersioning.Version.Increase.Major
-import com.javiersc.semanticVersioning.Version.Increase.Minor
-import com.javiersc.semanticVersioning.Version.Increase.Patch
+import com.javiersc.semanticVersioning.Version.Increase.*
 import io.kotest.assertions.throwables.shouldThrow
 import io.kotest.matchers.comparables.shouldBeGreaterThan
 import io.kotest.matchers.nulls.shouldBeNull
@@ -12,7 +10,7 @@ import kotlin.test.Test
 class VersionTest {
 
     @Test
-    fun `Same version`() {
+    fun same_version() {
         Version("1.0.0") shouldBe Version("1.0.0")
         Version("1.1.0") shouldBe Version("1.1.0")
         Version("1.1.1") shouldBe Version("1.1.1")
@@ -27,7 +25,7 @@ class VersionTest {
     }
 
     @Test
-    fun `Greater major`() {
+    fun greater_major() {
         Version("2.0.0") shouldBeGreaterThan Version("1.0.0")
         Version("2.0.0") shouldBeGreaterThan Version("1.0.1")
         Version("2.0.0") shouldBeGreaterThan Version("1.1.0")
@@ -45,7 +43,7 @@ class VersionTest {
     }
 
     @Test
-    fun `Greater minor with same major`() {
+    fun greater_minor_with_same_major() {
         Version("1.1.0") shouldBeGreaterThan Version("1.0.1")
         Version("1.1.0") shouldBeGreaterThan Version("1.0.0-alpha.2")
         Version("1.1.0") shouldBeGreaterThan Version("1.1.0-alpha.2")
@@ -57,7 +55,7 @@ class VersionTest {
     }
 
     @Test
-    fun `Greater patch with same major and minor`() {
+    fun greater_patch_with_same_major_and_minor() {
         Version("1.1.1") shouldBeGreaterThan Version("1.1.0")
         Version("1.1.0") shouldBeGreaterThan Version("1.1.0-alpha.2")
         Version("1.1.1-alpha.2") shouldBeGreaterThan Version("1.1.0-alpha.1")
@@ -67,7 +65,7 @@ class VersionTest {
     }
 
     @Test
-    fun `Greater stage with same major, minor and patch`() {
+    fun greater_stage_with_same_major_minor_and_patch() {
         Version("1.0.0-beta.1") shouldBeGreaterThan Version("1.0.0-alpha.1")
         Version("1.0.0-rc.1") shouldBeGreaterThan Version("1.0.0-alpha.1")
         Version("1.0.0-alpha.1") shouldBeGreaterThan Version("1.0.0-SNAPSHOT")
@@ -76,7 +74,7 @@ class VersionTest {
     }
 
     @Test
-    fun `Value is correct`() {
+    fun value_is_correct() {
         Version("12.23.34-SNAPSHOT").value shouldBe "12.23.34-SNAPSHOT"
         Version("12.23.34", "alpha.5").value shouldBe "12.23.34-alpha.5"
         Version("12.23.34", "SNAPSHOT").value shouldBe "12.23.34-SNAPSHOT"
@@ -85,7 +83,7 @@ class VersionTest {
     }
 
     @Test
-    fun `Public properties and constructors with correct versions`() {
+    fun public_properties_and_constructors_with_correct_versions() {
         with(Version("1.2.0")) {
             major shouldBe 1
             minor shouldBe 2
@@ -133,7 +131,7 @@ class VersionTest {
     }
 
     @Test
-    fun `Public properties and constructors with incorrect versions`() {
+    fun public_properties_and_constructors_with_incorrect_versions() {
         shouldThrow<SemanticVersionException> { Version("1.0") }
         shouldThrow<SemanticVersionException> { Version("3.53") }
         shouldThrow<SemanticVersionException> { Version("222.22") }
@@ -182,7 +180,7 @@ class VersionTest {
     }
 
     @Test
-    fun `Increase stage`() {
+    fun increase_stage() {
         Version("1.0.0").inc(stageName = "alpha") shouldBe Version("1.0.1-alpha.1")
         Version("1.0.0-alpha.1").inc(stageName = "alpha") shouldBe Version("1.0.0-alpha.2")
         Version("1.0.0-alpha.1").inc() shouldBe Version("1.0.0")
@@ -197,7 +195,7 @@ class VersionTest {
     }
 
     @Test
-    fun `Increase stage and patch`() {
+    fun increase_stage_and_patch() {
         Version("1.0.0").inc(Patch, "alpha") shouldBe Version("1.0.1-alpha.1")
         Version("1.0.0-alpha.1").inc(Patch, "alpha") shouldBe Version("1.0.1-alpha.2")
         Version("1.0.0-alpha.1").inc(Patch, "") shouldBe Version("1.0.1")
@@ -212,7 +210,7 @@ class VersionTest {
     }
 
     @Test
-    fun `Increase stage and minor`() {
+    fun increase_stage_and_minor() {
         Version("1.0.0").inc(Minor, "alpha") shouldBe Version("1.1.0-alpha.1")
         Version("1.0.0-alpha.1").inc(Minor, "alpha") shouldBe Version("1.1.0-alpha.2")
         Version("1.0.0-alpha.1").inc(Minor, "") shouldBe Version("1.1.0")
@@ -227,7 +225,7 @@ class VersionTest {
     }
 
     @Test
-    fun `Increase stage and major`() {
+    fun increase_stage_and_major() {
         Version("1.0.0").inc(Major, "alpha") shouldBe Version("2.0.0-alpha.1")
         Version("1.0.0-alpha.1").inc(Major, "alpha") shouldBe Version("2.0.0-alpha.2")
         Version("1.0.0-alpha.1").inc(Major, "") shouldBe Version("2.0.0")
@@ -242,7 +240,7 @@ class VersionTest {
     }
 
     @Test
-    fun `Increase patch`() {
+    fun increase_patch() {
         Version("1.0.0").inc(Patch) shouldBe Version("1.0.1")
         Version("1.1.0").inc(Patch) shouldBe Version("1.1.1")
         Version("1.1.1").inc(Patch) shouldBe Version("1.1.2")
@@ -254,7 +252,7 @@ class VersionTest {
     }
 
     @Test
-    fun `Increase minor`() {
+    fun increase_minor() {
         Version("1.0.0").inc(Minor) shouldBe Version("1.1.0")
         Version("1.1.0").inc(Minor) shouldBe Version("1.2.0")
         Version("1.1.1").inc(Minor) shouldBe Version("1.2.0")
@@ -266,7 +264,7 @@ class VersionTest {
     }
 
     @Test
-    fun `Increase major`() {
+    fun increase_major() {
         Version("1.0.0").inc(Major) shouldBe Version("2.0.0")
         Version("1.1.0").inc(Major) shouldBe Version("2.0.0")
         Version("1.1.1").inc(Major) shouldBe Version("2.0.0")
@@ -278,7 +276,7 @@ class VersionTest {
     }
 
     @Test
-    fun `Copy all versions`() {
+    fun copy_all_versions() {
         Version("1.0.0").copy(major = 3) shouldBe Version("3.0.0")
         Version("1.0.0").copy(minor = 3) shouldBe Version("1.3.0")
         Version("1.0.0").copy(patch = 3) shouldBe Version("1.0.3")
@@ -303,7 +301,7 @@ class VersionTest {
     }
 
     @Test
-    fun `Next snapshot`() {
+    fun next_snapshot() {
         Version("1.0.0").nextSnapshotPatch() shouldBe Version("1.0.1-SNAPSHOT")
         Version("1.0.1").nextSnapshotPatch() shouldBe Version("1.0.2-SNAPSHOT")
         Version("1.1.1").nextSnapshotPatch() shouldBe Version("1.1.2-SNAPSHOT")

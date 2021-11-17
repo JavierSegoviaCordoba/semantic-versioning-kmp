@@ -27,6 +27,7 @@ public final class com/javiersc/semanticVersioning/Version : java/lang/Comparabl
 
 public final class com/javiersc/semanticVersioning/Version$Companion {
 	public final fun getRegex ()Lkotlin/text/Regex;
+	public final fun getScopeRegex ()Lkotlin/text/Regex;
 	public final fun invoke (IIILjava/lang/String;Ljava/lang/Integer;)Lcom/javiersc/semanticVersioning/Version;
 	public final fun invoke (Ljava/lang/String;)Lcom/javiersc/semanticVersioning/Version;
 	public final fun invoke (Ljava/lang/String;Ljava/lang/String;)Lcom/javiersc/semanticVersioning/Version;
@@ -63,7 +64,7 @@ public final class com/javiersc/semanticVersioning/Version$Stage : java/lang/Com
 }
 
 public final class com/javiersc/semanticVersioning/Version$Stage$Companion {
-	public final fun getRegex ()Lkotlin/text/Regex;
+	public final fun getStageRegex ()Lkotlin/text/Regex;
 	public final fun invoke (Ljava/lang/String;)Lcom/javiersc/semanticVersioning/Version$Stage;
 	public final fun invoke (Ljava/lang/String;Ljava/lang/Integer;)Lcom/javiersc/semanticVersioning/Version$Stage;
 }

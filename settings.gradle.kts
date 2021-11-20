@@ -1,8 +1,14 @@
 rootProject.name = providers.gradleProperty("allProjects.name").forUseAtConfigurationTime().get()
 
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
-
 enableFeaturePreview("VERSION_CATALOGS")
+
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        mavenCentral()
+    }
+}
 
 dependencyResolutionManagement {
     repositories {

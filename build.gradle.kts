@@ -12,12 +12,16 @@ plugins {
     id("org.sonarqube") version "3.3"
 }
 
+kover {
+    coverageEngine.set(kotlinx.kover.api.CoverageEngine.JACOCO)
+}
+
 sonarqube {
     properties {
         property("sonar.projectKey", "JavierSegoviaCordoba_semantic-versioning-kmp")
         property("sonar.organization", "javiersc")
         property("sonar.host.url", "https://sonarcloud.io")
-        property("sonar.coverage.jacoco.xmlReportPaths", "**/build/kover/report.xml")
+        property("sonar.coverage.jacoco.xmlReportPaths", "**/build/reports/kover/report.xml")
     }
 }
 

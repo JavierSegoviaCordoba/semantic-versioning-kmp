@@ -1,8 +1,8 @@
-package com.javiersc.semanticVersioning
+package com.javiersc.semver
 
-import com.javiersc.semanticVersioning.Version.Increase.Major
-import com.javiersc.semanticVersioning.Version.Increase.Minor
-import com.javiersc.semanticVersioning.Version.Increase.Patch
+import com.javiersc.semver.Version.Increase.Major
+import com.javiersc.semver.Version.Increase.Minor
+import com.javiersc.semver.Version.Increase.Patch
 import io.kotest.assertions.throwables.shouldThrow
 import io.kotest.matchers.comparables.shouldBeGreaterThan
 import io.kotest.matchers.nulls.shouldBeNull

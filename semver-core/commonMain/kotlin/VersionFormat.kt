@@ -1,6 +1,4 @@
-@file:Suppress("MaxLineLength")
-
-package com.javiersc.semanticVersioning
+package com.javiersc.semver
 
 import kotlin.text.RegexOption.IGNORE_CASE
 

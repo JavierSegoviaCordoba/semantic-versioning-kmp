@@ -1,0 +1,71 @@
+public final class com/javiersc/semver/SemanticVersionException : java/lang/Exception {
+	public fun <init> (Ljava/lang/String;)V
+	public fun getMessage ()Ljava/lang/String;
+}
+
+public final class com/javiersc/semver/Version : java/lang/Comparable {
+	public static final field Companion Lcom/javiersc/semver/Version$Companion;
+	public synthetic fun <init> (Ljava/lang/String;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public fun compareTo (Lcom/javiersc/semver/Version;)I
+	public synthetic fun compareTo (Ljava/lang/Object;)I
+	public final fun copy (IIILjava/lang/String;Ljava/lang/Integer;)Lcom/javiersc/semver/Version;
+	public static synthetic fun copy$default (Lcom/javiersc/semver/Version;IIILjava/lang/String;Ljava/lang/Integer;ILjava/lang/Object;)Lcom/javiersc/semver/Version;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getMajor ()I
+	public final fun getMinor ()I
+	public final fun getPatch ()I
+	public final fun getStage ()Lcom/javiersc/semver/Version$Stage;
+	public final fun getValue ()Ljava/lang/String;
+	public fun hashCode ()I
+	public final fun inc (Lcom/javiersc/semver/Version$Increase;Ljava/lang/String;)Lcom/javiersc/semver/Version;
+	public static synthetic fun inc$default (Lcom/javiersc/semver/Version;Lcom/javiersc/semver/Version$Increase;Ljava/lang/String;ILjava/lang/Object;)Lcom/javiersc/semver/Version;
+	public final fun nextSnapshotMajor ()Lcom/javiersc/semver/Version;
+	public final fun nextSnapshotMinor ()Lcom/javiersc/semver/Version;
+	public final fun nextSnapshotPatch ()Lcom/javiersc/semver/Version;
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/javiersc/semver/Version$Companion {
+	public final fun getRegex ()Lkotlin/text/Regex;
+	public final fun getScopeRegex ()Lkotlin/text/Regex;
+	public final fun invoke (IIILjava/lang/String;Ljava/lang/Integer;)Lcom/javiersc/semver/Version;
+	public final fun invoke (Ljava/lang/String;)Lcom/javiersc/semver/Version;
+	public final fun invoke (Ljava/lang/String;Ljava/lang/String;)Lcom/javiersc/semver/Version;
+	public final fun safe-IoAF18A (Ljava/lang/String;)Ljava/lang/Object;
+	public final fun safe-gIAlu-s (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;
+	public final fun safe-yxL6bBk (IIILjava/lang/String;Ljava/lang/Integer;)Ljava/lang/Object;
+}
+
+public abstract interface class com/javiersc/semver/Version$Increase {
+}
+
+public final class com/javiersc/semver/Version$Increase$Major : com/javiersc/semver/Version$Increase {
+	public static final field INSTANCE Lcom/javiersc/semver/Version$Increase$Major;
+}
+
+public final class com/javiersc/semver/Version$Increase$Minor : com/javiersc/semver/Version$Increase {
+	public static final field INSTANCE Lcom/javiersc/semver/Version$Increase$Minor;
+}
+
+public final class com/javiersc/semver/Version$Increase$Patch : com/javiersc/semver/Version$Increase {
+	public static final field INSTANCE Lcom/javiersc/semver/Version$Increase$Patch;
+}
+
+public final class com/javiersc/semver/Version$Stage : java/lang/Comparable {
+	public static final field Companion Lcom/javiersc/semver/Version$Stage$Companion;
+	public synthetic fun <init> (Ljava/lang/String;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public fun compareTo (Lcom/javiersc/semver/Version$Stage;)I
+	public synthetic fun compareTo (Ljava/lang/Object;)I
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getName ()Ljava/lang/String;
+	public final fun getNum ()Ljava/lang/Integer;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/javiersc/semver/Version$Stage$Companion {
+	public final fun getStageRegex ()Lkotlin/text/Regex;
+	public final fun invoke (Ljava/lang/String;)Lcom/javiersc/semver/Version$Stage;
+	public final fun invoke (Ljava/lang/String;Ljava/lang/Integer;)Lcom/javiersc/semver/Version$Stage;
+}
+

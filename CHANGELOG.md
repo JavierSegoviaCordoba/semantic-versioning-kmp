@@ -5,6 +5,8 @@
 ### Added
 
 ### Changed
+- artifact to `com.javiersc.semver:semver-core`
+- package structure to `com.javiersc.semver`
 
 ### Deprecated
 

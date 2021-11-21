@@ -1,11 +1,11 @@
-# Module semantic-versioning-core
+# Module semver-core
 
 A Kotlin Multiplatform library to work with semantic versioning
 
 ## Download
 
 ```kotlin
-implementation("com.javiersc.semantic-versioning:semantic-versioning-core:$version")
+implementation("com.javiersc.semver:semver-core:$version")
 ```
 
 ## Usage

@@ -1,4 +1,4 @@
-package com.javiersc.semanticVersioning
+package com.javiersc.semver
 
 import kotlin.contracts.ExperimentalContracts
 import kotlin.contracts.contract

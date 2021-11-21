@@ -5,8 +5,6 @@
 ### Added
 
 ### Changed
-- artifact to `com.javiersc.semver:semver-core`
-- package structure to `com.javiersc.semver`
 
 ### Deprecated
 
@@ -15,9 +13,17 @@
 ### Fixed
 
 ### Updated
+
+
+## [0.1.0-beta.7] - 2021-11-21
+
+### Changed
+- artifact to `com.javiersc.semver:semver-core`
+- package structure to `com.javiersc.semver`
+
+### Updated
 - `com.javiersc.gradle-plugins:all-plugins -> 0.1.0-rc.12`
 - `org.jetbrains.kotlin:kotlin-gradle-plugin -> 1.6.0`
-
 
 ## [0.1.0-beta.6] - 2021-11-11
 

@@ -31,8 +31,10 @@ kotlin {
     sourceSets {
         commonTest {
             dependencies {
+                implementation(libs.javiersc.runBlocking.suspendTest)
                 implementation(libs.jetbrains.kotlin.kotlinTest)
                 implementation(libs.kotest.kotestAssertionsCore)
+                implementation(libs.kotest.kotestProperty)
             }
         }
     }

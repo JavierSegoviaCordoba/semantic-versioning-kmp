@@ -1,5 +1,6 @@
 package com.javiersc.semver
 
+import com.javiersc.runBlocking.suspendTest
 import com.javiersc.semver.Version.Increase.Major
 import com.javiersc.semver.Version.Increase.Minor
 import com.javiersc.semver.Version.Increase.Patch
@@ -7,9 +8,130 @@ import io.kotest.assertions.throwables.shouldThrow
 import io.kotest.matchers.comparables.shouldBeGreaterThan
 import io.kotest.matchers.nulls.shouldBeNull
 import io.kotest.matchers.shouldBe
+import io.kotest.property.Arb
+import io.kotest.property.PropertyTesting
+import io.kotest.property.arbitrary.arbitrary
+import io.kotest.property.arbitrary.choice
+import io.kotest.property.arbitrary.constant
+import io.kotest.property.arbitrary.positiveInt
+import io.kotest.property.checkAll
+import io.kotest.property.forAll
 import kotlin.test.Test
 
 class VersionTest {
+
+    init {
+        PropertyTesting.defaultIterationCount = 100_000
+    }
+
+    private val major = Arb.positiveInt(30)
+    private val minor = Arb.positiveInt(30)
+    private val patch = Arb.positiveInt(30)
+    private val stageName =
+        Arb.choice(
+            Arb.constant("alpha"),
+            Arb.constant("beta"),
+            Arb.constant("rc"),
+            Arb.constant("SNAPSHOT"),
+            Arb.constant("zasca"),
+            Arb.constant(null)
+        )
+    private val num =
+        Arb.choice(
+            Arb.positiveInt(30),
+            Arb.constant(null),
+        )
+
+    private val versionArbitrary: Arb<Version> = arbitrary {
+        val major = major.bind()
+        val minor = minor.bind()
+        val patch = patch.bind()
+        val stageName = stageName.bind()
+        val num = num.bind()
+        val stage: String =
+            when {
+                stageName.equals("SNAPSHOT", ignoreCase = true) -> "-$stageName"
+                stageName == null || num == null -> ""
+                else -> "-$stageName.$num"
+            }
+        Version("$major.$minor.$patch$stage")
+    }
+
+    @Test
+    fun major_comparator() = suspendTest {
+        forAll(versionArbitrary, versionArbitrary) { a: Version, b: Version ->
+            if (a.major > b.major) a > b else true
+        }
+    }
+
+    @Test
+    fun minor_comparator() = suspendTest {
+        forAll(versionArbitrary, versionArbitrary) { a: Version, b: Version ->
+            if ((a.major == b.major) && (a.minor > b.minor)) a > b else true
+        }
+    }
+
+    @Test
+    fun patch_comparator() = suspendTest {
+        forAll(versionArbitrary, versionArbitrary) { a: Version, b: Version ->
+            if ((a.major == b.major) && (a.minor == b.minor) && (a.patch > b.patch)) a > b else true
+        }
+    }
+
+    @Test
+    fun stage_name_comparator() = suspendTest {
+        forAll(versionArbitrary, versionArbitrary) { a: Version, b: Version ->
+            if ((a.major == b.major) &&
+                    (a.minor == b.minor) &&
+                    (a.patch == b.patch) &&
+                    (a.stage?.name != null) &&
+                    (b.stage?.name != null) &&
+                    (a.stage!!.name > b.stage!!.name)
+            )
+                a > b
+            else true
+        }
+    }
+
+    @Test
+    fun stage_num_comparator() = suspendTest {
+        forAll(versionArbitrary, versionArbitrary) { a: Version, b: Version ->
+            if ((a.major == b.major) &&
+                    (a.minor == b.minor) &&
+                    (a.patch == b.patch) &&
+                    (a.stage?.name != null) &&
+                    (b.stage?.name != null) &&
+                    (a.stage!!.name == b.stage!!.name) &&
+                    (a.stage?.num != null) &&
+                    (b.stage?.num != null) &&
+                    (a.stage!!.num!! > b.stage!!.num!!)
+            )
+                a > b
+            else true
+        }
+    }
+
+    @Test
+    fun wrong_versions() = suspendTest {
+        checkAll(major, minor, patch, stageName, num) { major, minor, patch, stageName, num ->
+            when {
+                stageName.equals("SNAPSHOT", true) && num != null -> {
+                    shouldThrow<SemanticVersionException> {
+                        Version(major, minor, patch, stageName, num)
+                    }
+                }
+                stageName.equals("SNAPSHOT", true) && num == null -> {
+                    Version(major, minor, patch, stageName, num)
+                }
+                stageName != null && num == null -> {
+                    shouldThrow<SemanticVersionException> {
+                        Version(major, minor, patch, stageName, num)
+                    }
+                }
+                else -> Version(major, minor, patch, stageName, num)
+            }
+        }
+    }
 
     @Test
     fun same_version() {
@@ -24,6 +146,56 @@ class VersionTest {
         Version("1.0.0-SNAPSHOT") shouldBe Version("1.0.0-SNAPSHOT")
         Version("2.1.0-SNAPSHOT") shouldBe Version("2.1.0-SNAPSHOT")
         Version("3.4.2-SNAPSHOT") shouldBe Version("3.4.2-SNAPSHOT")
+    }
+
+    @Test
+    fun order() {
+        val actualList =
+            listOf(
+                Version("0.1.0-rc.13"),
+                Version("0.1.0-rc.12"),
+                Version("0.1.0-rc.11"),
+                Version("0.1.0-rc.10"),
+                Version("0.1.0-rc.9"),
+                Version("0.1.0-rc.8"),
+                Version("0.1.0-rc.7"),
+                Version("0.1.0-rc.6"),
+                Version("0.1.0-rc.5"),
+                Version("0.1.0-rc.4"),
+                Version("0.1.0-rc.3"),
+                Version("0.1.0-rc.2"),
+                Version("0.1.0-rc.1"),
+                Version("0.1.0-beta.5"),
+                Version("0.1.0-beta.4"),
+                Version("0.1.0-beta.3"),
+                Version("0.1.0-beta.2"),
+                Version("0.1.0-beta.1"),
+                Version("0.1.0-alpha.23"),
+                Version("0.1.0-alpha.22"),
+                Version("0.1.0-alpha.21"),
+                Version("0.1.0-alpha.20"),
+                Version("0.1.0-alpha.19"),
+                Version("0.1.0-alpha.18"),
+                Version("0.1.0-alpha.17"),
+                Version("0.1.0-alpha.16"),
+                Version("0.1.0-alpha.15"),
+                Version("0.1.0-alpha.14"),
+                Version("0.1.0-alpha.13"),
+                Version("0.1.0-alpha.12"),
+                Version("0.1.0-alpha.11"),
+                Version("0.1.0-alpha.10"),
+                Version("0.1.0-alpha.9"),
+                Version("0.1.0-alpha.8"),
+                Version("0.1.0-alpha.7"),
+                Version("0.1.0-alpha.6"),
+                Version("0.1.0-alpha.5"),
+                Version("0.1.0-alpha.4"),
+                Version("0.1.0-alpha.3"),
+                Version("0.1.0-alpha.2"),
+                Version("0.1.0-alpha.1"),
+            )
+
+        actualList shouldBe actualList.sortedDescending()
     }
 
     @Test

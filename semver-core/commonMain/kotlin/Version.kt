@@ -240,12 +240,12 @@ private fun checkFullVersion(version: String) {
 
 private fun checkStage(stage: String) {
     checkVersion(stage.matches(Version.Stage.stageRegex)) {
-        """`|stage` provided has an incorrect format
-            | 
-            |Samples of stages:
-            |alpha.1
-            |beta.23
-            |SNAPSHOT
+        """|`stage` provided has an incorrect format
+           | 
+           |Samples of stages:
+           |alpha.1
+           |beta.23
+           |SNAPSHOT
         """
             .trimMargin()
             .red()
@@ -272,7 +272,8 @@ private fun buildVersion(
     append(major)
     append(".")
     append(minor)
-    if (patch != null) append(".$patch")
+    append(".")
+    append(patch)
     if (!stageName.isNullOrBlank()) {
         append("-")
         append(Version.Stage(stageName, stageNum).toString())

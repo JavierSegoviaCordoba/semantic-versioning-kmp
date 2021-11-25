@@ -1,6 +1,9 @@
 [versions]
 kotest = "5.0.0"
+runBlocking = "0.1.0-beta.1"
 
 [libraries]
+javiersc-runBlocking-suspendTest = { module = "com.javiersc.run-blocking:suspend-test", version.ref = "runBlocking" }
 jetbrains-kotlin-kotlinTest = { module = "org.jetbrains.kotlin:kotlin-test" }
 kotest-kotestAssertionsCore = { module = "io.kotest:kotest-assertions-core", version.ref = "kotest" }
+kotest-kotestProperty = { module = "io.kotest:kotest-property", version.ref = "kotest" }

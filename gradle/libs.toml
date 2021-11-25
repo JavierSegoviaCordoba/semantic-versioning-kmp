@@ -1,5 +1,5 @@
 [versions]
-kotest = "4.6.3"
+kotest = "5.0.0"
 
 [libraries]
 jetbrains-kotlin-kotlinTest = { module = "org.jetbrains.kotlin:kotlin-test" }

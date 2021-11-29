@@ -1,6 +1,6 @@
 [versions]
 kotest = "5.0.0"
-runBlocking = "0.1.0-beta.1"
+runBlocking = "0.1.0-beta.2"
 
 [libraries]
 javiersc-runBlocking-suspendTest = { module = "com.javiersc.run-blocking:suspend-test", version.ref = "runBlocking" }

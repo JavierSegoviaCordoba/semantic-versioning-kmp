@@ -17,8 +17,8 @@ dependencies {
     implementation(files(pluginLibs.javaClass.superclass.protectionDomain.codeSource.location))
 
     pluginLibs.apply {
-        implementation(javiersc.gradlePlugins.allPluginsX)
-        implementation(jetbrains.kotlin.kotlinGradlePluginX)
+        implementation(javiersc.gradlePlugins.allPlugins)
+        implementation(jetbrains.kotlin.kotlinGradlePlugin)
         implementation(jetbrains.kotlinx.binaryCompatibilityValidator)
     }
 }

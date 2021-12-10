@@ -1,9 +1,9 @@
 [versions]
+coroutines = "1.6.0"
 kotest = "5.0.3"
-runBlocking = "0.1.0-beta.2"
 
 [libraries]
-javiersc-runBlocking-suspendTest = { module = "com.javiersc.run-blocking:suspend-test", version.ref = "runBlocking" }
 jetbrains-kotlin-kotlinTest = { module = "org.jetbrains.kotlin:kotlin-test" }
+jetbrains-kotlinx-kotlinxCoroutinesTest = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "coroutines" }
 kotest-kotestAssertionsCore = { module = "io.kotest:kotest-assertions-core", version.ref = "kotest" }
 kotest-kotestProperty = { module = "io.kotest:kotest-property", version.ref = "kotest" }

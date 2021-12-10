@@ -14,8 +14,20 @@ kotlin {
     jvm()
 
     js(BOTH) {
-        browser()
-        nodejs()
+        browser {
+            testTask {
+                useMocha {
+                    timeout = "30s"
+                }
+            }
+        }
+        nodejs {
+            testTask {
+                useMocha {
+                    timeout = "30s"
+                }
+            }
+        }
     }
 
     linuxX64()
@@ -31,8 +43,8 @@ kotlin {
     sourceSets {
         commonTest {
             dependencies {
-                implementation(libs.javiersc.runBlocking.suspendTest)
                 implementation(libs.jetbrains.kotlin.kotlinTest)
+                implementation(libs.jetbrains.kotlinx.kotlinxCoroutinesTest)
                 implementation(libs.kotest.kotestAssertionsCore)
                 implementation(libs.kotest.kotestProperty)
             }

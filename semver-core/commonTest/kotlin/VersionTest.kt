@@ -1,6 +1,5 @@
 package com.javiersc.semver
 
-import com.javiersc.runBlocking.suspendTest
 import com.javiersc.semver.Version.Increase.Major
 import com.javiersc.semver.Version.Increase.Minor
 import com.javiersc.semver.Version.Increase.Patch
@@ -17,6 +16,7 @@ import io.kotest.property.arbitrary.positiveInt
 import io.kotest.property.checkAll
 import io.kotest.property.forAll
 import kotlin.test.Test
+import kotlinx.coroutines.test.runTest
 
 class VersionTest {
 
@@ -58,28 +58,28 @@ class VersionTest {
     }
 
     @Test
-    fun major_comparator() = suspendTest {
+    fun major_comparator() = runTest {
         forAll(versionArbitrary, versionArbitrary) { a: Version, b: Version ->
             if (a.major > b.major) a > b else true
         }
     }
 
     @Test
-    fun minor_comparator() = suspendTest {
+    fun minor_comparator() = runTest {
         forAll(versionArbitrary, versionArbitrary) { a: Version, b: Version ->
             if ((a.major == b.major) && (a.minor > b.minor)) a > b else true
         }
     }
 
     @Test
-    fun patch_comparator() = suspendTest {
+    fun patch_comparator() = runTest {
         forAll(versionArbitrary, versionArbitrary) { a: Version, b: Version ->
             if ((a.major == b.major) && (a.minor == b.minor) && (a.patch > b.patch)) a > b else true
         }
     }
 
     @Test
-    fun stage_name_comparator() = suspendTest {
+    fun stage_name_comparator() = runTest {
         forAll(versionArbitrary, versionArbitrary) { a: Version, b: Version ->
             if ((a.major == b.major) &&
                     (a.minor == b.minor) &&
@@ -94,7 +94,7 @@ class VersionTest {
     }
 
     @Test
-    fun stage_num_comparator() = suspendTest {
+    fun stage_num_comparator() = runTest {
         forAll(versionArbitrary, versionArbitrary) { a: Version, b: Version ->
             if ((a.major == b.major) &&
                     (a.minor == b.minor) &&
@@ -112,7 +112,7 @@ class VersionTest {
     }
 
     @Test
-    fun wrong_versions() = suspendTest {
+    fun wrong_versions() = runTest {
         checkAll(major, minor, patch, stageName, num) { major, minor, patch, stageName, num ->
             when {
                 stageName.equals("SNAPSHOT", true) && num != null -> {

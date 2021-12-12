@@ -14,10 +14,10 @@
 
 ### Updated
 
+- `com.javiersc.gradle-plugins:all-plugins -> 0.1.0-rc.24`
 - `io.kotest:kotest-assertions-core -> 5.0.2`
 - `io.kotest:kotest-property -> 5.0.1`
 - `gradle -> 7.3.1`
-- `com.javiersc.gradle-plugins:all-plugins -> 0.1.0-rc.22`
 
 ## [0.1.0-beta.8] - 2021-11-30
 

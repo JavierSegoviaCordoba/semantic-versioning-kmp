@@ -12,6 +12,12 @@
 
 ### Fixed
 
+### Updated
+
+## [0.1.0-beta.9] - 2021-12-13
+
+### Fixed
+
 - `num` is not being reset when `number` is provided to `inc` function
 
 ### Updated

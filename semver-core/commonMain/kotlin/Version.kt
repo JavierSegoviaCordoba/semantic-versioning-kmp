@@ -61,22 +61,13 @@ public class Version private constructor(public val value: String) : Comparable<
                 number is Increase.Patch && stageName.isBlank() -> {
                     invoke(major, minor, patch.inc(), null, null)
                 }
-                number is Increase.Major && stageName.isNotBlank() && stage?.name == stageName -> {
-                    invoke(major.inc(), 0, 0, stageName, stage.num?.inc())
-                }
-                number is Increase.Minor && stageName.isNotBlank() && stage?.name == stageName -> {
-                    invoke(major, minor.inc(), 0, stageName, stage.num?.inc())
-                }
-                number is Increase.Patch && stageName.isNotBlank() && stage?.name == stageName -> {
-                    invoke(major, minor, patch.inc(), stageName, stage.num?.inc())
-                }
-                number is Increase.Major && stageName.isNotBlank() && stage?.name != stageName -> {
+                number is Increase.Major && stageName.isNotBlank() -> {
                     invoke(major.inc(), 0, 0, stageName, 1)
                 }
-                number is Increase.Minor && stageName.isNotBlank() && stage?.name != stageName -> {
+                number is Increase.Minor && stageName.isNotBlank() -> {
                     invoke(major, minor.inc(), 0, stageName, 1)
                 }
-                number is Increase.Patch && stageName.isNotBlank() && stage?.name != stageName -> {
+                number is Increase.Patch && stageName.isNotBlank() -> {
                     invoke(major, minor, patch.inc(), stageName, 1)
                 }
                 else -> null

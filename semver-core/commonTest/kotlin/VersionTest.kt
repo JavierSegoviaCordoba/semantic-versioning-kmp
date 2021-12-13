@@ -371,7 +371,7 @@ class VersionTest {
     @Test
     fun increase_stage_and_patch() {
         Version("1.0.0").inc(Patch, "alpha") shouldBe Version("1.0.1-alpha.1")
-        Version("1.0.0-alpha.1").inc(Patch, "alpha") shouldBe Version("1.0.1-alpha.2")
+        Version("1.0.0-alpha.1").inc(Patch, "alpha") shouldBe Version("1.0.1-alpha.1")
         Version("1.0.0-alpha.1").inc(Patch, "") shouldBe Version("1.0.1")
         Version("1.0.0-alpha.1").inc(Patch, "beta") shouldBe Version("1.0.1-beta.1")
         Version("1.1.0-beta.1").inc(Patch, "rc") shouldBe Version("1.1.1-rc.1")
@@ -386,7 +386,7 @@ class VersionTest {
     @Test
     fun increase_stage_and_minor() {
         Version("1.0.0").inc(Minor, "alpha") shouldBe Version("1.1.0-alpha.1")
-        Version("1.0.0-alpha.1").inc(Minor, "alpha") shouldBe Version("1.1.0-alpha.2")
+        Version("1.0.0-alpha.1").inc(Minor, "alpha") shouldBe Version("1.1.0-alpha.1")
         Version("1.0.0-alpha.1").inc(Minor, "") shouldBe Version("1.1.0")
         Version("1.0.0-alpha.1").inc(Minor, "beta") shouldBe Version("1.1.0-beta.1")
         Version("1.1.0-beta.1").inc(Minor, "rc") shouldBe Version("1.2.0-rc.1")
@@ -401,7 +401,7 @@ class VersionTest {
     @Test
     fun increase_stage_and_major() {
         Version("1.0.0").inc(Major, "alpha") shouldBe Version("2.0.0-alpha.1")
-        Version("1.0.0-alpha.1").inc(Major, "alpha") shouldBe Version("2.0.0-alpha.2")
+        Version("1.0.0-alpha.1").inc(Major, "alpha") shouldBe Version("2.0.0-alpha.1")
         Version("1.0.0-alpha.1").inc(Major, "") shouldBe Version("2.0.0")
         Version("1.0.0-alpha.1").inc(Major, "beta") shouldBe Version("2.0.0-beta.1")
         Version("1.1.0-beta.1").inc(Major, "rc") shouldBe Version("2.0.0-rc.1")
@@ -423,6 +423,7 @@ class VersionTest {
         Version("0.1.0-beta.1").inc(Patch) shouldBe Version("0.1.1")
         Version("10.1.0-rc.3").inc(Patch) shouldBe Version("10.1.1")
         Version("1.0.0-SNAPSHOT").inc(Patch) shouldBe Version("1.0.1")
+        Version("1.0.19-beta.5").inc(Patch, stageName = "beta") shouldBe Version("1.0.20-beta.1")
     }
 
     @Test

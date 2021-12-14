@@ -14,6 +14,10 @@
 
 ### Updated
 
+## [0.1.0-beta.9.2+2021-12-14T12-07-04-544429Z] - 2021-12-14
+
+### Updated
+
 - `org.jetbrains.kotlin:kotlin-gradle-plugin -> 1.6.10`
 
 ## [0.1.0-beta.9] - 2021-12-13

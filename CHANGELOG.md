@@ -14,6 +14,9 @@
 
 ### Updated
 
+- `io.kotest:kotest-property -> 5.0.3`
+- `io.kotest:kotest-assertions-core -> 5.0.3`
+
 ## [0.1.0-beta.9.3+2021-12-18T12-46-06-325230Z] - 2021-12-18
 
 ### Updated

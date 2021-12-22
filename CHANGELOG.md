@@ -14,6 +14,7 @@
 
 ### Updated
 
+- `gradle -> 7.3.3`
 - `io.kotest:kotest-property -> 5.0.3`
 - `io.kotest:kotest-assertions-core -> 5.0.3`
 

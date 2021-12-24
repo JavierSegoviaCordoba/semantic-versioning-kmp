@@ -8,7 +8,6 @@ import io.kotest.matchers.comparables.shouldBeGreaterThan
 import io.kotest.matchers.nulls.shouldBeNull
 import io.kotest.matchers.shouldBe
 import io.kotest.property.Arb
-import io.kotest.property.PropertyTesting
 import io.kotest.property.arbitrary.arbitrary
 import io.kotest.property.arbitrary.choice
 import io.kotest.property.arbitrary.constant
@@ -19,10 +18,6 @@ import kotlin.test.Test
 import kotlinx.coroutines.test.runTest
 
 class VersionTest {
-
-    init {
-        PropertyTesting.defaultIterationCount = 100_000
-    }
 
     private val major = Arb.positiveInt(30)
     private val minor = Arb.positiveInt(30)

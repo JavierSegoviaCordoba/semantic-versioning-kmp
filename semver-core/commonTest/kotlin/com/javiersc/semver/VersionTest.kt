@@ -1,8 +1,5 @@
 package com.javiersc.semver
 
-import com.javiersc.semver.Version.Increase.Major
-import com.javiersc.semver.Version.Increase.Minor
-import com.javiersc.semver.Version.Increase.Patch
 import io.kotest.assertions.throwables.shouldThrow
 import io.kotest.matchers.comparables.shouldBeGreaterThan
 import io.kotest.matchers.nulls.shouldBeNull
@@ -365,84 +362,106 @@ class VersionTest {
 
     @Test
     fun increase_stage_and_patch() {
-        Version("1.0.0").inc(Patch, "alpha") shouldBe Version("1.0.1-alpha.1")
-        Version("1.0.0-alpha.1").inc(Patch, "alpha") shouldBe Version("1.0.1-alpha.1")
-        Version("1.0.0-alpha.1").inc(Patch, "") shouldBe Version("1.0.1")
-        Version("1.0.0-alpha.1").inc(Patch, "beta") shouldBe Version("1.0.1-beta.1")
-        Version("1.1.0-beta.1").inc(Patch, "rc") shouldBe Version("1.1.1-rc.1")
-        Version("1.1.0").inc(Patch, "rc") shouldBe Version("1.1.1-rc.1")
-        Version("1.1.0-SNAPSHOT").inc(Patch, "rc") shouldBe Version("1.1.1-rc.1")
-        Version("1.1.0-SNAPSHOT").inc(Patch) shouldBe Version("1.1.1")
-        Version("1.1.0-beta.1").inc(Patch, "alpha") shouldBe Version("1.1.1-alpha.1")
-        shouldThrow<SemanticVersionException> { Version("1.0.0").inc(Patch, "snapshot") }
-        shouldThrow<SemanticVersionException> { Version("1.0.0").inc(Patch, "SNAPSHOT") }
+        Version("1.0.0").inc(Version.Increase.Patch, "alpha") shouldBe Version("1.0.1-alpha.1")
+        Version("1.0.0-alpha.1").inc(Version.Increase.Patch, "alpha") shouldBe
+            Version("1.0.1-alpha.1")
+        Version("1.0.0-alpha.1").inc(Version.Increase.Patch, "") shouldBe Version("1.0.1")
+        Version("1.0.0-alpha.1").inc(Version.Increase.Patch, "beta") shouldBe
+            Version("1.0.1-beta.1")
+        Version("1.1.0-beta.1").inc(Version.Increase.Patch, "rc") shouldBe Version("1.1.1-rc.1")
+        Version("1.1.0").inc(Version.Increase.Patch, "rc") shouldBe Version("1.1.1-rc.1")
+        Version("1.1.0-SNAPSHOT").inc(Version.Increase.Patch, "rc") shouldBe Version("1.1.1-rc.1")
+        Version("1.1.0-SNAPSHOT").inc(Version.Increase.Patch) shouldBe Version("1.1.1")
+        Version("1.1.0-beta.1").inc(Version.Increase.Patch, "alpha") shouldBe
+            Version("1.1.1-alpha.1")
+        shouldThrow<SemanticVersionException> {
+            Version("1.0.0").inc(Version.Increase.Patch, "snapshot")
+        }
+        shouldThrow<SemanticVersionException> {
+            Version("1.0.0").inc(Version.Increase.Patch, "SNAPSHOT")
+        }
     }
 
     @Test
     fun increase_stage_and_minor() {
-        Version("1.0.0").inc(Minor, "alpha") shouldBe Version("1.1.0-alpha.1")
-        Version("1.0.0-alpha.1").inc(Minor, "alpha") shouldBe Version("1.1.0-alpha.1")
-        Version("1.0.0-alpha.1").inc(Minor, "") shouldBe Version("1.1.0")
-        Version("1.0.0-alpha.1").inc(Minor, "beta") shouldBe Version("1.1.0-beta.1")
-        Version("1.1.0-beta.1").inc(Minor, "rc") shouldBe Version("1.2.0-rc.1")
-        Version("1.1.0").inc(Minor, "rc") shouldBe Version("1.2.0-rc.1")
-        Version("1.1.0-SNAPSHOT").inc(Minor, "rc") shouldBe Version("1.2.0-rc.1")
-        Version("1.1.0-SNAPSHOT").inc(Minor) shouldBe Version("1.2.0")
-        Version("1.1.0-beta.1").inc(Minor, "alpha") shouldBe Version("1.2.0-alpha.1")
-        shouldThrow<SemanticVersionException> { Version("1.0.0").inc(Minor, "snapshot") }
-        shouldThrow<SemanticVersionException> { Version("1.0.0").inc(Minor, "SNAPSHOT") }
+        Version("1.0.0").inc(Version.Increase.Minor, "alpha") shouldBe Version("1.1.0-alpha.1")
+        Version("1.0.0-alpha.1").inc(Version.Increase.Minor, "alpha") shouldBe
+            Version("1.1.0-alpha.1")
+        Version("1.0.0-alpha.1").inc(Version.Increase.Minor, "") shouldBe Version("1.1.0")
+        Version("1.0.0-alpha.1").inc(Version.Increase.Minor, "beta") shouldBe
+            Version("1.1.0-beta.1")
+        Version("1.1.0-beta.1").inc(Version.Increase.Minor, "rc") shouldBe Version("1.2.0-rc.1")
+        Version("1.1.0").inc(Version.Increase.Minor, "rc") shouldBe Version("1.2.0-rc.1")
+        Version("1.1.0-SNAPSHOT").inc(Version.Increase.Minor, "rc") shouldBe Version("1.2.0-rc.1")
+        Version("1.1.0-SNAPSHOT").inc(Version.Increase.Minor) shouldBe Version("1.2.0")
+        Version("1.1.0-beta.1").inc(Version.Increase.Minor, "alpha") shouldBe
+            Version("1.2.0-alpha.1")
+        shouldThrow<SemanticVersionException> {
+            Version("1.0.0").inc(Version.Increase.Minor, "snapshot")
+        }
+        shouldThrow<SemanticVersionException> {
+            Version("1.0.0").inc(Version.Increase.Minor, "SNAPSHOT")
+        }
     }
 
     @Test
     fun increase_stage_and_major() {
-        Version("1.0.0").inc(Major, "alpha") shouldBe Version("2.0.0-alpha.1")
-        Version("1.0.0-alpha.1").inc(Major, "alpha") shouldBe Version("2.0.0-alpha.1")
-        Version("1.0.0-alpha.1").inc(Major, "") shouldBe Version("2.0.0")
-        Version("1.0.0-alpha.1").inc(Major, "beta") shouldBe Version("2.0.0-beta.1")
-        Version("1.1.0-beta.1").inc(Major, "rc") shouldBe Version("2.0.0-rc.1")
-        Version("1.1.0").inc(Major, "rc") shouldBe Version("2.0.0-rc.1")
-        Version("1.1.0-SNAPSHOT").inc(Major, "rc") shouldBe Version("2.0.0-rc.1")
-        Version("1.1.0-SNAPSHOT").inc(Major) shouldBe Version("2.0.0")
-        Version("1.1.0-beta.1").inc(Major, "alpha") shouldBe Version("2.0.0-alpha.1")
-        shouldThrow<SemanticVersionException> { Version("1.0.0").inc(Major, "snapshot") }
-        shouldThrow<SemanticVersionException> { Version("1.0.0").inc(Major, "SNAPSHOT") }
+        Version("1.0.0").inc(Version.Increase.Major, "alpha") shouldBe Version("2.0.0-alpha.1")
+        Version("1.0.0-alpha.1").inc(Version.Increase.Major, "alpha") shouldBe
+            Version("2.0.0-alpha.1")
+        Version("1.0.0-alpha.1").inc(Version.Increase.Major, "") shouldBe Version("2.0.0")
+        Version("1.0.0-alpha.1").inc(Version.Increase.Major, "beta") shouldBe
+            Version("2.0.0-beta.1")
+        Version("1.1.0-beta.1").inc(Version.Increase.Major, "rc") shouldBe Version("2.0.0-rc.1")
+        Version("1.1.0").inc(Version.Increase.Major, "rc") shouldBe Version("2.0.0-rc.1")
+        Version("1.1.0-SNAPSHOT").inc(Version.Increase.Major, "rc") shouldBe Version("2.0.0-rc.1")
+        Version("1.1.0-SNAPSHOT").inc(Version.Increase.Major) shouldBe Version("2.0.0")
+        Version("1.1.0-beta.1").inc(Version.Increase.Major, "alpha") shouldBe
+            Version("2.0.0-alpha.1")
+        shouldThrow<SemanticVersionException> {
+            Version("1.0.0").inc(Version.Increase.Major, "snapshot")
+        }
+        shouldThrow<SemanticVersionException> {
+            Version("1.0.0").inc(Version.Increase.Major, "SNAPSHOT")
+        }
     }
 
     @Test
     fun increase_patch() {
-        Version("1.0.0").inc(Patch) shouldBe Version("1.0.1")
-        Version("1.1.0").inc(Patch) shouldBe Version("1.1.1")
-        Version("1.1.1").inc(Patch) shouldBe Version("1.1.2")
-        Version("1.1.1-alpha.1").inc(Patch) shouldBe Version("1.1.2")
-        Version("1.1.1-beta.1").inc(Patch) shouldBe Version("1.1.2")
-        Version("0.1.0-beta.1").inc(Patch) shouldBe Version("0.1.1")
-        Version("10.1.0-rc.3").inc(Patch) shouldBe Version("10.1.1")
-        Version("1.0.0-SNAPSHOT").inc(Patch) shouldBe Version("1.0.1")
-        Version("1.0.19-beta.5").inc(Patch, stageName = "beta") shouldBe Version("1.0.20-beta.1")
+        Version("1.0.0").inc(Version.Increase.Patch) shouldBe Version("1.0.1")
+        Version("1.1.0").inc(Version.Increase.Patch) shouldBe Version("1.1.1")
+        Version("1.1.1").inc(Version.Increase.Patch) shouldBe Version("1.1.2")
+        Version("1.1.1-alpha.1").inc(Version.Increase.Patch) shouldBe Version("1.1.2")
+        Version("1.1.1-beta.1").inc(Version.Increase.Patch) shouldBe Version("1.1.2")
+        Version("0.1.0-beta.1").inc(Version.Increase.Patch) shouldBe Version("0.1.1")
+        Version("10.1.0-rc.3").inc(Version.Increase.Patch) shouldBe Version("10.1.1")
+        Version("1.0.0-SNAPSHOT").inc(Version.Increase.Patch) shouldBe Version("1.0.1")
+        Version("1.0.19-beta.5").inc(Version.Increase.Patch, stageName = "beta") shouldBe
+            Version("1.0.20-beta.1")
     }
 
     @Test
     fun increase_minor() {
-        Version("1.0.0").inc(Minor) shouldBe Version("1.1.0")
-        Version("1.1.0").inc(Minor) shouldBe Version("1.2.0")
-        Version("1.1.1").inc(Minor) shouldBe Version("1.2.0")
-        Version("1.1.1-alpha.1").inc(Minor) shouldBe Version("1.2.0")
-        Version("1.1.1-beta.1").inc(Minor) shouldBe Version("1.2.0")
-        Version("0.1.0-beta.1").inc(Minor) shouldBe Version("0.2.0")
-        Version("10.1.0-rc.3").inc(Minor) shouldBe Version("10.2.0")
-        Version("1.0.0-SNAPSHOT").inc(Minor) shouldBe Version("1.1.0")
+        Version("1.0.0").inc(Version.Increase.Minor) shouldBe Version("1.1.0")
+        Version("1.1.0").inc(Version.Increase.Minor) shouldBe Version("1.2.0")
+        Version("1.1.1").inc(Version.Increase.Minor) shouldBe Version("1.2.0")
+        Version("1.1.1-alpha.1").inc(Version.Increase.Minor) shouldBe Version("1.2.0")
+        Version("1.1.1-beta.1").inc(Version.Increase.Minor) shouldBe Version("1.2.0")
+        Version("0.1.0-beta.1").inc(Version.Increase.Minor) shouldBe Version("0.2.0")
+        Version("10.1.0-rc.3").inc(Version.Increase.Minor) shouldBe Version("10.2.0")
+        Version("1.0.0-SNAPSHOT").inc(Version.Increase.Minor) shouldBe Version("1.1.0")
     }
 
     @Test
     fun increase_major() {
-        Version("1.0.0").inc(Major) shouldBe Version("2.0.0")
-        Version("1.1.0").inc(Major) shouldBe Version("2.0.0")
-        Version("1.1.1").inc(Major) shouldBe Version("2.0.0")
-        Version("1.1.1-alpha.1").inc(Major) shouldBe Version("2.0.0")
-        Version("1.1.1-beta.1").inc(Major) shouldBe Version("2.0.0")
-        Version("0.1.0-beta.1").inc(Major) shouldBe Version("1.0.0")
-        Version("10.1.0-rc.3").inc(Major) shouldBe Version("11.0.0")
-        Version("1.0.0-SNAPSHOT").inc(Major) shouldBe Version("2.0.0")
+        Version("1.0.0").inc(Version.Increase.Major) shouldBe Version("2.0.0")
+        Version("1.1.0").inc(Version.Increase.Major) shouldBe Version("2.0.0")
+        Version("1.1.1").inc(Version.Increase.Major) shouldBe Version("2.0.0")
+        Version("1.1.1-alpha.1").inc(Version.Increase.Major) shouldBe Version("2.0.0")
+        Version("1.1.1-beta.1").inc(Version.Increase.Major) shouldBe Version("2.0.0")
+        Version("0.1.0-beta.1").inc(Version.Increase.Major) shouldBe Version("1.0.0")
+        Version("10.1.0-rc.3").inc(Version.Increase.Major) shouldBe Version("11.0.0")
+        Version("1.0.0-SNAPSHOT").inc(Version.Increase.Major) shouldBe Version("2.0.0")
     }
 
     @Test

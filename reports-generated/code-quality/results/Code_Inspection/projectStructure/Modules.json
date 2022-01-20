@@ -126,19 +126,19 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-core-iosarm64:klib:5.0.3",
+          "name": "Gradle: io.kotest:kotest-assertions-core-iosarm64:klib:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-property-iosarm64:klib:5.0.3",
+          "name": "Gradle: io.kotest:kotest-property-iosarm64:klib:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-property:desktopMain:5.0.3",
+          "name": "Gradle: io.kotest:kotest-property:desktopMain:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-reflect:1.6.0",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-reflect:1.6.10",
           "type": "Library"
         },
         {
@@ -182,27 +182,27 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-shared-iosarm64:klib:5.0.3",
+          "name": "Gradle: io.kotest:kotest-assertions-shared-iosarm64:klib:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-shared:desktopMain:5.0.3",
+          "name": "Gradle: io.kotest:kotest-assertions-shared:desktopMain:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-common-iosarm64:klib:5.0.3",
+          "name": "Gradle: io.kotest:kotest-common-iosarm64:klib:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-common:desktopMain:5.0.3",
+          "name": "Gradle: io.kotest:kotest-common:desktopMain:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.6.0",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.6.10",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-api-iosarm64:klib:5.0.3",
+          "name": "Gradle: io.kotest:kotest-assertions-api-iosarm64:klib:5.1.0",
           "type": "Library"
         },
         {
@@ -280,19 +280,19 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-core-iosx64:klib:5.0.3",
+          "name": "Gradle: io.kotest:kotest-assertions-core-iosx64:klib:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-property-iosx64:klib:5.0.3",
+          "name": "Gradle: io.kotest:kotest-property-iosx64:klib:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-property:desktopMain:5.0.3",
+          "name": "Gradle: io.kotest:kotest-property:desktopMain:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-reflect:1.6.0",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-reflect:1.6.10",
           "type": "Library"
         },
         {
@@ -336,27 +336,27 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-shared-iosx64:klib:5.0.3",
+          "name": "Gradle: io.kotest:kotest-assertions-shared-iosx64:klib:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-shared:desktopMain:5.0.3",
+          "name": "Gradle: io.kotest:kotest-assertions-shared:desktopMain:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-common-iosx64:klib:5.0.3",
+          "name": "Gradle: io.kotest:kotest-common-iosx64:klib:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-common:desktopMain:5.0.3",
+          "name": "Gradle: io.kotest:kotest-common:desktopMain:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.6.0",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.6.10",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-api-iosx64:klib:5.0.3",
+          "name": "Gradle: io.kotest:kotest-assertions-api-iosx64:klib:5.1.0",
           "type": "Library"
         },
         {
@@ -462,7 +462,7 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-core-js:klib:5.0.3",
+          "name": "Gradle: io.kotest:kotest-assertions-core-js:klib:5.1.0",
           "type": "Library"
         },
         {
@@ -470,15 +470,15 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-core-js:5.0.3",
+          "name": "Gradle: io.kotest:kotest-assertions-core-js:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-property-js:klib:5.0.3",
+          "name": "Gradle: io.kotest:kotest-property-js:klib:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-property-js:5.0.3",
+          "name": "Gradle: io.kotest:kotest-property-js:5.1.0",
           "type": "Library"
         },
         {
@@ -494,7 +494,7 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-shared-js:klib:5.0.3",
+          "name": "Gradle: io.kotest:kotest-assertions-shared-js:klib:5.1.0",
           "type": "Library"
         },
         {
@@ -502,31 +502,31 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-shared-js:5.0.3",
+          "name": "Gradle: io.kotest:kotest-assertions-shared-js:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-common-js:klib:5.0.3",
+          "name": "Gradle: io.kotest:kotest-common-js:klib:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-api-js:klib:5.0.3",
+          "name": "Gradle: io.kotest:kotest-assertions-api-js:klib:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-common-js:5.0.3",
+          "name": "Gradle: io.kotest:kotest-common-js:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-reflect:1.6.0",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-reflect:1.6.10",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-api-js:5.0.3",
+          "name": "Gradle: io.kotest:kotest-assertions-api-js:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.6.0",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.6.10",
           "type": "Library"
         },
         {
@@ -636,7 +636,7 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-core-jvm:5.0.3",
+          "name": "Gradle: io.kotest:kotest-assertions-core-jvm:5.1.0",
           "type": "Library"
         },
         {
@@ -644,7 +644,7 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-property-jvm:5.0.3",
+          "name": "Gradle: io.kotest:kotest-property-jvm:5.1.0",
           "type": "Library"
         },
         {
@@ -680,7 +680,7 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-reflect:1.6.0",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-reflect:1.6.10",
           "type": "Library"
         },
         {
@@ -692,7 +692,7 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-shared-jvm:5.0.3",
+          "name": "Gradle: io.kotest:kotest-assertions-shared-jvm:5.1.0",
           "type": "Library"
         },
         {
@@ -700,11 +700,11 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-common-jvm:5.0.3",
+          "name": "Gradle: io.kotest:kotest-common-jvm:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-api-jvm:5.0.3",
+          "name": "Gradle: io.kotest:kotest-assertions-api-jvm:5.1.0",
           "type": "Library"
         },
         {
@@ -822,19 +822,19 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-core-linuxx64:klib:5.0.3",
+          "name": "Gradle: io.kotest:kotest-assertions-core-linuxx64:klib:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-property-linuxx64:klib:5.0.3",
+          "name": "Gradle: io.kotest:kotest-property-linuxx64:klib:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-property:desktopMain:5.0.3",
+          "name": "Gradle: io.kotest:kotest-property:desktopMain:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-reflect:1.6.0",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-reflect:1.6.10",
           "type": "Library"
         },
         {
@@ -882,27 +882,27 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-shared-linuxx64:klib:5.0.3",
+          "name": "Gradle: io.kotest:kotest-assertions-shared-linuxx64:klib:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-shared:desktopMain:5.0.3",
+          "name": "Gradle: io.kotest:kotest-assertions-shared:desktopMain:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-common-linuxx64:klib:5.0.3",
+          "name": "Gradle: io.kotest:kotest-common-linuxx64:klib:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-common:desktopMain:5.0.3",
+          "name": "Gradle: io.kotest:kotest-common:desktopMain:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.6.0",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.6.10",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-api-linuxx64:klib:5.0.3",
+          "name": "Gradle: io.kotest:kotest-assertions-api-linuxx64:klib:5.1.0",
           "type": "Library"
         },
         {
@@ -980,19 +980,19 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-core-macosx64:klib:5.0.3",
+          "name": "Gradle: io.kotest:kotest-assertions-core-macosx64:klib:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-property-macosx64:klib:5.0.3",
+          "name": "Gradle: io.kotest:kotest-property-macosx64:klib:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-property:desktopMain:5.0.3",
+          "name": "Gradle: io.kotest:kotest-property:desktopMain:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-reflect:1.6.0",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-reflect:1.6.10",
           "type": "Library"
         },
         {
@@ -1036,27 +1036,27 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-shared-macosx64:klib:5.0.3",
+          "name": "Gradle: io.kotest:kotest-assertions-shared-macosx64:klib:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-shared:desktopMain:5.0.3",
+          "name": "Gradle: io.kotest:kotest-assertions-shared:desktopMain:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-common-macosx64:klib:5.0.3",
+          "name": "Gradle: io.kotest:kotest-common-macosx64:klib:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-common:desktopMain:5.0.3",
+          "name": "Gradle: io.kotest:kotest-common:desktopMain:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.6.0",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.6.10",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-api-macosx64:klib:5.0.3",
+          "name": "Gradle: io.kotest:kotest-assertions-api-macosx64:klib:5.1.0",
           "type": "Library"
         },
         {
@@ -1190,19 +1190,19 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-core-mingwx64:klib:5.0.3",
+          "name": "Gradle: io.kotest:kotest-assertions-core-mingwx64:klib:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-property-mingwx64:klib:5.0.3",
+          "name": "Gradle: io.kotest:kotest-property-mingwx64:klib:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-property:desktopMain:5.0.3",
+          "name": "Gradle: io.kotest:kotest-property:desktopMain:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-reflect:1.6.0",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-reflect:1.6.10",
           "type": "Library"
         },
         {
@@ -1250,27 +1250,27 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-shared-mingwx64:klib:5.0.3",
+          "name": "Gradle: io.kotest:kotest-assertions-shared-mingwx64:klib:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-shared:desktopMain:5.0.3",
+          "name": "Gradle: io.kotest:kotest-assertions-shared:desktopMain:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-common-mingwx64:klib:5.0.3",
+          "name": "Gradle: io.kotest:kotest-common-mingwx64:klib:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-common:desktopMain:5.0.3",
+          "name": "Gradle: io.kotest:kotest-common:desktopMain:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.6.0",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.6.10",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-api-mingwx64:klib:5.0.3",
+          "name": "Gradle: io.kotest:kotest-assertions-api-mingwx64:klib:5.1.0",
           "type": "Library"
         },
         {
@@ -1348,19 +1348,19 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-core-tvosarm64:klib:5.0.3",
+          "name": "Gradle: io.kotest:kotest-assertions-core-tvosarm64:klib:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-property-tvosarm64:klib:5.0.3",
+          "name": "Gradle: io.kotest:kotest-property-tvosarm64:klib:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-property:desktopMain:5.0.3",
+          "name": "Gradle: io.kotest:kotest-property:desktopMain:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-reflect:1.6.0",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-reflect:1.6.10",
           "type": "Library"
         },
         {
@@ -1404,27 +1404,27 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-shared-tvosarm64:klib:5.0.3",
+          "name": "Gradle: io.kotest:kotest-assertions-shared-tvosarm64:klib:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-shared:desktopMain:5.0.3",
+          "name": "Gradle: io.kotest:kotest-assertions-shared:desktopMain:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-common-tvosarm64:klib:5.0.3",
+          "name": "Gradle: io.kotest:kotest-common-tvosarm64:klib:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-common:desktopMain:5.0.3",
+          "name": "Gradle: io.kotest:kotest-common:desktopMain:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.6.0",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.6.10",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-api-tvosarm64:klib:5.0.3",
+          "name": "Gradle: io.kotest:kotest-assertions-api-tvosarm64:klib:5.1.0",
           "type": "Library"
         },
         {
@@ -1502,19 +1502,19 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-core-tvosx64:klib:5.0.3",
+          "name": "Gradle: io.kotest:kotest-assertions-core-tvosx64:klib:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-property-tvosx64:klib:5.0.3",
+          "name": "Gradle: io.kotest:kotest-property-tvosx64:klib:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-property:desktopMain:5.0.3",
+          "name": "Gradle: io.kotest:kotest-property:desktopMain:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-reflect:1.6.0",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-reflect:1.6.10",
           "type": "Library"
         },
         {
@@ -1558,27 +1558,27 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-shared-tvosx64:klib:5.0.3",
+          "name": "Gradle: io.kotest:kotest-assertions-shared-tvosx64:klib:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-shared:desktopMain:5.0.3",
+          "name": "Gradle: io.kotest:kotest-assertions-shared:desktopMain:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-common-tvosx64:klib:5.0.3",
+          "name": "Gradle: io.kotest:kotest-common-tvosx64:klib:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-common:desktopMain:5.0.3",
+          "name": "Gradle: io.kotest:kotest-common:desktopMain:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.6.0",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.6.10",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-api-tvosx64:klib:5.0.3",
+          "name": "Gradle: io.kotest:kotest-assertions-api-tvosx64:klib:5.1.0",
           "type": "Library"
         },
         {
@@ -1656,19 +1656,19 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-core-watchosarm64:klib:5.0.3",
+          "name": "Gradle: io.kotest:kotest-assertions-core-watchosarm64:klib:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-property-watchosarm64:klib:5.0.3",
+          "name": "Gradle: io.kotest:kotest-property-watchosarm64:klib:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-property:desktopMain:5.0.3",
+          "name": "Gradle: io.kotest:kotest-property:desktopMain:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-reflect:1.6.0",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-reflect:1.6.10",
           "type": "Library"
         },
         {
@@ -1712,27 +1712,27 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-shared-watchosarm64:klib:5.0.3",
+          "name": "Gradle: io.kotest:kotest-assertions-shared-watchosarm64:klib:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-shared:desktopMain:5.0.3",
+          "name": "Gradle: io.kotest:kotest-assertions-shared:desktopMain:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-common-watchosarm64:klib:5.0.3",
+          "name": "Gradle: io.kotest:kotest-common-watchosarm64:klib:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-common:desktopMain:5.0.3",
+          "name": "Gradle: io.kotest:kotest-common:desktopMain:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.6.0",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.6.10",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-api-watchosarm64:klib:5.0.3",
+          "name": "Gradle: io.kotest:kotest-assertions-api-watchosarm64:klib:5.1.0",
           "type": "Library"
         },
         {
@@ -1810,19 +1810,19 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-core-watchosx64:klib:5.0.3",
+          "name": "Gradle: io.kotest:kotest-assertions-core-watchosx64:klib:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-property-watchosx64:klib:5.0.3",
+          "name": "Gradle: io.kotest:kotest-property-watchosx64:klib:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-property:desktopMain:5.0.3",
+          "name": "Gradle: io.kotest:kotest-property:desktopMain:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-reflect:1.6.0",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-reflect:1.6.10",
           "type": "Library"
         },
         {
@@ -1866,27 +1866,27 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-shared-watchosx64:klib:5.0.3",
+          "name": "Gradle: io.kotest:kotest-assertions-shared-watchosx64:klib:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-shared:desktopMain:5.0.3",
+          "name": "Gradle: io.kotest:kotest-assertions-shared:desktopMain:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-common-watchosx64:klib:5.0.3",
+          "name": "Gradle: io.kotest:kotest-common-watchosx64:klib:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-common:desktopMain:5.0.3",
+          "name": "Gradle: io.kotest:kotest-common:desktopMain:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.6.0",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.6.10",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-api-watchosx64:klib:5.0.3",
+          "name": "Gradle: io.kotest:kotest-assertions-api-watchosx64:klib:5.1.0",
           "type": "Library"
         },
         {
@@ -1960,11 +1960,11 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-core:commonMain:5.0.3",
+          "name": "Gradle: io.kotest:kotest-assertions-core:commonMain:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-property:commonMain:5.0.3",
+          "name": "Gradle: io.kotest:kotest-property:commonMain:5.1.0",
           "type": "Library"
         },
         {
@@ -1980,15 +1980,15 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-shared:commonMain:5.0.3",
+          "name": "Gradle: io.kotest:kotest-assertions-shared:commonMain:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-common:commonMain:5.0.3",
+          "name": "Gradle: io.kotest:kotest-common:commonMain:5.1.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-api:commonMain:5.0.3",
+          "name": "Gradle: io.kotest:kotest-assertions-api:commonMain:5.1.0",
           "type": "Library"
         }
       ]

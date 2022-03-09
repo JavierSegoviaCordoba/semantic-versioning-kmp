@@ -568,16 +568,10 @@
       "version": "1.6.0"
     },
     {
-      "ideaName": "Kotlin/Native 1.6.10 - linux | linux_x64",
-      "gradleName": "Kotlin/Native 1.6.10 - linux | linux_x64",
+      "ideaName": "Kotlin/Native 1.6.10 - builtin | linux_x64",
+      "gradleName": "Kotlin/Native 1.6.10 - builtin | linux_x64",
       "unresolved": false,
-      "artifactId": "Kotlin/Native 1.6.10 - linux | linux_x64"
-    },
-    {
-      "ideaName": "Kotlin/Native 1.6.10 - zlib | linux_x64",
-      "gradleName": "Kotlin/Native 1.6.10 - zlib | linux_x64",
-      "unresolved": false,
-      "artifactId": "Kotlin/Native 1.6.10 - zlib | linux_x64"
+      "artifactId": "Kotlin/Native 1.6.10 - builtin | linux_x64"
     },
     {
       "ideaName": "Kotlin/Native 1.6.10 - posix | linux_x64",
@@ -586,16 +580,22 @@
       "artifactId": "Kotlin/Native 1.6.10 - posix | linux_x64"
     },
     {
+      "ideaName": "Kotlin/Native 1.6.10 - linux | linux_x64",
+      "gradleName": "Kotlin/Native 1.6.10 - linux | linux_x64",
+      "unresolved": false,
+      "artifactId": "Kotlin/Native 1.6.10 - linux | linux_x64"
+    },
+    {
       "ideaName": "Kotlin/Native 1.6.10 - iconv | linux_x64",
       "gradleName": "Kotlin/Native 1.6.10 - iconv | linux_x64",
       "unresolved": false,
       "artifactId": "Kotlin/Native 1.6.10 - iconv | linux_x64"
     },
     {
-      "ideaName": "Kotlin/Native 1.6.10 - builtin | linux_x64",
-      "gradleName": "Kotlin/Native 1.6.10 - builtin | linux_x64",
+      "ideaName": "Kotlin/Native 1.6.10 - zlib | linux_x64",
+      "gradleName": "Kotlin/Native 1.6.10 - zlib | linux_x64",
       "unresolved": false,
-      "artifactId": "Kotlin/Native 1.6.10 - builtin | linux_x64"
+      "artifactId": "Kotlin/Native 1.6.10 - zlib | linux_x64"
     },
     {
       "ideaName": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-linuxx64:klib:1.6.0",
@@ -756,10 +756,10 @@
       "artifactId": "Kotlin/Native 1.6.10 - opengl32 | mingw_x64"
     },
     {
-      "ideaName": "Kotlin/Native 1.6.10 - zlib | mingw_x64",
-      "gradleName": "Kotlin/Native 1.6.10 - zlib | mingw_x64",
+      "ideaName": "Kotlin/Native 1.6.10 - builtin | mingw_x64",
+      "gradleName": "Kotlin/Native 1.6.10 - builtin | mingw_x64",
       "unresolved": false,
-      "artifactId": "Kotlin/Native 1.6.10 - zlib | mingw_x64"
+      "artifactId": "Kotlin/Native 1.6.10 - builtin | mingw_x64"
     },
     {
       "ideaName": "Kotlin/Native 1.6.10 - windows | mingw_x64",
@@ -768,16 +768,16 @@
       "artifactId": "Kotlin/Native 1.6.10 - windows | mingw_x64"
     },
     {
-      "ideaName": "Kotlin/Native 1.6.10 - gdiplus | mingw_x64",
-      "gradleName": "Kotlin/Native 1.6.10 - gdiplus | mingw_x64",
-      "unresolved": false,
-      "artifactId": "Kotlin/Native 1.6.10 - gdiplus | mingw_x64"
-    },
-    {
       "ideaName": "Kotlin/Native 1.6.10 - posix | mingw_x64",
       "gradleName": "Kotlin/Native 1.6.10 - posix | mingw_x64",
       "unresolved": false,
       "artifactId": "Kotlin/Native 1.6.10 - posix | mingw_x64"
+    },
+    {
+      "ideaName": "Kotlin/Native 1.6.10 - gdiplus | mingw_x64",
+      "gradleName": "Kotlin/Native 1.6.10 - gdiplus | mingw_x64",
+      "unresolved": false,
+      "artifactId": "Kotlin/Native 1.6.10 - gdiplus | mingw_x64"
     },
     {
       "ideaName": "Kotlin/Native 1.6.10 - iconv | mingw_x64",
@@ -786,10 +786,10 @@
       "artifactId": "Kotlin/Native 1.6.10 - iconv | mingw_x64"
     },
     {
-      "ideaName": "Kotlin/Native 1.6.10 - builtin | mingw_x64",
-      "gradleName": "Kotlin/Native 1.6.10 - builtin | mingw_x64",
+      "ideaName": "Kotlin/Native 1.6.10 - zlib | mingw_x64",
+      "gradleName": "Kotlin/Native 1.6.10 - zlib | mingw_x64",
       "unresolved": false,
-      "artifactId": "Kotlin/Native 1.6.10 - builtin | mingw_x64"
+      "artifactId": "Kotlin/Native 1.6.10 - zlib | mingw_x64"
     },
     {
       "ideaName": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-mingwx64:klib:1.6.0",

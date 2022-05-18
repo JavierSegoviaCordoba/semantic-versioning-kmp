@@ -2039,10 +2039,6 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:binary-compatibility-validator:0.9.0",
-          "type": "Library"
-        },
-        {
           "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21",
           "type": "Library"
         },
@@ -2052,6 +2048,10 @@
         },
         {
           "name": "Gradle: org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.21",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:binary-compatibility-validator:0.10.0",
           "type": "Library"
         },
         {
@@ -2195,22 +2195,6 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-metadata-jvm:0.4.2",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.ow2.asm:asm-tree:9.2",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.ow2.asm:asm:9.2",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.googlecode.java-diff-utils:diffutils:1.3.0",
-          "type": "Library"
-        },
-        {
           "name": "Gradle: org.jetbrains.kotlin:kotlin-compiler-runner:1.6.21",
           "type": "Library"
         },
@@ -2260,6 +2244,22 @@
         },
         {
           "name": "Gradle: org.jetbrains.kotlin:kotlin-scripting-compiler-impl-embeddable:1.6.21",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-metadata-jvm:0.4.2",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.ow2.asm:asm-tree:9.2",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.ow2.asm:asm:9.2",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.googlecode.java-diff-utils:diffutils:1.3.0",
           "type": "Library"
         },
         {
@@ -2710,10 +2710,6 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:binary-compatibility-validator:0.9.0",
-          "type": "Library"
-        },
-        {
           "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21",
           "type": "Library"
         },
@@ -2723,6 +2719,10 @@
         },
         {
           "name": "Gradle: org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.21",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:binary-compatibility-validator:0.10.0",
           "type": "Library"
         },
         {

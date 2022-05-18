@@ -1,13 +1,13 @@
 {
-  "total": 2,
+  "total": 0,
   "tools inspection": {
-    "Code Inspection": 2
+    "Code Inspection": 0
   },
   "attributes": {
     "vcs": {
       "sarifIdea": {
         "repositoryUri": "https://github.com/JavierSegoviaCordoba/semantic-versioning-kmp",
-        "revisionId": "41e02ce4203260e64e2de100a994612fd4e9be0f",
+        "revisionId": "d19094675a79919d604b4986dde36b5e497ceff3",
         "branch": "main"
       }
     },

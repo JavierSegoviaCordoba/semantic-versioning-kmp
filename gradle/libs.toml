@@ -1,6 +1,6 @@
 [versions]
 coroutines = "1.6.3"
-kotest = "5.3.1"
+kotest = "5.3.2"
 
 [libraries]
 jetbrains-kotlin-kotlinTest = { module = "org.jetbrains.kotlin:kotlin-test" }

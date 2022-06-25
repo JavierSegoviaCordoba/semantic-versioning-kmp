@@ -14,9 +14,9 @@
 
 ### Updated
 
+- `io.kotest:kotest-property -> 5.3.2`
+- `io.kotest:kotest-assertions-core -> 5.3.2`
 - `org.jetbrains.kotlinx:binary-compatibility-validator -> 0.10.1`
-- `io.kotest:kotest-property -> 5.3.1`
-- `io.kotest:kotest-assertions-core -> 5.3.1`
 - `org.jetbrains.kotlinx:kotlinx-coroutines-test -> 1.6.3`
 - `com.javiersc.gradle-plugins:all-plugins -> 0.1.0-rc.43`
 - `org.jetbrains.kotlin:kotlin-gradle-plugin -> 1.6.21`

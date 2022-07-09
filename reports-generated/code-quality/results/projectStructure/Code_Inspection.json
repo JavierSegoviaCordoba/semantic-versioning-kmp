@@ -39,25 +39,6 @@
       ]
     },
     {
-      "name": "semantic-versioning-kmp.buildSrc",
-      "contentEntries": [
-        {
-          "path": "file://$PROJECT_DIR$/buildSrc",
-          "sourceFolders": []
-        }
-      ],
-      "orderEntries": [
-        {
-          "name": "jbr-11",
-          "type": "SDK"
-        },
-        {
-          "name": "<Module source>",
-          "type": "Own sources"
-        }
-      ]
-    },
-    {
       "name": "semantic-versioning-kmp.semver-core.iosArm64Main",
       "contentEntries": [
         {
@@ -75,12 +56,52 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - stdlib",
+          "name": "Kotlin/Native 1.7.0 - stdlib",
           "type": "Library"
         },
         {
           "name": "semantic-versioning-kmp.semver-core.commonMain",
           "type": "Module"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-iosarm64:klib:1.6.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:concurrentMain:1.6.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeDarwinMain:1.6.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeMain:1.6.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-iosarm64:klib:0.1.0-alpha.7",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-iosarm64:klib:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu:commonMain:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu:nativeInterop:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu:nativeMain:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-iosarm64:klib:cinterop-interop:0.17.3",
+          "type": "Library"
         }
       ]
     },
@@ -102,7 +123,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - stdlib",
+          "name": "Kotlin/Native 1.7.0 - stdlib",
           "type": "Library"
         },
         {
@@ -118,6 +139,14 @@
           "type": "Module"
         },
         {
+          "name": "Gradle: io.kotest:kotest-property-iosarm64:klib:5.3.1",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-property:desktopMain:5.3.1",
+          "type": "Library"
+        },
+        {
           "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-iosarm64:klib:1.6.3",
           "type": "Library"
         },
@@ -126,19 +155,86 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-core-iosarm64:klib:5.3.0",
+          "name": "Gradle: io.kotest:kotest-assertions-core-iosarm64:klib:5.3.2",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-property-iosarm64:klib:5.3.0",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-iosarm64:klib:1.6.3",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-property:desktopMain:5.3.0",
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-iosarm64:klib:0.1.0-alpha.7",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-assertions-shared:desktopMain:5.3.2",
           "type": "Library"
         },
         {
           "name": "Gradle: org.jetbrains.kotlin:kotlin-reflect:1.6.21",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-assertions-shared-iosarm64:klib:5.3.2",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-common:desktopMain:5.3.2",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-common-iosarm64:klib:5.3.2",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.6.21",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-iosarm64:klib:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-iosarm64:klib:cinterop-interop:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-assertions-api-iosarm64:klib:5.3.2",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains:annotations:13.0",
+          "type": "Library"
+        }
+      ]
+    },
+    {
+      "name": "semantic-versioning-kmp.semver-core.iosSimulatorArm64Main",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/semver-core/iosSimulatorArm64Main",
+          "sourceFolders": []
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.0 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "semantic-versioning-kmp.semver-core.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-iossimulatorarm64:klib:1.6.3",
           "type": "Library"
         },
         {
@@ -154,6 +250,14 @@
           "type": "Library"
         },
         {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-iossimulatorarm64:klib:0.1.0-alpha.7",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-iossimulatorarm64:klib:0.17.3",
+          "type": "Library"
+        },
+        {
           "name": "Gradle: org.jetbrains.kotlinx:atomicfu:commonMain:0.17.3",
           "type": "Library"
         },
@@ -166,31 +270,90 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-iosarm64:klib:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-iossimulatorarm64:klib:cinterop-interop:0.17.3",
+          "type": "Library"
+        }
+      ]
+    },
+    {
+      "name": "semantic-versioning-kmp.semver-core.iosSimulatorArm64Test",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/semver-core/iosSimulatorArm64Test",
+          "sourceFolders": []
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.0 - stdlib",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-shared:desktopMain:5.3.0",
+          "name": "semantic-versioning-kmp.semver-core.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "semantic-versioning-kmp.semver-core.commonTest",
+          "type": "Module"
+        },
+        {
+          "name": "semantic-versioning-kmp.semver-core.iosSimulatorArm64Main",
+          "type": "Module"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-property-iossimulatorarm64:klib:5.3.1",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-iosarm64:klib:0.17.3",
+          "name": "Gradle: io.kotest:kotest-property:desktopMain:5.3.1",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-common:desktopMain:5.3.0",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-iossimulatorarm64:klib:1.6.3",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-iosarm64:klib:cinterop-interop:0.17.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test:nativeMain:1.6.3",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-shared-iosarm64:klib:5.3.0",
+          "name": "Gradle: io.kotest:kotest-assertions-core-iossimulatorarm64:klib:5.3.2",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-common-iosarm64:klib:5.3.0",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-iossimulatorarm64:klib:1.6.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-iossimulatorarm64:klib:0.1.0-alpha.7",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-assertions-shared:desktopMain:5.3.2",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-reflect:1.6.21",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-assertions-shared-iossimulatorarm64:klib:5.3.2",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-common:desktopMain:5.3.2",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-common-iossimulatorarm64:klib:5.3.2",
           "type": "Library"
         },
         {
@@ -198,7 +361,15 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-api-iosarm64:klib:5.3.0",
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-iossimulatorarm64:klib:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-iossimulatorarm64:klib:cinterop-interop:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-assertions-api-iossimulatorarm64:klib:5.3.2",
           "type": "Library"
         },
         {
@@ -225,12 +396,52 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - stdlib",
+          "name": "Kotlin/Native 1.7.0 - stdlib",
           "type": "Library"
         },
         {
           "name": "semantic-versioning-kmp.semver-core.commonMain",
           "type": "Module"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-iosx64:klib:1.6.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:concurrentMain:1.6.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeDarwinMain:1.6.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeMain:1.6.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-iosx64:klib:0.1.0-alpha.7",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-iosx64:klib:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu:commonMain:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu:nativeInterop:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu:nativeMain:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-iosx64:klib:cinterop-interop:0.17.3",
+          "type": "Library"
         }
       ]
     },
@@ -252,7 +463,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - stdlib",
+          "name": "Kotlin/Native 1.7.0 - stdlib",
           "type": "Library"
         },
         {
@@ -268,6 +479,14 @@
           "type": "Module"
         },
         {
+          "name": "Gradle: io.kotest:kotest-property-iosx64:klib:5.3.1",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-property:desktopMain:5.3.1",
+          "type": "Library"
+        },
+        {
           "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-iosx64:klib:1.6.3",
           "type": "Library"
         },
@@ -276,43 +495,7 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-core-iosx64:klib:5.3.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: io.kotest:kotest-property-iosx64:klib:5.3.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: io.kotest:kotest-property:desktopMain:5.3.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-reflect:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:concurrentMain:1.6.3",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeDarwinMain:1.6.3",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeMain:1.6.3",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlinx:atomicfu:commonMain:0.17.3",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlinx:atomicfu:nativeInterop:0.17.3",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlinx:atomicfu:nativeMain:0.17.3",
+          "name": "Gradle: io.kotest:kotest-assertions-core-iosx64:klib:5.3.2",
           "type": "Library"
         },
         {
@@ -320,27 +503,27 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-shared:desktopMain:5.3.0",
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-iosx64:klib:0.1.0-alpha.7",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-iosx64:klib:0.17.3",
+          "name": "Gradle: io.kotest:kotest-assertions-shared:desktopMain:5.3.2",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-common:desktopMain:5.3.0",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-reflect:1.6.21",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-iosx64:klib:cinterop-interop:0.17.3",
+          "name": "Gradle: io.kotest:kotest-assertions-shared-iosx64:klib:5.3.2",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-shared-iosx64:klib:5.3.0",
+          "name": "Gradle: io.kotest:kotest-common:desktopMain:5.3.2",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-common-iosx64:klib:5.3.0",
+          "name": "Gradle: io.kotest:kotest-common-iosx64:klib:5.3.2",
           "type": "Library"
         },
         {
@@ -348,7 +531,15 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-api-iosx64:klib:5.3.0",
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-iosx64:klib:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-iosx64:klib:cinterop-interop:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-assertions-api-iosx64:klib:5.3.2",
           "type": "Library"
         },
         {
@@ -387,7 +578,39 @@
           "type": "Module"
         },
         {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-js:1.7.0",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-js:klib:1.6.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-js:klib:0.1.0-alpha.7",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-js:1.6.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-js:0.1.0-alpha.7",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-js:klib:0.17.3",
+          "type": "Library"
+        },
+        {
           "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-js:1.6.21",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-js:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:atomicfu:1.6.21",
           "type": "Library"
         }
       ]
@@ -430,7 +653,7 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-js:klib:1.6.3",
+          "name": "Gradle: io.kotest:kotest-property-js:klib:5.3.1",
           "type": "Library"
         },
         {
@@ -438,23 +661,15 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-core-js:klib:5.3.0",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-js:1.7.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-js:1.6.21",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-js:klib:1.6.3",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-property-js:klib:5.3.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-js:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-js:klib:0.17.3",
+          "name": "Gradle: io.kotest:kotest-assertions-core-js:klib:5.3.2",
           "type": "Library"
         },
         {
@@ -462,15 +677,7 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-core-js:5.3.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:atomicfu:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: io.kotest:kotest-property-js:5.3.0",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-js:1.6.3",
           "type": "Library"
         },
         {
@@ -478,7 +685,39 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-shared-js:klib:5.3.0",
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-js:0.1.0-alpha.7",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-js:klib:0.1.0-alpha.7",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-property-js:5.3.1",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-js:klib:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:atomicfu:1.6.21",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-js:1.6.21",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-assertions-core-js:5.3.2",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-assertions-shared-js:klib:5.3.2",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-common-js:klib:5.3.2",
           "type": "Library"
         },
         {
@@ -486,31 +725,27 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-common-js:klib:5.3.0",
+          "name": "Gradle: io.kotest:kotest-assertions-api-js:klib:5.3.2",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-js:1.6.3",
+          "name": "Gradle: io.kotest:kotest-common-js:5.3.1",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-api-js:klib:5.3.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: io.kotest:kotest-assertions-shared-js:5.3.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: io.kotest:kotest-common-js:5.3.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: io.kotest:kotest-assertions-api-js:5.3.0",
+          "name": "Gradle: io.kotest:kotest-assertions-shared-js:5.3.2",
           "type": "Library"
         },
         {
           "name": "Gradle: org.jetbrains.kotlin:kotlin-reflect:1.6.21",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-assertions-api-js:5.3.2",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-common-js:5.3.2",
           "type": "Library"
         },
         {
@@ -545,15 +780,27 @@
           "type": "Module"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.7.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.21",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:concurrentMain:1.6.3",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.6.21",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-jvm:0.1.0-alpha.7",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.0",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.7.0",
           "type": "Library"
         },
         {
@@ -600,19 +847,7 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit5:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:concurrentMain:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.7.0",
           "type": "Library"
         },
         {
@@ -620,15 +855,39 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-core-jvm:5.3.0",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.3",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-property-jvm:5.3.0",
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-jvm:0.1.0-alpha.7",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.21",
+          "name": "Gradle: io.kotest:kotest-property-jvm:5.3.1",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.7.0",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit5:1.6.21",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-assertions-core-jvm:5.3.2",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.0",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.github.curious-odd-man:rgxgen:1.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-reflect:1.6.21",
           "type": "Library"
         },
         {
@@ -640,11 +899,19 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: com.github.curious-odd-man:rgxgen:1.3",
+          "name": "Gradle: io.github.java-diff-utils:java-diff-utils:4.11",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.junit.jupiter:junit-jupiter-engine:5.6.0",
+          "name": "Gradle: io.kotest:kotest-common-jvm:5.3.1",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-assertions-shared-jvm:5.3.2",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-jdk8:1.6.3",
           "type": "Library"
         },
         {
@@ -656,11 +923,7 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-jdk8:1.6.3",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-reflect:1.6.21",
+          "name": "Gradle: org.junit.jupiter:junit-jupiter-engine:5.6.0",
           "type": "Library"
         },
         {
@@ -668,23 +931,11 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.3",
+          "name": "Gradle: io.kotest:kotest-assertions-api-jvm:5.3.2",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.github.java-diff-utils:java-diff-utils:4.11",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: io.kotest:kotest-assertions-shared-jvm:5.3.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: io.kotest:kotest-common-jvm:5.3.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: io.kotest:kotest-assertions-api-jvm:5.3.0",
+          "name": "Gradle: io.kotest:kotest-common-jvm:5.3.2",
           "type": "Library"
         },
         {
@@ -711,7 +962,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - stdlib",
+          "name": "Kotlin/Native 1.7.0 - stdlib",
           "type": "Library"
         },
         {
@@ -719,23 +970,63 @@
           "type": "Module"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - builtin | linux_x64",
+          "name": "Kotlin/Native 1.7.0 - builtin | linux_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - iconv | linux_x64",
+          "name": "Kotlin/Native 1.7.0 - iconv | linux_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - linux | linux_x64",
+          "name": "Kotlin/Native 1.7.0 - linux | linux_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - posix | linux_x64",
+          "name": "Kotlin/Native 1.7.0 - posix | linux_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - zlib | linux_x64",
+          "name": "Kotlin/Native 1.7.0 - zlib | linux_x64",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-linuxx64:klib:1.6.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:concurrentMain:1.6.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeMain:1.6.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeOtherMain:1.6.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-linuxx64:klib:0.1.0-alpha.7",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-linuxx64:klib:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu:commonMain:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu:nativeInterop:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu:nativeMain:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-linuxx64:klib:cinterop-interop:0.17.3",
           "type": "Library"
         }
       ]
@@ -758,7 +1049,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - stdlib",
+          "name": "Kotlin/Native 1.7.0 - stdlib",
           "type": "Library"
         },
         {
@@ -774,23 +1065,31 @@
           "type": "Module"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - builtin | linux_x64",
+          "name": "Kotlin/Native 1.7.0 - builtin | linux_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - iconv | linux_x64",
+          "name": "Kotlin/Native 1.7.0 - iconv | linux_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - linux | linux_x64",
+          "name": "Kotlin/Native 1.7.0 - linux | linux_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - posix | linux_x64",
+          "name": "Kotlin/Native 1.7.0 - posix | linux_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - zlib | linux_x64",
+          "name": "Kotlin/Native 1.7.0 - zlib | linux_x64",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-property-linuxx64:klib:5.3.1",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-property:desktopMain:5.3.1",
           "type": "Library"
         },
         {
@@ -802,15 +1101,19 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-core-linuxx64:klib:5.3.0",
+          "name": "Gradle: io.kotest:kotest-assertions-core-linuxx64:klib:5.3.2",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-property-linuxx64:klib:5.3.0",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-linuxx64:klib:1.6.3",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-property:desktopMain:5.3.0",
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-linuxx64:klib:0.1.0-alpha.7",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-assertions-shared:desktopMain:5.3.2",
           "type": "Library"
         },
         {
@@ -818,7 +1121,74 @@
           "type": "Library"
         },
         {
+          "name": "Gradle: io.kotest:kotest-assertions-shared-linuxx64:klib:5.3.2",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-common:desktopMain:5.3.2",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-common-linuxx64:klib:5.3.2",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.6.21",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-linuxx64:klib:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-linuxx64:klib:cinterop-interop:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-assertions-api-linuxx64:klib:5.3.2",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains:annotations:13.0",
+          "type": "Library"
+        }
+      ]
+    },
+    {
+      "name": "semantic-versioning-kmp.semver-core.macosArm64Main",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/semver-core/macosArm64Main",
+          "sourceFolders": []
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.0 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "semantic-versioning-kmp.semver-core.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-macosarm64:klib:1.6.3",
+          "type": "Library"
+        },
+        {
           "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:concurrentMain:1.6.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeDarwinMain:1.6.3",
           "type": "Library"
         },
         {
@@ -826,7 +1196,11 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeOtherMain:1.6.3",
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-macosarm64:klib:0.1.0-alpha.7",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-macosarm64:klib:0.17.3",
           "type": "Library"
         },
         {
@@ -842,31 +1216,90 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-linuxx64:klib:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-macosarm64:klib:cinterop-interop:0.17.3",
+          "type": "Library"
+        }
+      ]
+    },
+    {
+      "name": "semantic-versioning-kmp.semver-core.macosArm64Test",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/semver-core/macosArm64Test",
+          "sourceFolders": []
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.0 - stdlib",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-shared:desktopMain:5.3.0",
+          "name": "semantic-versioning-kmp.semver-core.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "semantic-versioning-kmp.semver-core.commonTest",
+          "type": "Module"
+        },
+        {
+          "name": "semantic-versioning-kmp.semver-core.macosArm64Main",
+          "type": "Module"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-property-macosarm64:klib:5.3.1",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-linuxx64:klib:0.17.3",
+          "name": "Gradle: io.kotest:kotest-property:desktopMain:5.3.1",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-common:desktopMain:5.3.0",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-macosarm64:klib:1.6.3",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-linuxx64:klib:cinterop-interop:0.17.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test:nativeMain:1.6.3",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-shared-linuxx64:klib:5.3.0",
+          "name": "Gradle: io.kotest:kotest-assertions-core-macosarm64:klib:5.3.2",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-common-linuxx64:klib:5.3.0",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-macosarm64:klib:1.6.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-macosarm64:klib:0.1.0-alpha.7",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-assertions-shared:desktopMain:5.3.2",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-reflect:1.6.21",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-assertions-shared-macosarm64:klib:5.3.2",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-common:desktopMain:5.3.2",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-common-macosarm64:klib:5.3.2",
           "type": "Library"
         },
         {
@@ -874,7 +1307,15 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-api-linuxx64:klib:5.3.0",
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-macosarm64:klib:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-macosarm64:klib:cinterop-interop:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-assertions-api-macosarm64:klib:5.3.2",
           "type": "Library"
         },
         {
@@ -901,12 +1342,52 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - stdlib",
+          "name": "Kotlin/Native 1.7.0 - stdlib",
           "type": "Library"
         },
         {
           "name": "semantic-versioning-kmp.semver-core.commonMain",
           "type": "Module"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-macosx64:klib:1.6.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:concurrentMain:1.6.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeDarwinMain:1.6.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeMain:1.6.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-macosx64:klib:0.1.0-alpha.7",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-macosx64:klib:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu:commonMain:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu:nativeInterop:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu:nativeMain:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-macosx64:klib:cinterop-interop:0.17.3",
+          "type": "Library"
         }
       ]
     },
@@ -928,7 +1409,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - stdlib",
+          "name": "Kotlin/Native 1.7.0 - stdlib",
           "type": "Library"
         },
         {
@@ -944,6 +1425,14 @@
           "type": "Module"
         },
         {
+          "name": "Gradle: io.kotest:kotest-property-macosx64:klib:5.3.1",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-property:desktopMain:5.3.1",
+          "type": "Library"
+        },
+        {
           "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-macosx64:klib:1.6.3",
           "type": "Library"
         },
@@ -952,43 +1441,7 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-core-macosx64:klib:5.3.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: io.kotest:kotest-property-macosx64:klib:5.3.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: io.kotest:kotest-property:desktopMain:5.3.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-reflect:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:concurrentMain:1.6.3",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeDarwinMain:1.6.3",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeMain:1.6.3",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlinx:atomicfu:commonMain:0.17.3",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlinx:atomicfu:nativeInterop:0.17.3",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlinx:atomicfu:nativeMain:0.17.3",
+          "name": "Gradle: io.kotest:kotest-assertions-core-macosx64:klib:5.3.2",
           "type": "Library"
         },
         {
@@ -996,27 +1449,27 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-shared:desktopMain:5.3.0",
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-macosx64:klib:0.1.0-alpha.7",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-macosx64:klib:0.17.3",
+          "name": "Gradle: io.kotest:kotest-assertions-shared:desktopMain:5.3.2",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-common:desktopMain:5.3.0",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-reflect:1.6.21",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-macosx64:klib:cinterop-interop:0.17.3",
+          "name": "Gradle: io.kotest:kotest-assertions-shared-macosx64:klib:5.3.2",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-shared-macosx64:klib:5.3.0",
+          "name": "Gradle: io.kotest:kotest-common:desktopMain:5.3.2",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-common-macosx64:klib:5.3.0",
+          "name": "Gradle: io.kotest:kotest-common-macosx64:klib:5.3.2",
           "type": "Library"
         },
         {
@@ -1024,7 +1477,15 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-api-macosx64:klib:5.3.0",
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-macosx64:klib:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-macosx64:klib:cinterop-interop:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-assertions-api-macosx64:klib:5.3.2",
           "type": "Library"
         },
         {
@@ -1051,7 +1512,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - stdlib",
+          "name": "Kotlin/Native 1.7.0 - stdlib",
           "type": "Library"
         },
         {
@@ -1059,31 +1520,71 @@
           "type": "Module"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - builtin | mingw_x64",
+          "name": "Kotlin/Native 1.7.0 - builtin | mingw_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - gdiplus | mingw_x64",
+          "name": "Kotlin/Native 1.7.0 - gdiplus | mingw_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - iconv | mingw_x64",
+          "name": "Kotlin/Native 1.7.0 - iconv | mingw_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - opengl32 | mingw_x64",
+          "name": "Kotlin/Native 1.7.0 - opengl32 | mingw_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - posix | mingw_x64",
+          "name": "Kotlin/Native 1.7.0 - posix | mingw_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - windows | mingw_x64",
+          "name": "Kotlin/Native 1.7.0 - windows | mingw_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - zlib | mingw_x64",
+          "name": "Kotlin/Native 1.7.0 - zlib | mingw_x64",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-mingwx64:klib:1.6.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:concurrentMain:1.6.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeMain:1.6.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeOtherMain:1.6.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-mingwx64:klib:0.1.0-alpha.7",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-mingwx64:klib:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu:commonMain:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu:nativeInterop:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu:nativeMain:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-mingwx64:klib:cinterop-interop:0.17.3",
           "type": "Library"
         }
       ]
@@ -1106,7 +1607,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - stdlib",
+          "name": "Kotlin/Native 1.7.0 - stdlib",
           "type": "Library"
         },
         {
@@ -1122,31 +1623,39 @@
           "type": "Module"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - builtin | mingw_x64",
+          "name": "Kotlin/Native 1.7.0 - builtin | mingw_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - gdiplus | mingw_x64",
+          "name": "Kotlin/Native 1.7.0 - gdiplus | mingw_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - iconv | mingw_x64",
+          "name": "Kotlin/Native 1.7.0 - iconv | mingw_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - opengl32 | mingw_x64",
+          "name": "Kotlin/Native 1.7.0 - opengl32 | mingw_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - posix | mingw_x64",
+          "name": "Kotlin/Native 1.7.0 - posix | mingw_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - windows | mingw_x64",
+          "name": "Kotlin/Native 1.7.0 - windows | mingw_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - zlib | mingw_x64",
+          "name": "Kotlin/Native 1.7.0 - zlib | mingw_x64",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-property-mingwx64:klib:5.3.1",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-property:desktopMain:5.3.1",
           "type": "Library"
         },
         {
@@ -1158,43 +1667,7 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-core-mingwx64:klib:5.3.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: io.kotest:kotest-property-mingwx64:klib:5.3.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: io.kotest:kotest-property:desktopMain:5.3.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-reflect:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:concurrentMain:1.6.3",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeMain:1.6.3",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeOtherMain:1.6.3",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlinx:atomicfu:commonMain:0.17.3",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlinx:atomicfu:nativeInterop:0.17.3",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlinx:atomicfu:nativeMain:0.17.3",
+          "name": "Gradle: io.kotest:kotest-assertions-core-mingwx64:klib:5.3.2",
           "type": "Library"
         },
         {
@@ -1202,27 +1675,27 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-shared:desktopMain:5.3.0",
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-mingwx64:klib:0.1.0-alpha.7",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-mingwx64:klib:0.17.3",
+          "name": "Gradle: io.kotest:kotest-assertions-shared:desktopMain:5.3.2",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-common:desktopMain:5.3.0",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-reflect:1.6.21",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-mingwx64:klib:cinterop-interop:0.17.3",
+          "name": "Gradle: io.kotest:kotest-assertions-shared-mingwx64:klib:5.3.2",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-shared-mingwx64:klib:5.3.0",
+          "name": "Gradle: io.kotest:kotest-common:desktopMain:5.3.2",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-common-mingwx64:klib:5.3.0",
+          "name": "Gradle: io.kotest:kotest-common-mingwx64:klib:5.3.2",
           "type": "Library"
         },
         {
@@ -1230,7 +1703,15 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-api-mingwx64:klib:5.3.0",
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-mingwx64:klib:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-mingwx64:klib:cinterop-interop:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-assertions-api-mingwx64:klib:5.3.2",
           "type": "Library"
         },
         {
@@ -1257,12 +1738,52 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - stdlib",
+          "name": "Kotlin/Native 1.7.0 - stdlib",
           "type": "Library"
         },
         {
           "name": "semantic-versioning-kmp.semver-core.commonMain",
           "type": "Module"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-tvosarm64:klib:1.6.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:concurrentMain:1.6.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeDarwinMain:1.6.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeMain:1.6.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-tvosarm64:klib:0.1.0-alpha.7",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-tvosarm64:klib:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu:commonMain:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu:nativeInterop:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu:nativeMain:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-tvosarm64:klib:cinterop-interop:0.17.3",
+          "type": "Library"
         }
       ]
     },
@@ -1284,7 +1805,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - stdlib",
+          "name": "Kotlin/Native 1.7.0 - stdlib",
           "type": "Library"
         },
         {
@@ -1300,6 +1821,14 @@
           "type": "Module"
         },
         {
+          "name": "Gradle: io.kotest:kotest-property-tvosarm64:klib:5.3.1",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-property:desktopMain:5.3.1",
+          "type": "Library"
+        },
+        {
           "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-tvosarm64:klib:1.6.3",
           "type": "Library"
         },
@@ -1308,19 +1837,86 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-core-tvosarm64:klib:5.3.0",
+          "name": "Gradle: io.kotest:kotest-assertions-core-tvosarm64:klib:5.3.2",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-property-tvosarm64:klib:5.3.0",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-tvosarm64:klib:1.6.3",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-property:desktopMain:5.3.0",
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-tvosarm64:klib:0.1.0-alpha.7",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-assertions-shared:desktopMain:5.3.2",
           "type": "Library"
         },
         {
           "name": "Gradle: org.jetbrains.kotlin:kotlin-reflect:1.6.21",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-assertions-shared-tvosarm64:klib:5.3.2",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-common:desktopMain:5.3.2",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-common-tvosarm64:klib:5.3.2",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.6.21",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-tvosarm64:klib:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-tvosarm64:klib:cinterop-interop:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-assertions-api-tvosarm64:klib:5.3.2",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains:annotations:13.0",
+          "type": "Library"
+        }
+      ]
+    },
+    {
+      "name": "semantic-versioning-kmp.semver-core.tvosSimulatorArm64Main",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/semver-core/tvosSimulatorArm64Main",
+          "sourceFolders": []
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.0 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "semantic-versioning-kmp.semver-core.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-tvossimulatorarm64:klib:1.6.3",
           "type": "Library"
         },
         {
@@ -1336,6 +1932,14 @@
           "type": "Library"
         },
         {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-tvossimulatorarm64:klib:0.1.0-alpha.7",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-tvossimulatorarm64:klib:0.17.3",
+          "type": "Library"
+        },
+        {
           "name": "Gradle: org.jetbrains.kotlinx:atomicfu:commonMain:0.17.3",
           "type": "Library"
         },
@@ -1348,31 +1952,90 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-tvosarm64:klib:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-tvossimulatorarm64:klib:cinterop-interop:0.17.3",
+          "type": "Library"
+        }
+      ]
+    },
+    {
+      "name": "semantic-versioning-kmp.semver-core.tvosSimulatorArm64Test",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/semver-core/tvosSimulatorArm64Test",
+          "sourceFolders": []
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.0 - stdlib",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-shared:desktopMain:5.3.0",
+          "name": "semantic-versioning-kmp.semver-core.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "semantic-versioning-kmp.semver-core.commonTest",
+          "type": "Module"
+        },
+        {
+          "name": "semantic-versioning-kmp.semver-core.tvosSimulatorArm64Main",
+          "type": "Module"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-property-tvossimulatorarm64:klib:5.3.1",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-tvosarm64:klib:0.17.3",
+          "name": "Gradle: io.kotest:kotest-property:desktopMain:5.3.1",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-common:desktopMain:5.3.0",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-tvossimulatorarm64:klib:1.6.3",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-tvosarm64:klib:cinterop-interop:0.17.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test:nativeMain:1.6.3",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-shared-tvosarm64:klib:5.3.0",
+          "name": "Gradle: io.kotest:kotest-assertions-core-tvossimulatorarm64:klib:5.3.2",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-common-tvosarm64:klib:5.3.0",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-tvossimulatorarm64:klib:1.6.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-tvossimulatorarm64:klib:0.1.0-alpha.7",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-assertions-shared:desktopMain:5.3.2",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-reflect:1.6.21",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-assertions-shared-tvossimulatorarm64:klib:5.3.2",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-common:desktopMain:5.3.2",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-common-tvossimulatorarm64:klib:5.3.2",
           "type": "Library"
         },
         {
@@ -1380,7 +2043,15 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-api-tvosarm64:klib:5.3.0",
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-tvossimulatorarm64:klib:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-tvossimulatorarm64:klib:cinterop-interop:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-assertions-api-tvossimulatorarm64:klib:5.3.2",
           "type": "Library"
         },
         {
@@ -1407,12 +2078,52 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - stdlib",
+          "name": "Kotlin/Native 1.7.0 - stdlib",
           "type": "Library"
         },
         {
           "name": "semantic-versioning-kmp.semver-core.commonMain",
           "type": "Module"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-tvosx64:klib:1.6.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:concurrentMain:1.6.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeDarwinMain:1.6.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeMain:1.6.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-tvosx64:klib:0.1.0-alpha.7",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-tvosx64:klib:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu:commonMain:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu:nativeInterop:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu:nativeMain:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-tvosx64:klib:cinterop-interop:0.17.3",
+          "type": "Library"
         }
       ]
     },
@@ -1434,7 +2145,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - stdlib",
+          "name": "Kotlin/Native 1.7.0 - stdlib",
           "type": "Library"
         },
         {
@@ -1450,6 +2161,14 @@
           "type": "Module"
         },
         {
+          "name": "Gradle: io.kotest:kotest-property-tvosx64:klib:5.3.1",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-property:desktopMain:5.3.1",
+          "type": "Library"
+        },
+        {
           "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-tvosx64:klib:1.6.3",
           "type": "Library"
         },
@@ -1458,43 +2177,7 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-core-tvosx64:klib:5.3.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: io.kotest:kotest-property-tvosx64:klib:5.3.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: io.kotest:kotest-property:desktopMain:5.3.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-reflect:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:concurrentMain:1.6.3",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeDarwinMain:1.6.3",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeMain:1.6.3",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlinx:atomicfu:commonMain:0.17.3",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlinx:atomicfu:nativeInterop:0.17.3",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlinx:atomicfu:nativeMain:0.17.3",
+          "name": "Gradle: io.kotest:kotest-assertions-core-tvosx64:klib:5.3.2",
           "type": "Library"
         },
         {
@@ -1502,27 +2185,27 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-shared:desktopMain:5.3.0",
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-tvosx64:klib:0.1.0-alpha.7",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-tvosx64:klib:0.17.3",
+          "name": "Gradle: io.kotest:kotest-assertions-shared:desktopMain:5.3.2",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-common:desktopMain:5.3.0",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-reflect:1.6.21",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-tvosx64:klib:cinterop-interop:0.17.3",
+          "name": "Gradle: io.kotest:kotest-assertions-shared-tvosx64:klib:5.3.2",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-shared-tvosx64:klib:5.3.0",
+          "name": "Gradle: io.kotest:kotest-common:desktopMain:5.3.2",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-common-tvosx64:klib:5.3.0",
+          "name": "Gradle: io.kotest:kotest-common-tvosx64:klib:5.3.2",
           "type": "Library"
         },
         {
@@ -1530,7 +2213,15 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-api-tvosx64:klib:5.3.0",
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-tvosx64:klib:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-tvosx64:klib:cinterop-interop:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-assertions-api-tvosx64:klib:5.3.2",
           "type": "Library"
         },
         {
@@ -1557,12 +2248,52 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - stdlib",
+          "name": "Kotlin/Native 1.7.0 - stdlib",
           "type": "Library"
         },
         {
           "name": "semantic-versioning-kmp.semver-core.commonMain",
           "type": "Module"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-watchosarm64:klib:1.6.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:concurrentMain:1.6.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeDarwinMain:1.6.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeMain:1.6.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-watchosarm64:klib:0.1.0-alpha.7",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-watchosarm64:klib:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu:commonMain:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu:nativeInterop:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu:nativeMain:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-watchosarm64:klib:cinterop-interop:0.17.3",
+          "type": "Library"
         }
       ]
     },
@@ -1584,7 +2315,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - stdlib",
+          "name": "Kotlin/Native 1.7.0 - stdlib",
           "type": "Library"
         },
         {
@@ -1600,6 +2331,14 @@
           "type": "Module"
         },
         {
+          "name": "Gradle: io.kotest:kotest-property-watchosarm64:klib:5.3.1",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-property:desktopMain:5.3.1",
+          "type": "Library"
+        },
+        {
           "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-watchosarm64:klib:1.6.3",
           "type": "Library"
         },
@@ -1608,19 +2347,86 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-core-watchosarm64:klib:5.3.0",
+          "name": "Gradle: io.kotest:kotest-assertions-core-watchosarm64:klib:5.3.2",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-property-watchosarm64:klib:5.3.0",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-watchosarm64:klib:1.6.3",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-property:desktopMain:5.3.0",
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-watchosarm64:klib:0.1.0-alpha.7",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-assertions-shared:desktopMain:5.3.2",
           "type": "Library"
         },
         {
           "name": "Gradle: org.jetbrains.kotlin:kotlin-reflect:1.6.21",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-assertions-shared-watchosarm64:klib:5.3.2",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-common:desktopMain:5.3.2",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-common-watchosarm64:klib:5.3.2",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.6.21",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-watchosarm64:klib:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-watchosarm64:klib:cinterop-interop:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-assertions-api-watchosarm64:klib:5.3.2",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains:annotations:13.0",
+          "type": "Library"
+        }
+      ]
+    },
+    {
+      "name": "semantic-versioning-kmp.semver-core.watchosSimulatorArm64Main",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/semver-core/watchosSimulatorArm64Main",
+          "sourceFolders": []
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.0 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "semantic-versioning-kmp.semver-core.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-watchossimulatorarm64:klib:1.6.3",
           "type": "Library"
         },
         {
@@ -1636,6 +2442,14 @@
           "type": "Library"
         },
         {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-watchossimulatorarm64:klib:0.1.0-alpha.7",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-watchossimulatorarm64:klib:0.17.3",
+          "type": "Library"
+        },
+        {
           "name": "Gradle: org.jetbrains.kotlinx:atomicfu:commonMain:0.17.3",
           "type": "Library"
         },
@@ -1648,31 +2462,90 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-watchosarm64:klib:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-watchossimulatorarm64:klib:cinterop-interop:0.17.3",
+          "type": "Library"
+        }
+      ]
+    },
+    {
+      "name": "semantic-versioning-kmp.semver-core.watchosSimulatorArm64Test",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/semver-core/watchosSimulatorArm64Test",
+          "sourceFolders": []
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.7.0 - stdlib",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-shared:desktopMain:5.3.0",
+          "name": "semantic-versioning-kmp.semver-core.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "semantic-versioning-kmp.semver-core.commonTest",
+          "type": "Module"
+        },
+        {
+          "name": "semantic-versioning-kmp.semver-core.watchosSimulatorArm64Main",
+          "type": "Module"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-property-watchossimulatorarm64:klib:5.3.1",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-watchosarm64:klib:0.17.3",
+          "name": "Gradle: io.kotest:kotest-property:desktopMain:5.3.1",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-common:desktopMain:5.3.0",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-watchossimulatorarm64:klib:1.6.3",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-watchosarm64:klib:cinterop-interop:0.17.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test:nativeMain:1.6.3",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-shared-watchosarm64:klib:5.3.0",
+          "name": "Gradle: io.kotest:kotest-assertions-core-watchossimulatorarm64:klib:5.3.2",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-common-watchosarm64:klib:5.3.0",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-watchossimulatorarm64:klib:1.6.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-watchossimulatorarm64:klib:0.1.0-alpha.7",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-assertions-shared:desktopMain:5.3.2",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-reflect:1.6.21",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-assertions-shared-watchossimulatorarm64:klib:5.3.2",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-common:desktopMain:5.3.2",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-common-watchossimulatorarm64:klib:5.3.2",
           "type": "Library"
         },
         {
@@ -1680,7 +2553,15 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-api-watchosarm64:klib:5.3.0",
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-watchossimulatorarm64:klib:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-watchossimulatorarm64:klib:cinterop-interop:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-assertions-api-watchossimulatorarm64:klib:5.3.2",
           "type": "Library"
         },
         {
@@ -1707,12 +2588,52 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - stdlib",
+          "name": "Kotlin/Native 1.7.0 - stdlib",
           "type": "Library"
         },
         {
           "name": "semantic-versioning-kmp.semver-core.commonMain",
           "type": "Module"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-watchosx64:klib:1.6.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:concurrentMain:1.6.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeDarwinMain:1.6.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeMain:1.6.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-watchosx64:klib:0.1.0-alpha.7",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-watchosx64:klib:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu:commonMain:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu:nativeInterop:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu:nativeMain:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-watchosx64:klib:cinterop-interop:0.17.3",
+          "type": "Library"
         }
       ]
     },
@@ -1734,7 +2655,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.6.21 - stdlib",
+          "name": "Kotlin/Native 1.7.0 - stdlib",
           "type": "Library"
         },
         {
@@ -1750,6 +2671,14 @@
           "type": "Module"
         },
         {
+          "name": "Gradle: io.kotest:kotest-property-watchosx64:klib:5.3.1",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-property:desktopMain:5.3.1",
+          "type": "Library"
+        },
+        {
           "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-watchosx64:klib:1.6.3",
           "type": "Library"
         },
@@ -1758,43 +2687,7 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-core-watchosx64:klib:5.3.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: io.kotest:kotest-property-watchosx64:klib:5.3.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: io.kotest:kotest-property:desktopMain:5.3.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-reflect:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:concurrentMain:1.6.3",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeDarwinMain:1.6.3",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeMain:1.6.3",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlinx:atomicfu:commonMain:0.17.3",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlinx:atomicfu:nativeInterop:0.17.3",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlinx:atomicfu:nativeMain:0.17.3",
+          "name": "Gradle: io.kotest:kotest-assertions-core-watchosx64:klib:5.3.2",
           "type": "Library"
         },
         {
@@ -1802,27 +2695,27 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-shared:desktopMain:5.3.0",
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-watchosx64:klib:0.1.0-alpha.7",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-watchosx64:klib:0.17.3",
+          "name": "Gradle: io.kotest:kotest-assertions-shared:desktopMain:5.3.2",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-common:desktopMain:5.3.0",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-reflect:1.6.21",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-watchosx64:klib:cinterop-interop:0.17.3",
+          "name": "Gradle: io.kotest:kotest-assertions-shared-watchosx64:klib:5.3.2",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-shared-watchosx64:klib:5.3.0",
+          "name": "Gradle: io.kotest:kotest-common:desktopMain:5.3.2",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-common-watchosx64:klib:5.3.0",
+          "name": "Gradle: io.kotest:kotest-common-watchosx64:klib:5.3.2",
           "type": "Library"
         },
         {
@@ -1830,7 +2723,15 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-api-watchosx64:klib:5.3.0",
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-watchosx64:klib:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-watchosx64:klib:cinterop-interop:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-assertions-api-watchosx64:klib:5.3.2",
           "type": "Library"
         },
         {
@@ -1863,7 +2764,15 @@
           "type": "Own sources"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.6.21",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.0",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:commonMain:1.6.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib:commonMain:0.1.0-alpha.7",
           "type": "Library"
         }
       ]
@@ -1896,7 +2805,19 @@
           "type": "Module"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.6.21",
+          "name": "Gradle: io.kotest:kotest-property:commonMain:5.3.1",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.0",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:commonMain:1.6.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib:commonMain:0.1.0-alpha.7",
           "type": "Library"
         },
         {
@@ -1904,15 +2825,19 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-assertions-core:commonMain:5.3.0",
+          "name": "Gradle: io.kotest:kotest-assertions-core:commonMain:5.3.2",
           "type": "Library"
         },
         {
-          "name": "Gradle: io.kotest:kotest-property:commonMain:5.3.0",
+          "name": "Gradle: io.kotest:kotest-assertions-shared:commonMain:5.3.2",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:commonMain:1.6.3",
+          "name": "Gradle: io.kotest:kotest-common:commonMain:5.3.2",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-assertions-api:commonMain:5.3.2",
           "type": "Library"
         },
         {
@@ -1921,1364 +2846,6 @@
         },
         {
           "name": "Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: io.kotest:kotest-assertions-shared:commonMain:5.3.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: io.kotest:kotest-common:commonMain:5.3.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: io.kotest:kotest-assertions-api:commonMain:5.3.0",
-          "type": "Library"
-        }
-      ]
-    },
-    {
-      "name": "semantic-versioning-kmp.buildSrc.test",
-      "contentEntries": [
-        {
-          "path": "file://$PROJECT_DIR$/buildSrc/src/test",
-          "sourceFolders": []
-        }
-      ],
-      "orderEntries": [
-        {
-          "name": "jbr-11",
-          "type": "SDK"
-        },
-        {
-          "name": "<Module source>",
-          "type": "Own sources"
-        },
-        {
-          "name": "semantic-versioning-kmp.buildSrc.main",
-          "type": "Module"
-        },
-        {
-          "name": "/data/cache/gradle/caches/7.4.2/generated-gradle-jars/gradle-api-7.4.2.jar",
-          "type": "Library"
-        },
-        {
-          "name": "/data/cache/gradle/wrapper/dists/gradle-7.4.2-bin/48ivgl02cpt2ed3fh9dbalvx8/gradle-7.4.2/lib/groovy-3.0.9.jar",
-          "type": "Library"
-        },
-        {
-          "name": "/data/cache/gradle/wrapper/dists/gradle-7.4.2-bin/48ivgl02cpt2ed3fh9dbalvx8/gradle-7.4.2/lib/groovy-ant-3.0.9.jar",
-          "type": "Library"
-        },
-        {
-          "name": "/data/cache/gradle/wrapper/dists/gradle-7.4.2-bin/48ivgl02cpt2ed3fh9dbalvx8/gradle-7.4.2/lib/groovy-astbuilder-3.0.9.jar",
-          "type": "Library"
-        },
-        {
-          "name": "/data/cache/gradle/wrapper/dists/gradle-7.4.2-bin/48ivgl02cpt2ed3fh9dbalvx8/gradle-7.4.2/lib/groovy-console-3.0.9.jar",
-          "type": "Library"
-        },
-        {
-          "name": "/data/cache/gradle/wrapper/dists/gradle-7.4.2-bin/48ivgl02cpt2ed3fh9dbalvx8/gradle-7.4.2/lib/groovy-datetime-3.0.9.jar",
-          "type": "Library"
-        },
-        {
-          "name": "/data/cache/gradle/wrapper/dists/gradle-7.4.2-bin/48ivgl02cpt2ed3fh9dbalvx8/gradle-7.4.2/lib/groovy-dateutil-3.0.9.jar",
-          "type": "Library"
-        },
-        {
-          "name": "/data/cache/gradle/wrapper/dists/gradle-7.4.2-bin/48ivgl02cpt2ed3fh9dbalvx8/gradle-7.4.2/lib/groovy-groovydoc-3.0.9.jar",
-          "type": "Library"
-        },
-        {
-          "name": "/data/cache/gradle/wrapper/dists/gradle-7.4.2-bin/48ivgl02cpt2ed3fh9dbalvx8/gradle-7.4.2/lib/groovy-json-3.0.9.jar",
-          "type": "Library"
-        },
-        {
-          "name": "/data/cache/gradle/wrapper/dists/gradle-7.4.2-bin/48ivgl02cpt2ed3fh9dbalvx8/gradle-7.4.2/lib/groovy-nio-3.0.9.jar",
-          "type": "Library"
-        },
-        {
-          "name": "/data/cache/gradle/wrapper/dists/gradle-7.4.2-bin/48ivgl02cpt2ed3fh9dbalvx8/gradle-7.4.2/lib/groovy-sql-3.0.9.jar",
-          "type": "Library"
-        },
-        {
-          "name": "/data/cache/gradle/wrapper/dists/gradle-7.4.2-bin/48ivgl02cpt2ed3fh9dbalvx8/gradle-7.4.2/lib/groovy-templates-3.0.9.jar",
-          "type": "Library"
-        },
-        {
-          "name": "/data/cache/gradle/wrapper/dists/gradle-7.4.2-bin/48ivgl02cpt2ed3fh9dbalvx8/gradle-7.4.2/lib/groovy-test-3.0.9.jar",
-          "type": "Library"
-        },
-        {
-          "name": "/data/cache/gradle/wrapper/dists/gradle-7.4.2-bin/48ivgl02cpt2ed3fh9dbalvx8/gradle-7.4.2/lib/groovy-xml-3.0.9.jar",
-          "type": "Library"
-        },
-        {
-          "name": "/data/cache/gradle/wrapper/dists/gradle-7.4.2-bin/48ivgl02cpt2ed3fh9dbalvx8/gradle-7.4.2/lib/javaparser-core-3.17.0.jar",
-          "type": "Library"
-        },
-        {
-          "name": "/data/cache/gradle/wrapper/dists/gradle-7.4.2-bin/48ivgl02cpt2ed3fh9dbalvx8/gradle-7.4.2/lib/kotlin-stdlib-1.5.31.jar",
-          "type": "Library"
-        },
-        {
-          "name": "/data/cache/gradle/wrapper/dists/gradle-7.4.2-bin/48ivgl02cpt2ed3fh9dbalvx8/gradle-7.4.2/lib/kotlin-stdlib-common-1.5.31.jar",
-          "type": "Library"
-        },
-        {
-          "name": "/data/cache/gradle/wrapper/dists/gradle-7.4.2-bin/48ivgl02cpt2ed3fh9dbalvx8/gradle-7.4.2/lib/kotlin-stdlib-jdk7-1.5.31.jar",
-          "type": "Library"
-        },
-        {
-          "name": "/data/cache/gradle/wrapper/dists/gradle-7.4.2-bin/48ivgl02cpt2ed3fh9dbalvx8/gradle-7.4.2/lib/kotlin-stdlib-jdk8-1.5.31.jar",
-          "type": "Library"
-        },
-        {
-          "name": "/data/cache/gradle/wrapper/dists/gradle-7.4.2-bin/48ivgl02cpt2ed3fh9dbalvx8/gradle-7.4.2/lib/kotlin-reflect-1.5.31.jar",
-          "type": "Library"
-        },
-        {
-          "name": "/data/cache/gradle/wrapper/dists/gradle-7.4.2-bin/48ivgl02cpt2ed3fh9dbalvx8/gradle-7.4.2/lib/gradle-installation-beacon-7.4.2.jar",
-          "type": "Library"
-        },
-        {
-          "name": "/data/project/buildSrc/.gradle/7.4.2/dependencies-accessors/89ec37b105c51464d630d28769cc0516844fbcca/classes",
-          "type": "Library"
-        },
-        {
-          "name": "/data/project/buildSrc/.gradle/7.4.2/dependencies-accessors/674e2a97927ee4d395219d4136ca60e4763c4860/classes",
-          "type": "Library"
-        },
-        {
-          "name": "/data/cache/gradle/caches/7.4.2/generated-gradle-jars/gradle-kotlin-dsl-extensions-7.4.2.jar",
-          "type": "Library"
-        },
-        {
-          "name": "/data/cache/gradle/wrapper/dists/gradle-7.4.2-bin/48ivgl02cpt2ed3fh9dbalvx8/gradle-7.4.2/lib/gradle-kotlin-dsl-7.4.2.jar",
-          "type": "Library"
-        },
-        {
-          "name": "/data/cache/gradle/wrapper/dists/gradle-7.4.2-bin/48ivgl02cpt2ed3fh9dbalvx8/gradle-7.4.2/lib/gradle-kotlin-dsl-tooling-models-7.4.2.jar",
-          "type": "Library"
-        },
-        {
-          "name": "/data/cache/gradle/caches/7.4.2/generated-gradle-jars/gradle-test-kit-7.4.2.jar",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.javiersc.gradle-plugins:all-plugins:0.1.0-rc.43",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-reflect:1.5.31",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlinx:binary-compatibility-validator:0.10.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.javiersc.gradle-plugins:kotlin-config:0.1.0-rc.43",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.javiersc.gradle-plugins:publish:0.1.0-rc.43",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.javiersc.gradle-plugins:core:0.1.0-rc.43",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.javiersc.gradle-plugins:all-projects:0.1.0-rc.43",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.javiersc.gradle-plugins:code-analysis:0.1.0-rc.43",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.javiersc.gradle-plugins:code-coverage:0.1.0-rc.43",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.javiersc.gradle-plugins:code-formatter:0.1.0-rc.43",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.javiersc.gradle-plugins:dependency-updates:0.1.0-rc.43",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.javiersc.gradle-plugins:versioning:0.1.0-rc.43",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.javiersc.gradle-plugins:changelog:0.1.0-rc.43",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.javiersc.gradle-plugins:docs:0.1.0-rc.43",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.javiersc.gradle-plugins:readme-badges:0.1.0-rc.43",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.javiersc.gradle-plugins:gradle-wrapper-updater:0.1.0-rc.43",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.javiersc.gradle-plugins:nexus:0.1.0-rc.43",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.javiersc.gradle-plugins:massive-catalogs-updater:0.1.0-rc.43",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.javiersc.gradle-plugins:projects-version-catalog:0.1.0-rc.43",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.javiersc.gradle-plugins:plugin-accessors:0.1.0-rc.43",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-gradle-plugin-api:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-gradle-plugin-model:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: io.gitlab.arturbosch.detekt:detekt-gradle-plugin:1.20.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:3.3",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlinx:kover:0.5.1",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.github.ben-manes:gradle-versions-plugin:0.42.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.javiersc.semver:semver-gradle-plugin:0.1.0-alpha.10",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.intellij.plugins:gradle-changelog-plugin:1.3.1",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: io.github.gradle-nexus:publish-plugin:1.1.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains:annotations:13.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-native-utils:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-project-model:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-util-io:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "/data/project/buildSrc/build/pluginUnderTestMetadata",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-reflect:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-compiler-runner:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-util-klib:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-klib-commonizer-api:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-tooling-metadata:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.google.code.gson:gson:2.9.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.google.guava:guava:31.0.1-jre",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: de.undercouch:gradle-download-task:4.1.1",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.github.gundy:semver4j:nodeps:0.16.4",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-annotation-processing-gradle:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-android-extensions:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-compiler-embeddable:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-scripting-compiler-embeddable:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-scripting-compiler-impl-embeddable:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-metadata-jvm:0.4.2",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.ow2.asm:asm-tree:9.2",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.ow2.asm:asm:9.2",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.googlecode.java-diff-utils:diffutils:1.3.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.adarshr:gradle-test-logger-plugin:3.2.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.dokka:dokka-gradle-plugin:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: ru.vyarus:gradle-mkdocs-plugin:2.3.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.github.triplet.gradle:play-publisher:3.7.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.gradle.publish:plugin-publish-plugin:0.21.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.diffplug.spotless:spotless-plugin-gradle:6.6.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.eclipse.jgit:org.eclipse.jgit:6.1.0.202203080745-r",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jsoup:jsoup:1.14.3",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.tomlj:tomlj:1.0.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-daemon-client:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-build-common:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.google.guava:failureaccess:1.0.1",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.google.code.findbugs:jsr305:3.0.2",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.checkerframework:checker-qual:3.12.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.google.errorprone:error_prone_annotations:2.7.1",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.google.j2objc:j2objc-annotations:1.3",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-daemon-embeddable:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.intellij.deps:trove4j:1.0.20200330",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: net.java.dev.jna:jna:5.6.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-scripting-jvm:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-scripting-common:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.fusesource.jansi:jansi:2.4.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-jvm:0.1.0-alpha.4",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.dokka:dokka-core:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.ajoberstar.grgit:grgit-core:4.1.1",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: ru.vyarus:gradle-use-python-plugin:2.3.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.ajoberstar:gradle-git-publish:3.0.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.github.triplet.gradle:android-publisher:3.7.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.google.http-client:google-http-client-gson:1.40.1",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.github.triplet.gradle:common-utils:3.7.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.github.triplet.gradle:common-validation:3.7.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.apache.maven:maven-model:3.6.3",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.javiersc.semver:semver-core-jvm:0.1.0-beta.10",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: io.github.detekt.sarif4k:sarif4k:0.0.1",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: io.gitlab.arturbosch.detekt:detekt-utils:1.20.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.sonarsource.scanner.api:sonar-scanner-api:2.16.1.361",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.diffplug.spotless:spotless-lib-extra:2.25.3",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.diffplug.durian:durian-io:1.2.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.diffplug.durian:durian-collect:1.2.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.diffplug.durian:durian-core:1.2.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.diffplug.spotless:spotless-lib:2.25.3",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.thoughtworks.xstream:xstream:1.4.17",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.googlecode.javaewah:JavaEWAH:1.1.13",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.slf4j:slf4j-api:1.7.30",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.antlr:antlr4-runtime:4.7.2",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.12.4",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.fasterxml.jackson.module:jackson-module-kotlin:2.12.4",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.google.apis:google-api-services-androidpublisher:v3-rev20211021-1.32.1",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.google.api-client:google-api-client:1.32.2",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.google.auth:google-auth-library-oauth2-http:1.2.2",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.google.http-client:google-http-client-apache-v2:1.40.1",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.google.http-client:google-http-client:1.40.1",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.googlecode.concurrent-trees:concurrent-trees:2.6.1",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.codehaus.groovy:groovy-xml:3.0.9",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: io.github.x-stream:mxparser:1.2.1",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains:markdown-jvm:0.2.4",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.fasterxml.jackson.module:jackson-module-jaxb-annotations:2.12.4",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.fasterxml.jackson.core:jackson-databind:2.12.4",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.fasterxml.jackson.core:jackson-annotations:2.12.4",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.fasterxml.jackson.core:jackson-core:2.12.4",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.fasterxml.woodstox:woodstox-core:6.2.4",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.codehaus.woodstox:stax2-api:4.2.1",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.google.oauth-client:google-oauth-client:1.32.1",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.apache.httpcomponents:httpclient:4.5.13",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.apache.httpcomponents:httpcore:4.4.14",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.google.auto.value:auto-value-annotations:1.8.2",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.google.auth:google-auth-library-credentials:1.2.2",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: io.opencensus:opencensus-contrib-http-util:0.28.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: io.opencensus:opencensus-api:0.28.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-serialization-json-jvm:1.1.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.codehaus.groovy:groovy:3.0.9",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: xmlpull:xmlpull:1.1.3.1",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: jakarta.xml.bind:jakarta.xml.bind-api:2.3.2",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: jakarta.activation:jakarta.activation-api:1.2.1",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: commons-logging:commons-logging:1.2",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: commons-codec:commons-codec:1.11",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: io.grpc:grpc-context:1.27.2",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-serialization-core-jvm:1.1.0",
-          "type": "Library"
-        }
-      ]
-    },
-    {
-      "name": "semantic-versioning-kmp.buildSrc.main",
-      "contentEntries": [
-        {
-          "path": "file://$PROJECT_DIR$/buildSrc/src/main",
-          "sourceFolders": []
-        }
-      ],
-      "orderEntries": [
-        {
-          "name": "jbr-11",
-          "type": "SDK"
-        },
-        {
-          "name": "<Module source>",
-          "type": "Own sources"
-        },
-        {
-          "name": "/data/cache/gradle/caches/7.4.2/generated-gradle-jars/gradle-api-7.4.2.jar",
-          "type": "Library"
-        },
-        {
-          "name": "/data/cache/gradle/wrapper/dists/gradle-7.4.2-bin/48ivgl02cpt2ed3fh9dbalvx8/gradle-7.4.2/lib/groovy-3.0.9.jar",
-          "type": "Library"
-        },
-        {
-          "name": "/data/cache/gradle/wrapper/dists/gradle-7.4.2-bin/48ivgl02cpt2ed3fh9dbalvx8/gradle-7.4.2/lib/groovy-ant-3.0.9.jar",
-          "type": "Library"
-        },
-        {
-          "name": "/data/cache/gradle/wrapper/dists/gradle-7.4.2-bin/48ivgl02cpt2ed3fh9dbalvx8/gradle-7.4.2/lib/groovy-astbuilder-3.0.9.jar",
-          "type": "Library"
-        },
-        {
-          "name": "/data/cache/gradle/wrapper/dists/gradle-7.4.2-bin/48ivgl02cpt2ed3fh9dbalvx8/gradle-7.4.2/lib/groovy-console-3.0.9.jar",
-          "type": "Library"
-        },
-        {
-          "name": "/data/cache/gradle/wrapper/dists/gradle-7.4.2-bin/48ivgl02cpt2ed3fh9dbalvx8/gradle-7.4.2/lib/groovy-datetime-3.0.9.jar",
-          "type": "Library"
-        },
-        {
-          "name": "/data/cache/gradle/wrapper/dists/gradle-7.4.2-bin/48ivgl02cpt2ed3fh9dbalvx8/gradle-7.4.2/lib/groovy-dateutil-3.0.9.jar",
-          "type": "Library"
-        },
-        {
-          "name": "/data/cache/gradle/wrapper/dists/gradle-7.4.2-bin/48ivgl02cpt2ed3fh9dbalvx8/gradle-7.4.2/lib/groovy-groovydoc-3.0.9.jar",
-          "type": "Library"
-        },
-        {
-          "name": "/data/cache/gradle/wrapper/dists/gradle-7.4.2-bin/48ivgl02cpt2ed3fh9dbalvx8/gradle-7.4.2/lib/groovy-json-3.0.9.jar",
-          "type": "Library"
-        },
-        {
-          "name": "/data/cache/gradle/wrapper/dists/gradle-7.4.2-bin/48ivgl02cpt2ed3fh9dbalvx8/gradle-7.4.2/lib/groovy-nio-3.0.9.jar",
-          "type": "Library"
-        },
-        {
-          "name": "/data/cache/gradle/wrapper/dists/gradle-7.4.2-bin/48ivgl02cpt2ed3fh9dbalvx8/gradle-7.4.2/lib/groovy-sql-3.0.9.jar",
-          "type": "Library"
-        },
-        {
-          "name": "/data/cache/gradle/wrapper/dists/gradle-7.4.2-bin/48ivgl02cpt2ed3fh9dbalvx8/gradle-7.4.2/lib/groovy-templates-3.0.9.jar",
-          "type": "Library"
-        },
-        {
-          "name": "/data/cache/gradle/wrapper/dists/gradle-7.4.2-bin/48ivgl02cpt2ed3fh9dbalvx8/gradle-7.4.2/lib/groovy-test-3.0.9.jar",
-          "type": "Library"
-        },
-        {
-          "name": "/data/cache/gradle/wrapper/dists/gradle-7.4.2-bin/48ivgl02cpt2ed3fh9dbalvx8/gradle-7.4.2/lib/groovy-xml-3.0.9.jar",
-          "type": "Library"
-        },
-        {
-          "name": "/data/cache/gradle/wrapper/dists/gradle-7.4.2-bin/48ivgl02cpt2ed3fh9dbalvx8/gradle-7.4.2/lib/javaparser-core-3.17.0.jar",
-          "type": "Library"
-        },
-        {
-          "name": "/data/cache/gradle/wrapper/dists/gradle-7.4.2-bin/48ivgl02cpt2ed3fh9dbalvx8/gradle-7.4.2/lib/kotlin-stdlib-1.5.31.jar",
-          "type": "Library"
-        },
-        {
-          "name": "/data/cache/gradle/wrapper/dists/gradle-7.4.2-bin/48ivgl02cpt2ed3fh9dbalvx8/gradle-7.4.2/lib/kotlin-stdlib-common-1.5.31.jar",
-          "type": "Library"
-        },
-        {
-          "name": "/data/cache/gradle/wrapper/dists/gradle-7.4.2-bin/48ivgl02cpt2ed3fh9dbalvx8/gradle-7.4.2/lib/kotlin-stdlib-jdk7-1.5.31.jar",
-          "type": "Library"
-        },
-        {
-          "name": "/data/cache/gradle/wrapper/dists/gradle-7.4.2-bin/48ivgl02cpt2ed3fh9dbalvx8/gradle-7.4.2/lib/kotlin-stdlib-jdk8-1.5.31.jar",
-          "type": "Library"
-        },
-        {
-          "name": "/data/cache/gradle/wrapper/dists/gradle-7.4.2-bin/48ivgl02cpt2ed3fh9dbalvx8/gradle-7.4.2/lib/kotlin-reflect-1.5.31.jar",
-          "type": "Library"
-        },
-        {
-          "name": "/data/cache/gradle/wrapper/dists/gradle-7.4.2-bin/48ivgl02cpt2ed3fh9dbalvx8/gradle-7.4.2/lib/gradle-installation-beacon-7.4.2.jar",
-          "type": "Library"
-        },
-        {
-          "name": "/data/cache/gradle/caches/7.4.2/generated-gradle-jars/gradle-kotlin-dsl-extensions-7.4.2.jar",
-          "type": "Library"
-        },
-        {
-          "name": "/data/cache/gradle/wrapper/dists/gradle-7.4.2-bin/48ivgl02cpt2ed3fh9dbalvx8/gradle-7.4.2/lib/gradle-kotlin-dsl-7.4.2.jar",
-          "type": "Library"
-        },
-        {
-          "name": "/data/cache/gradle/wrapper/dists/gradle-7.4.2-bin/48ivgl02cpt2ed3fh9dbalvx8/gradle-7.4.2/lib/gradle-kotlin-dsl-tooling-models-7.4.2.jar",
-          "type": "Library"
-        },
-        {
-          "name": "/data/project/buildSrc/.gradle/7.4.2/dependencies-accessors/89ec37b105c51464d630d28769cc0516844fbcca/classes",
-          "type": "Library"
-        },
-        {
-          "name": "/data/project/buildSrc/.gradle/7.4.2/dependencies-accessors/674e2a97927ee4d395219d4136ca60e4763c4860/classes",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.javiersc.gradle-plugins:all-plugins:0.1.0-rc.43",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-reflect:1.5.31",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlinx:binary-compatibility-validator:0.10.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.javiersc.gradle-plugins:kotlin-config:0.1.0-rc.43",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.javiersc.gradle-plugins:publish:0.1.0-rc.43",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.javiersc.gradle-plugins:core:0.1.0-rc.43",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.javiersc.gradle-plugins:all-projects:0.1.0-rc.43",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.javiersc.gradle-plugins:code-analysis:0.1.0-rc.43",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.javiersc.gradle-plugins:code-coverage:0.1.0-rc.43",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.javiersc.gradle-plugins:code-formatter:0.1.0-rc.43",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.javiersc.gradle-plugins:dependency-updates:0.1.0-rc.43",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.javiersc.gradle-plugins:versioning:0.1.0-rc.43",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.javiersc.gradle-plugins:changelog:0.1.0-rc.43",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.javiersc.gradle-plugins:docs:0.1.0-rc.43",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.javiersc.gradle-plugins:readme-badges:0.1.0-rc.43",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.javiersc.gradle-plugins:gradle-wrapper-updater:0.1.0-rc.43",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.javiersc.gradle-plugins:nexus:0.1.0-rc.43",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.javiersc.gradle-plugins:massive-catalogs-updater:0.1.0-rc.43",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.javiersc.gradle-plugins:projects-version-catalog:0.1.0-rc.43",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.javiersc.gradle-plugins:plugin-accessors:0.1.0-rc.43",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-gradle-plugin-api:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-gradle-plugin-model:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: io.gitlab.arturbosch.detekt:detekt-gradle-plugin:1.20.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:3.3",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlinx:kover:0.5.1",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.github.ben-manes:gradle-versions-plugin:0.42.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.javiersc.semver:semver-gradle-plugin:0.1.0-alpha.10",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.intellij.plugins:gradle-changelog-plugin:1.3.1",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: io.github.gradle-nexus:publish-plugin:1.1.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains:annotations:13.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-native-utils:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-project-model:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-util-io:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-compiler-runner:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-util-klib:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-klib-commonizer-api:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-tooling-metadata:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.google.code.gson:gson:2.9.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.google.guava:guava:31.0.1-jre",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: de.undercouch:gradle-download-task:4.1.1",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.github.gundy:semver4j:nodeps:0.16.4",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-annotation-processing-gradle:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-android-extensions:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-compiler-embeddable:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-scripting-compiler-embeddable:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-scripting-compiler-impl-embeddable:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-metadata-jvm:0.4.2",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.ow2.asm:asm-tree:9.2",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.ow2.asm:asm:9.2",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.googlecode.java-diff-utils:diffutils:1.3.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.adarshr:gradle-test-logger-plugin:3.2.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.dokka:dokka-gradle-plugin:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: ru.vyarus:gradle-mkdocs-plugin:2.3.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.github.triplet.gradle:play-publisher:3.7.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.gradle.publish:plugin-publish-plugin:0.21.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.diffplug.spotless:spotless-plugin-gradle:6.6.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.eclipse.jgit:org.eclipse.jgit:6.1.0.202203080745-r",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jsoup:jsoup:1.14.3",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.tomlj:tomlj:1.0.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-daemon-client:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-build-common:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.google.guava:failureaccess:1.0.1",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.google.code.findbugs:jsr305:3.0.2",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.checkerframework:checker-qual:3.12.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.google.errorprone:error_prone_annotations:2.7.1",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.google.j2objc:j2objc-annotations:1.3",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-daemon-embeddable:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.intellij.deps:trove4j:1.0.20200330",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: net.java.dev.jna:jna:5.6.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-scripting-jvm:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-scripting-common:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.fusesource.jansi:jansi:2.4.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-jvm:0.1.0-alpha.4",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.dokka:dokka-core:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.ajoberstar.grgit:grgit-core:4.1.1",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: ru.vyarus:gradle-use-python-plugin:2.3.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.ajoberstar:gradle-git-publish:3.0.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.github.triplet.gradle:android-publisher:3.7.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.google.http-client:google-http-client-gson:1.40.1",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.github.triplet.gradle:common-utils:3.7.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.github.triplet.gradle:common-validation:3.7.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.apache.maven:maven-model:3.6.3",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.javiersc.semver:semver-core-jvm:0.1.0-beta.10",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: io.github.detekt.sarif4k:sarif4k:0.0.1",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: io.gitlab.arturbosch.detekt:detekt-utils:1.20.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.sonarsource.scanner.api:sonar-scanner-api:2.16.1.361",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.diffplug.spotless:spotless-lib-extra:2.25.3",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.diffplug.durian:durian-io:1.2.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.diffplug.durian:durian-collect:1.2.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.diffplug.durian:durian-core:1.2.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.diffplug.spotless:spotless-lib:2.25.3",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.thoughtworks.xstream:xstream:1.4.17",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.googlecode.javaewah:JavaEWAH:1.1.13",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.slf4j:slf4j-api:1.7.30",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.antlr:antlr4-runtime:4.7.2",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.12.4",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.fasterxml.jackson.module:jackson-module-kotlin:2.12.4",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-reflect:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.google.apis:google-api-services-androidpublisher:v3-rev20211021-1.32.1",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.google.api-client:google-api-client:1.32.2",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.google.auth:google-auth-library-oauth2-http:1.2.2",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.google.http-client:google-http-client-apache-v2:1.40.1",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.google.http-client:google-http-client:1.40.1",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.googlecode.concurrent-trees:concurrent-trees:2.6.1",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.codehaus.groovy:groovy-xml:3.0.9",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: io.github.x-stream:mxparser:1.2.1",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains:markdown-jvm:0.2.4",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.fasterxml.jackson.module:jackson-module-jaxb-annotations:2.12.4",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.fasterxml.jackson.core:jackson-databind:2.12.4",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.fasterxml.jackson.core:jackson-annotations:2.12.4",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.fasterxml.jackson.core:jackson-core:2.12.4",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.fasterxml.woodstox:woodstox-core:6.2.4",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.codehaus.woodstox:stax2-api:4.2.1",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.google.oauth-client:google-oauth-client:1.32.1",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.apache.httpcomponents:httpclient:4.5.13",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.apache.httpcomponents:httpcore:4.4.14",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.google.auto.value:auto-value-annotations:1.8.2",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: com.google.auth:google-auth-library-credentials:1.2.2",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: io.opencensus:opencensus-contrib-http-util:0.28.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: io.opencensus:opencensus-api:0.28.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-serialization-json-jvm:1.1.0",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.codehaus.groovy:groovy:3.0.9",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: xmlpull:xmlpull:1.1.3.1",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: jakarta.xml.bind:jakarta.xml.bind-api:2.3.2",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: jakarta.activation:jakarta.activation-api:1.2.1",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: commons-logging:commons-logging:1.2",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: commons-codec:commons-codec:1.11",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: io.grpc:grpc-context:1.27.2",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-serialization-core-jvm:1.1.0",
           "type": "Library"
         }
       ]

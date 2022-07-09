@@ -9,15 +9,19 @@
       "languageLevel": 11
     },
     {
-      "name": "semantic-versioning-kmp.buildSrc",
-      "languageLevel": 11
-    },
-    {
       "name": "semantic-versioning-kmp.semver-core.iosArm64Main",
       "languageLevel": 11
     },
     {
       "name": "semantic-versioning-kmp.semver-core.iosArm64Test",
+      "languageLevel": 11
+    },
+    {
+      "name": "semantic-versioning-kmp.semver-core.iosSimulatorArm64Main",
+      "languageLevel": 11
+    },
+    {
+      "name": "semantic-versioning-kmp.semver-core.iosSimulatorArm64Test",
       "languageLevel": 11
     },
     {
@@ -53,6 +57,14 @@
       "languageLevel": 11
     },
     {
+      "name": "semantic-versioning-kmp.semver-core.macosArm64Main",
+      "languageLevel": 11
+    },
+    {
+      "name": "semantic-versioning-kmp.semver-core.macosArm64Test",
+      "languageLevel": 11
+    },
+    {
       "name": "semantic-versioning-kmp.semver-core.macosX64Main",
       "languageLevel": 11
     },
@@ -77,6 +89,14 @@
       "languageLevel": 11
     },
     {
+      "name": "semantic-versioning-kmp.semver-core.tvosSimulatorArm64Main",
+      "languageLevel": 11
+    },
+    {
+      "name": "semantic-versioning-kmp.semver-core.tvosSimulatorArm64Test",
+      "languageLevel": 11
+    },
+    {
       "name": "semantic-versioning-kmp.semver-core.tvosX64Main",
       "languageLevel": 11
     },
@@ -93,6 +113,14 @@
       "languageLevel": 11
     },
     {
+      "name": "semantic-versioning-kmp.semver-core.watchosSimulatorArm64Main",
+      "languageLevel": 11
+    },
+    {
+      "name": "semantic-versioning-kmp.semver-core.watchosSimulatorArm64Test",
+      "languageLevel": 11
+    },
+    {
       "name": "semantic-versioning-kmp.semver-core.watchosX64Main",
       "languageLevel": 11
     },
@@ -106,14 +134,6 @@
     },
     {
       "name": "semantic-versioning-kmp.semver-core.commonTest",
-      "languageLevel": 11
-    },
-    {
-      "name": "semantic-versioning-kmp.buildSrc.test",
-      "languageLevel": 11
-    },
-    {
-      "name": "semantic-versioning-kmp.buildSrc.main",
       "languageLevel": 11
     }
   ]

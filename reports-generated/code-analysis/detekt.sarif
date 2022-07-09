@@ -20,7 +20,7 @@
                 },
                 "region": {
                   "startColumn": 17,
-                  "startLine": 76
+                  "startLine": 77
                 }
               }
             }
@@ -41,7 +41,7 @@
                 },
                 "region": {
                   "startColumn": 17,
-                  "startLine": 91
+                  "startLine": 93
                 }
               }
             }
@@ -50,27 +50,6 @@
             "text": "This condition is too complex (9). Defined complexity threshold for conditions is set to '4'"
           },
           "ruleId": "detekt.complexity.ComplexCondition"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "buildSrc/build.gradle.kts",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startColumn": 5,
-                  "startLine": 14
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "This comment contains 'TODO:' that has been defined as forbidden in detekt."
-          },
-          "ruleId": "detekt.style.ForbiddenComment"
         }
       ],
       "tool": {

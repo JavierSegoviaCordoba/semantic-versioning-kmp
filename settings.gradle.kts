@@ -1,19 +1,20 @@
-rootProject.name = providers.gradleProperty("project.name").forUseAtConfigurationTime().get()
+pluginManagement {
+    val hubdleVersion: String =
+        file("$rootDir/gradle/libs.versions.toml")
+            .readLines()
+            .first { it.contains("hubdle") }
+            .split("\"")[1]
 
-enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
-enableFeaturePreview("VERSION_CATALOGS")
-
-dependencyResolutionManagement {
     repositories {
-        mavenCentral()
-        google()
         gradlePluginPortal()
+        mavenCentral()
     }
 
-    versionCatalogs {
-        create("libs") { from(files("gradle/libs.toml")) }
-        create("pluginLibs") { from(files("gradle/pluginLibs.toml")) }
+    plugins {
+        id("com.javiersc.hubdle.settings") version hubdleVersion
     }
 }
 
-include(":semver-core")
+plugins {
+    id("com.javiersc.hubdle.settings")
+}

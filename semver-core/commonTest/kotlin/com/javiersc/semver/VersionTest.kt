@@ -73,7 +73,8 @@ class VersionTest {
     @Test
     fun stage_name_comparator() = runTest {
         forAll(versionArbitrary, versionArbitrary) { a: Version, b: Version ->
-            if ((a.major == b.major) &&
+            if (
+                (a.major == b.major) &&
                     (a.minor == b.minor) &&
                     (a.patch == b.patch) &&
                     (a.stage?.name != null) &&
@@ -88,7 +89,8 @@ class VersionTest {
     @Test
     fun stage_num_comparator() = runTest {
         forAll(versionArbitrary, versionArbitrary) { a: Version, b: Version ->
-            if ((a.major == b.major) &&
+            if (
+                (a.major == b.major) &&
                     (a.minor == b.minor) &&
                     (a.patch == b.patch) &&
                     (a.stage?.name != null) &&

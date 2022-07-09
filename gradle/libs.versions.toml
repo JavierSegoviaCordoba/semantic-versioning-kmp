@@ -1,0 +1,11 @@
+[versions]
+hubdle = "0.2.0-alpha.15"
+kotest = "5.3.1"
+kotlin = "1.7.0"
+
+[libraries]
+jetbrains-kotlin-kotlinGradlePlugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+kotest-kotestProperty = { module = "io.kotest:kotest-property", version.ref = "kotest" }
+
+[plugins]
+javiersc-hubdle = { id = "com.javiersc.hubdle", version.ref = "hubdle" }

@@ -14,7 +14,7 @@ hubdle {
             common {
                 test {
                     dependencies {
-                        implementation(libs.kotest.kotestProperty)
+                        implementation(kotestProperty())
                     }
                 }
             }

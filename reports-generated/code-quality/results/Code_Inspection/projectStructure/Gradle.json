@@ -82,18 +82,18 @@
       "version": "0.17.3"
     },
     {
-      "ideaName": "Kotlin/Native 1.7.0 - stdlib",
-      "gradleName": "Kotlin/Native 1.7.0 - stdlib",
+      "ideaName": "Kotlin/Native 1.7.10 - stdlib",
+      "gradleName": "Kotlin/Native 1.7.10 - stdlib",
       "unresolved": false,
-      "artifactId": "Kotlin/Native 1.7.0 - stdlib"
+      "artifactId": "Kotlin/Native 1.7.10 - stdlib"
     },
     {
-      "ideaName": "Gradle: io.kotest:kotest-property-iosarm64:klib:5.3.1",
-      "gradleName": "io.kotest:kotest-property-iosarm64:klib:5.3.1",
+      "ideaName": "Gradle: io.kotest:kotest-property-iosarm64:klib:5.3.2",
+      "gradleName": "io.kotest:kotest-property-iosarm64:klib:5.3.2",
       "unresolved": false,
       "groupId": "io.kotest",
       "artifactId": "kotest-property-iosarm64",
-      "version": "5.3.1"
+      "version": "5.3.2"
     },
     {
       "ideaName": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-iosarm64:klib:1.6.3",
@@ -160,12 +160,12 @@
       "version": "13.0"
     },
     {
-      "ideaName": "Gradle: io.kotest:kotest-property:desktopMain:5.3.1",
-      "gradleName": "io.kotest:kotest-property:desktopMain:5.3.1",
+      "ideaName": "Gradle: io.kotest:kotest-property:desktopMain:5.3.2",
+      "gradleName": "io.kotest:kotest-property:desktopMain:5.3.2",
       "unresolved": false,
       "groupId": "io.kotest",
       "artifactId": "kotest-property",
-      "version": "5.3.1"
+      "version": "5.3.2"
     },
     {
       "ideaName": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test:nativeMain:1.6.3",
@@ -224,12 +224,12 @@
       "version": "0.17.3"
     },
     {
-      "ideaName": "Gradle: io.kotest:kotest-property-iossimulatorarm64:klib:5.3.1",
-      "gradleName": "io.kotest:kotest-property-iossimulatorarm64:klib:5.3.1",
+      "ideaName": "Gradle: io.kotest:kotest-property-iossimulatorarm64:klib:5.3.2",
+      "gradleName": "io.kotest:kotest-property-iossimulatorarm64:klib:5.3.2",
       "unresolved": false,
       "groupId": "io.kotest",
       "artifactId": "kotest-property-iossimulatorarm64",
-      "version": "5.3.1"
+      "version": "5.3.2"
     },
     {
       "ideaName": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-iossimulatorarm64:klib:1.6.3",
@@ -304,12 +304,12 @@
       "version": "0.17.3"
     },
     {
-      "ideaName": "Gradle: io.kotest:kotest-property-iosx64:klib:5.3.1",
-      "gradleName": "io.kotest:kotest-property-iosx64:klib:5.3.1",
+      "ideaName": "Gradle: io.kotest:kotest-property-iosx64:klib:5.3.2",
+      "gradleName": "io.kotest:kotest-property-iosx64:klib:5.3.2",
       "unresolved": false,
       "groupId": "io.kotest",
       "artifactId": "kotest-property-iosx64",
-      "version": "5.3.1"
+      "version": "5.3.2"
     },
     {
       "ideaName": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-iosx64:klib:1.6.3",
@@ -352,12 +352,12 @@
       "version": "5.3.2"
     },
     {
-      "ideaName": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-js:1.7.0",
-      "gradleName": "org.jetbrains.kotlin:kotlin-stdlib-js:1.7.0",
+      "ideaName": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-js:1.7.10",
+      "gradleName": "org.jetbrains.kotlin:kotlin-stdlib-js:1.7.10",
       "unresolved": false,
       "groupId": "org.jetbrains.kotlin",
       "artifactId": "kotlin-stdlib-js",
-      "version": "1.7.0"
+      "version": "1.7.10"
     },
     {
       "ideaName": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-js:1.6.3",
@@ -432,12 +432,12 @@
       "version": "1.6.3"
     },
     {
-      "ideaName": "Gradle: io.kotest:kotest-property-js:5.3.1",
-      "gradleName": "io.kotest:kotest-property-js:5.3.1",
+      "ideaName": "Gradle: io.kotest:kotest-property-js:5.3.2",
+      "gradleName": "io.kotest:kotest-property-js:5.3.2",
       "unresolved": false,
       "groupId": "io.kotest",
       "artifactId": "kotest-property-js",
-      "version": "5.3.1"
+      "version": "5.3.2"
     },
     {
       "ideaName": "Gradle: org.jetbrains.kotlin:kotlin-test-js:1.6.21",
@@ -456,12 +456,12 @@
       "version": "5.3.2"
     },
     {
-      "ideaName": "Gradle: io.kotest:kotest-common-js:5.3.1",
-      "gradleName": "io.kotest:kotest-common-js:5.3.1",
+      "ideaName": "Gradle: io.kotest:kotest-common-js:5.3.2",
+      "gradleName": "io.kotest:kotest-common-js:5.3.2",
       "unresolved": false,
       "groupId": "io.kotest",
       "artifactId": "kotest-common-js",
-      "version": "5.3.1"
+      "version": "5.3.2"
     },
     {
       "ideaName": "Gradle: io.kotest:kotest-assertions-shared-js:5.3.2",
@@ -480,20 +480,12 @@
       "version": "5.3.2"
     },
     {
-      "ideaName": "Gradle: io.kotest:kotest-common-js:5.3.2",
-      "gradleName": "io.kotest:kotest-common-js:5.3.2",
-      "unresolved": false,
-      "groupId": "io.kotest",
-      "artifactId": "kotest-common-js",
-      "version": "5.3.2"
-    },
-    {
-      "ideaName": "Gradle: io.kotest:kotest-property-js:klib:5.3.1",
-      "gradleName": "io.kotest:kotest-property-js:klib:5.3.1",
+      "ideaName": "Gradle: io.kotest:kotest-property-js:klib:5.3.2",
+      "gradleName": "io.kotest:kotest-property-js:klib:5.3.2",
       "unresolved": false,
       "groupId": "io.kotest",
       "artifactId": "kotest-property-js",
-      "version": "5.3.1"
+      "version": "5.3.2"
     },
     {
       "ideaName": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-js:klib:1.6.3",
@@ -536,12 +528,12 @@
       "version": "5.3.2"
     },
     {
-      "ideaName": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.7.0",
-      "gradleName": "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.7.0",
+      "ideaName": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.7.10",
+      "gradleName": "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.7.10",
       "unresolved": false,
       "groupId": "org.jetbrains.kotlin",
       "artifactId": "kotlin-stdlib-jdk8",
-      "version": "1.7.0"
+      "version": "1.7.10"
     },
     {
       "ideaName": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.3",
@@ -560,20 +552,20 @@
       "version": "0.1.0-alpha.7"
     },
     {
-      "ideaName": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.0",
-      "gradleName": "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.0",
+      "ideaName": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.10",
+      "gradleName": "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.10",
       "unresolved": false,
       "groupId": "org.jetbrains.kotlin",
       "artifactId": "kotlin-stdlib-jdk7",
-      "version": "1.7.0"
+      "version": "1.7.10"
     },
     {
-      "ideaName": "Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.7.0",
-      "gradleName": "org.jetbrains.kotlin:kotlin-stdlib:1.7.0",
+      "ideaName": "Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.7.10",
+      "gradleName": "org.jetbrains.kotlin:kotlin-stdlib:1.7.10",
       "unresolved": false,
       "groupId": "org.jetbrains.kotlin",
       "artifactId": "kotlin-stdlib",
-      "version": "1.7.0"
+      "version": "1.7.10"
     },
     {
       "ideaName": "Gradle: org.jetbrains.kotlin:kotlin-test:1.6.21",
@@ -592,12 +584,12 @@
       "version": "1.6.3"
     },
     {
-      "ideaName": "Gradle: io.kotest:kotest-property-jvm:5.3.1",
-      "gradleName": "io.kotest:kotest-property-jvm:5.3.1",
+      "ideaName": "Gradle: io.kotest:kotest-property-jvm:5.3.2",
+      "gradleName": "io.kotest:kotest-property-jvm:5.3.2",
       "unresolved": false,
       "groupId": "io.kotest",
       "artifactId": "kotest-property-jvm",
-      "version": "5.3.1"
+      "version": "5.3.2"
     },
     {
       "ideaName": "Gradle: org.jetbrains.kotlin:kotlin-test-junit5:1.6.21",
@@ -632,12 +624,12 @@
       "version": "5.6.0"
     },
     {
-      "ideaName": "Gradle: io.kotest:kotest-common-jvm:5.3.1",
-      "gradleName": "io.kotest:kotest-common-jvm:5.3.1",
+      "ideaName": "Gradle: io.kotest:kotest-common-jvm:5.3.2",
+      "gradleName": "io.kotest:kotest-common-jvm:5.3.2",
       "unresolved": false,
       "groupId": "io.kotest",
       "artifactId": "kotest-common-jvm",
-      "version": "5.3.1"
+      "version": "5.3.2"
     },
     {
       "ideaName": "Gradle: io.kotest:kotest-assertions-shared-jvm:5.3.2",
@@ -704,14 +696,6 @@
       "version": "5.6.0"
     },
     {
-      "ideaName": "Gradle: io.kotest:kotest-common-jvm:5.3.2",
-      "gradleName": "io.kotest:kotest-common-jvm:5.3.2",
-      "unresolved": false,
-      "groupId": "io.kotest",
-      "artifactId": "kotest-common-jvm",
-      "version": "5.3.2"
-    },
-    {
       "ideaName": "Gradle: org.junit.platform:junit-platform-engine:1.6.0",
       "gradleName": "org.junit.platform:junit-platform-engine:1.6.0",
       "unresolved": false,
@@ -760,42 +744,42 @@
       "version": "1.6.3"
     },
     {
-      "ideaName": "Kotlin/Native 1.7.0 - zlib | linux_x64",
-      "gradleName": "Kotlin/Native 1.7.0 - zlib | linux_x64",
+      "ideaName": "Kotlin/Native 1.7.10 - zlib | linux_x64",
+      "gradleName": "Kotlin/Native 1.7.10 - zlib | linux_x64",
       "unresolved": false,
-      "artifactId": "Kotlin/Native 1.7.0 - zlib | linux_x64"
+      "artifactId": "Kotlin/Native 1.7.10 - zlib | linux_x64"
     },
     {
-      "ideaName": "Kotlin/Native 1.7.0 - iconv | linux_x64",
-      "gradleName": "Kotlin/Native 1.7.0 - iconv | linux_x64",
+      "ideaName": "Kotlin/Native 1.7.10 - iconv | linux_x64",
+      "gradleName": "Kotlin/Native 1.7.10 - iconv | linux_x64",
       "unresolved": false,
-      "artifactId": "Kotlin/Native 1.7.0 - iconv | linux_x64"
+      "artifactId": "Kotlin/Native 1.7.10 - iconv | linux_x64"
     },
     {
-      "ideaName": "Kotlin/Native 1.7.0 - builtin | linux_x64",
-      "gradleName": "Kotlin/Native 1.7.0 - builtin | linux_x64",
+      "ideaName": "Kotlin/Native 1.7.10 - builtin | linux_x64",
+      "gradleName": "Kotlin/Native 1.7.10 - builtin | linux_x64",
       "unresolved": false,
-      "artifactId": "Kotlin/Native 1.7.0 - builtin | linux_x64"
+      "artifactId": "Kotlin/Native 1.7.10 - builtin | linux_x64"
     },
     {
-      "ideaName": "Kotlin/Native 1.7.0 - posix | linux_x64",
-      "gradleName": "Kotlin/Native 1.7.0 - posix | linux_x64",
+      "ideaName": "Kotlin/Native 1.7.10 - posix | linux_x64",
+      "gradleName": "Kotlin/Native 1.7.10 - posix | linux_x64",
       "unresolved": false,
-      "artifactId": "Kotlin/Native 1.7.0 - posix | linux_x64"
+      "artifactId": "Kotlin/Native 1.7.10 - posix | linux_x64"
     },
     {
-      "ideaName": "Kotlin/Native 1.7.0 - linux | linux_x64",
-      "gradleName": "Kotlin/Native 1.7.0 - linux | linux_x64",
+      "ideaName": "Kotlin/Native 1.7.10 - linux | linux_x64",
+      "gradleName": "Kotlin/Native 1.7.10 - linux | linux_x64",
       "unresolved": false,
-      "artifactId": "Kotlin/Native 1.7.0 - linux | linux_x64"
+      "artifactId": "Kotlin/Native 1.7.10 - linux | linux_x64"
     },
     {
-      "ideaName": "Gradle: io.kotest:kotest-property-linuxx64:klib:5.3.1",
-      "gradleName": "io.kotest:kotest-property-linuxx64:klib:5.3.1",
+      "ideaName": "Gradle: io.kotest:kotest-property-linuxx64:klib:5.3.2",
+      "gradleName": "io.kotest:kotest-property-linuxx64:klib:5.3.2",
       "unresolved": false,
       "groupId": "io.kotest",
       "artifactId": "kotest-property-linuxx64",
-      "version": "5.3.1"
+      "version": "5.3.2"
     },
     {
       "ideaName": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-linuxx64:klib:1.6.3",
@@ -870,12 +854,12 @@
       "version": "0.17.3"
     },
     {
-      "ideaName": "Gradle: io.kotest:kotest-property-macosarm64:klib:5.3.1",
-      "gradleName": "io.kotest:kotest-property-macosarm64:klib:5.3.1",
+      "ideaName": "Gradle: io.kotest:kotest-property-macosarm64:klib:5.3.2",
+      "gradleName": "io.kotest:kotest-property-macosarm64:klib:5.3.2",
       "unresolved": false,
       "groupId": "io.kotest",
       "artifactId": "kotest-property-macosarm64",
-      "version": "5.3.1"
+      "version": "5.3.2"
     },
     {
       "ideaName": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-macosarm64:klib:1.6.3",
@@ -950,12 +934,12 @@
       "version": "0.17.3"
     },
     {
-      "ideaName": "Gradle: io.kotest:kotest-property-macosx64:klib:5.3.1",
-      "gradleName": "io.kotest:kotest-property-macosx64:klib:5.3.1",
+      "ideaName": "Gradle: io.kotest:kotest-property-macosx64:klib:5.3.2",
+      "gradleName": "io.kotest:kotest-property-macosx64:klib:5.3.2",
       "unresolved": false,
       "groupId": "io.kotest",
       "artifactId": "kotest-property-macosx64",
-      "version": "5.3.1"
+      "version": "5.3.2"
     },
     {
       "ideaName": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-macosx64:klib:1.6.3",
@@ -1030,54 +1014,54 @@
       "version": "0.17.3"
     },
     {
-      "ideaName": "Kotlin/Native 1.7.0 - zlib | mingw_x64",
-      "gradleName": "Kotlin/Native 1.7.0 - zlib | mingw_x64",
+      "ideaName": "Kotlin/Native 1.7.10 - zlib | mingw_x64",
+      "gradleName": "Kotlin/Native 1.7.10 - zlib | mingw_x64",
       "unresolved": false,
-      "artifactId": "Kotlin/Native 1.7.0 - zlib | mingw_x64"
+      "artifactId": "Kotlin/Native 1.7.10 - zlib | mingw_x64"
     },
     {
-      "ideaName": "Kotlin/Native 1.7.0 - gdiplus | mingw_x64",
-      "gradleName": "Kotlin/Native 1.7.0 - gdiplus | mingw_x64",
+      "ideaName": "Kotlin/Native 1.7.10 - gdiplus | mingw_x64",
+      "gradleName": "Kotlin/Native 1.7.10 - gdiplus | mingw_x64",
       "unresolved": false,
-      "artifactId": "Kotlin/Native 1.7.0 - gdiplus | mingw_x64"
+      "artifactId": "Kotlin/Native 1.7.10 - gdiplus | mingw_x64"
     },
     {
-      "ideaName": "Kotlin/Native 1.7.0 - windows | mingw_x64",
-      "gradleName": "Kotlin/Native 1.7.0 - windows | mingw_x64",
+      "ideaName": "Kotlin/Native 1.7.10 - windows | mingw_x64",
+      "gradleName": "Kotlin/Native 1.7.10 - windows | mingw_x64",
       "unresolved": false,
-      "artifactId": "Kotlin/Native 1.7.0 - windows | mingw_x64"
+      "artifactId": "Kotlin/Native 1.7.10 - windows | mingw_x64"
     },
     {
-      "ideaName": "Kotlin/Native 1.7.0 - iconv | mingw_x64",
-      "gradleName": "Kotlin/Native 1.7.0 - iconv | mingw_x64",
+      "ideaName": "Kotlin/Native 1.7.10 - iconv | mingw_x64",
+      "gradleName": "Kotlin/Native 1.7.10 - iconv | mingw_x64",
       "unresolved": false,
-      "artifactId": "Kotlin/Native 1.7.0 - iconv | mingw_x64"
+      "artifactId": "Kotlin/Native 1.7.10 - iconv | mingw_x64"
     },
     {
-      "ideaName": "Kotlin/Native 1.7.0 - opengl32 | mingw_x64",
-      "gradleName": "Kotlin/Native 1.7.0 - opengl32 | mingw_x64",
+      "ideaName": "Kotlin/Native 1.7.10 - opengl32 | mingw_x64",
+      "gradleName": "Kotlin/Native 1.7.10 - opengl32 | mingw_x64",
       "unresolved": false,
-      "artifactId": "Kotlin/Native 1.7.0 - opengl32 | mingw_x64"
+      "artifactId": "Kotlin/Native 1.7.10 - opengl32 | mingw_x64"
     },
     {
-      "ideaName": "Kotlin/Native 1.7.0 - builtin | mingw_x64",
-      "gradleName": "Kotlin/Native 1.7.0 - builtin | mingw_x64",
+      "ideaName": "Kotlin/Native 1.7.10 - builtin | mingw_x64",
+      "gradleName": "Kotlin/Native 1.7.10 - builtin | mingw_x64",
       "unresolved": false,
-      "artifactId": "Kotlin/Native 1.7.0 - builtin | mingw_x64"
+      "artifactId": "Kotlin/Native 1.7.10 - builtin | mingw_x64"
     },
     {
-      "ideaName": "Kotlin/Native 1.7.0 - posix | mingw_x64",
-      "gradleName": "Kotlin/Native 1.7.0 - posix | mingw_x64",
+      "ideaName": "Kotlin/Native 1.7.10 - posix | mingw_x64",
+      "gradleName": "Kotlin/Native 1.7.10 - posix | mingw_x64",
       "unresolved": false,
-      "artifactId": "Kotlin/Native 1.7.0 - posix | mingw_x64"
+      "artifactId": "Kotlin/Native 1.7.10 - posix | mingw_x64"
     },
     {
-      "ideaName": "Gradle: io.kotest:kotest-property-mingwx64:klib:5.3.1",
-      "gradleName": "io.kotest:kotest-property-mingwx64:klib:5.3.1",
+      "ideaName": "Gradle: io.kotest:kotest-property-mingwx64:klib:5.3.2",
+      "gradleName": "io.kotest:kotest-property-mingwx64:klib:5.3.2",
       "unresolved": false,
       "groupId": "io.kotest",
       "artifactId": "kotest-property-mingwx64",
-      "version": "5.3.1"
+      "version": "5.3.2"
     },
     {
       "ideaName": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-mingwx64:klib:1.6.3",
@@ -1152,12 +1136,12 @@
       "version": "0.17.3"
     },
     {
-      "ideaName": "Gradle: io.kotest:kotest-property-tvosarm64:klib:5.3.1",
-      "gradleName": "io.kotest:kotest-property-tvosarm64:klib:5.3.1",
+      "ideaName": "Gradle: io.kotest:kotest-property-tvosarm64:klib:5.3.2",
+      "gradleName": "io.kotest:kotest-property-tvosarm64:klib:5.3.2",
       "unresolved": false,
       "groupId": "io.kotest",
       "artifactId": "kotest-property-tvosarm64",
-      "version": "5.3.1"
+      "version": "5.3.2"
     },
     {
       "ideaName": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-tvosarm64:klib:1.6.3",
@@ -1232,12 +1216,12 @@
       "version": "0.17.3"
     },
     {
-      "ideaName": "Gradle: io.kotest:kotest-property-tvossimulatorarm64:klib:5.3.1",
-      "gradleName": "io.kotest:kotest-property-tvossimulatorarm64:klib:5.3.1",
+      "ideaName": "Gradle: io.kotest:kotest-property-tvossimulatorarm64:klib:5.3.2",
+      "gradleName": "io.kotest:kotest-property-tvossimulatorarm64:klib:5.3.2",
       "unresolved": false,
       "groupId": "io.kotest",
       "artifactId": "kotest-property-tvossimulatorarm64",
-      "version": "5.3.1"
+      "version": "5.3.2"
     },
     {
       "ideaName": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-tvossimulatorarm64:klib:1.6.3",
@@ -1312,12 +1296,12 @@
       "version": "0.17.3"
     },
     {
-      "ideaName": "Gradle: io.kotest:kotest-property-tvosx64:klib:5.3.1",
-      "gradleName": "io.kotest:kotest-property-tvosx64:klib:5.3.1",
+      "ideaName": "Gradle: io.kotest:kotest-property-tvosx64:klib:5.3.2",
+      "gradleName": "io.kotest:kotest-property-tvosx64:klib:5.3.2",
       "unresolved": false,
       "groupId": "io.kotest",
       "artifactId": "kotest-property-tvosx64",
-      "version": "5.3.1"
+      "version": "5.3.2"
     },
     {
       "ideaName": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-tvosx64:klib:1.6.3",
@@ -1392,12 +1376,12 @@
       "version": "0.17.3"
     },
     {
-      "ideaName": "Gradle: io.kotest:kotest-property-watchosarm64:klib:5.3.1",
-      "gradleName": "io.kotest:kotest-property-watchosarm64:klib:5.3.1",
+      "ideaName": "Gradle: io.kotest:kotest-property-watchosarm64:klib:5.3.2",
+      "gradleName": "io.kotest:kotest-property-watchosarm64:klib:5.3.2",
       "unresolved": false,
       "groupId": "io.kotest",
       "artifactId": "kotest-property-watchosarm64",
-      "version": "5.3.1"
+      "version": "5.3.2"
     },
     {
       "ideaName": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-watchosarm64:klib:1.6.3",
@@ -1472,12 +1456,12 @@
       "version": "0.17.3"
     },
     {
-      "ideaName": "Gradle: io.kotest:kotest-property-watchossimulatorarm64:klib:5.3.1",
-      "gradleName": "io.kotest:kotest-property-watchossimulatorarm64:klib:5.3.1",
+      "ideaName": "Gradle: io.kotest:kotest-property-watchossimulatorarm64:klib:5.3.2",
+      "gradleName": "io.kotest:kotest-property-watchossimulatorarm64:klib:5.3.2",
       "unresolved": false,
       "groupId": "io.kotest",
       "artifactId": "kotest-property-watchossimulatorarm64",
-      "version": "5.3.1"
+      "version": "5.3.2"
     },
     {
       "ideaName": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-watchossimulatorarm64:klib:1.6.3",
@@ -1552,12 +1536,12 @@
       "version": "0.17.3"
     },
     {
-      "ideaName": "Gradle: io.kotest:kotest-property-watchosx64:klib:5.3.1",
-      "gradleName": "io.kotest:kotest-property-watchosx64:klib:5.3.1",
+      "ideaName": "Gradle: io.kotest:kotest-property-watchosx64:klib:5.3.2",
+      "gradleName": "io.kotest:kotest-property-watchosx64:klib:5.3.2",
       "unresolved": false,
       "groupId": "io.kotest",
       "artifactId": "kotest-property-watchosx64",
-      "version": "5.3.1"
+      "version": "5.3.2"
     },
     {
       "ideaName": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-watchosx64:klib:1.6.3",
@@ -1600,12 +1584,12 @@
       "version": "5.3.2"
     },
     {
-      "ideaName": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.0",
-      "gradleName": "org.jetbrains.kotlin:kotlin-stdlib-common:1.7.0",
+      "ideaName": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.10",
+      "gradleName": "org.jetbrains.kotlin:kotlin-stdlib-common:1.7.10",
       "unresolved": false,
       "groupId": "org.jetbrains.kotlin",
       "artifactId": "kotlin-stdlib-common",
-      "version": "1.7.0"
+      "version": "1.7.10"
     },
     {
       "ideaName": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:commonMain:1.6.3",
@@ -1624,12 +1608,12 @@
       "version": "0.1.0-alpha.7"
     },
     {
-      "ideaName": "Gradle: io.kotest:kotest-property:commonMain:5.3.1",
-      "gradleName": "io.kotest:kotest-property:commonMain:5.3.1",
+      "ideaName": "Gradle: io.kotest:kotest-property:commonMain:5.3.2",
+      "gradleName": "io.kotest:kotest-property:commonMain:5.3.2",
       "unresolved": false,
       "groupId": "io.kotest",
       "artifactId": "kotest-property",
-      "version": "5.3.1"
+      "version": "5.3.2"
     },
     {
       "ideaName": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test:commonMain:1.6.3",

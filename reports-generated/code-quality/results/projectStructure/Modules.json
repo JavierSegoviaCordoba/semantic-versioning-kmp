@@ -42,7 +42,7 @@
       "name": "semantic-versioning-kmp.semver-core.iosArm64Main",
       "contentEntries": [
         {
-          "path": "file://$PROJECT_DIR$/semver-core/iosArm64Main",
+          "path": "file://$PROJECT_DIR$/semver-core/iosArm64/main",
           "sourceFolders": []
         }
       ],
@@ -64,23 +64,23 @@
           "type": "Module"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-iosarm64:klib:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-iosarm64:klib:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:concurrentMain:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:concurrentMain:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeDarwinMain:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeDarwinMain:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeMain:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeMain:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-iosarm64:klib:0.1.0-alpha.7",
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-iosarm64:klib:0.1.0-alpha.11",
           "type": "Library"
         },
         {
@@ -109,7 +109,7 @@
       "name": "semantic-versioning-kmp.semver-core.iosArm64Test",
       "contentEntries": [
         {
-          "path": "file://$PROJECT_DIR$/semver-core/iosArm64Test",
+          "path": "file://$PROJECT_DIR$/semver-core/iosArm64/test",
           "sourceFolders": []
         }
       ],
@@ -147,11 +147,11 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-iosarm64:klib:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-iosarm64:klib:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test:nativeMain:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test:nativeMain:1.6.4",
           "type": "Library"
         },
         {
@@ -159,11 +159,27 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-iosarm64:klib:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-iosarm64:klib:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-iosarm64:klib:0.1.0-alpha.7",
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-iosarm64:klib:0.1.0-alpha.11",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-test-junit5-iosarm64:klib:0.1.0-alpha.11",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-test-junit5:darwinMain:0.1.0-alpha.11",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-test-junit5:iosMain:0.1.0-alpha.11",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-test-junit5:nativeMain:0.1.0-alpha.11",
           "type": "Library"
         },
         {
@@ -212,7 +228,7 @@
       "name": "semantic-versioning-kmp.semver-core.iosSimulatorArm64Main",
       "contentEntries": [
         {
-          "path": "file://$PROJECT_DIR$/semver-core/iosSimulatorArm64Main",
+          "path": "file://$PROJECT_DIR$/semver-core/iosSimulatorArm64/main",
           "sourceFolders": []
         }
       ],
@@ -234,23 +250,23 @@
           "type": "Module"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-iossimulatorarm64:klib:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-iossimulatorarm64:klib:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:concurrentMain:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:concurrentMain:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeDarwinMain:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeDarwinMain:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeMain:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeMain:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-iossimulatorarm64:klib:0.1.0-alpha.7",
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-iossimulatorarm64:klib:0.1.0-alpha.11",
           "type": "Library"
         },
         {
@@ -279,7 +295,7 @@
       "name": "semantic-versioning-kmp.semver-core.iosSimulatorArm64Test",
       "contentEntries": [
         {
-          "path": "file://$PROJECT_DIR$/semver-core/iosSimulatorArm64Test",
+          "path": "file://$PROJECT_DIR$/semver-core/iosSimulatorArm64/test",
           "sourceFolders": []
         }
       ],
@@ -317,11 +333,11 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-iossimulatorarm64:klib:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-iossimulatorarm64:klib:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test:nativeMain:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test:nativeMain:1.6.4",
           "type": "Library"
         },
         {
@@ -329,11 +345,27 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-iossimulatorarm64:klib:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-iossimulatorarm64:klib:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-iossimulatorarm64:klib:0.1.0-alpha.7",
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-iossimulatorarm64:klib:0.1.0-alpha.11",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-test-junit5-iossimulatorarm64:klib:0.1.0-alpha.11",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-test-junit5:darwinMain:0.1.0-alpha.11",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-test-junit5:iosMain:0.1.0-alpha.11",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-test-junit5:nativeMain:0.1.0-alpha.11",
           "type": "Library"
         },
         {
@@ -382,7 +414,7 @@
       "name": "semantic-versioning-kmp.semver-core.iosX64Main",
       "contentEntries": [
         {
-          "path": "file://$PROJECT_DIR$/semver-core/iosX64Main",
+          "path": "file://$PROJECT_DIR$/semver-core/iosX64/main",
           "sourceFolders": []
         }
       ],
@@ -404,23 +436,23 @@
           "type": "Module"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-iosx64:klib:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-iosx64:klib:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:concurrentMain:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:concurrentMain:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeDarwinMain:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeDarwinMain:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeMain:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeMain:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-iosx64:klib:0.1.0-alpha.7",
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-iosx64:klib:0.1.0-alpha.11",
           "type": "Library"
         },
         {
@@ -449,7 +481,7 @@
       "name": "semantic-versioning-kmp.semver-core.iosX64Test",
       "contentEntries": [
         {
-          "path": "file://$PROJECT_DIR$/semver-core/iosX64Test",
+          "path": "file://$PROJECT_DIR$/semver-core/iosX64/test",
           "sourceFolders": []
         }
       ],
@@ -487,11 +519,11 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-iosx64:klib:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-iosx64:klib:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test:nativeMain:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test:nativeMain:1.6.4",
           "type": "Library"
         },
         {
@@ -499,11 +531,27 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-iosx64:klib:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-iosx64:klib:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-iosx64:klib:0.1.0-alpha.7",
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-iosx64:klib:0.1.0-alpha.11",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-test-junit5-iosx64:klib:0.1.0-alpha.11",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-test-junit5:darwinMain:0.1.0-alpha.11",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-test-junit5:iosMain:0.1.0-alpha.11",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-test-junit5:nativeMain:0.1.0-alpha.11",
           "type": "Library"
         },
         {
@@ -560,7 +608,7 @@
           "sourceFolders": []
         },
         {
-          "path": "file://$PROJECT_DIR$/semver-core/jsMain",
+          "path": "file://$PROJECT_DIR$/semver-core/js/main",
           "sourceFolders": []
         }
       ],
@@ -582,27 +630,23 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-js:klib:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-js:klib:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-js:klib:0.1.0-alpha.7",
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-js:klib:0.1.0-alpha.11",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-js:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-js:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-js:0.1.0-alpha.7",
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-js:0.1.0-alpha.11",
           "type": "Library"
         },
         {
           "name": "Gradle: org.jetbrains.kotlinx:atomicfu-js:klib:0.17.3",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-js:1.6.21",
           "type": "Library"
         },
         {
@@ -619,7 +663,7 @@
       "name": "semantic-versioning-kmp.semver-core.jsTest",
       "contentEntries": [
         {
-          "path": "file://$PROJECT_DIR$/semver-core/jsTest",
+          "path": "file://$PROJECT_DIR$/semver-core/js/test",
           "sourceFolders": []
         }
       ],
@@ -665,7 +709,7 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-js:klib:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-js:klib:1.6.4",
           "type": "Library"
         },
         {
@@ -673,23 +717,27 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-js:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-js:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-js:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-js:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-js:klib:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-js:klib:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-js:0.1.0-alpha.7",
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-js:0.1.0-alpha.11",
           "type": "Library"
         },
         {
-          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-js:klib:0.1.0-alpha.7",
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-js:klib:0.1.0-alpha.11",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-test-junit5-js:klib:0.1.0-alpha.11",
           "type": "Library"
         },
         {
@@ -697,7 +745,15 @@
           "type": "Library"
         },
         {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-js:1.6.21",
+          "type": "Library"
+        },
+        {
           "name": "Gradle: org.jetbrains.kotlinx:atomicfu-js:klib:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-assertions-core-js:5.3.2",
           "type": "Library"
         },
         {
@@ -705,11 +761,7 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-js:1.6.21",
-          "type": "Library"
-        },
-        {
-          "name": "Gradle: io.kotest:kotest-assertions-core-js:5.3.2",
+          "name": "Gradle: com.javiersc.kotlin:kotlin-test-junit5-js:0.1.0-alpha.11",
           "type": "Library"
         },
         {
@@ -758,7 +810,7 @@
       "name": "semantic-versioning-kmp.semver-core.jvmMain",
       "contentEntries": [
         {
-          "path": "file://$PROJECT_DIR$/semver-core/jvmMain",
+          "path": "file://$PROJECT_DIR$/semver-core/jvm/main",
           "sourceFolders": []
         }
       ],
@@ -780,15 +832,15 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:concurrentMain:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:concurrentMain:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-jvm:0.1.0-alpha.7",
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-jvm:0.1.0-alpha.11",
           "type": "Library"
         },
         {
@@ -809,7 +861,7 @@
       "name": "semantic-versioning-kmp.semver-core.jvmTest",
       "contentEntries": [
         {
-          "path": "file://$PROJECT_DIR$/semver-core/jvmTest",
+          "path": "file://$PROJECT_DIR$/semver-core/jvm/test",
           "sourceFolders": []
         }
       ],
@@ -847,15 +899,15 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-jvm:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-jvm:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-jvm:0.1.0-alpha.7",
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-jvm:0.1.0-alpha.11",
           "type": "Library"
         },
         {
@@ -872,6 +924,10 @@
         },
         {
           "name": "Gradle: io.kotest:kotest-assertions-core-jvm:5.3.2",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-test-junit5-jvm:0.1.0-alpha.11",
           "type": "Library"
         },
         {
@@ -907,7 +963,7 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-jdk8:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-jdk8:1.6.4",
           "type": "Library"
         },
         {
@@ -940,7 +996,7 @@
       "name": "semantic-versioning-kmp.semver-core.linuxX64Main",
       "contentEntries": [
         {
-          "path": "file://$PROJECT_DIR$/semver-core/linuxX64Main",
+          "path": "file://$PROJECT_DIR$/semver-core/linuxX64/main",
           "sourceFolders": []
         }
       ],
@@ -982,23 +1038,23 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-linuxx64:klib:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-linuxx64:klib:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:concurrentMain:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:concurrentMain:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeMain:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeMain:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeOtherMain:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeOtherMain:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-linuxx64:klib:0.1.0-alpha.7",
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-linuxx64:klib:0.1.0-alpha.11",
           "type": "Library"
         },
         {
@@ -1027,7 +1083,7 @@
       "name": "semantic-versioning-kmp.semver-core.linuxX64Test",
       "contentEntries": [
         {
-          "path": "file://$PROJECT_DIR$/semver-core/linuxX64Test",
+          "path": "file://$PROJECT_DIR$/semver-core/linuxX64/test",
           "sourceFolders": []
         }
       ],
@@ -1085,11 +1141,11 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-linuxx64:klib:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-linuxx64:klib:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test:nativeMain:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test:nativeMain:1.6.4",
           "type": "Library"
         },
         {
@@ -1097,11 +1153,23 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-linuxx64:klib:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-linuxx64:klib:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-linuxx64:klib:0.1.0-alpha.7",
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-linuxx64:klib:0.1.0-alpha.11",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-test-junit5-linuxx64:klib:0.1.0-alpha.11",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-test-junit5:linuxMain:0.1.0-alpha.11",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-test-junit5:nativeMain:0.1.0-alpha.11",
           "type": "Library"
         },
         {
@@ -1150,7 +1218,7 @@
       "name": "semantic-versioning-kmp.semver-core.macosArm64Main",
       "contentEntries": [
         {
-          "path": "file://$PROJECT_DIR$/semver-core/macosArm64Main",
+          "path": "file://$PROJECT_DIR$/semver-core/macosArm64/main",
           "sourceFolders": []
         }
       ],
@@ -1172,23 +1240,23 @@
           "type": "Module"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-macosarm64:klib:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-macosarm64:klib:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:concurrentMain:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:concurrentMain:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeDarwinMain:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeDarwinMain:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeMain:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeMain:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-macosarm64:klib:0.1.0-alpha.7",
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-macosarm64:klib:0.1.0-alpha.11",
           "type": "Library"
         },
         {
@@ -1217,7 +1285,7 @@
       "name": "semantic-versioning-kmp.semver-core.macosArm64Test",
       "contentEntries": [
         {
-          "path": "file://$PROJECT_DIR$/semver-core/macosArm64Test",
+          "path": "file://$PROJECT_DIR$/semver-core/macosArm64/test",
           "sourceFolders": []
         }
       ],
@@ -1255,11 +1323,11 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-macosarm64:klib:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-macosarm64:klib:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test:nativeMain:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test:nativeMain:1.6.4",
           "type": "Library"
         },
         {
@@ -1267,11 +1335,27 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-macosarm64:klib:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-macosarm64:klib:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-macosarm64:klib:0.1.0-alpha.7",
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-macosarm64:klib:0.1.0-alpha.11",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-test-junit5-macosarm64:klib:0.1.0-alpha.11",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-test-junit5:darwinMain:0.1.0-alpha.11",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-test-junit5:macosMain:0.1.0-alpha.11",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-test-junit5:nativeMain:0.1.0-alpha.11",
           "type": "Library"
         },
         {
@@ -1320,7 +1404,7 @@
       "name": "semantic-versioning-kmp.semver-core.macosX64Main",
       "contentEntries": [
         {
-          "path": "file://$PROJECT_DIR$/semver-core/macosX64Main",
+          "path": "file://$PROJECT_DIR$/semver-core/macosX64/main",
           "sourceFolders": []
         }
       ],
@@ -1342,23 +1426,23 @@
           "type": "Module"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-macosx64:klib:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-macosx64:klib:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:concurrentMain:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:concurrentMain:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeDarwinMain:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeDarwinMain:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeMain:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeMain:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-macosx64:klib:0.1.0-alpha.7",
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-macosx64:klib:0.1.0-alpha.11",
           "type": "Library"
         },
         {
@@ -1387,7 +1471,7 @@
       "name": "semantic-versioning-kmp.semver-core.macosX64Test",
       "contentEntries": [
         {
-          "path": "file://$PROJECT_DIR$/semver-core/macosX64Test",
+          "path": "file://$PROJECT_DIR$/semver-core/macosX64/test",
           "sourceFolders": []
         }
       ],
@@ -1425,11 +1509,11 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-macosx64:klib:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-macosx64:klib:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test:nativeMain:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test:nativeMain:1.6.4",
           "type": "Library"
         },
         {
@@ -1437,11 +1521,27 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-macosx64:klib:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-macosx64:klib:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-macosx64:klib:0.1.0-alpha.7",
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-macosx64:klib:0.1.0-alpha.11",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-test-junit5-macosx64:klib:0.1.0-alpha.11",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-test-junit5:darwinMain:0.1.0-alpha.11",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-test-junit5:macosMain:0.1.0-alpha.11",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-test-junit5:nativeMain:0.1.0-alpha.11",
           "type": "Library"
         },
         {
@@ -1490,7 +1590,7 @@
       "name": "semantic-versioning-kmp.semver-core.mingwX64Main",
       "contentEntries": [
         {
-          "path": "file://$PROJECT_DIR$/semver-core/mingwX64Main",
+          "path": "file://$PROJECT_DIR$/semver-core/mingwX64/main",
           "sourceFolders": []
         }
       ],
@@ -1540,23 +1640,23 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-mingwx64:klib:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-mingwx64:klib:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:concurrentMain:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:concurrentMain:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeMain:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeMain:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeOtherMain:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeOtherMain:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-mingwx64:klib:0.1.0-alpha.7",
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-mingwx64:klib:0.1.0-alpha.11",
           "type": "Library"
         },
         {
@@ -1585,7 +1685,7 @@
       "name": "semantic-versioning-kmp.semver-core.mingwX64Test",
       "contentEntries": [
         {
-          "path": "file://$PROJECT_DIR$/semver-core/mingwX64Test",
+          "path": "file://$PROJECT_DIR$/semver-core/mingwX64/test",
           "sourceFolders": []
         }
       ],
@@ -1651,11 +1751,11 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-mingwx64:klib:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-mingwx64:klib:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test:nativeMain:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test:nativeMain:1.6.4",
           "type": "Library"
         },
         {
@@ -1663,11 +1763,23 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-mingwx64:klib:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-mingwx64:klib:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-mingwx64:klib:0.1.0-alpha.7",
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-mingwx64:klib:0.1.0-alpha.11",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-test-junit5-mingwx64:klib:0.1.0-alpha.11",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-test-junit5:mingwMain:0.1.0-alpha.11",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-test-junit5:nativeMain:0.1.0-alpha.11",
           "type": "Library"
         },
         {
@@ -1716,7 +1828,7 @@
       "name": "semantic-versioning-kmp.semver-core.tvosArm64Main",
       "contentEntries": [
         {
-          "path": "file://$PROJECT_DIR$/semver-core/tvosArm64Main",
+          "path": "file://$PROJECT_DIR$/semver-core/tvosArm64/main",
           "sourceFolders": []
         }
       ],
@@ -1738,23 +1850,23 @@
           "type": "Module"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-tvosarm64:klib:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-tvosarm64:klib:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:concurrentMain:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:concurrentMain:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeDarwinMain:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeDarwinMain:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeMain:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeMain:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-tvosarm64:klib:0.1.0-alpha.7",
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-tvosarm64:klib:0.1.0-alpha.11",
           "type": "Library"
         },
         {
@@ -1783,7 +1895,7 @@
       "name": "semantic-versioning-kmp.semver-core.tvosArm64Test",
       "contentEntries": [
         {
-          "path": "file://$PROJECT_DIR$/semver-core/tvosArm64Test",
+          "path": "file://$PROJECT_DIR$/semver-core/tvosArm64/test",
           "sourceFolders": []
         }
       ],
@@ -1821,11 +1933,11 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-tvosarm64:klib:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-tvosarm64:klib:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test:nativeMain:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test:nativeMain:1.6.4",
           "type": "Library"
         },
         {
@@ -1833,11 +1945,27 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-tvosarm64:klib:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-tvosarm64:klib:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-tvosarm64:klib:0.1.0-alpha.7",
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-tvosarm64:klib:0.1.0-alpha.11",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-test-junit5-tvosarm64:klib:0.1.0-alpha.11",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-test-junit5:darwinMain:0.1.0-alpha.11",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-test-junit5:nativeMain:0.1.0-alpha.11",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-test-junit5:tvosMain:0.1.0-alpha.11",
           "type": "Library"
         },
         {
@@ -1886,7 +2014,7 @@
       "name": "semantic-versioning-kmp.semver-core.tvosSimulatorArm64Main",
       "contentEntries": [
         {
-          "path": "file://$PROJECT_DIR$/semver-core/tvosSimulatorArm64Main",
+          "path": "file://$PROJECT_DIR$/semver-core/tvosSimulatorArm64/main",
           "sourceFolders": []
         }
       ],
@@ -1908,23 +2036,23 @@
           "type": "Module"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-tvossimulatorarm64:klib:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-tvossimulatorarm64:klib:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:concurrentMain:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:concurrentMain:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeDarwinMain:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeDarwinMain:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeMain:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeMain:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-tvossimulatorarm64:klib:0.1.0-alpha.7",
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-tvossimulatorarm64:klib:0.1.0-alpha.11",
           "type": "Library"
         },
         {
@@ -1953,7 +2081,7 @@
       "name": "semantic-versioning-kmp.semver-core.tvosSimulatorArm64Test",
       "contentEntries": [
         {
-          "path": "file://$PROJECT_DIR$/semver-core/tvosSimulatorArm64Test",
+          "path": "file://$PROJECT_DIR$/semver-core/tvosSimulatorArm64/test",
           "sourceFolders": []
         }
       ],
@@ -1991,11 +2119,11 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-tvossimulatorarm64:klib:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-tvossimulatorarm64:klib:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test:nativeMain:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test:nativeMain:1.6.4",
           "type": "Library"
         },
         {
@@ -2003,11 +2131,27 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-tvossimulatorarm64:klib:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-tvossimulatorarm64:klib:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-tvossimulatorarm64:klib:0.1.0-alpha.7",
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-tvossimulatorarm64:klib:0.1.0-alpha.11",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-test-junit5-tvossimulatorarm64:klib:0.1.0-alpha.11",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-test-junit5:darwinMain:0.1.0-alpha.11",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-test-junit5:nativeMain:0.1.0-alpha.11",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-test-junit5:tvosMain:0.1.0-alpha.11",
           "type": "Library"
         },
         {
@@ -2056,7 +2200,7 @@
       "name": "semantic-versioning-kmp.semver-core.tvosX64Main",
       "contentEntries": [
         {
-          "path": "file://$PROJECT_DIR$/semver-core/tvosX64Main",
+          "path": "file://$PROJECT_DIR$/semver-core/tvosX64/main",
           "sourceFolders": []
         }
       ],
@@ -2078,23 +2222,23 @@
           "type": "Module"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-tvosx64:klib:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-tvosx64:klib:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:concurrentMain:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:concurrentMain:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeDarwinMain:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeDarwinMain:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeMain:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeMain:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-tvosx64:klib:0.1.0-alpha.7",
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-tvosx64:klib:0.1.0-alpha.11",
           "type": "Library"
         },
         {
@@ -2123,7 +2267,7 @@
       "name": "semantic-versioning-kmp.semver-core.tvosX64Test",
       "contentEntries": [
         {
-          "path": "file://$PROJECT_DIR$/semver-core/tvosX64Test",
+          "path": "file://$PROJECT_DIR$/semver-core/tvosX64/test",
           "sourceFolders": []
         }
       ],
@@ -2161,11 +2305,11 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-tvosx64:klib:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-tvosx64:klib:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test:nativeMain:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test:nativeMain:1.6.4",
           "type": "Library"
         },
         {
@@ -2173,11 +2317,27 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-tvosx64:klib:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-tvosx64:klib:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-tvosx64:klib:0.1.0-alpha.7",
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-tvosx64:klib:0.1.0-alpha.11",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-test-junit5-tvosx64:klib:0.1.0-alpha.11",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-test-junit5:darwinMain:0.1.0-alpha.11",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-test-junit5:nativeMain:0.1.0-alpha.11",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-test-junit5:tvosMain:0.1.0-alpha.11",
           "type": "Library"
         },
         {
@@ -2226,7 +2386,7 @@
       "name": "semantic-versioning-kmp.semver-core.watchosArm64Main",
       "contentEntries": [
         {
-          "path": "file://$PROJECT_DIR$/semver-core/watchosArm64Main",
+          "path": "file://$PROJECT_DIR$/semver-core/watchosArm64/main",
           "sourceFolders": []
         }
       ],
@@ -2248,23 +2408,23 @@
           "type": "Module"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-watchosarm64:klib:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-watchosarm64:klib:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:concurrentMain:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:concurrentMain:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeDarwinMain:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeDarwinMain:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeMain:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeMain:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-watchosarm64:klib:0.1.0-alpha.7",
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-watchosarm64:klib:0.1.0-alpha.11",
           "type": "Library"
         },
         {
@@ -2293,7 +2453,7 @@
       "name": "semantic-versioning-kmp.semver-core.watchosArm64Test",
       "contentEntries": [
         {
-          "path": "file://$PROJECT_DIR$/semver-core/watchosArm64Test",
+          "path": "file://$PROJECT_DIR$/semver-core/watchosArm64/test",
           "sourceFolders": []
         }
       ],
@@ -2331,11 +2491,11 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-watchosarm64:klib:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-watchosarm64:klib:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test:nativeMain:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test:nativeMain:1.6.4",
           "type": "Library"
         },
         {
@@ -2343,11 +2503,27 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-watchosarm64:klib:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-watchosarm64:klib:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-watchosarm64:klib:0.1.0-alpha.7",
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-watchosarm64:klib:0.1.0-alpha.11",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-test-junit5-watchosarm64:klib:0.1.0-alpha.11",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-test-junit5:darwinMain:0.1.0-alpha.11",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-test-junit5:nativeMain:0.1.0-alpha.11",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-test-junit5:watchosMain:0.1.0-alpha.11",
           "type": "Library"
         },
         {
@@ -2396,7 +2572,7 @@
       "name": "semantic-versioning-kmp.semver-core.watchosSimulatorArm64Main",
       "contentEntries": [
         {
-          "path": "file://$PROJECT_DIR$/semver-core/watchosSimulatorArm64Main",
+          "path": "file://$PROJECT_DIR$/semver-core/watchosSimulatorArm64/main",
           "sourceFolders": []
         }
       ],
@@ -2418,23 +2594,23 @@
           "type": "Module"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-watchossimulatorarm64:klib:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-watchossimulatorarm64:klib:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:concurrentMain:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:concurrentMain:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeDarwinMain:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeDarwinMain:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeMain:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeMain:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-watchossimulatorarm64:klib:0.1.0-alpha.7",
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-watchossimulatorarm64:klib:0.1.0-alpha.11",
           "type": "Library"
         },
         {
@@ -2463,7 +2639,7 @@
       "name": "semantic-versioning-kmp.semver-core.watchosSimulatorArm64Test",
       "contentEntries": [
         {
-          "path": "file://$PROJECT_DIR$/semver-core/watchosSimulatorArm64Test",
+          "path": "file://$PROJECT_DIR$/semver-core/watchosSimulatorArm64/test",
           "sourceFolders": []
         }
       ],
@@ -2501,11 +2677,11 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-watchossimulatorarm64:klib:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-watchossimulatorarm64:klib:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test:nativeMain:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test:nativeMain:1.6.4",
           "type": "Library"
         },
         {
@@ -2513,11 +2689,27 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-watchossimulatorarm64:klib:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-watchossimulatorarm64:klib:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-watchossimulatorarm64:klib:0.1.0-alpha.7",
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-watchossimulatorarm64:klib:0.1.0-alpha.11",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-test-junit5-watchossimulatorarm64:klib:0.1.0-alpha.11",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-test-junit5:darwinMain:0.1.0-alpha.11",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-test-junit5:nativeMain:0.1.0-alpha.11",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-test-junit5:watchosMain:0.1.0-alpha.11",
           "type": "Library"
         },
         {
@@ -2566,7 +2758,7 @@
       "name": "semantic-versioning-kmp.semver-core.watchosX64Main",
       "contentEntries": [
         {
-          "path": "file://$PROJECT_DIR$/semver-core/watchosX64Main",
+          "path": "file://$PROJECT_DIR$/semver-core/watchosX64/main",
           "sourceFolders": []
         }
       ],
@@ -2588,23 +2780,23 @@
           "type": "Module"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-watchosx64:klib:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-watchosx64:klib:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:concurrentMain:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:concurrentMain:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeDarwinMain:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeDarwinMain:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeMain:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeMain:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-watchosx64:klib:0.1.0-alpha.7",
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-watchosx64:klib:0.1.0-alpha.11",
           "type": "Library"
         },
         {
@@ -2633,7 +2825,7 @@
       "name": "semantic-versioning-kmp.semver-core.watchosX64Test",
       "contentEntries": [
         {
-          "path": "file://$PROJECT_DIR$/semver-core/watchosX64Test",
+          "path": "file://$PROJECT_DIR$/semver-core/watchosX64/test",
           "sourceFolders": []
         }
       ],
@@ -2671,11 +2863,11 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-watchosx64:klib:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-watchosx64:klib:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test:nativeMain:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test:nativeMain:1.6.4",
           "type": "Library"
         },
         {
@@ -2683,11 +2875,27 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-watchosx64:klib:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-watchosx64:klib:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-watchosx64:klib:0.1.0-alpha.7",
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-watchosx64:klib:0.1.0-alpha.11",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-test-junit5-watchosx64:klib:0.1.0-alpha.11",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-test-junit5:darwinMain:0.1.0-alpha.11",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-test-junit5:nativeMain:0.1.0-alpha.11",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-test-junit5:watchosMain:0.1.0-alpha.11",
           "type": "Library"
         },
         {
@@ -2736,10 +2944,10 @@
       "name": "semantic-versioning-kmp.semver-core.commonMain",
       "contentEntries": [
         {
-          "path": "file://$PROJECT_DIR$/semver-core/commonMain",
+          "path": "file://$PROJECT_DIR$/semver-core/common/main",
           "sourceFolders": [
             {
-              "path": "file://$PROJECT_DIR$/semver-core/commonMain/kotlin",
+              "path": "file://$PROJECT_DIR$/semver-core/common/main/kotlin",
               "type": "Source",
               "packagePrefix": ""
             }
@@ -2760,11 +2968,11 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:commonMain:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:commonMain:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib:commonMain:0.1.0-alpha.7",
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib:commonMain:0.1.0-alpha.11",
           "type": "Library"
         }
       ]
@@ -2773,10 +2981,10 @@
       "name": "semantic-versioning-kmp.semver-core.commonTest",
       "contentEntries": [
         {
-          "path": "file://$PROJECT_DIR$/semver-core/commonTest",
+          "path": "file://$PROJECT_DIR$/semver-core/common/test",
           "sourceFolders": [
             {
-              "path": "file://$PROJECT_DIR$/semver-core/commonTest/kotlin",
+              "path": "file://$PROJECT_DIR$/semver-core/common/test/kotlin",
               "type": "Source",
               "packagePrefix": ""
             }
@@ -2805,19 +3013,23 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:commonMain:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:commonMain:1.6.4",
           "type": "Library"
         },
         {
-          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib:commonMain:0.1.0-alpha.7",
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib:commonMain:0.1.0-alpha.11",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test:commonMain:1.6.3",
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test:commonMain:1.6.4",
           "type": "Library"
         },
         {
           "name": "Gradle: io.kotest:kotest-assertions-core:commonMain:5.3.2",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-test-junit5:commonMain:0.1.0-alpha.11",
           "type": "Library"
         },
         {
@@ -2833,11 +3045,11 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-common:1.6.21",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.6.21",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.6.21",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-common:1.6.21",
           "type": "Library"
         }
       ]

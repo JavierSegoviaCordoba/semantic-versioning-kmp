@@ -14,6 +14,7 @@
 
 ### Updated
 
+- `gradle -> 7.5`
 - `com.javiersc.hubdle:com.javiersc.hubdle.gradle.plugin -> 0.2.0-alpha.26`
 - `org.jetbrains.kotlin:kotlin-gradle-plugin -> 1.7.10`
 - `org.jetbrains.kotlinx:binary-compatibility-validator -> 0.10.1`
@@ -21,7 +22,6 @@
 - `io.kotest:kotest-assertions-core -> 5.3.1`
 - `org.jetbrains.kotlinx:kotlinx-coroutines-test -> 1.6.3`
 - `com.javiersc.gradle-plugins:all-plugins -> 0.1.0-rc.43`
-- `gradle -> 7.4.2`
 
 ## [0.1.0-beta.10] - 2021-12-18
 

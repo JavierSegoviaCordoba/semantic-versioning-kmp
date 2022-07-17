@@ -19,6 +19,8 @@
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
+                  "endColumn": 54,
+                  "endLine": 82,
                   "startColumn": 17,
                   "startLine": 77
                 }
@@ -40,6 +42,8 @@
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
+                  "endColumn": 56,
+                  "endLine": 101,
                   "startColumn": 17,
                   "startLine": 93
                 }
@@ -54,7 +58,7 @@
       ],
       "tool": {
         "driver": {
-          "downloadUri": "https://github.com/detekt/detekt/releases/download/v1.20.0/detekt",
+          "downloadUri": "https://github.com/detekt/detekt/releases/download/v1.21.0/detekt",
           "fullName": "detekt",
           "guid": "022ca8c2-f6a2-4c95-b107-bb72c43263f3",
           "informationUri": "https://detekt.dev",
@@ -407,6 +411,14 @@
               }
             },
             {
+              "helpUri": "https://detekt.dev/complexity.html#nestedscopefunctions",
+              "id": "detekt.complexity.NestedScopeFunctions",
+              "name": "NestedScopeFunctions",
+              "shortDescription": {
+                "text": "Over-using scope functions makes code confusing, hard to read and bug prone."
+              }
+            },
+            {
               "helpUri": "https://detekt.dev/complexity.html#toomanyfunctions",
               "id": "detekt.complexity.TooManyFunctions",
               "name": "TooManyFunctions",
@@ -443,7 +455,7 @@
               "id": "detekt.complexity.NamedArguments",
               "name": "NamedArguments",
               "shortDescription": {
-                "text": "Named arguments are required for function invocation with many parameters."
+                "text": "Named arguments are required for function calls with many arguments."
               }
             },
             {
@@ -564,6 +576,14 @@
               "name": "AbsentOrWrongFileLicense",
               "shortDescription": {
                 "text": "License text is absent or incorrect."
+              }
+            },
+            {
+              "helpUri": "https://detekt.dev/comments.html#kdocreferencesnonpublicproperty",
+              "id": "detekt.comments.KDocReferencesNonPublicProperty",
+              "name": "KDocReferencesNonPublicProperty",
+              "shortDescription": {
+                "text": "KDoc comments should not refer to non-public properties."
               }
             },
             {
@@ -999,11 +1019,27 @@
               }
             },
             {
+              "helpUri": "https://detekt.dev/performance.html#couldbesequence",
+              "id": "detekt.performance.CouldBeSequence",
+              "name": "CouldBeSequence",
+              "shortDescription": {
+                "text": "Several chained collection operations that should be a sequence."
+              }
+            },
+            {
               "helpUri": "https://detekt.dev/style.html#canbenonnullable",
               "id": "detekt.style.CanBeNonNullable",
               "name": "CanBeNonNullable",
               "shortDescription": {
                 "text": "Variable can be changed to non-nullable, as it is never set to null."
+              }
+            },
+            {
+              "helpUri": "https://detekt.dev/style.html#cascadingcallwrapping",
+              "id": "detekt.style.CascadingCallWrapping",
+              "name": "CascadingCallWrapping",
+              "shortDescription": {
+                "text": "If a chained call is wrapped to a new line, subsequent chained calls should be as well."
               }
             },
             {
@@ -1027,7 +1063,7 @@
               "id": "detekt.style.DestructuringDeclarationWithTooManyEntries",
               "name": "DestructuringDeclarationWithTooManyEntries",
               "shortDescription": {
-                "text": "The destructuring declaration contains too many entries, making it difficult to read. Consider refactoring to avoid using a destructuring declaration for this case."
+                "text": "Too many entries in a destructuring declaration make the code hard to understand."
               }
             },
             {
@@ -1132,6 +1168,14 @@
               "name": "ForbiddenPublicDataClass",
               "shortDescription": {
                 "text": "The data classes are bad for the binary compatibility in public APIs. Avoid to use it."
+              }
+            },
+            {
+              "helpUri": "https://detekt.dev/style.html#forbiddensuppress",
+              "id": "detekt.style.ForbiddenSuppress",
+              "name": "ForbiddenSuppress",
+              "shortDescription": {
+                "text": "Suppressing a rule which is forbidden in current configuration."
               }
             },
             {
@@ -1415,6 +1459,14 @@
               }
             },
             {
+              "helpUri": "https://detekt.dev/style.html#nullablebooleancheck",
+              "id": "detekt.style.NullableBooleanCheck",
+              "name": "NullableBooleanCheck",
+              "shortDescription": {
+                "text": "Nullable boolean check should use `==` rather than `?:`"
+              }
+            },
+            {
               "helpUri": "https://detekt.dev/style.html#varcouldbeval",
               "id": "detekt.style.VarCouldBeVal",
               "name": "VarCouldBeVal",
@@ -1589,10 +1641,26 @@
               "shortDescription": {
                 "text": "Use `any` or `none` instead of `find` and `null` checks."
               }
+            },
+            {
+              "helpUri": "https://detekt.dev/style.html#unnecessarybackticks",
+              "id": "detekt.style.UnnecessaryBackticks",
+              "name": "UnnecessaryBackticks",
+              "shortDescription": {
+                "text": "Backticks are unnecessary."
+              }
+            },
+            {
+              "helpUri": "https://detekt.dev/style.html#maxchainedcallsonsameline",
+              "id": "detekt.style.MaxChainedCallsOnSameLine",
+              "name": "MaxChainedCallsOnSameLine",
+              "shortDescription": {
+                "text": "Chained calls beyond the maximum should be wrapped to a new line."
+              }
             }
           ],
-          "semanticVersion": "1.20.0",
-          "version": "1.20.0"
+          "semanticVersion": "1.21.0",
+          "version": "1.21.0"
         }
       }
     }

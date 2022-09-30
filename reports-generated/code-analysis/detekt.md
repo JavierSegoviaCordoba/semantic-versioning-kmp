@@ -14,11 +14,11 @@
 
 ## Complexity Report
 
-* 918 lines of code (loc)
+* 913 lines of code (loc)
 
-* 815 source lines of code (sloc)
+* 811 source lines of code (sloc)
 
-* 673 logical lines of code (lloc)
+* 671 logical lines of code (lloc)
 
 * 5 comment lines of code (cloc)
 
@@ -30,7 +30,7 @@
 
 * 0% comment source ratio
 
-* 240 mcc per 1,000 lloc
+* 241 mcc per 1,000 lloc
 
 * 2 code smells per 1,000 lloc
 
@@ -74,4 +74,4 @@ This condition is too complex (9). Defined complexity threshold for conditions i
 
 ```
 
-generated with [detekt version 1.21.0](https://detekt.dev/) on 2022-09-26 18:27:09 UTC
+generated with [detekt version 1.21.0](https://detekt.dev/) on 2022-09-30 15:26:57 UTC

@@ -6,8 +6,9 @@ pluginManagement {
             .split("\"")[1]
 
     repositories {
-        gradlePluginPortal()
         mavenCentral()
+        gradlePluginPortal()
+        google()
     }
 
     plugins {

@@ -7,12 +7,12 @@
     "vcs": {
       "sarifIdea": {
         "repositoryUri": "https://github.com/JavierSegoviaCordoba/semantic-versioning-kmp",
-        "revisionId": "21797865bde250177e5de7812ca2df2e05d2ddb1",
+        "revisionId": "942a0a8fee848a6d4e42833825128db16796f1ec",
         "branch": "main"
       }
     },
     "deviceId": "200820300000000-d3c3-6092-403e-95b45d1159f0",
-    "jobUrl": "https://github.com/JavierSegoviaCordoba/semantic-versioning-kmp/actions/runs/3159866285",
+    "jobUrl": "https://github.com/JavierSegoviaCordoba/semantic-versioning-kmp/actions/runs/3233205223",
     "repoUrl": "https://github.com/JavierSegoviaCordoba/semantic-versioning-kmp"
   }
 }

@@ -74,4 +74,4 @@ This condition is too complex (9). Defined complexity threshold for conditions i
 
 ```
 
-generated with [detekt version 1.21.0](https://detekt.dev/) on 2022-09-30 15:26:57 UTC
+generated with [detekt version 1.21.0](https://detekt.dev/) on 2022-10-12 08:37:07 UTC

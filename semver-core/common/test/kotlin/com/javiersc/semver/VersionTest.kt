@@ -4,6 +4,8 @@ import com.javiersc.semver.Version.Increase.Major
 import com.javiersc.semver.Version.Increase.Minor
 import com.javiersc.semver.Version.Increase.Patch
 import io.kotest.assertions.throwables.shouldThrow
+import io.kotest.matchers.booleans.shouldBeFalse
+import io.kotest.matchers.booleans.shouldBeTrue
 import io.kotest.matchers.comparables.shouldBeGreaterThan
 import io.kotest.matchers.nulls.shouldBeNull
 import io.kotest.matchers.shouldBe
@@ -473,5 +475,168 @@ class VersionTest {
         Version("1.1.0-alpha.1").copy(stageName = "beta", stageNum = 3) shouldBe
             Version("1.1.0-beta.3")
         Version("1.1.0-alpha.1").copy(stageName = "SNAPSHOT") shouldBe Version("1.1.0-SNAPSHOT")
+    }
+
+    @Test
+    fun is_version() {
+        Version("1.0.0").apply {
+            isAlpha.shouldBeFalse()
+            isNotAlpha.shouldBeTrue()
+            isAlpha.shouldBeFalse()
+            isNotAlpha.shouldBeTrue()
+            isBeta.shouldBeFalse()
+            isNotBeta.shouldBeTrue()
+            isBeta.shouldBeFalse()
+            isNotBeta.shouldBeTrue()
+            isDev.shouldBeFalse()
+            isNotDev.shouldBeTrue()
+            isDev.shouldBeFalse()
+            isNotDev.shouldBeTrue()
+            isRC.shouldBeFalse()
+            isNotRC.shouldBeTrue()
+            isRC.shouldBeFalse()
+            isNotRC.shouldBeTrue()
+            isSnapshot.shouldBeFalse()
+            isNotSnapshot.shouldBeTrue()
+            isSnapshot.shouldBeFalse()
+            isNotSnapshot.shouldBeTrue()
+        }
+        Version("1.0.0-random.1").apply {
+            isAlpha.shouldBeFalse()
+            isNotAlpha.shouldBeTrue()
+            isAlpha.shouldBeFalse()
+            isNotAlpha.shouldBeTrue()
+            isBeta.shouldBeFalse()
+            isNotBeta.shouldBeTrue()
+            isBeta.shouldBeFalse()
+            isNotBeta.shouldBeTrue()
+            isDev.shouldBeFalse()
+            isNotDev.shouldBeTrue()
+            isDev.shouldBeFalse()
+            isNotDev.shouldBeTrue()
+            isRC.shouldBeFalse()
+            isNotRC.shouldBeTrue()
+            isRC.shouldBeFalse()
+            isNotRC.shouldBeTrue()
+            isSnapshot.shouldBeFalse()
+            isNotSnapshot.shouldBeTrue()
+            isSnapshot.shouldBeFalse()
+            isNotSnapshot.shouldBeTrue()
+        }
+
+        Version("1.0.0-alpha.1").apply {
+            isAlpha.shouldBeTrue()
+            isNotAlpha.shouldBeFalse()
+            isAlpha.shouldBeTrue()
+            isNotAlpha.shouldBeFalse()
+            isBeta.shouldBeFalse()
+            isNotBeta.shouldBeTrue()
+            isBeta.shouldBeFalse()
+            isNotBeta.shouldBeTrue()
+            isDev.shouldBeFalse()
+            isNotDev.shouldBeTrue()
+            isDev.shouldBeFalse()
+            isNotDev.shouldBeTrue()
+            isRC.shouldBeFalse()
+            isNotRC.shouldBeTrue()
+            isRC.shouldBeFalse()
+            isNotRC.shouldBeTrue()
+            isSnapshot.shouldBeFalse()
+            isNotSnapshot.shouldBeTrue()
+            isSnapshot.shouldBeFalse()
+            isNotSnapshot.shouldBeTrue()
+        }
+
+        Version("1.0.0-beta.1").apply {
+            isAlpha.shouldBeFalse()
+            isNotAlpha.shouldBeTrue()
+            isAlpha.shouldBeFalse()
+            isNotAlpha.shouldBeTrue()
+            isBeta.shouldBeTrue()
+            isNotBeta.shouldBeFalse()
+            isBeta.shouldBeTrue()
+            isNotBeta.shouldBeFalse()
+            isDev.shouldBeFalse()
+            isNotDev.shouldBeTrue()
+            isDev.shouldBeFalse()
+            isNotDev.shouldBeTrue()
+            isRC.shouldBeFalse()
+            isNotRC.shouldBeTrue()
+            isRC.shouldBeFalse()
+            isNotRC.shouldBeTrue()
+            isSnapshot.shouldBeFalse()
+            isNotSnapshot.shouldBeTrue()
+            isSnapshot.shouldBeFalse()
+            isNotSnapshot.shouldBeTrue()
+        }
+
+        Version("1.0.0-dev.1").apply {
+            isAlpha.shouldBeFalse()
+            isNotAlpha.shouldBeTrue()
+            isAlpha.shouldBeFalse()
+            isNotAlpha.shouldBeTrue()
+            isBeta.shouldBeFalse()
+            isNotBeta.shouldBeTrue()
+            isBeta.shouldBeFalse()
+            isNotBeta.shouldBeTrue()
+            isDev.shouldBeTrue()
+            isNotDev.shouldBeFalse()
+            isDev.shouldBeTrue()
+            isNotDev.shouldBeFalse()
+            isRC.shouldBeFalse()
+            isNotRC.shouldBeTrue()
+            isRC.shouldBeFalse()
+            isNotRC.shouldBeTrue()
+            isSnapshot.shouldBeFalse()
+            isNotSnapshot.shouldBeTrue()
+            isSnapshot.shouldBeFalse()
+            isNotSnapshot.shouldBeTrue()
+        }
+
+        Version("1.0.0-rc.1").apply {
+            isAlpha.shouldBeFalse()
+            isNotAlpha.shouldBeTrue()
+            isAlpha.shouldBeFalse()
+            isNotAlpha.shouldBeTrue()
+            isBeta.shouldBeFalse()
+            isNotBeta.shouldBeTrue()
+            isBeta.shouldBeFalse()
+            isNotBeta.shouldBeTrue()
+            isDev.shouldBeFalse()
+            isNotDev.shouldBeTrue()
+            isDev.shouldBeFalse()
+            isNotDev.shouldBeTrue()
+            isRC.shouldBeTrue()
+            isNotRC.shouldBeFalse()
+            isRC.shouldBeTrue()
+            isNotRC.shouldBeFalse()
+            isSnapshot.shouldBeFalse()
+            isNotSnapshot.shouldBeTrue()
+            isSnapshot.shouldBeFalse()
+            isNotSnapshot.shouldBeTrue()
+        }
+
+        Version("1.0.0-SNAPSHOT").apply {
+            isAlpha.shouldBeFalse()
+            isNotAlpha.shouldBeTrue()
+            isAlpha.shouldBeFalse()
+            isNotAlpha.shouldBeTrue()
+            isBeta.shouldBeFalse()
+            isNotBeta.shouldBeTrue()
+            isBeta.shouldBeFalse()
+            isNotBeta.shouldBeTrue()
+            isDev.shouldBeFalse()
+            isNotDev.shouldBeTrue()
+            isDev.shouldBeFalse()
+            isNotDev.shouldBeTrue()
+            isRC.shouldBeFalse()
+            isNotRC.shouldBeTrue()
+            isRC.shouldBeFalse()
+            isNotRC.shouldBeTrue()
+            isSnapshot.shouldBeTrue()
+            isNotSnapshot.shouldBeFalse()
+            isSnapshot.shouldBeTrue()
+            isNotSnapshot.shouldBeFalse()
+        }
     }
 }

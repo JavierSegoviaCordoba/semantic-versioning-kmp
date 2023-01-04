@@ -1,3 +1,26 @@
+public final class com/javiersc/semver/IsVersionExtensionsKt {
+	public static final fun isAlpha (Lcom/javiersc/semver/Version;)Z
+	public static final fun isAlpha (Ljava/lang/String;)Z
+	public static final fun isBeta (Lcom/javiersc/semver/Version;)Z
+	public static final fun isBeta (Ljava/lang/String;)Z
+	public static final fun isDev (Lcom/javiersc/semver/Version;)Z
+	public static final fun isDev (Ljava/lang/String;)Z
+	public static final fun isNotAlpha (Lcom/javiersc/semver/Version;)Z
+	public static final fun isNotAlpha (Ljava/lang/String;)Z
+	public static final fun isNotBeta (Lcom/javiersc/semver/Version;)Z
+	public static final fun isNotBeta (Ljava/lang/String;)Z
+	public static final fun isNotDev (Lcom/javiersc/semver/Version;)Z
+	public static final fun isNotDev (Ljava/lang/String;)Z
+	public static final fun isNotRC (Lcom/javiersc/semver/Version;)Z
+	public static final fun isNotRC (Ljava/lang/String;)Z
+	public static final fun isNotSnapshot (Lcom/javiersc/semver/Version;)Z
+	public static final fun isNotSnapshot (Ljava/lang/String;)Z
+	public static final fun isRC (Lcom/javiersc/semver/Version;)Z
+	public static final fun isRC (Ljava/lang/String;)Z
+	public static final fun isSnapshot (Lcom/javiersc/semver/Version;)Z
+	public static final fun isSnapshot (Ljava/lang/String;)Z
+}
+
 public final class com/javiersc/semver/SemanticVersionException : java/lang/Exception {
 	public fun <init> (Ljava/lang/String;)V
 	public fun getMessage ()Ljava/lang/String;

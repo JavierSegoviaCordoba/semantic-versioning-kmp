@@ -4,6 +4,27 @@
 
 ### Added
 
+- `Version.isAlpha: Boolean` extension
+- `Version.isNotAlpha: Boolean` extension
+- `String.isAlpha: Boolean` extension
+- `String.isNotAlpha: Boolean` extension
+- `Version.isBeta: Boolean` extension
+- `Version.isNotBeta: Boolean` extension
+- `String.isBeta: Boolean` extension
+- `String.isNotBeta: Boolean` extension
+- `Version.isDev: Boolean` extension
+- `Version.isNotDev: Boolean` extension
+- `String.isDev: Boolean` extension
+- `String.isNotDev: Boolean` extension
+- `Version.isRC: Boolean` extension
+- `Version.isNotRC: Boolean` extension
+- `String.isRC: Boolean` extension
+- `String.isNotRC: Boolean` extension
+- `Version.isSnapshot: Boolean` extension
+- `Version.isNotSnapshot: Boolean` extension
+- `String.isSnapshot: Boolean` extension
+- `String.isNotSnapshot: Boolean` extension
+
 ### Changed
 
 ### Deprecated

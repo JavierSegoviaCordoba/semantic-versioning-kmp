@@ -6,17 +6,25 @@
 
 ### Changed
 
-- `SNAPSHOT` is treated now as non-special stage (higher than `rc`)
-
 ### Deprecated
+
+### Removed
+
+### Fixed
+
+### Updated
+
+## [0.1.0-beta.11] - 2023-01-04
+
+### Changed
+
+- `SNAPSHOT` is treated now as non-special stage (higher than `rc`)
 
 ### Removed
 
 - `nextSnapshotMajor` function
 - `nextSnapshotMinor` function
 - `nextSnapshotPatch` function
-
-### Fixed
 
 ### Updated
 
@@ -164,3 +172,35 @@
 ## [0.1.0-alpha.1] - 2021-06-25
 
 - No changes
+
+[Unreleased]: https://github.com/JavierSegoviaCordoba/semantic-versioning-kmp/compare/0.1.0-beta.11...HEAD
+
+[0.1.0-beta.11]: https://github.com/JavierSegoviaCordoba/semantic-versioning-kmp/compare/0.1.0-beta.10...0.1.0-beta.11
+
+[0.1.0-beta.10]: https://github.com/JavierSegoviaCordoba/semantic-versioning-kmp/compare/0.1.0-beta.9...0.1.0-beta.10
+
+[0.1.0-beta.9]: https://github.com/JavierSegoviaCordoba/semantic-versioning-kmp/compare/0.1.0-beta.8...0.1.0-beta.9
+
+[0.1.0-beta.8]: https://github.com/JavierSegoviaCordoba/semantic-versioning-kmp/compare/0.1.0-beta.7...0.1.0-beta.8
+
+[0.1.0-beta.7]: https://github.com/JavierSegoviaCordoba/semantic-versioning-kmp/compare/0.1.0-beta.6...0.1.0-beta.7
+
+[0.1.0-beta.6]: https://github.com/JavierSegoviaCordoba/semantic-versioning-kmp/compare/0.1.0-beta.5...0.1.0-beta.6
+
+[0.1.0-beta.5]: https://github.com/JavierSegoviaCordoba/semantic-versioning-kmp/compare/0.1.0-beta.4...0.1.0-beta.5
+
+[0.1.0-beta.4]: https://github.com/JavierSegoviaCordoba/semantic-versioning-kmp/compare/0.1.0-beta.3...0.1.0-beta.4
+
+[0.1.0-beta.3]: https://github.com/JavierSegoviaCordoba/semantic-versioning-kmp/compare/0.1.0-beta.2...0.1.0-beta.3
+
+[0.1.0-beta.2]: https://github.com/JavierSegoviaCordoba/semantic-versioning-kmp/compare/0.1.0-beta.1...0.1.0-beta.2
+
+[0.1.0-beta.1]: https://github.com/JavierSegoviaCordoba/semantic-versioning-kmp/compare/0.1.0-alpha.4...0.1.0-beta.1
+
+[0.1.0-alpha.4]: https://github.com/JavierSegoviaCordoba/semantic-versioning-kmp/compare/0.1.0-alpha.3...0.1.0-alpha.4
+
+[0.1.0-alpha.3]: https://github.com/JavierSegoviaCordoba/semantic-versioning-kmp/compare/0.1.0-alpha.2...0.1.0-alpha.3
+
+[0.1.0-alpha.2]: https://github.com/JavierSegoviaCordoba/semantic-versioning-kmp/compare/0.1.0-alpha.1...0.1.0-alpha.2
+
+[0.1.0-alpha.1]: https://github.com/JavierSegoviaCordoba/semantic-versioning-kmp/commits/0.1.0-alpha.1

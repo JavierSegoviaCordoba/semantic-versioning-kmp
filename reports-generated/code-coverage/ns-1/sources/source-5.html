@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html id="htmlId">
 <head>
-  <title>Coverage Report > SemanticVersionException</title>
+  <title>Coverage Report > VersionKt</title>
   <style type="text/css">
     @import "../../css/coverage.css";
     @import "../../css/idea.min.css";
@@ -21,7 +21,7 @@ Current scope:     <a href="../../index.html">all classes</a>
     <a href="../index.html">com.javiersc.semver</a>
 </div>
 
-<h1>Coverage Summary for Class: SemanticVersionException (com.javiersc.semver)</h1>
+<h1>Coverage Summary for Class: VersionKt (com.javiersc.semver)</h1>
 
 <table class="coverageStats">
 <tr>
@@ -48,7 +48,7 @@ Current scope:     <a href="../../index.html">all classes</a>
 </th>
 </tr>
 <tr>
-  <td class="name">SemanticVersionException</td>
+  <td class="name">VersionKt</td>
 <td class="coverageStat">
   <span class="percent">
     100%
@@ -62,16 +62,23 @@ Current scope:     <a href="../../index.html">all classes</a>
     100%
   </span>
   <span class="absValue">
-    (1/1)
+    (6/6)
   </span>
 </td>
-    <td class="coverageStat"/>
+<td class="coverageStat">
+  <span class="percent">
+    87.5%
+  </span>
+  <span class="absValue">
+    (7/8)
+  </span>
+</td>
 <td class="coverageStat">
   <span class="percent">
     100%
   </span>
   <span class="absValue">
-    (1/1)
+    (22/22)
   </span>
 </td>
 <td class="coverageStat">
@@ -79,7 +86,7 @@ Current scope:     <a href="../../index.html">all classes</a>
     100%
   </span>
   <span class="absValue">
-    (8/8)
+    (124/124)
   </span>
 </td>
 </tr>
@@ -293,15 +300,15 @@ Current scope:     <a href="../../index.html">all classes</a>
 &nbsp;    }
 &nbsp;}
 &nbsp;
-&nbsp;private fun String.red() = &quot;$RED$this$RESET&quot;
+<b class="fc">&nbsp;private fun String.red() = &quot;$RED$this$RESET&quot;</b>
 &nbsp;
 &nbsp;private fun checkFullVersion(version: String) {
-&nbsp;    checkVersion(version.matches(Version.regex)) {
-&nbsp;        &quot;&quot;&quot;|The version is not semantic, rules:
+<b class="fc">&nbsp;    checkVersion(version.matches(Version.regex)) {</b>
+<b class="fc">&nbsp;        &quot;&quot;&quot;|The version is not semantic, rules:</b>
 &nbsp;           |  - `major`, `minor` and `patch` are required, rest are optional
 &nbsp;           |  - `num` is required if `stage` is present and it is not snapshot
 &nbsp;           |
-&nbsp;           |Current version: $version
+<b class="fc">&nbsp;           |Current version: $version</b>
 &nbsp;           |
 &nbsp;           |Samples of semantic versions:
 &nbsp;           |1.0.0
@@ -312,13 +319,13 @@ Current scope:     <a href="../../index.html">all classes</a>
 &nbsp;           |12.23.34-SNAPSHOT
 &nbsp;           |
 &nbsp;        &quot;&quot;&quot;
-&nbsp;            .trimMargin()
-&nbsp;            .red()
+<b class="fc">&nbsp;            .trimMargin()</b>
+<b class="fc">&nbsp;            .red()</b>
 &nbsp;    }
 &nbsp;}
 &nbsp;
 &nbsp;private fun checkStage(stage: String) {
-&nbsp;    checkVersion(stage.matches(Version.Stage.stageRegex)) {
+<b class="fc">&nbsp;    checkVersion(stage.matches(Version.Stage.stageRegex)) {</b>
 &nbsp;        &quot;&quot;&quot;|`stage` provided has an incorrect format
 &nbsp;           | 
 &nbsp;           |Samples of stages:
@@ -326,19 +333,19 @@ Current scope:     <a href="../../index.html">all classes</a>
 &nbsp;           |beta.23
 &nbsp;           |SNAPSHOT
 &nbsp;        &quot;&quot;&quot;
-&nbsp;            .trimMargin()
-&nbsp;            .red()
+<b class="fc">&nbsp;            .trimMargin()</b>
+<b class="fc">&nbsp;            .red()</b>
 &nbsp;    }
 &nbsp;}
 &nbsp;
-<b class="fc">&nbsp;public class SemanticVersionException(override val message: String) : Exception(message)</b>
+&nbsp;public class SemanticVersionException(override val message: String) : Exception(message)
 &nbsp;
-&nbsp;internal fun semverError(message: String): Nothing = throw SemanticVersionException(message)
+<b class="fc">&nbsp;internal fun semverError(message: String): Nothing = throw SemanticVersionException(message)</b>
 &nbsp;
 &nbsp;@OptIn(ExperimentalContracts::class)
 &nbsp;private inline fun checkVersion(value: Boolean, lazyMessage: () -&gt; Any) {
-&nbsp;    contract { returns() implies value }
-&nbsp;    if (!value) semverError(lazyMessage().toString())
+<b class="fc">&nbsp;    contract { returns() implies value }</b>
+<b class="fc">&nbsp;    if (!value) semverError(lazyMessage().toString())</b>
 &nbsp;}
 &nbsp;
 &nbsp;private fun buildVersion(
@@ -347,17 +354,17 @@ Current scope:     <a href="../../index.html">all classes</a>
 &nbsp;    patch: Int?,
 &nbsp;    stageName: String?,
 &nbsp;    stageNum: Int?,
-&nbsp;): String = buildString {
-&nbsp;    append(major)
-&nbsp;    append(&quot;.&quot;)
-&nbsp;    append(minor)
-&nbsp;    append(&quot;.&quot;)
-&nbsp;    append(patch)
-&nbsp;    if (!stageName.isNullOrBlank()) {
-&nbsp;        append(&quot;-&quot;)
-&nbsp;        append(Version.Stage(stageName, stageNum).toString())
+<b class="fc">&nbsp;): String = buildString {</b>
+<b class="fc">&nbsp;    append(major)</b>
+<b class="fc">&nbsp;    append(&quot;.&quot;)</b>
+<b class="fc">&nbsp;    append(minor)</b>
+<b class="fc">&nbsp;    append(&quot;.&quot;)</b>
+<b class="fc">&nbsp;    append(patch)</b>
+<b class="pc">&nbsp;    if (!stageName.isNullOrBlank()) {</b>
+<b class="fc">&nbsp;        append(&quot;-&quot;)</b>
+<b class="fc">&nbsp;        append(Version.Stage(stageName, stageNum).toString())</b>
 &nbsp;    }
-&nbsp;}
+<b class="fc">&nbsp;}</b>
 &nbsp;
 &nbsp;private const val RED = &quot;\u001b[31m&quot;
 &nbsp;private const val RESET = &quot;\u001B[0m&quot;

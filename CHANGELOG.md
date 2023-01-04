@@ -4,6 +4,20 @@
 
 ### Added
 
+### Changed
+
+### Deprecated
+
+### Removed
+
+### Fixed
+
+### Updated
+
+## [0.1.0-beta.12] - 2023-01-04
+
+### Added
+
 - `Version.isAlpha: Boolean` extension
 - `Version.isNotAlpha: Boolean` extension
 - `String.isAlpha: Boolean` extension
@@ -24,16 +38,6 @@
 - `Version.isNotSnapshot: Boolean` extension
 - `String.isSnapshot: Boolean` extension
 - `String.isNotSnapshot: Boolean` extension
-
-### Changed
-
-### Deprecated
-
-### Removed
-
-### Fixed
-
-### Updated
 
 ## [0.1.0-beta.11] - 2023-01-04
 
@@ -194,7 +198,9 @@
 
 - No changes
 
-[Unreleased]: https://github.com/JavierSegoviaCordoba/semantic-versioning-kmp/compare/0.1.0-beta.11...HEAD
+[Unreleased]: https://github.com/JavierSegoviaCordoba/semantic-versioning-kmp/compare/0.1.0-beta.12...HEAD
+
+[0.1.0-beta.12]: https://github.com/JavierSegoviaCordoba/semantic-versioning-kmp/compare/0.1.0-beta.11...0.1.0-beta.12
 
 [0.1.0-beta.11]: https://github.com/JavierSegoviaCordoba/semantic-versioning-kmp/compare/0.1.0-beta.10...0.1.0-beta.11
 

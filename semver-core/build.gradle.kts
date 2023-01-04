@@ -5,6 +5,9 @@ plugins {
 hubdle {
     config {
         explicitApi()
+        languageSettings {
+            experimentalCoroutinesApi()
+        }
         publishing()
     }
     kotlin {

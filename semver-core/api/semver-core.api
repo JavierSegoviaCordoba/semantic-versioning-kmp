@@ -19,9 +19,6 @@ public final class com/javiersc/semver/Version : java/lang/Comparable {
 	public fun hashCode ()I
 	public final fun inc (Lcom/javiersc/semver/Version$Increase;Ljava/lang/String;)Lcom/javiersc/semver/Version;
 	public static synthetic fun inc$default (Lcom/javiersc/semver/Version;Lcom/javiersc/semver/Version$Increase;Ljava/lang/String;ILjava/lang/Object;)Lcom/javiersc/semver/Version;
-	public final fun nextSnapshotMajor ()Lcom/javiersc/semver/Version;
-	public final fun nextSnapshotMinor ()Lcom/javiersc/semver/Version;
-	public final fun nextSnapshotPatch ()Lcom/javiersc/semver/Version;
 	public fun toString ()Ljava/lang/String;
 }
 

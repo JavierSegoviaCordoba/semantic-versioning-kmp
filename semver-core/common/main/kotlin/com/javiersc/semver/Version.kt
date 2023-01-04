@@ -35,6 +35,7 @@ public class Version private constructor(public val value: String) : Comparable<
 
     @Suppress("ComplexMethod")
     public fun inc(number: Increase? = null, stageName: String = ""): Version {
+        val incNum = if (stageName.lowercase() == "snapshot") null else 1
         val nextVersion: Version =
             when {
                 number == null && stageName.isBlank() && !stage?.name.isNullOrBlank() -> {
@@ -44,13 +45,13 @@ public class Version private constructor(public val value: String) : Comparable<
                     invoke(major, minor, patch.inc(), null, null)
                 }
                 number == null && stageName.isNotBlank() && stage?.name.isNullOrBlank() -> {
-                    invoke(major, minor, patch.inc(), stageName, 1)
+                    invoke(major, minor, patch.inc(), stageName, incNum)
                 }
                 number == null && stageName.isNotBlank() && stageName == stage?.name -> {
                     invoke(major, minor, patch, stageName, stage.num?.inc())
                 }
                 number == null && stageName.isNotBlank() && stageName != stage?.name -> {
-                    invoke(major, minor, patch, stageName, 1)
+                    invoke(major, minor, patch, stageName, incNum)
                 }
                 number is Increase.Major && stageName.isBlank() -> {
                     invoke(major.inc(), 0, 0, null, null)
@@ -62,13 +63,13 @@ public class Version private constructor(public val value: String) : Comparable<
                     invoke(major, minor, patch.inc(), null, null)
                 }
                 number is Increase.Major && stageName.isNotBlank() -> {
-                    invoke(major.inc(), 0, 0, stageName, 1)
+                    invoke(major.inc(), 0, 0, stageName, incNum)
                 }
                 number is Increase.Minor && stageName.isNotBlank() -> {
-                    invoke(major, minor.inc(), 0, stageName, 1)
+                    invoke(major, minor.inc(), 0, stageName, incNum)
                 }
                 number is Increase.Patch && stageName.isNotBlank() -> {
-                    invoke(major, minor, patch.inc(), stageName, 1)
+                    invoke(major, minor, patch.inc(), stageName, incNum)
                 }
                 else -> null
             }
@@ -79,12 +80,6 @@ public class Version private constructor(public val value: String) : Comparable<
         }
         return nextVersion
     }
-
-    public fun nextSnapshotMajor(): Version = invoke(major.inc(), 0, 0, "SNAPSHOT", null)
-
-    public fun nextSnapshotMinor(): Version = invoke(major, minor.inc(), 0, "SNAPSHOT", null)
-
-    public fun nextSnapshotPatch(): Version = invoke(major, minor, patch.inc(), "SNAPSHOT", null)
 
     public fun copy(
         major: Int = this.major,
@@ -166,8 +161,8 @@ public class Version private constructor(public val value: String) : Comparable<
         @Suppress("ComplexMethod")
         override fun compareTo(other: Stage): Int =
             when {
-                name > other.name -> 1
-                name < other.name -> -1
+                name.lowercase() > other.name.lowercase() -> 1
+                name.lowercase() < other.name.lowercase() -> -1
                 num != null && other.num == null -> 1
                 num == null && other.num != null -> -1
                 num != null && other.num != null && num > other.num -> 1

@@ -157,8 +157,8 @@
 
 <div>
   <ul>
-    <li>31 number of properties</li>
-    <li>51 number of functions</li>
+    <li>32 number of properties</li>
+    <li>47 number of functions</li>
     <li>7 number of classes</li>
     <li>2 number of packages</li>
     <li>6 number of kt files</li>
@@ -170,16 +170,16 @@
 
 <div>
   <ul>
-    <li>913 lines of code (loc)</li>
-    <li>811 source lines of code (sloc)</li>
-    <li>671 logical lines of code (lloc)</li>
+    <li>870 lines of code (loc)</li>
+    <li>772 source lines of code (sloc)</li>
+    <li>635 logical lines of code (lloc)</li>
     <li>5 comment lines of code (cloc)</li>
-    <li>162 cyclomatic complexity (mcc)</li>
-    <li>48 cognitive complexity</li>
+    <li>159 cyclomatic complexity (mcc)</li>
+    <li>59 cognitive complexity</li>
     <li>2 number of total code smells</li>
     <li>0% comment source ratio</li>
-    <li>241 mcc per 1,000 lloc</li>
-    <li>2 code smells per 1,000 lloc</li>
+    <li>250 mcc per 1,000 lloc</li>
+    <li>3 code smells per 1,000 lloc</li>
   </ul>
 </div>
 
@@ -191,24 +191,24 @@
     <summary class="rule-container"><span class="rule">ComplexCondition: 2 </span><span class="description">Complex conditions should be simplified and extracted into well-named methods if necessary.</span></summary>
 <a href="https://detekt.dev/docs/rules/complexity#complexcondition">Documentation</a>
     <ul>
-      <li><span class="location">semver-core/common/test/kotlin/com/javiersc/semver/VersionTest.kt:77:17</span><span class="message">This condition is too complex (6). Defined complexity threshold for conditions is set to '4'</span>
-        <pre><code><span class="lineno">  74 </span>    fun stage_name_comparator() = runTest {
-<span class="lineno">  75 </span>        forAll(versionArbitrary, versionArbitrary) { a: Version, b: Version -&gt;
-<span class="lineno">  76 </span>            if (
-<span class="lineno">  77 </span>                <span class="error">(a.major == b.major) &amp;&amp;</span>
-<span class="lineno">  78 </span><span class="error">                    (a.minor == b.minor) &amp;&amp;</span>
-<span class="lineno">  79 </span><span class="error">                    (a.patch == b.patch) &amp;&amp;</span>
-<span class="lineno">  80 </span><span class="error">                    (a.stage?.name != null) &amp;&amp;</span>
+      <li><span class="location">semver-core/common/test/kotlin/com/javiersc/semver/VersionTest.kt:80:17</span><span class="message">This condition is too complex (6). Defined complexity threshold for conditions is set to '4'</span>
+        <pre><code><span class="lineno">  77 </span>    fun stage_name_comparator() = runTest {
+<span class="lineno">  78 </span>        forAll(versionArbitrary, versionArbitrary) { a: Version, b: Version -&gt;
+<span class="lineno">  79 </span>            if (
+<span class="lineno">  80 </span>                <span class="error">(a.major == b.major) &amp;&amp;</span>
+<span class="lineno">  81 </span><span class="error">                    (a.minor == b.minor) &amp;&amp;</span>
+<span class="lineno">  82 </span><span class="error">                    (a.patch == b.patch) &amp;&amp;</span>
+<span class="lineno">  83 </span><span class="error">                    (a.stage?.name != null) &amp;&amp;</span>
 </code></pre>
       </li>
-      <li><span class="location">semver-core/common/test/kotlin/com/javiersc/semver/VersionTest.kt:93:17</span><span class="message">This condition is too complex (9). Defined complexity threshold for conditions is set to '4'</span>
-        <pre><code><span class="lineno">  90 </span>    fun stage_num_comparator() = runTest {
-<span class="lineno">  91 </span>        forAll(versionArbitrary, versionArbitrary) { a: Version, b: Version -&gt;
-<span class="lineno">  92 </span>            if (
-<span class="lineno">  93 </span>                <span class="error">(a.major == b.major) &amp;&amp;</span>
-<span class="lineno">  94 </span><span class="error">                    (a.minor == b.minor) &amp;&amp;</span>
-<span class="lineno">  95 </span><span class="error">                    (a.patch == b.patch) &amp;&amp;</span>
-<span class="lineno">  96 </span><span class="error">                    (a.stage?.name != null) &amp;&amp;</span>
+      <li><span class="location">semver-core/common/test/kotlin/com/javiersc/semver/VersionTest.kt:96:17</span><span class="message">This condition is too complex (9). Defined complexity threshold for conditions is set to '4'</span>
+        <pre><code><span class="lineno">  93 </span>    fun stage_num_comparator() = runTest {
+<span class="lineno">  94 </span>        forAll(versionArbitrary, versionArbitrary) { a: Version, b: Version -&gt;
+<span class="lineno">  95 </span>            if (
+<span class="lineno">  96 </span>                <span class="error">(a.major == b.major) &amp;&amp;</span>
+<span class="lineno">  97 </span><span class="error">                    (a.minor == b.minor) &amp;&amp;</span>
+<span class="lineno">  98 </span><span class="error">                    (a.patch == b.patch) &amp;&amp;</span>
+<span class="lineno">  99 </span><span class="error">                    (a.stage?.name != null) &amp;&amp;</span>
 </code></pre>
       </li>
     </ul>
@@ -216,7 +216,7 @@
 </div>
 
 
-generated with <a href="https://detekt.dev/">detekt version 1.21.0</a> on 2022-10-12 08:37:06 UTC.
+generated with <a href="https://detekt.dev/">detekt version 1.22.0</a> on 2023-01-04 14:46:41 UTC.
 
 </body>
 </html>

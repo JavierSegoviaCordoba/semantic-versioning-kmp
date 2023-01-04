@@ -135,6 +135,7 @@ Current scope:     <a href="../../index.html">all classes</a>
 &nbsp;
 &nbsp;    @Suppress(&quot;ComplexMethod&quot;)
 &nbsp;    public fun inc(number: Increase? = null, stageName: String = &quot;&quot;): Version {
+&nbsp;        val incNum = if (stageName.lowercase() == &quot;snapshot&quot;) null else 1
 &nbsp;        val nextVersion: Version =
 &nbsp;            when {
 &nbsp;                number == null &amp;&amp; stageName.isBlank() &amp;&amp; !stage?.name.isNullOrBlank() -&gt; {
@@ -144,13 +145,13 @@ Current scope:     <a href="../../index.html">all classes</a>
 &nbsp;                    invoke(major, minor, patch.inc(), null, null)
 &nbsp;                }
 &nbsp;                number == null &amp;&amp; stageName.isNotBlank() &amp;&amp; stage?.name.isNullOrBlank() -&gt; {
-&nbsp;                    invoke(major, minor, patch.inc(), stageName, 1)
+&nbsp;                    invoke(major, minor, patch.inc(), stageName, incNum)
 &nbsp;                }
 &nbsp;                number == null &amp;&amp; stageName.isNotBlank() &amp;&amp; stageName == stage?.name -&gt; {
 &nbsp;                    invoke(major, minor, patch, stageName, stage.num?.inc())
 &nbsp;                }
 &nbsp;                number == null &amp;&amp; stageName.isNotBlank() &amp;&amp; stageName != stage?.name -&gt; {
-&nbsp;                    invoke(major, minor, patch, stageName, 1)
+&nbsp;                    invoke(major, minor, patch, stageName, incNum)
 &nbsp;                }
 &nbsp;                number is Increase.Major &amp;&amp; stageName.isBlank() -&gt; {
 &nbsp;                    invoke(major.inc(), 0, 0, null, null)
@@ -162,13 +163,13 @@ Current scope:     <a href="../../index.html">all classes</a>
 &nbsp;                    invoke(major, minor, patch.inc(), null, null)
 &nbsp;                }
 &nbsp;                number is Increase.Major &amp;&amp; stageName.isNotBlank() -&gt; {
-&nbsp;                    invoke(major.inc(), 0, 0, stageName, 1)
+&nbsp;                    invoke(major.inc(), 0, 0, stageName, incNum)
 &nbsp;                }
 &nbsp;                number is Increase.Minor &amp;&amp; stageName.isNotBlank() -&gt; {
-&nbsp;                    invoke(major, minor.inc(), 0, stageName, 1)
+&nbsp;                    invoke(major, minor.inc(), 0, stageName, incNum)
 &nbsp;                }
 &nbsp;                number is Increase.Patch &amp;&amp; stageName.isNotBlank() -&gt; {
-&nbsp;                    invoke(major, minor, patch.inc(), stageName, 1)
+&nbsp;                    invoke(major, minor, patch.inc(), stageName, incNum)
 &nbsp;                }
 &nbsp;                else -&gt; null
 &nbsp;            }
@@ -179,12 +180,6 @@ Current scope:     <a href="../../index.html">all classes</a>
 &nbsp;        }
 &nbsp;        return nextVersion
 &nbsp;    }
-&nbsp;
-&nbsp;    public fun nextSnapshotMajor(): Version = invoke(major.inc(), 0, 0, &quot;SNAPSHOT&quot;, null)
-&nbsp;
-&nbsp;    public fun nextSnapshotMinor(): Version = invoke(major, minor.inc(), 0, &quot;SNAPSHOT&quot;, null)
-&nbsp;
-&nbsp;    public fun nextSnapshotPatch(): Version = invoke(major, minor, patch.inc(), &quot;SNAPSHOT&quot;, null)
 &nbsp;
 &nbsp;    public fun copy(
 &nbsp;        major: Int = this.major,
@@ -266,8 +261,8 @@ Current scope:     <a href="../../index.html">all classes</a>
 &nbsp;        @Suppress(&quot;ComplexMethod&quot;)
 &nbsp;        override fun compareTo(other: Stage): Int =
 &nbsp;            when {
-&nbsp;                name &gt; other.name -&gt; 1
-&nbsp;                name &lt; other.name -&gt; -1
+&nbsp;                name.lowercase() &gt; other.name.lowercase() -&gt; 1
+&nbsp;                name.lowercase() &lt; other.name.lowercase() -&gt; -1
 &nbsp;                num != null &amp;&amp; other.num == null -&gt; 1
 &nbsp;                num == null &amp;&amp; other.num != null -&gt; -1
 &nbsp;                num != null &amp;&amp; other.num != null &amp;&amp; num &gt; other.num -&gt; 1
@@ -396,7 +391,7 @@ Current scope:     <a href="../../index.html">all classes</a>
 
 <div class="footer">
     
-    <div style="float:right;">generated on 2022-10-12 08:35</div>
+    <div style="float:right;">generated on 2023-01-04 14:47</div>
 </div>
 </body>
 </html>

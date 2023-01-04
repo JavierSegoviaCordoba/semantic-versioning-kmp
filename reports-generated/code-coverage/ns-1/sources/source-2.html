@@ -48,34 +48,34 @@ Current scope:     <a href="../../index.html">all classes</a>
   <td class="name">Version</td>
 <td class="coverageStat">
   <span class="percent">
-    93.3%
+    91.7%
   </span>
   <span class="absValue">
-    (14/15)
+    (11/12)
   </span>
 </td>
 <td class="coverageStat">
   <span class="percent">
-    74.6%
+    75%
   </span>
   <span class="absValue">
-    (100/134)
+    (102/136)
   </span>
 </td>
 <td class="coverageStat">
   <span class="percent">
-    93.3%
+    93.2%
   </span>
   <span class="absValue">
-    (70/75)
+    (68/73)
   </span>
 </td>
 <td class="coverageStat">
   <span class="percent">
-    92.1%
+    91.8%
   </span>
   <span class="absValue">
-    (637/692)
+    (613/668)
   </span>
 </td>
 </tr>
@@ -230,10 +230,10 @@ Current scope:     <a href="../../index.html">all classes</a>
 </td>
 <td class="coverageStat">
   <span class="percent">
-    81.2%
+    83.3%
   </span>
   <span class="absValue">
-    (125/154)
+    (145/174)
   </span>
 </td>
   </tr>
@@ -276,34 +276,34 @@ Current scope:     <a href="../../index.html">all classes</a>
   <td class="name"><strong>Total</strong></td>
 <td class="coverageStat">
   <span class="percent">
-    80%
+    78.1%
   </span>
   <span class="absValue">
-    (28/35)
+    (25/32)
   </span>
 </td>
 <td class="coverageStat">
   <span class="percent">
-    71.1%
+    71.4%
   </span>
   <span class="absValue">
-    (128/180)
+    (130/182)
   </span>
 </td>
 <td class="coverageStat">
   <span class="percent">
-    85.7%
+    85.5%
   </span>
   <span class="absValue">
-    (96/112)
+    (94/110)
   </span>
 </td>
 <td class="coverageStat">
   <span class="percent">
-    81.6%
+    81.5%
   </span>
   <span class="absValue">
-    (843/1033)
+    (839/1029)
   </span>
 </td>
 </tr>
@@ -351,6 +351,7 @@ Current scope:     <a href="../../index.html">all classes</a>
 &nbsp;
 &nbsp;    @Suppress(&quot;ComplexMethod&quot;)
 <b class="fc">&nbsp;    public fun inc(number: Increase? = null, stageName: String = &quot;&quot;): Version {</b>
+<b class="fc">&nbsp;        val incNum = if (stageName.lowercase() == &quot;snapshot&quot;) null else 1</b>
 <b class="fc">&nbsp;        val nextVersion: Version =</b>
 <b class="pc">&nbsp;            when {</b>
 <b class="pc">&nbsp;                number == null &amp;&amp; stageName.isBlank() &amp;&amp; !stage?.name.isNullOrBlank() -&gt; {</b>
@@ -360,13 +361,13 @@ Current scope:     <a href="../../index.html">all classes</a>
 <b class="nc">&nbsp;                    invoke(major, minor, patch.inc(), null, null)</b>
 &nbsp;                }
 <b class="pc">&nbsp;                number == null &amp;&amp; stageName.isNotBlank() &amp;&amp; stage?.name.isNullOrBlank() -&gt; {</b>
-<b class="fc">&nbsp;                    invoke(major, minor, patch.inc(), stageName, 1)</b>
+<b class="fc">&nbsp;                    invoke(major, minor, patch.inc(), stageName, incNum)</b>
 &nbsp;                }
 <b class="pc">&nbsp;                number == null &amp;&amp; stageName.isNotBlank() &amp;&amp; stageName == stage?.name -&gt; {</b>
 <b class="pc">&nbsp;                    invoke(major, minor, patch, stageName, stage.num?.inc())</b>
 &nbsp;                }
 <b class="pc">&nbsp;                number == null &amp;&amp; stageName.isNotBlank() &amp;&amp; stageName != stage?.name -&gt; {</b>
-<b class="fc">&nbsp;                    invoke(major, minor, patch, stageName, 1)</b>
+<b class="fc">&nbsp;                    invoke(major, minor, patch, stageName, incNum)</b>
 &nbsp;                }
 <b class="fc">&nbsp;                number is Increase.Major &amp;&amp; stageName.isBlank() -&gt; {</b>
 <b class="fc">&nbsp;                    invoke(major.inc(), 0, 0, null, null)</b>
@@ -378,13 +379,13 @@ Current scope:     <a href="../../index.html">all classes</a>
 <b class="fc">&nbsp;                    invoke(major, minor, patch.inc(), null, null)</b>
 &nbsp;                }
 <b class="pc">&nbsp;                number is Increase.Major &amp;&amp; stageName.isNotBlank() -&gt; {</b>
-<b class="fc">&nbsp;                    invoke(major.inc(), 0, 0, stageName, 1)</b>
+<b class="fc">&nbsp;                    invoke(major.inc(), 0, 0, stageName, incNum)</b>
 &nbsp;                }
 <b class="pc">&nbsp;                number is Increase.Minor &amp;&amp; stageName.isNotBlank() -&gt; {</b>
-<b class="fc">&nbsp;                    invoke(major, minor.inc(), 0, stageName, 1)</b>
+<b class="fc">&nbsp;                    invoke(major, minor.inc(), 0, stageName, incNum)</b>
 &nbsp;                }
 <b class="pc">&nbsp;                number is Increase.Patch &amp;&amp; stageName.isNotBlank() -&gt; {</b>
-<b class="fc">&nbsp;                    invoke(major, minor, patch.inc(), stageName, 1)</b>
+<b class="fc">&nbsp;                    invoke(major, minor, patch.inc(), stageName, incNum)</b>
 &nbsp;                }
 <b class="nc">&nbsp;                else -&gt; null</b>
 &nbsp;            }
@@ -395,12 +396,6 @@ Current scope:     <a href="../../index.html">all classes</a>
 &nbsp;        }
 <b class="fc">&nbsp;        return nextVersion</b>
 &nbsp;    }
-&nbsp;
-<b class="fc">&nbsp;    public fun nextSnapshotMajor(): Version = invoke(major.inc(), 0, 0, &quot;SNAPSHOT&quot;, null)</b>
-&nbsp;
-<b class="fc">&nbsp;    public fun nextSnapshotMinor(): Version = invoke(major, minor.inc(), 0, &quot;SNAPSHOT&quot;, null)</b>
-&nbsp;
-<b class="fc">&nbsp;    public fun nextSnapshotPatch(): Version = invoke(major, minor, patch.inc(), &quot;SNAPSHOT&quot;, null)</b>
 &nbsp;
 &nbsp;    public fun copy(
 <b class="fc">&nbsp;        major: Int = this.major,</b>
@@ -482,8 +477,8 @@ Current scope:     <a href="../../index.html">all classes</a>
 &nbsp;        @Suppress(&quot;ComplexMethod&quot;)
 &nbsp;        override fun compareTo(other: Stage): Int =
 <b class="fc">&nbsp;            when {</b>
-<b class="fc">&nbsp;                name &gt; other.name -&gt; 1</b>
-<b class="fc">&nbsp;                name &lt; other.name -&gt; -1</b>
+<b class="fc">&nbsp;                name.lowercase() &gt; other.name.lowercase() -&gt; 1</b>
+<b class="fc">&nbsp;                name.lowercase() &lt; other.name.lowercase() -&gt; -1</b>
 <b class="pc">&nbsp;                num != null &amp;&amp; other.num == null -&gt; 1</b>
 <b class="pc">&nbsp;                num == null &amp;&amp; other.num != null -&gt; -1</b>
 <b class="pc">&nbsp;                num != null &amp;&amp; other.num != null &amp;&amp; num &gt; other.num -&gt; 1</b>
@@ -612,7 +607,7 @@ Current scope:     <a href="../../index.html">all classes</a>
 
 <div class="footer">
     
-    <div style="float:right;">generated on 2022-10-12 08:35</div>
+    <div style="float:right;">generated on 2023-01-04 14:47</div>
 </div>
 </body>
 </html>

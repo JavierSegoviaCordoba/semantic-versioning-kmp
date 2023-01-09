@@ -2,7 +2,7 @@
 [![MavenCentral](https://img.shields.io/maven-central/v/com.javiersc.semver/semver-core?label=MavenCentral)](https://repo1.maven.org/maven2/com/javiersc/semver/semver-core/)
 [![Snapshot](https://img.shields.io/nexus/s/com.javiersc.semver/semver-core?server=https%3A%2F%2Foss.sonatype.org%2F&label=Snapshot)](https://oss.sonatype.org/content/repositories/snapshots/com/javiersc/semver/semver-core/)
 
-[![Build](https://img.shields.io/github/workflow/status/JavierSegoviaCordoba/semantic-versioning-kmp/build-kotlin?label=Build&logo=GitHub)](https://github.com/JavierSegoviaCordoba/semantic-versioning-kmp/tree/main)
+[![Build](https://img.shields.io/github/actions/workflow/status/JavierSegoviaCordoba/semantic-versioning-kmp/build-kotlin.yaml?label=Build&logo=GitHub)](https://github.com/JavierSegoviaCordoba/semantic-versioning-kmp/tree/main)
 [![Coverage](https://img.shields.io/sonar/coverage/com.javiersc.semver:semantic-versioning-kmp?label=Coverage&logo=SonarCloud&logoColor=white&server=https%3A%2F%2Fsonarcloud.io)](https://sonarcloud.io/dashboard?id=com.javiersc.semver:semantic-versioning-kmp)
 [![Quality](https://img.shields.io/sonar/quality_gate/com.javiersc.semver:semantic-versioning-kmp?label=Quality&logo=SonarCloud&logoColor=white&server=https%3A%2F%2Fsonarcloud.io)](https://sonarcloud.io/dashboard?id=com.javiersc.semver:semantic-versioning-kmp)
 [![Tech debt](https://img.shields.io/sonar/tech_debt/com.javiersc.semver:semantic-versioning-kmp?label=Tech%20debt&logo=SonarCloud&logoColor=white&server=https%3A%2F%2Fsonarcloud.io)](https://sonarcloud.io/dashboard?id=com.javiersc.semver:semantic-versioning-kmp)

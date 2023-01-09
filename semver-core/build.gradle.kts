@@ -12,7 +12,9 @@ hubdle {
     }
     kotlin {
         multiplatform {
-            features { coroutines() }
+            features {
+                coroutines()
+            }
 
             common {
                 test {
@@ -22,9 +24,27 @@ hubdle {
                 }
             }
 
-            iosArm64()
-            iosSimulatorArm64()
-            iosX64()
+            apple {
+                ios {
+                    iosArm64()
+                    iosSimulatorArm64()
+                    iosX64()
+                }
+                macos {
+                    macosArm64()
+                    macosX64()
+                }
+                tvos {
+                    tvosArm64()
+                    tvosSimulatorArm64()
+                    tvosX64()
+                }
+                watchos {
+                    watchosArm64()
+                    watchosSimulatorArm64()
+                    watchosX64()
+                }
+            }
             jvm()
             js {
                 browser {
@@ -42,16 +62,12 @@ hubdle {
                     }
                 }
             }
-            linuxX64()
-            macosArm64()
-            macosX64()
-            mingwX64()
-            tvosArm64()
-            tvosSimulatorArm64()
-            tvosX64()
-            watchosArm64()
-            watchosSimulatorArm64()
-            watchosX64()
+            linux {
+                linuxX64()
+            }
+            mingw {
+                mingwX64()
+            }
         }
     }
 }

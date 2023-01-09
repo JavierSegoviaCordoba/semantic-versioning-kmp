@@ -81,14 +81,6 @@
       "languageLevel": 17
     },
     {
-      "name": "semantic-versioning-kmp.semver-core.tvosArm64Main",
-      "languageLevel": 17
-    },
-    {
-      "name": "semantic-versioning-kmp.semver-core.tvosArm64Test",
-      "languageLevel": 17
-    },
-    {
       "name": "semantic-versioning-kmp.semver-core.tvosSimulatorArm64Main",
       "languageLevel": 17
     },
@@ -129,11 +121,67 @@
       "languageLevel": 17
     },
     {
+      "name": "semantic-versioning-kmp.semver-core.appleMain",
+      "languageLevel": 17
+    },
+    {
+      "name": "semantic-versioning-kmp.semver-core.appleTest",
+      "languageLevel": 17
+    },
+    {
       "name": "semantic-versioning-kmp.semver-core.commonMain",
       "languageLevel": 17
     },
     {
       "name": "semantic-versioning-kmp.semver-core.commonTest",
+      "languageLevel": 17
+    },
+    {
+      "name": "semantic-versioning-kmp.semver-core.iosMain",
+      "languageLevel": 17
+    },
+    {
+      "name": "semantic-versioning-kmp.semver-core.iosTest",
+      "languageLevel": 17
+    },
+    {
+      "name": "semantic-versioning-kmp.semver-core.linuxMain",
+      "languageLevel": 17
+    },
+    {
+      "name": "semantic-versioning-kmp.semver-core.linuxTest",
+      "languageLevel": 17
+    },
+    {
+      "name": "semantic-versioning-kmp.semver-core.macosMain",
+      "languageLevel": 17
+    },
+    {
+      "name": "semantic-versioning-kmp.semver-core.macosTest",
+      "languageLevel": 17
+    },
+    {
+      "name": "semantic-versioning-kmp.semver-core.mingwMain",
+      "languageLevel": 17
+    },
+    {
+      "name": "semantic-versioning-kmp.semver-core.mingwTest",
+      "languageLevel": 17
+    },
+    {
+      "name": "semantic-versioning-kmp.semver-core.tvosMain",
+      "languageLevel": 17
+    },
+    {
+      "name": "semantic-versioning-kmp.semver-core.tvosTest",
+      "languageLevel": 17
+    },
+    {
+      "name": "semantic-versioning-kmp.semver-core.watchosMain",
+      "languageLevel": 17
+    },
+    {
+      "name": "semantic-versioning-kmp.semver-core.watchosTest",
       "languageLevel": 17
     }
   ]

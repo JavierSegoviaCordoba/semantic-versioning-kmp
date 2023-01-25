@@ -11,37 +11,6 @@
   "sources": [
     {
       "type": "file",
-      "path": "build.gradle.kts",
-      "language": "kotlin",
-      "line": 2,
-      "offset": 11,
-      "length": 4,
-      "code": {
-        "startLine": 1,
-        "length": 4,
-        "offset": 20,
-        "surroundingCode": "plugins {\n    alias(libs.plugins.javiersc.hubdle)\n}\n"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "semantic-versioning-kmp",
-    "inspectionName": "KotlinAnnotator"
-  },
-  "hash": "8350cc734d11db7e55fad33c79ca6ba7a4fce4e25a0435cfd6be3abec4a83a2f"
-},{
-  "tool": "Code Inspection",
-  "category": "General",
-  "type": "Kotlin annotator",
-  "tags": [
-    "Sanity"
-  ],
-  "severity": "Critical",
-  "comment": "'val Project.libs: LibrariesForLibs' can't be called in this context by implicit receiver. Use the explicit one if necessary",
-  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
-  "sources": [
-    {
-      "type": "file",
       "path": "semver-core/build.gradle.kts",
       "language": "kotlin",
       "line": 2,
@@ -60,4 +29,35 @@
     "inspectionName": "KotlinAnnotator"
   },
   "hash": "41691abc4580aa7ab77bae055c5c902a86a0feffb70ea73828a2c6e8689487d6"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "tags": [
+    "Sanity"
+  ],
+  "severity": "Critical",
+  "comment": "'val Project.libs: LibrariesForLibs' can't be called in this context by implicit receiver. Use the explicit one if necessary",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "build.gradle.kts",
+      "language": "kotlin",
+      "line": 2,
+      "offset": 11,
+      "length": 4,
+      "code": {
+        "startLine": 1,
+        "length": 4,
+        "offset": 20,
+        "surroundingCode": "plugins {\n    alias(libs.plugins.javiersc.hubdle)\n}\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "semantic-versioning-kmp",
+    "inspectionName": "KotlinAnnotator"
+  },
+  "hash": "8350cc734d11db7e55fad33c79ca6ba7a4fce4e25a0435cfd6be3abec4a83a2f"
 }]}

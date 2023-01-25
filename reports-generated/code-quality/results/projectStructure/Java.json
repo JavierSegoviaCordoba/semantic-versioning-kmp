@@ -81,6 +81,14 @@
       "languageLevel": 17
     },
     {
+      "name": "semantic-versioning-kmp.semver-core.tvosArm64Main",
+      "languageLevel": 17
+    },
+    {
+      "name": "semantic-versioning-kmp.semver-core.tvosArm64Test",
+      "languageLevel": 17
+    },
+    {
       "name": "semantic-versioning-kmp.semver-core.tvosSimulatorArm64Main",
       "languageLevel": 17
     },

@@ -1,218 +1,232 @@
 {
   "libraries": [
     {
-      "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.20",
+      "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.8.0",
       "roots": [
-        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.7.20/e15351bdaf9fa06f009be5da7a202e4184f00ae3/kotlin-stdlib-common-1.7.20.jar!/"
+        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.8.0/f7197e7cc76453ac59f8b0f8d5137cc600becd36/kotlin-stdlib-common-1.8.0.jar!/"
       ],
       "properties": {}
     },
     {
       "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:commonMain:1.6.4",
       "roots": [
-        "jar://$PROJECT_DIR$/.gradle/kotlin/sourceSetMetadata/semver-core.semantic-versioning-kmp/commonMain/implementation/org.jetbrains.kotlinx-kotlinx-coroutines-core/org.jetbrains.kotlinx-kotlinx-coroutines-core-commonMain.klib!/"
+        "jar://$PROJECT_DIR$/.gradle/kotlin/kotlinTransformedMetadataLibraries/org.jetbrains.kotlinx-kotlinx-coroutines-core-1.6.4-commonMain-fLwzjw.klib!/"
       ],
       "properties": {}
     },
     {
       "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib:commonMain:0.1.0-alpha.12",
       "roots": [
-        "jar://$PROJECT_DIR$/.gradle/kotlin/sourceSetMetadata/semver-core.semantic-versioning-kmp/commonMain/implementation/com.javiersc.kotlin-kotlin-stdlib/com.javiersc.kotlin-kotlin-stdlib-commonMain.klib!/"
+        "jar://$PROJECT_DIR$/.gradle/kotlin/kotlinTransformedMetadataLibraries/com.javiersc.kotlin-kotlin-stdlib-0.1.0-alpha.12-commonMain-yQOd5Q.klib!/"
       ],
       "properties": {}
     },
     {
-      "name": "Kotlin/Native 1.7.20 - stdlib",
+      "name": "Kotlin/Native 1.8.0 - stdlib",
       "roots": [
-        "file://$USER_HOME$/.konan/kotlin-native-prebuilt-linux-x86_64-1.7.20/klib/common/stdlib"
+        "file://$USER_HOME$/.konan/kotlin-native-prebuilt-linux-x86_64-1.8.0/klib/common/stdlib"
       ],
       "properties": {}
     },
     {
       "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:concurrentMain:1.6.4",
       "roots": [
-        "jar://$PROJECT_DIR$/.gradle/kotlin/sourceSetMetadata/semver-core.semantic-versioning-kmp/watchosMain/implementation/org.jetbrains.kotlinx-kotlinx-coroutines-core/org.jetbrains.kotlinx-kotlinx-coroutines-core-concurrentMain.klib!/"
-      ]
+        "jar://$PROJECT_DIR$/.gradle/kotlin/kotlinTransformedMetadataLibraries/org.jetbrains.kotlinx-kotlinx-coroutines-core-1.6.4-concurrentMain-fLwzjw.klib!/"
+      ],
+      "properties": {}
     },
     {
       "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeDarwinMain:1.6.4",
       "roots": [
-        "jar://$PROJECT_DIR$/.gradle/kotlin/sourceSetMetadata/semver-core.semantic-versioning-kmp/watchosMain/implementation/org.jetbrains.kotlinx-kotlinx-coroutines-core/org.jetbrains.kotlinx-kotlinx-coroutines-core-nativeDarwinMain.klib!/"
-      ]
+        "jar://$PROJECT_DIR$/.gradle/kotlin/kotlinTransformedMetadataLibraries/org.jetbrains.kotlinx-kotlinx-coroutines-core-1.6.4-nativeDarwinMain-WRRmgw.klib!/"
+      ],
+      "properties": {}
     },
     {
       "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeMain:1.6.4",
       "roots": [
-        "jar://$PROJECT_DIR$/.gradle/kotlin/sourceSetMetadata/semver-core.semantic-versioning-kmp/watchosMain/implementation/org.jetbrains.kotlinx-kotlinx-coroutines-core/org.jetbrains.kotlinx-kotlinx-coroutines-core-nativeMain.klib!/"
-      ]
+        "jar://$PROJECT_DIR$/.gradle/kotlin/kotlinTransformedMetadataLibraries/org.jetbrains.kotlinx-kotlinx-coroutines-core-1.6.4-nativeMain-fLwzjw.klib!/"
+      ],
+      "properties": {}
     },
     {
       "name": "Gradle: org.jetbrains.kotlinx:atomicfu:commonMain:0.17.3",
       "roots": [
-        "jar://$PROJECT_DIR$/.gradle/kotlin/sourceSetMetadata/semver-core.semantic-versioning-kmp/watchosMain/implementation/org.jetbrains.kotlinx-atomicfu/org.jetbrains.kotlinx-atomicfu-commonMain.klib!/"
-      ]
+        "jar://$PROJECT_DIR$/.gradle/kotlin/kotlinTransformedMetadataLibraries/org.jetbrains.kotlinx-atomicfu-0.17.3-commonMain-8G5yng.klib!/"
+      ],
+      "properties": {}
     },
     {
       "name": "Gradle: org.jetbrains.kotlinx:atomicfu:nativeInterop:0.17.3",
       "roots": [
-        "jar://$PROJECT_DIR$/.gradle/kotlin/sourceSetMetadata/semver-core.semantic-versioning-kmp/watchosMain/implementation/org.jetbrains.kotlinx-atomicfu/org.jetbrains.kotlinx-atomicfu-nativeInterop.klib!/"
-      ]
+        "jar://$PROJECT_DIR$/.gradle/kotlin/kotlinTransformedMetadataLibraries/org.jetbrains.kotlinx-atomicfu-0.17.3-nativeInterop-8G5yng.klib!/"
+      ],
+      "properties": {}
     },
     {
       "name": "Gradle: org.jetbrains.kotlinx:atomicfu:nativeMain:0.17.3",
       "roots": [
-        "jar://$PROJECT_DIR$/.gradle/kotlin/sourceSetMetadata/semver-core.semantic-versioning-kmp/watchosMain/implementation/org.jetbrains.kotlinx-atomicfu/org.jetbrains.kotlinx-atomicfu-nativeMain.klib!/"
-      ]
-    },
-    {
-      "name": "Kotlin/Native 1.7.20 - builtin | mingw_x64",
-      "roots": [
-        "file://$USER_HOME$/.konan/kotlin-native-prebuilt-linux-x86_64-1.7.20/klib/platform/mingw_x64/org.jetbrains.kotlin.native.platform.builtin"
+        "jar://$PROJECT_DIR$/.gradle/kotlin/kotlinTransformedMetadataLibraries/org.jetbrains.kotlinx-atomicfu-0.17.3-nativeMain-8G5yng.klib!/"
       ],
       "properties": {}
     },
     {
-      "name": "Kotlin/Native 1.7.20 - gdiplus | mingw_x64",
+      "name": "Kotlin/Native 1.8.0 - builtin | mingw_x64",
       "roots": [
-        "file://$USER_HOME$/.konan/kotlin-native-prebuilt-linux-x86_64-1.7.20/klib/platform/mingw_x64/org.jetbrains.kotlin.native.platform.gdiplus"
+        "file://$USER_HOME$/.konan/kotlin-native-prebuilt-linux-x86_64-1.8.0/klib/platform/mingw_x64/org.jetbrains.kotlin.native.platform.builtin"
       ],
       "properties": {}
     },
     {
-      "name": "Kotlin/Native 1.7.20 - iconv | mingw_x64",
+      "name": "Kotlin/Native 1.8.0 - gdiplus | mingw_x64",
       "roots": [
-        "file://$USER_HOME$/.konan/kotlin-native-prebuilt-linux-x86_64-1.7.20/klib/platform/mingw_x64/org.jetbrains.kotlin.native.platform.iconv"
+        "file://$USER_HOME$/.konan/kotlin-native-prebuilt-linux-x86_64-1.8.0/klib/platform/mingw_x64/org.jetbrains.kotlin.native.platform.gdiplus"
       ],
       "properties": {}
     },
     {
-      "name": "Kotlin/Native 1.7.20 - opengl32 | mingw_x64",
+      "name": "Kotlin/Native 1.8.0 - iconv | mingw_x64",
       "roots": [
-        "file://$USER_HOME$/.konan/kotlin-native-prebuilt-linux-x86_64-1.7.20/klib/platform/mingw_x64/org.jetbrains.kotlin.native.platform.opengl32"
+        "file://$USER_HOME$/.konan/kotlin-native-prebuilt-linux-x86_64-1.8.0/klib/platform/mingw_x64/org.jetbrains.kotlin.native.platform.iconv"
       ],
       "properties": {}
     },
     {
-      "name": "Kotlin/Native 1.7.20 - posix | mingw_x64",
+      "name": "Kotlin/Native 1.8.0 - opengl32 | mingw_x64",
       "roots": [
-        "file://$USER_HOME$/.konan/kotlin-native-prebuilt-linux-x86_64-1.7.20/klib/platform/mingw_x64/org.jetbrains.kotlin.native.platform.posix"
+        "file://$USER_HOME$/.konan/kotlin-native-prebuilt-linux-x86_64-1.8.0/klib/platform/mingw_x64/org.jetbrains.kotlin.native.platform.opengl32"
       ],
       "properties": {}
     },
     {
-      "name": "Kotlin/Native 1.7.20 - windows | mingw_x64",
+      "name": "Kotlin/Native 1.8.0 - posix | mingw_x64",
       "roots": [
-        "file://$USER_HOME$/.konan/kotlin-native-prebuilt-linux-x86_64-1.7.20/klib/platform/mingw_x64/org.jetbrains.kotlin.native.platform.windows"
+        "file://$USER_HOME$/.konan/kotlin-native-prebuilt-linux-x86_64-1.8.0/klib/platform/mingw_x64/org.jetbrains.kotlin.native.platform.posix"
       ],
       "properties": {}
     },
     {
-      "name": "Kotlin/Native 1.7.20 - zlib | mingw_x64",
+      "name": "Kotlin/Native 1.8.0 - windows | mingw_x64",
       "roots": [
-        "file://$USER_HOME$/.konan/kotlin-native-prebuilt-linux-x86_64-1.7.20/klib/platform/mingw_x64/org.jetbrains.kotlin.native.platform.zlib"
+        "file://$USER_HOME$/.konan/kotlin-native-prebuilt-linux-x86_64-1.8.0/klib/platform/mingw_x64/org.jetbrains.kotlin.native.platform.windows"
+      ],
+      "properties": {}
+    },
+    {
+      "name": "Kotlin/Native 1.8.0 - winhttp | mingw_x64",
+      "roots": [
+        "file://$USER_HOME$/.konan/kotlin-native-prebuilt-linux-x86_64-1.8.0/klib/platform/mingw_x64/org.jetbrains.kotlin.native.platform.winhttp"
+      ],
+      "properties": {}
+    },
+    {
+      "name": "Kotlin/Native 1.8.0 - zlib | mingw_x64",
+      "roots": [
+        "file://$USER_HOME$/.konan/kotlin-native-prebuilt-linux-x86_64-1.8.0/klib/platform/mingw_x64/org.jetbrains.kotlin.native.platform.zlib"
       ],
       "properties": {}
     },
     {
       "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:nativeOtherMain:1.6.4",
       "roots": [
-        "jar://$PROJECT_DIR$/.gradle/kotlin/sourceSetMetadata/semver-core.semantic-versioning-kmp/mingwMain/implementation/org.jetbrains.kotlinx-kotlinx-coroutines-core/org.jetbrains.kotlinx-kotlinx-coroutines-core-nativeOtherMain.klib!/"
-      ]
-    },
-    {
-      "name": "Kotlin/Native 1.7.20 - builtin | linux_x64",
-      "roots": [
-        "file://$USER_HOME$/.konan/kotlin-native-prebuilt-linux-x86_64-1.7.20/klib/platform/linux_x64/org.jetbrains.kotlin.native.platform.builtin"
+        "jar://$PROJECT_DIR$/.gradle/kotlin/kotlinTransformedMetadataLibraries/org.jetbrains.kotlinx-kotlinx-coroutines-core-1.6.4-nativeOtherMain-fLwzjw.klib!/"
       ],
       "properties": {}
     },
     {
-      "name": "Kotlin/Native 1.7.20 - iconv | linux_x64",
+      "name": "Kotlin/Native 1.8.0 - builtin | linux_x64",
       "roots": [
-        "file://$USER_HOME$/.konan/kotlin-native-prebuilt-linux-x86_64-1.7.20/klib/platform/linux_x64/org.jetbrains.kotlin.native.platform.iconv"
+        "file://$USER_HOME$/.konan/kotlin-native-prebuilt-linux-x86_64-1.8.0/klib/platform/linux_x64/org.jetbrains.kotlin.native.platform.builtin"
       ],
       "properties": {}
     },
     {
-      "name": "Kotlin/Native 1.7.20 - linux | linux_x64",
+      "name": "Kotlin/Native 1.8.0 - iconv | linux_x64",
       "roots": [
-        "file://$USER_HOME$/.konan/kotlin-native-prebuilt-linux-x86_64-1.7.20/klib/platform/linux_x64/org.jetbrains.kotlin.native.platform.linux"
+        "file://$USER_HOME$/.konan/kotlin-native-prebuilt-linux-x86_64-1.8.0/klib/platform/linux_x64/org.jetbrains.kotlin.native.platform.iconv"
       ],
       "properties": {}
     },
     {
-      "name": "Kotlin/Native 1.7.20 - posix | linux_x64",
+      "name": "Kotlin/Native 1.8.0 - linux | linux_x64",
       "roots": [
-        "file://$USER_HOME$/.konan/kotlin-native-prebuilt-linux-x86_64-1.7.20/klib/platform/linux_x64/org.jetbrains.kotlin.native.platform.posix"
+        "file://$USER_HOME$/.konan/kotlin-native-prebuilt-linux-x86_64-1.8.0/klib/platform/linux_x64/org.jetbrains.kotlin.native.platform.linux"
       ],
       "properties": {}
     },
     {
-      "name": "Kotlin/Native 1.7.20 - zlib | linux_x64",
+      "name": "Kotlin/Native 1.8.0 - posix | linux_x64",
       "roots": [
-        "file://$USER_HOME$/.konan/kotlin-native-prebuilt-linux-x86_64-1.7.20/klib/platform/linux_x64/org.jetbrains.kotlin.native.platform.zlib"
+        "file://$USER_HOME$/.konan/kotlin-native-prebuilt-linux-x86_64-1.8.0/klib/platform/linux_x64/org.jetbrains.kotlin.native.platform.posix"
+      ],
+      "properties": {}
+    },
+    {
+      "name": "Kotlin/Native 1.8.0 - zlib | linux_x64",
+      "roots": [
+        "file://$USER_HOME$/.konan/kotlin-native-prebuilt-linux-x86_64-1.8.0/klib/platform/linux_x64/org.jetbrains.kotlin.native.platform.zlib"
       ],
       "properties": {}
     },
     {
       "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test:commonMain:1.6.4",
       "roots": [
-        "jar://$PROJECT_DIR$/.gradle/kotlin/sourceSetMetadata/semver-core.semantic-versioning-kmp/commonTest/implementation/org.jetbrains.kotlinx-kotlinx-coroutines-test/org.jetbrains.kotlinx-kotlinx-coroutines-test-commonMain.klib!/"
+        "jar://$PROJECT_DIR$/.gradle/kotlin/kotlinTransformedMetadataLibraries/org.jetbrains.kotlinx-kotlinx-coroutines-test-1.6.4-commonMain-AuQmhQ.klib!/"
       ],
       "properties": {}
     },
     {
       "name": "Gradle: io.kotest:kotest-assertions-core:commonMain:5.5.4",
       "roots": [
-        "jar://$PROJECT_DIR$/.gradle/kotlin/sourceSetMetadata/semver-core.semantic-versioning-kmp/commonTest/implementation/io.kotest-kotest-assertions-core/io.kotest-kotest-assertions-core-commonMain.klib!/"
+        "jar://$PROJECT_DIR$/.gradle/kotlin/kotlinTransformedMetadataLibraries/io.kotest-kotest-assertions-core-5.5.4-commonMain-ODwRMA.klib!/"
       ],
       "properties": {}
     },
     {
       "name": "Gradle: io.kotest:kotest-property:commonMain:5.5.4",
       "roots": [
-        "jar://$PROJECT_DIR$/.gradle/kotlin/sourceSetMetadata/semver-core.semantic-versioning-kmp/commonTest/implementation/io.kotest-kotest-property/io.kotest-kotest-property-commonMain.klib!/"
+        "jar://$PROJECT_DIR$/.gradle/kotlin/kotlinTransformedMetadataLibraries/io.kotest-kotest-property-5.5.4-commonMain-8bR-Ug.klib!/"
       ],
       "properties": {}
     },
     {
       "name": "Gradle: com.javiersc.kotlin:kotlin-test-junit:commonMain:0.1.0-alpha.12",
       "roots": [
-        "jar://$PROJECT_DIR$/.gradle/kotlin/sourceSetMetadata/semver-core.semantic-versioning-kmp/commonTest/implementation/com.javiersc.kotlin-kotlin-test-junit/com.javiersc.kotlin-kotlin-test-junit-commonMain.klib!/"
+        "jar://$PROJECT_DIR$/.gradle/kotlin/kotlinTransformedMetadataLibraries/com.javiersc.kotlin-kotlin-test-junit-0.1.0-alpha.12-commonMain-C3-y1Q.klib!/"
       ],
       "properties": {}
     },
     {
-      "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.7.20",
+      "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.8.0",
       "roots": [
-        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test-junit/1.7.20/d32c2a8433d4c8bfaa0e75e72cd9f0c365d56045/kotlin-test-junit-1.7.20.jar!/"
+        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test-junit/1.8.0/d2f0489c492f06152eac8a7c4029e92e05205153/kotlin-test-junit-1.8.0.jar!/"
       ]
     },
     {
-      "name": "Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.7.20",
+      "name": "Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.8.0",
       "roots": [
-        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test-annotations-common/1.7.20/cc5fb934384fc3eaf58fbd24c3ee5d1b850c481/kotlin-test-annotations-common-1.7.20.jar!/"
+        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test-annotations-common/1.8.0/cdf5e27c26112fe60c7a761680561c8a86d878d3/kotlin-test-annotations-common-1.8.0.jar!/"
       ],
       "properties": {}
     },
     {
       "name": "Gradle: io.kotest:kotest-assertions-shared:commonMain:5.5.4",
       "roots": [
-        "jar://$PROJECT_DIR$/.gradle/kotlin/sourceSetMetadata/semver-core.semantic-versioning-kmp/commonTest/implementation/io.kotest-kotest-assertions-shared/io.kotest-kotest-assertions-shared-commonMain.klib!/"
+        "jar://$PROJECT_DIR$/.gradle/kotlin/kotlinTransformedMetadataLibraries/io.kotest-kotest-assertions-shared-5.5.4-commonMain-8xyWgA.klib!/"
       ],
       "properties": {}
     },
     {
       "name": "Gradle: io.kotest:kotest-common:commonMain:5.5.4",
       "roots": [
-        "jar://$PROJECT_DIR$/.gradle/kotlin/sourceSetMetadata/semver-core.semantic-versioning-kmp/commonTest/implementation/io.kotest-kotest-common/io.kotest-kotest-common-commonMain.klib!/"
+        "jar://$PROJECT_DIR$/.gradle/kotlin/kotlinTransformedMetadataLibraries/io.kotest-kotest-common-5.5.4-commonMain-wBOt8A.klib!/"
       ],
       "properties": {}
     },
     {
       "name": "Gradle: io.kotest:kotest-assertions-api:commonMain:5.5.4",
       "roots": [
-        "jar://$PROJECT_DIR$/.gradle/kotlin/sourceSetMetadata/semver-core.semantic-versioning-kmp/commonTest/implementation/io.kotest-kotest-assertions-api/io.kotest-kotest-assertions-api-commonMain.klib!/"
+        "jar://$PROJECT_DIR$/.gradle/kotlin/kotlinTransformedMetadataLibraries/io.kotest-kotest-assertions-api-5.5.4-commonMain-Ty-b-w.klib!/"
       ],
       "properties": {}
     },
@@ -223,9 +237,9 @@
       ]
     },
     {
-      "name": "Gradle: org.jetbrains.kotlin:kotlin-test-common:1.7.20",
+      "name": "Gradle: org.jetbrains.kotlin:kotlin-test-common:1.8.0",
       "roots": [
-        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test-common/1.7.20/7643c58c4532546cb551152dd3df0162ec79c1d6/kotlin-test-common-1.7.20.jar!/"
+        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test-common/1.8.0/cfac2ae508ad411844aa4232e4b4762fd8fa7eb9/kotlin-test-common-1.8.0.jar!/"
       ],
       "properties": {}
     },
@@ -639,6 +653,83 @@
       "properties": {}
     },
     {
+      "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-tvosarm64:klib:1.6.4",
+      "roots": [
+        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-tvosarm64/1.6.4/5b1faf4db44035222d455bf2244c3da49813d5de/kotlinx-coroutines-core.klib!/"
+      ],
+      "properties": {}
+    },
+    {
+      "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-tvosarm64:klib:0.1.0-alpha.12",
+      "roots": [
+        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/com.javiersc.kotlin/kotlin-stdlib-tvosarm64/0.1.0-alpha.12/ceb92964ab736bab53224dce08db03d77efee4c8/kotlin-stdlib.klib!/"
+      ],
+      "properties": {}
+    },
+    {
+      "name": "Gradle: org.jetbrains.kotlinx:atomicfu-tvosarm64:klib:0.17.3",
+      "roots": [
+        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/atomicfu-tvosarm64/0.17.3/aa35e04314c16bf6d49f5539d20036031aafab8d/atomicfu.klib!/"
+      ],
+      "properties": {}
+    },
+    {
+      "name": "Gradle: org.jetbrains.kotlinx:atomicfu-tvosarm64:klib:cinterop-interop:0.17.3",
+      "roots": [
+        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/atomicfu-tvosarm64/0.17.3/8e09c671f05580ac9e72dca1d744e3efaf7a5393/atomicfu-cinterop-interop.klib!/"
+      ],
+      "properties": {}
+    },
+    {
+      "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-tvosarm64:klib:1.6.4",
+      "roots": [
+        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-test-tvosarm64/1.6.4/3f6afbe3cac332830cd28f919a5aa6cba018150e/kotlinx-coroutines-test.klib!/"
+      ],
+      "properties": {}
+    },
+    {
+      "name": "Gradle: io.kotest:kotest-assertions-core-tvosarm64:klib:5.5.4",
+      "roots": [
+        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/io.kotest/kotest-assertions-core-tvosarm64/5.5.4/4aaaa1cb08e8ccf682a05732eefd8d7bb4397998/kotest-assertions-core.klib!/"
+      ],
+      "properties": {}
+    },
+    {
+      "name": "Gradle: io.kotest:kotest-property-tvosarm64:klib:5.5.4",
+      "roots": [
+        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/io.kotest/kotest-property-tvosarm64/5.5.4/41353faa4cf4b146e0d2156d9f2e54ae6804332e/kotest-property.klib!/"
+      ],
+      "properties": {}
+    },
+    {
+      "name": "Gradle: com.javiersc.kotlin:kotlin-test-junit-tvosarm64:klib:0.1.0-alpha.12",
+      "roots": [
+        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/com.javiersc.kotlin/kotlin-test-junit-tvosarm64/0.1.0-alpha.12/f9164d910969fac989cc1c2e6689b44ea0f866bc/kotlin-test-junit.klib!/"
+      ],
+      "properties": {}
+    },
+    {
+      "name": "Gradle: io.kotest:kotest-assertions-shared-tvosarm64:klib:5.5.4",
+      "roots": [
+        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/io.kotest/kotest-assertions-shared-tvosarm64/5.5.4/8cca9cc3bf7b1e133e8f08642f61a721c6c43f30/kotest-assertions-shared.klib!/"
+      ],
+      "properties": {}
+    },
+    {
+      "name": "Gradle: io.kotest:kotest-common-tvosarm64:klib:5.5.4",
+      "roots": [
+        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/io.kotest/kotest-common-tvosarm64/5.5.4/b3b582471fb0601052ba7d4900ff198c8d4551b2/kotest-common.klib!/"
+      ],
+      "properties": {}
+    },
+    {
+      "name": "Gradle: io.kotest:kotest-assertions-api-tvosarm64:klib:5.5.4",
+      "roots": [
+        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/io.kotest/kotest-assertions-api-tvosarm64/5.5.4/e016d9145327c3b169a925c16c20d9c7f4cb8e5/kotest-assertions-api.klib!/"
+      ],
+      "properties": {}
+    },
+    {
       "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-mingwx64:klib:1.6.4",
       "roots": [
         "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-mingwx64/1.6.4/4d1a8741d749cdc2cb92081aa81449f24b40272f/kotlinx-coroutines-core.klib!/"
@@ -947,9 +1038,9 @@
       "properties": {}
     },
     {
-      "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.7.20",
+      "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.0",
       "roots": [
-        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.7.20/eac6656981d9d7156e838467d2d8d79093b1570/kotlin-stdlib-jdk8-1.7.20.jar!/"
+        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.8.0/ed04f49e186a116753ad70d34f0ac2925d1d8020/kotlin-stdlib-jdk8-1.8.0.jar!/"
       ]
     },
     {
@@ -965,21 +1056,21 @@
       ]
     },
     {
-      "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.20",
+      "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.0",
       "roots": [
-        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.7.20/2a729aa8763306368e665e2b747abd1dfd29b9d5/kotlin-stdlib-jdk7-1.7.20.jar!/"
+        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.8.0/3c91271347f678c239607abb676d4032a7898427/kotlin-stdlib-jdk7-1.8.0.jar!/"
       ]
     },
     {
-      "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.7.20",
+      "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.8.0",
       "roots": [
-        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.7.20/726594ea9ba2beb2ee113647fefa9a10f9fabe52/kotlin-stdlib-1.7.20.jar!/"
+        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.8.0/1796921c7a3e2e2665a83e6c8d33399336cd39bc/kotlin-stdlib-1.8.0.jar!/"
       ]
     },
     {
-      "name": "Gradle: org.jetbrains.kotlin:kotlin-test:1.7.20",
+      "name": "Gradle: org.jetbrains.kotlin:kotlin-test:1.8.0",
       "roots": [
-        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test/1.7.20/1cfae9a58285c1bafb4ad0bd1b27406d97a2623c/kotlin-test-1.7.20.jar!/"
+        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test/1.8.0/cbc4be6bae290df37622e1b3221281d14ba24aa/kotlin-test-1.8.0.jar!/"
       ]
     },
     {
@@ -1049,9 +1140,9 @@
       ]
     },
     {
-      "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-js:1.7.20",
+      "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-js:1.8.0",
       "roots": [
-        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-js/1.7.20/a47d234c0db34861c2d770a0e8fb8935735e1b0b/kotlin-stdlib-js-1.7.20.jar!/"
+        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-js/1.8.0/b4f5f83089cbb70f0b6d81ecffbf3cbf13f4a8b9/kotlin-stdlib-js-1.8.0.jar!/"
       ],
       "properties": {}
     },
@@ -1095,9 +1186,9 @@
       "properties": {}
     },
     {
-      "name": "Gradle: org.jetbrains.kotlin:kotlin-test-js:1.7.20",
+      "name": "Gradle: org.jetbrains.kotlin:kotlin-test-js:1.8.0",
       "roots": [
-        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test-js/1.7.20/abf9cd37b6a5f8c28c543c13189d36c132860a0e/kotlin-test-js-1.7.20.jar!/"
+        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test-js/1.8.0/3af4dadff9462ba38f857b60a1352d5fec65d100/kotlin-test-js-1.8.0.jar!/"
       ],
       "properties": {}
     },

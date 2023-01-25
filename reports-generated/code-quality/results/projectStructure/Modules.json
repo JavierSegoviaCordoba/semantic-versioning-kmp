@@ -56,7 +56,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - stdlib",
+          "name": "Kotlin/Native 1.8.0 - stdlib",
           "type": "Library"
         },
         {
@@ -107,7 +107,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - stdlib",
+          "name": "Kotlin/Native 1.8.0 - stdlib",
           "type": "Library"
         },
         {
@@ -139,7 +139,7 @@
           "type": "Module"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.8.0",
           "type": "Library"
         },
         {
@@ -226,7 +226,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - stdlib",
+          "name": "Kotlin/Native 1.8.0 - stdlib",
           "type": "Library"
         },
         {
@@ -277,7 +277,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - stdlib",
+          "name": "Kotlin/Native 1.8.0 - stdlib",
           "type": "Library"
         },
         {
@@ -309,7 +309,7 @@
           "type": "Module"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.8.0",
           "type": "Library"
         },
         {
@@ -396,7 +396,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - stdlib",
+          "name": "Kotlin/Native 1.8.0 - stdlib",
           "type": "Library"
         },
         {
@@ -447,7 +447,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - stdlib",
+          "name": "Kotlin/Native 1.8.0 - stdlib",
           "type": "Library"
         },
         {
@@ -479,7 +479,7 @@
           "type": "Module"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.8.0",
           "type": "Library"
         },
         {
@@ -578,7 +578,7 @@
           "type": "Module"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-js:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-js:1.8.0",
           "type": "Library"
         },
         {
@@ -641,11 +641,11 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.8.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-js:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-js:1.8.0",
           "type": "Library"
         },
         {
@@ -665,7 +665,7 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-js:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-js:1.8.0",
           "type": "Library"
         },
         {
@@ -740,7 +740,7 @@
           "type": "Module"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.0",
           "type": "Library"
         },
         {
@@ -752,11 +752,11 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.8.0",
           "type": "Library"
         },
         {
@@ -799,15 +799,15 @@
           "type": "Module"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.8.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test:1.8.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.0",
           "type": "Library"
         },
         {
@@ -827,7 +827,7 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.8.0",
           "type": "Library"
         },
         {
@@ -843,7 +843,7 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.0",
           "type": "Library"
         },
         {
@@ -906,7 +906,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - stdlib",
+          "name": "Kotlin/Native 1.8.0 - stdlib",
           "type": "Library"
         },
         {
@@ -918,23 +918,23 @@
           "type": "Module"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - builtin | linux_x64",
+          "name": "Kotlin/Native 1.8.0 - builtin | linux_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - iconv | linux_x64",
+          "name": "Kotlin/Native 1.8.0 - iconv | linux_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - linux | linux_x64",
+          "name": "Kotlin/Native 1.8.0 - linux | linux_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - posix | linux_x64",
+          "name": "Kotlin/Native 1.8.0 - posix | linux_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - zlib | linux_x64",
+          "name": "Kotlin/Native 1.8.0 - zlib | linux_x64",
           "type": "Library"
         },
         {
@@ -973,7 +973,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - stdlib",
+          "name": "Kotlin/Native 1.8.0 - stdlib",
           "type": "Library"
         },
         {
@@ -997,27 +997,27 @@
           "type": "Module"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - builtin | linux_x64",
+          "name": "Kotlin/Native 1.8.0 - builtin | linux_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - iconv | linux_x64",
+          "name": "Kotlin/Native 1.8.0 - iconv | linux_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - linux | linux_x64",
+          "name": "Kotlin/Native 1.8.0 - linux | linux_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - posix | linux_x64",
+          "name": "Kotlin/Native 1.8.0 - posix | linux_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - zlib | linux_x64",
+          "name": "Kotlin/Native 1.8.0 - zlib | linux_x64",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.8.0",
           "type": "Library"
         },
         {
@@ -1104,7 +1104,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - stdlib",
+          "name": "Kotlin/Native 1.8.0 - stdlib",
           "type": "Library"
         },
         {
@@ -1155,7 +1155,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - stdlib",
+          "name": "Kotlin/Native 1.8.0 - stdlib",
           "type": "Library"
         },
         {
@@ -1187,7 +1187,7 @@
           "type": "Module"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.8.0",
           "type": "Library"
         },
         {
@@ -1274,7 +1274,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - stdlib",
+          "name": "Kotlin/Native 1.8.0 - stdlib",
           "type": "Library"
         },
         {
@@ -1325,7 +1325,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - stdlib",
+          "name": "Kotlin/Native 1.8.0 - stdlib",
           "type": "Library"
         },
         {
@@ -1357,7 +1357,7 @@
           "type": "Module"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.8.0",
           "type": "Library"
         },
         {
@@ -1444,7 +1444,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - stdlib",
+          "name": "Kotlin/Native 1.8.0 - stdlib",
           "type": "Library"
         },
         {
@@ -1456,31 +1456,35 @@
           "type": "Module"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - builtin | mingw_x64",
+          "name": "Kotlin/Native 1.8.0 - builtin | mingw_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - gdiplus | mingw_x64",
+          "name": "Kotlin/Native 1.8.0 - gdiplus | mingw_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - iconv | mingw_x64",
+          "name": "Kotlin/Native 1.8.0 - iconv | mingw_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - opengl32 | mingw_x64",
+          "name": "Kotlin/Native 1.8.0 - opengl32 | mingw_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - posix | mingw_x64",
+          "name": "Kotlin/Native 1.8.0 - posix | mingw_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - windows | mingw_x64",
+          "name": "Kotlin/Native 1.8.0 - windows | mingw_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - zlib | mingw_x64",
+          "name": "Kotlin/Native 1.8.0 - winhttp | mingw_x64",
+          "type": "Library"
+        },
+        {
+          "name": "Kotlin/Native 1.8.0 - zlib | mingw_x64",
           "type": "Library"
         },
         {
@@ -1519,7 +1523,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - stdlib",
+          "name": "Kotlin/Native 1.8.0 - stdlib",
           "type": "Library"
         },
         {
@@ -1543,35 +1547,39 @@
           "type": "Module"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - builtin | mingw_x64",
+          "name": "Kotlin/Native 1.8.0 - builtin | mingw_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - gdiplus | mingw_x64",
+          "name": "Kotlin/Native 1.8.0 - gdiplus | mingw_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - iconv | mingw_x64",
+          "name": "Kotlin/Native 1.8.0 - iconv | mingw_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - opengl32 | mingw_x64",
+          "name": "Kotlin/Native 1.8.0 - opengl32 | mingw_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - posix | mingw_x64",
+          "name": "Kotlin/Native 1.8.0 - posix | mingw_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - windows | mingw_x64",
+          "name": "Kotlin/Native 1.8.0 - windows | mingw_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - zlib | mingw_x64",
+          "name": "Kotlin/Native 1.8.0 - winhttp | mingw_x64",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.7.20",
+          "name": "Kotlin/Native 1.8.0 - zlib | mingw_x64",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.8.0",
           "type": "Library"
         },
         {
@@ -1641,6 +1649,176 @@
       ]
     },
     {
+      "name": "semantic-versioning-kmp.semver-core.tvosArm64Main",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/semver-core/tvosArm64/main",
+          "sourceFolders": []
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.8.0 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "semantic-versioning-kmp.semver-core.appleMain",
+          "type": "Module"
+        },
+        {
+          "name": "semantic-versioning-kmp.semver-core.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "semantic-versioning-kmp.semver-core.tvosMain",
+          "type": "Module"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-tvosarm64:klib:1.6.4",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-tvosarm64:klib:0.1.0-alpha.12",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-tvosarm64:klib:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-tvosarm64:klib:cinterop-interop:0.17.3",
+          "type": "Library"
+        }
+      ]
+    },
+    {
+      "name": "semantic-versioning-kmp.semver-core.tvosArm64Test",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/semver-core/tvosArm64/test",
+          "sourceFolders": []
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "Kotlin SDK",
+          "type": "SDK"
+        },
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        },
+        {
+          "name": "Kotlin/Native 1.8.0 - stdlib",
+          "type": "Library"
+        },
+        {
+          "name": "semantic-versioning-kmp.semver-core.appleMain",
+          "type": "Module"
+        },
+        {
+          "name": "semantic-versioning-kmp.semver-core.appleTest",
+          "type": "Module"
+        },
+        {
+          "name": "semantic-versioning-kmp.semver-core.commonMain",
+          "type": "Module"
+        },
+        {
+          "name": "semantic-versioning-kmp.semver-core.commonTest",
+          "type": "Module"
+        },
+        {
+          "name": "semantic-versioning-kmp.semver-core.tvosArm64Main",
+          "type": "Module"
+        },
+        {
+          "name": "semantic-versioning-kmp.semver-core.tvosMain",
+          "type": "Module"
+        },
+        {
+          "name": "semantic-versioning-kmp.semver-core.tvosTest",
+          "type": "Module"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.8.0",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-test-tvosarm64:klib:1.6.4",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-assertions-core-tvosarm64:klib:5.5.4",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-property-tvosarm64:klib:5.5.4",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-tvosarm64:klib:1.6.4",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-stdlib-tvosarm64:klib:0.1.0-alpha.12",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: com.javiersc.kotlin:kotlin-test-junit-tvosarm64:klib:0.1.0-alpha.12",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: junit:junit:4.13.2",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-reflect:1.6.21",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.hamcrest:hamcrest-core:1.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-tvosarm64:klib:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlinx:atomicfu-tvosarm64:klib:cinterop-interop:0.17.3",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-assertions-shared-tvosarm64:klib:5.5.4",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-common-tvosarm64:klib:5.5.4",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.6.21",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: io.kotest:kotest-assertions-api-tvosarm64:klib:5.5.4",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains:annotations:13.0",
+          "type": "Library"
+        }
+      ]
+    },
+    {
       "name": "semantic-versioning-kmp.semver-core.tvosSimulatorArm64Main",
       "contentEntries": [
         {
@@ -1658,7 +1836,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - stdlib",
+          "name": "Kotlin/Native 1.8.0 - stdlib",
           "type": "Library"
         },
         {
@@ -1709,7 +1887,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - stdlib",
+          "name": "Kotlin/Native 1.8.0 - stdlib",
           "type": "Library"
         },
         {
@@ -1741,7 +1919,7 @@
           "type": "Module"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.8.0",
           "type": "Library"
         },
         {
@@ -1828,7 +2006,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - stdlib",
+          "name": "Kotlin/Native 1.8.0 - stdlib",
           "type": "Library"
         },
         {
@@ -1879,7 +2057,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - stdlib",
+          "name": "Kotlin/Native 1.8.0 - stdlib",
           "type": "Library"
         },
         {
@@ -1911,7 +2089,7 @@
           "type": "Module"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.8.0",
           "type": "Library"
         },
         {
@@ -1998,7 +2176,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - stdlib",
+          "name": "Kotlin/Native 1.8.0 - stdlib",
           "type": "Library"
         },
         {
@@ -2049,7 +2227,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - stdlib",
+          "name": "Kotlin/Native 1.8.0 - stdlib",
           "type": "Library"
         },
         {
@@ -2081,7 +2259,7 @@
           "type": "Module"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.8.0",
           "type": "Library"
         },
         {
@@ -2168,7 +2346,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - stdlib",
+          "name": "Kotlin/Native 1.8.0 - stdlib",
           "type": "Library"
         },
         {
@@ -2219,7 +2397,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - stdlib",
+          "name": "Kotlin/Native 1.8.0 - stdlib",
           "type": "Library"
         },
         {
@@ -2251,7 +2429,7 @@
           "type": "Module"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.8.0",
           "type": "Library"
         },
         {
@@ -2338,7 +2516,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - stdlib",
+          "name": "Kotlin/Native 1.8.0 - stdlib",
           "type": "Library"
         },
         {
@@ -2389,7 +2567,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - stdlib",
+          "name": "Kotlin/Native 1.8.0 - stdlib",
           "type": "Library"
         },
         {
@@ -2421,7 +2599,7 @@
           "type": "Module"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.8.0",
           "type": "Library"
         },
         {
@@ -2508,7 +2686,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - stdlib",
+          "name": "Kotlin/Native 1.8.0 - stdlib",
           "type": "Library"
         },
         {
@@ -2516,7 +2694,7 @@
           "type": "Module"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.8.0",
           "type": "Library"
         },
         {
@@ -2571,7 +2749,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - stdlib",
+          "name": "Kotlin/Native 1.8.0 - stdlib",
           "type": "Library"
         },
         {
@@ -2587,7 +2765,7 @@
           "type": "Module"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.8.0",
           "type": "Library"
         },
         {
@@ -2639,11 +2817,11 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.8.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.8.0",
           "type": "Library"
         },
         {
@@ -2663,7 +2841,7 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-common:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-common:1.8.0",
           "type": "Library"
         },
         {
@@ -2696,7 +2874,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.8.0",
           "type": "Library"
         },
         {
@@ -2737,7 +2915,7 @@
           "type": "Module"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.8.0",
           "type": "Library"
         },
         {
@@ -2765,11 +2943,11 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.8.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.8.0",
           "type": "Library"
         },
         {
@@ -2789,7 +2967,7 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-common:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-common:1.8.0",
           "type": "Library"
         },
         {
@@ -2816,7 +2994,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - stdlib",
+          "name": "Kotlin/Native 1.8.0 - stdlib",
           "type": "Library"
         },
         {
@@ -2824,7 +3002,7 @@
           "type": "Module"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.8.0",
           "type": "Library"
         },
         {
@@ -2879,7 +3057,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - stdlib",
+          "name": "Kotlin/Native 1.8.0 - stdlib",
           "type": "Library"
         },
         {
@@ -2899,7 +3077,7 @@
           "type": "Module"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.8.0",
           "type": "Library"
         },
         {
@@ -2951,11 +3129,11 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.8.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.8.0",
           "type": "Library"
         },
         {
@@ -2975,7 +3153,7 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-common:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-common:1.8.0",
           "type": "Library"
         },
         {
@@ -3002,7 +3180,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - stdlib",
+          "name": "Kotlin/Native 1.8.0 - stdlib",
           "type": "Library"
         },
         {
@@ -3010,27 +3188,27 @@
           "type": "Module"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - builtin | linux_x64",
+          "name": "Kotlin/Native 1.8.0 - builtin | linux_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - iconv | linux_x64",
+          "name": "Kotlin/Native 1.8.0 - iconv | linux_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - linux | linux_x64",
+          "name": "Kotlin/Native 1.8.0 - linux | linux_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - posix | linux_x64",
+          "name": "Kotlin/Native 1.8.0 - posix | linux_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - zlib | linux_x64",
+          "name": "Kotlin/Native 1.8.0 - zlib | linux_x64",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.8.0",
           "type": "Library"
         },
         {
@@ -3085,7 +3263,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - stdlib",
+          "name": "Kotlin/Native 1.8.0 - stdlib",
           "type": "Library"
         },
         {
@@ -3105,27 +3283,27 @@
           "type": "Module"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - builtin | linux_x64",
+          "name": "Kotlin/Native 1.8.0 - builtin | linux_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - iconv | linux_x64",
+          "name": "Kotlin/Native 1.8.0 - iconv | linux_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - linux | linux_x64",
+          "name": "Kotlin/Native 1.8.0 - linux | linux_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - posix | linux_x64",
+          "name": "Kotlin/Native 1.8.0 - posix | linux_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - zlib | linux_x64",
+          "name": "Kotlin/Native 1.8.0 - zlib | linux_x64",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.8.0",
           "type": "Library"
         },
         {
@@ -3177,11 +3355,11 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.8.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.8.0",
           "type": "Library"
         },
         {
@@ -3201,7 +3379,7 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-common:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-common:1.8.0",
           "type": "Library"
         },
         {
@@ -3228,7 +3406,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - stdlib",
+          "name": "Kotlin/Native 1.8.0 - stdlib",
           "type": "Library"
         },
         {
@@ -3236,7 +3414,7 @@
           "type": "Module"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.8.0",
           "type": "Library"
         },
         {
@@ -3291,7 +3469,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - stdlib",
+          "name": "Kotlin/Native 1.8.0 - stdlib",
           "type": "Library"
         },
         {
@@ -3311,7 +3489,7 @@
           "type": "Module"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.8.0",
           "type": "Library"
         },
         {
@@ -3363,11 +3541,11 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.8.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.8.0",
           "type": "Library"
         },
         {
@@ -3387,7 +3565,7 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-common:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-common:1.8.0",
           "type": "Library"
         },
         {
@@ -3414,7 +3592,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - stdlib",
+          "name": "Kotlin/Native 1.8.0 - stdlib",
           "type": "Library"
         },
         {
@@ -3422,35 +3600,39 @@
           "type": "Module"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - builtin | mingw_x64",
+          "name": "Kotlin/Native 1.8.0 - builtin | mingw_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - gdiplus | mingw_x64",
+          "name": "Kotlin/Native 1.8.0 - gdiplus | mingw_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - iconv | mingw_x64",
+          "name": "Kotlin/Native 1.8.0 - iconv | mingw_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - opengl32 | mingw_x64",
+          "name": "Kotlin/Native 1.8.0 - opengl32 | mingw_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - posix | mingw_x64",
+          "name": "Kotlin/Native 1.8.0 - posix | mingw_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - windows | mingw_x64",
+          "name": "Kotlin/Native 1.8.0 - windows | mingw_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - zlib | mingw_x64",
+          "name": "Kotlin/Native 1.8.0 - winhttp | mingw_x64",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.20",
+          "name": "Kotlin/Native 1.8.0 - zlib | mingw_x64",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.8.0",
           "type": "Library"
         },
         {
@@ -3505,7 +3687,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - stdlib",
+          "name": "Kotlin/Native 1.8.0 - stdlib",
           "type": "Library"
         },
         {
@@ -3525,35 +3707,39 @@
           "type": "Module"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - builtin | mingw_x64",
+          "name": "Kotlin/Native 1.8.0 - builtin | mingw_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - gdiplus | mingw_x64",
+          "name": "Kotlin/Native 1.8.0 - gdiplus | mingw_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - iconv | mingw_x64",
+          "name": "Kotlin/Native 1.8.0 - iconv | mingw_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - opengl32 | mingw_x64",
+          "name": "Kotlin/Native 1.8.0 - opengl32 | mingw_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - posix | mingw_x64",
+          "name": "Kotlin/Native 1.8.0 - posix | mingw_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - windows | mingw_x64",
+          "name": "Kotlin/Native 1.8.0 - windows | mingw_x64",
           "type": "Library"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - zlib | mingw_x64",
+          "name": "Kotlin/Native 1.8.0 - winhttp | mingw_x64",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.20",
+          "name": "Kotlin/Native 1.8.0 - zlib | mingw_x64",
+          "type": "Library"
+        },
+        {
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.8.0",
           "type": "Library"
         },
         {
@@ -3605,11 +3791,11 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.8.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.8.0",
           "type": "Library"
         },
         {
@@ -3629,7 +3815,7 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-common:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-common:1.8.0",
           "type": "Library"
         },
         {
@@ -3656,7 +3842,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - stdlib",
+          "name": "Kotlin/Native 1.8.0 - stdlib",
           "type": "Library"
         },
         {
@@ -3664,7 +3850,7 @@
           "type": "Module"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.8.0",
           "type": "Library"
         },
         {
@@ -3719,7 +3905,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - stdlib",
+          "name": "Kotlin/Native 1.8.0 - stdlib",
           "type": "Library"
         },
         {
@@ -3739,7 +3925,7 @@
           "type": "Module"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.8.0",
           "type": "Library"
         },
         {
@@ -3791,11 +3977,11 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.8.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.8.0",
           "type": "Library"
         },
         {
@@ -3815,7 +4001,7 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-common:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-common:1.8.0",
           "type": "Library"
         },
         {
@@ -3842,7 +4028,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - stdlib",
+          "name": "Kotlin/Native 1.8.0 - stdlib",
           "type": "Library"
         },
         {
@@ -3850,7 +4036,7 @@
           "type": "Module"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.8.0",
           "type": "Library"
         },
         {
@@ -3905,7 +4091,7 @@
           "type": "Own sources"
         },
         {
-          "name": "Kotlin/Native 1.7.20 - stdlib",
+          "name": "Kotlin/Native 1.8.0 - stdlib",
           "type": "Library"
         },
         {
@@ -3925,7 +4111,7 @@
           "type": "Module"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.8.0",
           "type": "Library"
         },
         {
@@ -3977,11 +4163,11 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.8.0",
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.8.0",
           "type": "Library"
         },
         {
@@ -4001,7 +4187,7 @@
           "type": "Library"
         },
         {
-          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-common:1.7.20",
+          "name": "Gradle: org.jetbrains.kotlin:kotlin-test-common:1.8.0",
           "type": "Library"
         },
         {

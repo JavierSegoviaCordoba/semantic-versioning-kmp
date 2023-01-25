@@ -6,6 +6,7 @@ import com.javiersc.semver.Version.Increase.Patch
 import io.kotest.assertions.throwables.shouldThrow
 import io.kotest.matchers.booleans.shouldBeFalse
 import io.kotest.matchers.booleans.shouldBeTrue
+import io.kotest.matchers.collections.shouldContainExactly
 import io.kotest.matchers.comparables.shouldBeGreaterThan
 import io.kotest.matchers.nulls.shouldBeNull
 import io.kotest.matchers.shouldBe
@@ -195,7 +196,7 @@ class VersionTest {
                 Version("0.1.0-alpha.1"),
             )
 
-        actualList shouldBe actualList.sortedDescending()
+        actualList shouldContainExactly actualList.sortedDescending()
     }
 
     @Test

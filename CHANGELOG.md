@@ -14,6 +14,10 @@
 
 ### Updated
 
+## [0.1.0-beta.13] - 2023-01-25
+
+### Updated
+
 - `kotlin -> 1.8.0`
 - `com.javiersc.hubdle:com.javiersc.hubdle.gradle.plugin -> 0.4.0-alpha.4`
 
@@ -201,7 +205,9 @@
 
 - No changes
 
-[Unreleased]: https://github.com/JavierSegoviaCordoba/semantic-versioning-kmp/compare/0.1.0-beta.12...HEAD
+[Unreleased]: https://github.com/JavierSegoviaCordoba/semantic-versioning-kmp/compare/0.1.0-beta.13...HEAD
+
+[0.1.0-beta.13]: https://github.com/JavierSegoviaCordoba/semantic-versioning-kmp/compare/0.1.0-beta.12...0.1.0-beta.13
 
 [0.1.0-beta.12]: https://github.com/JavierSegoviaCordoba/semantic-versioning-kmp/compare/0.1.0-beta.11...0.1.0-beta.12
 

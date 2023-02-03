@@ -96,4 +96,4 @@ The function is_version is too long (156). The maximum length is 60.
 
 ```
 
-generated with [detekt version 1.22.0](https://detekt.dev/) on 2023-01-27 14:31:02 UTC
+generated with [detekt version 1.22.0](https://detekt.dev/) on 2023-02-03 18:58:59 UTC

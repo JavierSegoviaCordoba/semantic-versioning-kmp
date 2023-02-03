@@ -3,16 +3,17 @@
   "tools inspection": {
     "Code Inspection": 0
   },
+  "linter": "QDJVMC",
   "attributes": {
     "vcs": {
       "sarifIdea": {
         "repositoryUri": "ssh://git@github.com/JavierSegoviaCordoba/semantic-versioning-kmp.git",
-        "revisionId": "23b3cef4131acf7ecc9705c5f5ff3f36a2093f11",
+        "revisionId": "b50cf9d8e21f0864eef2e9162b9fccddaa2c56f2",
         "branch": "refs/heads/main"
       }
     },
     "deviceId": "200820300000000-d3c3-6092-403e-95b45d1159f0",
-    "jobUrl": "https://github.com/JavierSegoviaCordoba/semantic-versioning-kmp/actions/runs/4025390995",
+    "jobUrl": "https://github.com/JavierSegoviaCordoba/semantic-versioning-kmp/actions/runs/4087064042",
     "repoUrl": "https://github.com/JavierSegoviaCordoba/semantic-versioning-kmp"
   }
 }

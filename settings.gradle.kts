@@ -19,3 +19,10 @@ pluginManagement {
 plugins {
     id("com.javiersc.hubdle.settings")
 }
+
+dependencyResolutionManagement {
+    repositories {
+        mavenCentral()
+        google()
+    }
+}

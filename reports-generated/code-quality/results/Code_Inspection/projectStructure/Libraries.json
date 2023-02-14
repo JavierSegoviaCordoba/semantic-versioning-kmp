@@ -1,9 +1,9 @@
 {
   "libraries": [
     {
-      "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.8.0",
+      "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.8.10",
       "roots": [
-        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.8.0/f7197e7cc76453ac59f8b0f8d5137cc600becd36/kotlin-stdlib-common-1.8.0.jar!/"
+        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.8.10/a61b182458550492c12aee66157d7b524a63a5ec/kotlin-stdlib-common-1.8.10.jar!/"
       ],
       "properties": {}
     },
@@ -22,9 +22,9 @@
       "properties": {}
     },
     {
-      "name": "Kotlin/Native 1.8.0 - stdlib",
+      "name": "Kotlin/Native 1.8.10 - stdlib",
       "roots": [
-        "file://$USER_HOME$/.konan/kotlin-native-prebuilt-linux-x86_64-1.8.0/klib/common/stdlib"
+        "file://$USER_HOME$/.konan/kotlin-native-prebuilt-linux-x86_64-1.8.10/klib/common/stdlib"
       ],
       "properties": {}
     },
@@ -71,58 +71,58 @@
       "properties": {}
     },
     {
-      "name": "Kotlin/Native 1.8.0 - builtin | mingw_x64",
+      "name": "Kotlin/Native 1.8.10 - builtin | mingw_x64",
       "roots": [
-        "file://$USER_HOME$/.konan/kotlin-native-prebuilt-linux-x86_64-1.8.0/klib/platform/mingw_x64/org.jetbrains.kotlin.native.platform.builtin"
+        "file://$USER_HOME$/.konan/kotlin-native-prebuilt-linux-x86_64-1.8.10/klib/platform/mingw_x64/org.jetbrains.kotlin.native.platform.builtin"
       ],
       "properties": {}
     },
     {
-      "name": "Kotlin/Native 1.8.0 - gdiplus | mingw_x64",
+      "name": "Kotlin/Native 1.8.10 - gdiplus | mingw_x64",
       "roots": [
-        "file://$USER_HOME$/.konan/kotlin-native-prebuilt-linux-x86_64-1.8.0/klib/platform/mingw_x64/org.jetbrains.kotlin.native.platform.gdiplus"
+        "file://$USER_HOME$/.konan/kotlin-native-prebuilt-linux-x86_64-1.8.10/klib/platform/mingw_x64/org.jetbrains.kotlin.native.platform.gdiplus"
       ],
       "properties": {}
     },
     {
-      "name": "Kotlin/Native 1.8.0 - iconv | mingw_x64",
+      "name": "Kotlin/Native 1.8.10 - iconv | mingw_x64",
       "roots": [
-        "file://$USER_HOME$/.konan/kotlin-native-prebuilt-linux-x86_64-1.8.0/klib/platform/mingw_x64/org.jetbrains.kotlin.native.platform.iconv"
+        "file://$USER_HOME$/.konan/kotlin-native-prebuilt-linux-x86_64-1.8.10/klib/platform/mingw_x64/org.jetbrains.kotlin.native.platform.iconv"
       ],
       "properties": {}
     },
     {
-      "name": "Kotlin/Native 1.8.0 - opengl32 | mingw_x64",
+      "name": "Kotlin/Native 1.8.10 - opengl32 | mingw_x64",
       "roots": [
-        "file://$USER_HOME$/.konan/kotlin-native-prebuilt-linux-x86_64-1.8.0/klib/platform/mingw_x64/org.jetbrains.kotlin.native.platform.opengl32"
+        "file://$USER_HOME$/.konan/kotlin-native-prebuilt-linux-x86_64-1.8.10/klib/platform/mingw_x64/org.jetbrains.kotlin.native.platform.opengl32"
       ],
       "properties": {}
     },
     {
-      "name": "Kotlin/Native 1.8.0 - posix | mingw_x64",
+      "name": "Kotlin/Native 1.8.10 - posix | mingw_x64",
       "roots": [
-        "file://$USER_HOME$/.konan/kotlin-native-prebuilt-linux-x86_64-1.8.0/klib/platform/mingw_x64/org.jetbrains.kotlin.native.platform.posix"
+        "file://$USER_HOME$/.konan/kotlin-native-prebuilt-linux-x86_64-1.8.10/klib/platform/mingw_x64/org.jetbrains.kotlin.native.platform.posix"
       ],
       "properties": {}
     },
     {
-      "name": "Kotlin/Native 1.8.0 - windows | mingw_x64",
+      "name": "Kotlin/Native 1.8.10 - windows | mingw_x64",
       "roots": [
-        "file://$USER_HOME$/.konan/kotlin-native-prebuilt-linux-x86_64-1.8.0/klib/platform/mingw_x64/org.jetbrains.kotlin.native.platform.windows"
+        "file://$USER_HOME$/.konan/kotlin-native-prebuilt-linux-x86_64-1.8.10/klib/platform/mingw_x64/org.jetbrains.kotlin.native.platform.windows"
       ],
       "properties": {}
     },
     {
-      "name": "Kotlin/Native 1.8.0 - winhttp | mingw_x64",
+      "name": "Kotlin/Native 1.8.10 - winhttp | mingw_x64",
       "roots": [
-        "file://$USER_HOME$/.konan/kotlin-native-prebuilt-linux-x86_64-1.8.0/klib/platform/mingw_x64/org.jetbrains.kotlin.native.platform.winhttp"
+        "file://$USER_HOME$/.konan/kotlin-native-prebuilt-linux-x86_64-1.8.10/klib/platform/mingw_x64/org.jetbrains.kotlin.native.platform.winhttp"
       ],
       "properties": {}
     },
     {
-      "name": "Kotlin/Native 1.8.0 - zlib | mingw_x64",
+      "name": "Kotlin/Native 1.8.10 - zlib | mingw_x64",
       "roots": [
-        "file://$USER_HOME$/.konan/kotlin-native-prebuilt-linux-x86_64-1.8.0/klib/platform/mingw_x64/org.jetbrains.kotlin.native.platform.zlib"
+        "file://$USER_HOME$/.konan/kotlin-native-prebuilt-linux-x86_64-1.8.10/klib/platform/mingw_x64/org.jetbrains.kotlin.native.platform.zlib"
       ],
       "properties": {}
     },
@@ -134,37 +134,37 @@
       "properties": {}
     },
     {
-      "name": "Kotlin/Native 1.8.0 - builtin | linux_x64",
+      "name": "Kotlin/Native 1.8.10 - builtin | linux_x64",
       "roots": [
-        "file://$USER_HOME$/.konan/kotlin-native-prebuilt-linux-x86_64-1.8.0/klib/platform/linux_x64/org.jetbrains.kotlin.native.platform.builtin"
+        "file://$USER_HOME$/.konan/kotlin-native-prebuilt-linux-x86_64-1.8.10/klib/platform/linux_x64/org.jetbrains.kotlin.native.platform.builtin"
       ],
       "properties": {}
     },
     {
-      "name": "Kotlin/Native 1.8.0 - iconv | linux_x64",
+      "name": "Kotlin/Native 1.8.10 - iconv | linux_x64",
       "roots": [
-        "file://$USER_HOME$/.konan/kotlin-native-prebuilt-linux-x86_64-1.8.0/klib/platform/linux_x64/org.jetbrains.kotlin.native.platform.iconv"
+        "file://$USER_HOME$/.konan/kotlin-native-prebuilt-linux-x86_64-1.8.10/klib/platform/linux_x64/org.jetbrains.kotlin.native.platform.iconv"
       ],
       "properties": {}
     },
     {
-      "name": "Kotlin/Native 1.8.0 - linux | linux_x64",
+      "name": "Kotlin/Native 1.8.10 - linux | linux_x64",
       "roots": [
-        "file://$USER_HOME$/.konan/kotlin-native-prebuilt-linux-x86_64-1.8.0/klib/platform/linux_x64/org.jetbrains.kotlin.native.platform.linux"
+        "file://$USER_HOME$/.konan/kotlin-native-prebuilt-linux-x86_64-1.8.10/klib/platform/linux_x64/org.jetbrains.kotlin.native.platform.linux"
       ],
       "properties": {}
     },
     {
-      "name": "Kotlin/Native 1.8.0 - posix | linux_x64",
+      "name": "Kotlin/Native 1.8.10 - posix | linux_x64",
       "roots": [
-        "file://$USER_HOME$/.konan/kotlin-native-prebuilt-linux-x86_64-1.8.0/klib/platform/linux_x64/org.jetbrains.kotlin.native.platform.posix"
+        "file://$USER_HOME$/.konan/kotlin-native-prebuilt-linux-x86_64-1.8.10/klib/platform/linux_x64/org.jetbrains.kotlin.native.platform.posix"
       ],
       "properties": {}
     },
     {
-      "name": "Kotlin/Native 1.8.0 - zlib | linux_x64",
+      "name": "Kotlin/Native 1.8.10 - zlib | linux_x64",
       "roots": [
-        "file://$USER_HOME$/.konan/kotlin-native-prebuilt-linux-x86_64-1.8.0/klib/platform/linux_x64/org.jetbrains.kotlin.native.platform.zlib"
+        "file://$USER_HOME$/.konan/kotlin-native-prebuilt-linux-x86_64-1.8.10/klib/platform/linux_x64/org.jetbrains.kotlin.native.platform.zlib"
       ],
       "properties": {}
     },
@@ -197,15 +197,15 @@
       "properties": {}
     },
     {
-      "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.8.0",
+      "name": "Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.8.10",
       "roots": [
-        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test-junit/1.8.0/d2f0489c492f06152eac8a7c4029e92e05205153/kotlin-test-junit-1.8.0.jar!/"
+        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test-junit/1.8.10/d30797f76f5f4619531a4aee2024bc1988c3b4f5/kotlin-test-junit-1.8.10.jar!/"
       ]
     },
     {
-      "name": "Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.8.0",
+      "name": "Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.8.10",
       "roots": [
-        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test-annotations-common/1.8.0/cdf5e27c26112fe60c7a761680561c8a86d878d3/kotlin-test-annotations-common-1.8.0.jar!/"
+        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test-annotations-common/1.8.10/b3015327d703b67b7450bf6714e3854d7130efdc/kotlin-test-annotations-common-1.8.10.jar!/"
       ],
       "properties": {}
     },
@@ -237,9 +237,9 @@
       ]
     },
     {
-      "name": "Gradle: org.jetbrains.kotlin:kotlin-test-common:1.8.0",
+      "name": "Gradle: org.jetbrains.kotlin:kotlin-test-common:1.8.10",
       "roots": [
-        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test-common/1.8.0/cfac2ae508ad411844aa4232e4b4762fd8fa7eb9/kotlin-test-common-1.8.0.jar!/"
+        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test-common/1.8.10/1da8086c87a846e6fa99a4f01380d0adb78cde3e/kotlin-test-common-1.8.10.jar!/"
       ],
       "properties": {}
     },
@@ -1038,9 +1038,9 @@
       "properties": {}
     },
     {
-      "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.0",
+      "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.10",
       "roots": [
-        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.8.0/ed04f49e186a116753ad70d34f0ac2925d1d8020/kotlin-stdlib-jdk8-1.8.0.jar!/"
+        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.8.10/7c002ac41f547a82e81dfebd2a20577a738dbf3f/kotlin-stdlib-jdk8-1.8.10.jar!/"
       ]
     },
     {
@@ -1056,21 +1056,21 @@
       ]
     },
     {
-      "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.0",
+      "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.10",
       "roots": [
-        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.8.0/3c91271347f678c239607abb676d4032a7898427/kotlin-stdlib-jdk7-1.8.0.jar!/"
+        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.8.10/cb726a23c808a850a43e7d6b9d1ba91b02fe9f05/kotlin-stdlib-jdk7-1.8.10.jar!/"
       ]
     },
     {
-      "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.8.0",
+      "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.8.10",
       "roots": [
-        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.8.0/1796921c7a3e2e2665a83e6c8d33399336cd39bc/kotlin-stdlib-1.8.0.jar!/"
+        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.8.10/6d5560a229477df9406943d5feda5618e98eb64c/kotlin-stdlib-1.8.10.jar!/"
       ]
     },
     {
-      "name": "Gradle: org.jetbrains.kotlin:kotlin-test:1.8.0",
+      "name": "Gradle: org.jetbrains.kotlin:kotlin-test:1.8.10",
       "roots": [
-        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test/1.8.0/cbc4be6bae290df37622e1b3221281d14ba24aa/kotlin-test-1.8.0.jar!/"
+        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test/1.8.10/5fd889abbc164b0a080a7a3314627bd796315421/kotlin-test-1.8.10.jar!/"
       ]
     },
     {
@@ -1140,9 +1140,9 @@
       ]
     },
     {
-      "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-js:1.8.0",
+      "name": "Gradle: org.jetbrains.kotlin:kotlin-stdlib-js:1.8.10",
       "roots": [
-        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-js/1.8.0/b4f5f83089cbb70f0b6d81ecffbf3cbf13f4a8b9/kotlin-stdlib-js-1.8.0.jar!/"
+        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-js/1.8.10/7f93c25deb9f979fa60c91720d1b0b6bfcb678e3/kotlin-stdlib-js-1.8.10.jar!/"
       ],
       "properties": {}
     },
@@ -1186,9 +1186,9 @@
       "properties": {}
     },
     {
-      "name": "Gradle: org.jetbrains.kotlin:kotlin-test-js:1.8.0",
+      "name": "Gradle: org.jetbrains.kotlin:kotlin-test-js:1.8.10",
       "roots": [
-        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test-js/1.8.0/3af4dadff9462ba38f857b60a1352d5fec65d100/kotlin-test-js-1.8.0.jar!/"
+        "jar://$PROJECT_DIR$/../cache/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test-js/1.8.10/d49e4951ce71193c0aca596b94b02c5c4ba9fa6e/kotlin-test-js-1.8.10.jar!/"
       ],
       "properties": {}
     },

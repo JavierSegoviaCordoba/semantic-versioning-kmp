@@ -14,11 +14,11 @@
 
 ## Complexity Report
 
-* 1,116 lines of code (loc)
+* 1,120 lines of code (loc)
 
-* 991 source lines of code (sloc)
+* 995 source lines of code (sloc)
 
-* 833 logical lines of code (lloc)
+* 836 logical lines of code (lloc)
 
 * 4 comment lines of code (cloc)
 
@@ -30,7 +30,7 @@
 
 * 0% comment source ratio
 
-* 200 mcc per 1,000 lloc
+* 199 mcc per 1,000 lloc
 
 * 3 code smells per 1,000 lloc
 
@@ -96,4 +96,4 @@ The function is_version is too long (156). The maximum length is 60.
 
 ```
 
-generated with [detekt version 1.22.0](https://detekt.dev/) on 2023-02-13 23:55:03 UTC
+generated with [detekt version 1.22.0](https://detekt.dev/) on 2023-02-27 13:14:42 UTC

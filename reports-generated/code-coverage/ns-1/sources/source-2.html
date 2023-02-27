@@ -1,0 +1,390 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > SemanticVersionException</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">com.javiersc.semver</a>
+</div>
+
+<h1>Coverage Summary for Class: SemanticVersionException (com.javiersc.semver)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Branch, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+<th class="coverageStat 
+">
+  Instruction, %
+</th>
+</tr>
+<tr>
+  <td class="name">SemanticVersionException</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+    <td class="coverageStat"/>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (8/8)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package com.javiersc.semver
+&nbsp;
+&nbsp;import kotlin.contracts.ExperimentalContracts
+&nbsp;import kotlin.contracts.contract
+&nbsp;
+&nbsp;public class Version private constructor(public val value: String) : Comparable&lt;Version&gt; {
+&nbsp;
+&nbsp;    init {
+&nbsp;        checkFullVersion(value)
+&nbsp;    }
+&nbsp;
+&nbsp;    public val major: Int = preStage.split(&quot;.&quot;).first().toInt()
+&nbsp;
+&nbsp;    public val minor: Int = preStage.split(&quot;.&quot;)[1].toInt()
+&nbsp;
+&nbsp;    public val patch: Int = preStage.split(&quot;.&quot;).getOrNull(2)?.toInt() ?: 0
+&nbsp;
+&nbsp;    public val stage: Stage? = stageAndNum?.let { Stage(it) }
+&nbsp;
+&nbsp;    @Suppress(&quot;ComplexMethod&quot;)
+&nbsp;    override fun compareTo(other: Version): Int =
+&nbsp;        when {
+&nbsp;            major &gt; other.major -&gt; 1
+&nbsp;            major &lt; other.major -&gt; -1
+&nbsp;            minor &gt; other.minor -&gt; 1
+&nbsp;            minor &lt; other.minor -&gt; -1
+&nbsp;            patch &gt; other.patch -&gt; 1
+&nbsp;            patch &lt; other.patch -&gt; -1
+&nbsp;            stage == null &amp;&amp; other.stage != null -&gt; 1
+&nbsp;            stage != null &amp;&amp; other.stage == null -&gt; -1
+&nbsp;            stage != null &amp;&amp; other.stage != null &amp;&amp; stage &gt; other.stage -&gt; 1
+&nbsp;            stage != null &amp;&amp; other.stage != null &amp;&amp; stage &lt; other.stage -&gt; -1
+&nbsp;            else -&gt; 0
+&nbsp;        }
+&nbsp;
+&nbsp;    @Suppress(&quot;ComplexMethod&quot;)
+&nbsp;    public fun inc(number: Increase? = null, stageName: String = &quot;&quot;): Version {
+&nbsp;        val incNum = if (stageName.lowercase() == &quot;snapshot&quot;) null else 1
+&nbsp;        val nextVersion: Version =
+&nbsp;            when {
+&nbsp;                number == null &amp;&amp; stageName.isBlank() &amp;&amp; !stage?.name.isNullOrBlank() -&gt; {
+&nbsp;                    invoke(major, minor, patch, null, null)
+&nbsp;                }
+&nbsp;                number == null &amp;&amp; stageName.isBlank() -&gt; {
+&nbsp;                    invoke(major, minor, patch.inc(), null, null)
+&nbsp;                }
+&nbsp;                number == null &amp;&amp; stageName.isNotBlank() &amp;&amp; stage?.name.isNullOrBlank() -&gt; {
+&nbsp;                    invoke(major, minor, patch.inc(), stageName, incNum)
+&nbsp;                }
+&nbsp;                number == null &amp;&amp; stageName.isNotBlank() &amp;&amp; stageName == stage?.name -&gt; {
+&nbsp;                    invoke(major, minor, patch, stageName, stage.num?.inc())
+&nbsp;                }
+&nbsp;                number == null &amp;&amp; stageName.isNotBlank() &amp;&amp; stageName != stage?.name -&gt; {
+&nbsp;                    invoke(major, minor, patch, stageName, incNum)
+&nbsp;                }
+&nbsp;                number is Increase.Major &amp;&amp; stageName.isBlank() -&gt; {
+&nbsp;                    invoke(major.inc(), 0, 0, null, null)
+&nbsp;                }
+&nbsp;                number is Increase.Minor &amp;&amp; stageName.isBlank() -&gt; {
+&nbsp;                    invoke(major, minor.inc(), 0, null, null)
+&nbsp;                }
+&nbsp;                number is Increase.Patch &amp;&amp; stageName.isBlank() -&gt; {
+&nbsp;                    invoke(major, minor, patch.inc(), null, null)
+&nbsp;                }
+&nbsp;                number is Increase.Major &amp;&amp; stageName.isNotBlank() -&gt; {
+&nbsp;                    invoke(major.inc(), 0, 0, stageName, incNum)
+&nbsp;                }
+&nbsp;                number is Increase.Minor &amp;&amp; stageName.isNotBlank() -&gt; {
+&nbsp;                    invoke(major, minor.inc(), 0, stageName, incNum)
+&nbsp;                }
+&nbsp;                number is Increase.Patch &amp;&amp; stageName.isNotBlank() -&gt; {
+&nbsp;                    invoke(major, minor, patch.inc(), stageName, incNum)
+&nbsp;                }
+&nbsp;                else -&gt; null
+&nbsp;            }
+&nbsp;                ?: semverError(&quot;There were an error configuring the version&quot;)
+&nbsp;
+&nbsp;        if (nextVersion &lt; this) {
+&nbsp;            semverError(&quot;Next version ($nextVersion) should be higher than the current one ($this)&quot;)
+&nbsp;        }
+&nbsp;        return nextVersion
+&nbsp;    }
+&nbsp;
+&nbsp;    public fun copy(
+&nbsp;        major: Int = this.major,
+&nbsp;        minor: Int = this.minor,
+&nbsp;        patch: Int = this.patch,
+&nbsp;        stageName: String? = this.stage?.name,
+&nbsp;        stageNum: Int? = this.stage?.num,
+&nbsp;    ): Version =
+&nbsp;        Version(
+&nbsp;            major = major,
+&nbsp;            minor = minor,
+&nbsp;            patch = patch,
+&nbsp;            stageName = stageName,
+&nbsp;            stageNum = if (stageName.equals(&quot;SNAPSHOT&quot;, ignoreCase = true)) null else stageNum
+&nbsp;        )
+&nbsp;
+&nbsp;    override fun equals(other: Any?): Boolean {
+&nbsp;        val otherVersion = other as? Version
+&nbsp;        return when {
+&nbsp;            otherVersion == null -&gt; false
+&nbsp;            compareTo(otherVersion) == 0 -&gt; true
+&nbsp;            else -&gt; false
+&nbsp;        }
+&nbsp;    }
+&nbsp;
+&nbsp;    override fun toString(): String = value
+&nbsp;
+&nbsp;    override fun hashCode(): Int = value.hashCode()
+&nbsp;
+&nbsp;    public companion object {
+&nbsp;        public val regex: Regex = VersionFormat.Default.regex
+&nbsp;
+&nbsp;        public val scopeRegex: Regex = VersionFormat.Default.scope
+&nbsp;
+&nbsp;        public operator fun invoke(value: String): Version = Version(value)
+&nbsp;
+&nbsp;        public fun safe(value: String): Result&lt;Version&gt; = runCatching { Version(value) }
+&nbsp;
+&nbsp;        public operator fun invoke(version: String, stage: String?): Version =
+&nbsp;            if (stage.isNullOrBlank()) Version(version) else Version(&quot;$version-$stage&quot;)
+&nbsp;
+&nbsp;        public fun safe(version: String, stage: String?): Result&lt;Version&gt; = runCatching {
+&nbsp;            if (stage.isNullOrBlank()) Version(version) else Version(&quot;$version-$stage&quot;)
+&nbsp;        }
+&nbsp;
+&nbsp;        public operator fun invoke(
+&nbsp;            major: Int,
+&nbsp;            minor: Int,
+&nbsp;            patch: Int,
+&nbsp;            stageName: String?,
+&nbsp;            stageNum: Int?,
+&nbsp;        ): Version = Version(buildVersion(major, minor, patch, stageName, stageNum))
+&nbsp;
+&nbsp;        public fun safe(
+&nbsp;            major: Int,
+&nbsp;            minor: Int,
+&nbsp;            patch: Int,
+&nbsp;            stageName: String?,
+&nbsp;            stageNum: Int?,
+&nbsp;        ): Result&lt;Version&gt; = runCatching { Version(major, minor, patch, stageName, stageNum) }
+&nbsp;    }
+&nbsp;
+&nbsp;    private val preStage: String
+&nbsp;        get() = value.split(&quot;-&quot;).first()
+&nbsp;
+&nbsp;    private val stageAndNum: String?
+&nbsp;        get() = value.split(&quot;-&quot;).getOrNull(1)
+&nbsp;
+&nbsp;    public class Stage private constructor(private val value: String) : Comparable&lt;Stage&gt; {
+&nbsp;
+&nbsp;        init {
+&nbsp;            checkStage(value)
+&nbsp;        }
+&nbsp;
+&nbsp;        public val name: String = value.split(&quot;.&quot;).first()
+&nbsp;
+&nbsp;        public val num: Int? = value.split(&quot;.&quot;).getOrNull(1)?.toInt()
+&nbsp;
+&nbsp;        @Suppress(&quot;ComplexMethod&quot;)
+&nbsp;        override fun compareTo(other: Stage): Int =
+&nbsp;            when {
+&nbsp;                name.lowercase() &gt; other.name.lowercase() -&gt; 1
+&nbsp;                name.lowercase() &lt; other.name.lowercase() -&gt; -1
+&nbsp;                num != null &amp;&amp; other.num == null -&gt; 1
+&nbsp;                num == null &amp;&amp; other.num != null -&gt; -1
+&nbsp;                num != null &amp;&amp; other.num != null &amp;&amp; num &gt; other.num -&gt; 1
+&nbsp;                num != null &amp;&amp; other.num != null &amp;&amp; num &lt; other.num -&gt; -1
+&nbsp;                else -&gt; 0
+&nbsp;            }
+&nbsp;
+&nbsp;        override fun equals(other: Any?): Boolean {
+&nbsp;            val otherStage = other as? Stage
+&nbsp;            return when {
+&nbsp;                otherStage == null -&gt; false
+&nbsp;                compareTo(otherStage) == 0 -&gt; true
+&nbsp;                else -&gt; false
+&nbsp;            }
+&nbsp;        }
+&nbsp;
+&nbsp;        override fun toString(): String = value
+&nbsp;
+&nbsp;        override fun hashCode(): Int = value.hashCode()
+&nbsp;
+&nbsp;        public companion object {
+&nbsp;            public val stageRegex: Regex = VersionFormat.Default.stage
+&nbsp;
+&nbsp;            public operator fun invoke(stage: String): Stage = Stage(stage)
+&nbsp;
+&nbsp;            public operator fun invoke(name: String, num: Int?): Stage =
+&nbsp;                if (num != null) Stage(&quot;$name.$num&quot;) else Stage(name)
+&nbsp;        }
+&nbsp;    }
+&nbsp;
+&nbsp;    public sealed interface Increase {
+&nbsp;        public object Major : Increase
+&nbsp;        public object Minor : Increase
+&nbsp;        public object Patch : Increase
+&nbsp;    }
+&nbsp;}
+&nbsp;
+&nbsp;private fun String.red() = &quot;$RED$this$RESET&quot;
+&nbsp;
+&nbsp;private fun checkFullVersion(version: String) {
+&nbsp;    checkVersion(version.matches(Version.regex)) {
+&nbsp;        &quot;&quot;&quot;|The version is not semantic, rules:
+&nbsp;           |  - `major`, `minor` and `patch` are required, rest are optional
+&nbsp;           |  - `num` is required if `stage` is present and it is not snapshot
+&nbsp;           |
+&nbsp;           |Current version: $version
+&nbsp;           |
+&nbsp;           |Samples of semantic versions:
+&nbsp;           |1.0.0
+&nbsp;           |1.0-alpha.1
+&nbsp;           |1.0.0-SNAPSHOT
+&nbsp;           |1.0.0-alpha.1
+&nbsp;           |12.23.34-alpha.45
+&nbsp;           |12.23.34-SNAPSHOT
+&nbsp;           |
+&nbsp;        &quot;&quot;&quot;
+&nbsp;            .trimMargin()
+&nbsp;            .red()
+&nbsp;    }
+&nbsp;}
+&nbsp;
+&nbsp;private fun checkStage(stage: String) {
+&nbsp;    checkVersion(stage.matches(Version.Stage.stageRegex)) {
+&nbsp;        &quot;&quot;&quot;|`stage` provided has an incorrect format
+&nbsp;           | 
+&nbsp;           |Samples of stages:
+&nbsp;           |alpha.1
+&nbsp;           |beta.23
+&nbsp;           |SNAPSHOT
+&nbsp;        &quot;&quot;&quot;
+&nbsp;            .trimMargin()
+&nbsp;            .red()
+&nbsp;    }
+&nbsp;}
+&nbsp;
+<b class="fc">&nbsp;public class SemanticVersionException(override val message: String) : Exception(message)</b>
+&nbsp;
+&nbsp;internal fun semverError(message: String): Nothing = throw SemanticVersionException(message)
+&nbsp;
+&nbsp;@OptIn(ExperimentalContracts::class)
+&nbsp;private inline fun checkVersion(value: Boolean, lazyMessage: () -&gt; Any) {
+&nbsp;    contract { returns() implies value }
+&nbsp;    if (!value) semverError(lazyMessage().toString())
+&nbsp;}
+&nbsp;
+&nbsp;private fun buildVersion(
+&nbsp;    major: Int,
+&nbsp;    minor: Int,
+&nbsp;    patch: Int?,
+&nbsp;    stageName: String?,
+&nbsp;    stageNum: Int?,
+&nbsp;): String = buildString {
+&nbsp;    append(major)
+&nbsp;    append(&quot;.&quot;)
+&nbsp;    append(minor)
+&nbsp;    append(&quot;.&quot;)
+&nbsp;    append(patch)
+&nbsp;    if (!stageName.isNullOrBlank()) {
+&nbsp;        append(&quot;-&quot;)
+&nbsp;        append(Version.Stage(stageName, stageNum).toString())
+&nbsp;    }
+&nbsp;}
+&nbsp;
+&nbsp;private const val RED = &quot;\u001b[31m&quot;
+&nbsp;private const val RESET = &quot;\u001B[0m&quot;
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-02-27 13:15</div>
+</div>
+</body>
+</html>

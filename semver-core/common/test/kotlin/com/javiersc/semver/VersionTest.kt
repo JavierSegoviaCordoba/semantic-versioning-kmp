@@ -11,6 +11,7 @@ import io.kotest.matchers.comparables.shouldBeGreaterThan
 import io.kotest.matchers.nulls.shouldBeNull
 import io.kotest.matchers.shouldBe
 import io.kotest.property.Arb
+import io.kotest.property.PropertyTesting
 import io.kotest.property.arbitrary.arbitrary
 import io.kotest.property.arbitrary.choice
 import io.kotest.property.arbitrary.constant
@@ -22,9 +23,9 @@ import kotlinx.coroutines.test.runTest
 
 class VersionTest {
 
-    private val major = Arb.positiveInt(30)
-    private val minor = Arb.positiveInt(30)
-    private val patch = Arb.positiveInt(30)
+    private val major = Arb.positiveInt(11)
+    private val minor = Arb.positiveInt(11)
+    private val patch = Arb.positiveInt(11)
     private val stageName =
         Arb.choice(
             Arb.constant("alpha"),
@@ -36,7 +37,7 @@ class VersionTest {
         )
     private val num =
         Arb.choice(
-            Arb.positiveInt(30),
+            Arb.positiveInt(11),
             Arb.constant(null),
         )
 
@@ -53,6 +54,25 @@ class VersionTest {
                 else -> "-$stageName.$num"
             }
         Version("$major.$minor.$patch$stage")
+    }
+
+    private val versionArbitrarySameMajorMinorPatch: Arb<Version> = arbitrary {
+        val major = 1
+        val minor = 0
+        val patch = 0
+        val stageName = stageName.bind()
+        val num = 1
+        val stage: String =
+            when {
+                stageName.equals("SNAPSHOT", ignoreCase = true) -> "-$stageName"
+                stageName == null -> ""
+                else -> "-$stageName.$num"
+            }
+        Version("$major.$minor.$patch$stage")
+    }
+
+    init {
+        PropertyTesting.defaultIterationCount = 100_000
     }
 
     @Test
@@ -86,9 +106,22 @@ class VersionTest {
                     (a.stage?.name != null) &&
                     (b.stage?.name != null) &&
                     (a.stage!!.name > b.stage!!.name)
-            )
-                a > b
-            else true
+            ) {
+                if (a.stage!!.name.lowercase() > b.stage!!.name.lowercase()) a > b else b > a
+            } else true
+        }
+
+        forAll(versionArbitrarySameMajorMinorPatch, versionArbitrarySameMajorMinorPatch) {
+            a: Version,
+            b: Version ->
+            when {
+                a.stage?.name == null && b.stage?.name == null -> true
+                a.stage?.name != null && b.stage?.name == null -> a < b
+                a.stage?.name == null && b.stage?.name != null -> a > b
+                a.stage!!.name.lowercase() == b.stage!!.name.lowercase() -> a == b
+                a.stage!!.name.lowercase() > b.stage!!.name.lowercase() -> a > b
+                else -> a < b
+            }
         }
     }
 

@@ -157,7 +157,7 @@
 
 <div>
   <ul>
-    <li>52 number of properties</li>
+    <li>59 number of properties</li>
     <li>48 number of functions</li>
     <li>7 number of classes</li>
     <li>2 number of packages</li>
@@ -170,45 +170,77 @@
 
 <div>
   <ul>
-    <li>1,120 lines of code (loc)</li>
-    <li>995 source lines of code (sloc)</li>
-    <li>836 logical lines of code (lloc)</li>
+    <li>1,153 lines of code (loc)</li>
+    <li>1,025 source lines of code (sloc)</li>
+    <li>861 logical lines of code (lloc)</li>
     <li>4 comment lines of code (cloc)</li>
-    <li>167 cyclomatic complexity (mcc)</li>
-    <li>59 cognitive complexity</li>
-    <li>3 number of total code smells</li>
+    <li>180 cyclomatic complexity (mcc)</li>
+    <li>70 cognitive complexity</li>
+    <li>5 number of total code smells</li>
     <li>0% comment source ratio</li>
-    <li>199 mcc per 1,000 lloc</li>
-    <li>3 code smells per 1,000 lloc</li>
+    <li>209 mcc per 1,000 lloc</li>
+    <li>5 code smells per 1,000 lloc</li>
   </ul>
 </div>
 
 
 <h2>Findings</h2>
-<div>Total: 3
-  <h3>complexity: 3</h3>
+<div>Total: 5
+  <h3>complexity: 5</h3>
   <details id="ComplexCondition" open="open">
     <summary class="rule-container"><span class="rule">ComplexCondition: 2 </span><span class="description">Complex conditions should be simplified and extracted into well-named methods if necessary.</span></summary>
 <a href="https://detekt.dev/docs/rules/complexity#complexcondition">Documentation</a>
     <ul>
-      <li><span class="location">semver-core/common/test/kotlin/com/javiersc/semver/VersionTest.kt:83:17</span><span class="message">This condition is too complex (6). Defined complexity threshold for conditions is set to '4'</span>
-        <pre><code><span class="lineno">  80 </span>    fun stage_name_comparator() = runTest {
-<span class="lineno">  81 </span>        forAll(versionArbitrary, versionArbitrary) { a: Version, b: Version -&gt;
-<span class="lineno">  82 </span>            if (
-<span class="lineno">  83 </span>                <span class="error">(a.major == b.major) &amp;&amp;</span>
-<span class="lineno">  84 </span><span class="error">                    (a.minor == b.minor) &amp;&amp;</span>
-<span class="lineno">  85 </span><span class="error">                    (a.patch == b.patch) &amp;&amp;</span>
-<span class="lineno">  86 </span><span class="error">                    (a.stage?.name != null) &amp;&amp;</span>
+      <li><span class="location">semver-core/common/test/kotlin/com/javiersc/semver/VersionTest.kt:103:17</span><span class="message">This condition is too complex (6). Defined complexity threshold for conditions is set to '4'</span>
+        <pre><code><span class="lineno"> 100 </span>    fun stage_name_comparator() = runTest {
+<span class="lineno"> 101 </span>        forAll(versionArbitrary, versionArbitrary) { a: Version, b: Version -&gt;
+<span class="lineno"> 102 </span>            if (
+<span class="lineno"> 103 </span>                <span class="error">(a.major == b.major) &amp;&amp;</span>
+<span class="lineno"> 104 </span><span class="error">                    (a.minor == b.minor) &amp;&amp;</span>
+<span class="lineno"> 105 </span><span class="error">                    (a.patch == b.patch) &amp;&amp;</span>
+<span class="lineno"> 106 </span><span class="error">                    (a.stage?.name != null) &amp;&amp;</span>
 </code></pre>
       </li>
-      <li><span class="location">semver-core/common/test/kotlin/com/javiersc/semver/VersionTest.kt:99:17</span><span class="message">This condition is too complex (9). Defined complexity threshold for conditions is set to '4'</span>
-        <pre><code><span class="lineno">  96 </span>    fun stage_num_comparator() = runTest {
-<span class="lineno">  97 </span>        forAll(versionArbitrary, versionArbitrary) { a: Version, b: Version -&gt;
-<span class="lineno">  98 </span>            if (
-<span class="lineno">  99 </span>                <span class="error">(a.major == b.major) &amp;&amp;</span>
-<span class="lineno"> 100 </span><span class="error">                    (a.minor == b.minor) &amp;&amp;</span>
-<span class="lineno"> 101 </span><span class="error">                    (a.patch == b.patch) &amp;&amp;</span>
-<span class="lineno"> 102 </span><span class="error">                    (a.stage?.name != null) &amp;&amp;</span>
+      <li><span class="location">semver-core/common/test/kotlin/com/javiersc/semver/VersionTest.kt:132:17</span><span class="message">This condition is too complex (9). Defined complexity threshold for conditions is set to '4'</span>
+        <pre><code><span class="lineno"> 129 </span>    fun stage_num_comparator() = runTest {
+<span class="lineno"> 130 </span>        forAll(versionArbitrary, versionArbitrary) { a: Version, b: Version -&gt;
+<span class="lineno"> 131 </span>            if (
+<span class="lineno"> 132 </span>                <span class="error">(a.major == b.major) &amp;&amp;</span>
+<span class="lineno"> 133 </span><span class="error">                    (a.minor == b.minor) &amp;&amp;</span>
+<span class="lineno"> 134 </span><span class="error">                    (a.patch == b.patch) &amp;&amp;</span>
+<span class="lineno"> 135 </span><span class="error">                    (a.stage?.name != null) &amp;&amp;</span>
+</code></pre>
+      </li>
+    </ul>
+  </details>
+  <details id="CyclomaticComplexMethod" open="open">
+    <summary class="rule-container"><span class="rule">CyclomaticComplexMethod: 1 </span><span class="description">Prefer splitting up complex methods into smaller, easier to test methods.</span></summary>
+<a href="https://detekt.dev/docs/rules/complexity#cyclomaticcomplexmethod">Documentation</a>
+    <ul>
+      <li><span class="location">semver-core/common/test/kotlin/com/javiersc/semver/VersionTest.kt:100:9</span><span class="message">The function stage_name_comparator appears to be too complex based on Cyclomatic Complexity (complexity: 17). Defined complexity threshold for methods is set to '15'</span>
+        <pre><code><span class="lineno">  97 </span>    }
+<span class="lineno">  98 </span>
+<span class="lineno">  99 </span>    @Test
+<span class="lineno"> 100 </span>    fun <span class="error">stage_name_comparator</span>() = runTest {
+<span class="lineno"> 101 </span>        forAll(versionArbitrary, versionArbitrary) { a: Version, b: Version -&gt;
+<span class="lineno"> 102 </span>            if (
+<span class="lineno"> 103 </span>                (a.major == b.major) &amp;&amp;
+</code></pre>
+      </li>
+    </ul>
+  </details>
+  <details id="LargeClass" open="open">
+    <summary class="rule-container"><span class="rule">LargeClass: 1 </span><span class="description">One class should have one responsibility. Large classes tend to handle many things at once. Split up large classes into smaller classes that are easier to understand.</span></summary>
+<a href="https://detekt.dev/docs/rules/complexity#largeclass">Documentation</a>
+    <ul>
+      <li><span class="location">semver-core/common/test/kotlin/com/javiersc/semver/VersionTest.kt:24:7</span><span class="message">Class VersionTest is too large. Consider splitting it into smaller pieces.</span>
+        <pre><code><span class="lineno">  21 </span>import kotlin.test.Test
+<span class="lineno">  22 </span>import kotlinx.coroutines.test.runTest
+<span class="lineno">  23 </span>
+<span class="lineno">  24 </span>class <span class="error">VersionTest</span> {
+<span class="lineno">  25 </span>
+<span class="lineno">  26 </span>    private val major = Arb.positiveInt(11)
+<span class="lineno">  27 </span>    private val minor = Arb.positiveInt(11)
 </code></pre>
       </li>
     </ul>
@@ -217,14 +249,14 @@
     <summary class="rule-container"><span class="rule">LongMethod: 1 </span><span class="description">One method should have one responsibility. Long methods tend to handle many things at once. Prefer smaller methods to make them easier to understand.</span></summary>
 <a href="https://detekt.dev/docs/rules/complexity#longmethod">Documentation</a>
     <ul>
-      <li><span class="location">semver-core/common/test/kotlin/com/javiersc/semver/VersionTest.kt:482:9</span><span class="message">The function is_version is too long (156). The maximum length is 60.</span>
-        <pre><code><span class="lineno"> 479 </span>    }
-<span class="lineno"> 480 </span>
-<span class="lineno"> 481 </span>    @Test
-<span class="lineno"> 482 </span>    fun <span class="error">is_version</span>() {
-<span class="lineno"> 483 </span>        Version(&quot;1.0.0&quot;).apply {
-<span class="lineno"> 484 </span>            isAlpha.shouldBeFalse()
-<span class="lineno"> 485 </span>            isNotAlpha.shouldBeTrue()
+      <li><span class="location">semver-core/common/test/kotlin/com/javiersc/semver/VersionTest.kt:515:9</span><span class="message">The function is_version is too long (156). The maximum length is 60.</span>
+        <pre><code><span class="lineno"> 512 </span>    }
+<span class="lineno"> 513 </span>
+<span class="lineno"> 514 </span>    @Test
+<span class="lineno"> 515 </span>    fun <span class="error">is_version</span>() {
+<span class="lineno"> 516 </span>        Version(&quot;1.0.0&quot;).apply {
+<span class="lineno"> 517 </span>            isAlpha.shouldBeFalse()
+<span class="lineno"> 518 </span>            isNotAlpha.shouldBeTrue()
 </code></pre>
       </li>
     </ul>
@@ -232,7 +264,7 @@
 </div>
 
 
-generated with <a href="https://detekt.dev/">detekt version 1.22.0</a> on 2023-02-27 13:14:42 UTC.
+generated with <a href="https://detekt.dev/">detekt version 1.22.0</a> on 2023-03-04 16:18:40 UTC.
 
 </body>
 </html>

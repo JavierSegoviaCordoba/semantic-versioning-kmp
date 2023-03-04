@@ -20,9 +20,9 @@
                 },
                 "region": {
                   "endColumn": 19,
-                  "endLine": 482,
+                  "endLine": 515,
                   "startColumn": 9,
-                  "startLine": 482
+                  "startLine": 515
                 }
               }
             }
@@ -42,10 +42,56 @@
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
+                  "endColumn": 18,
+                  "endLine": 24,
+                  "startColumn": 7,
+                  "startLine": 24
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Class VersionTest is too large. Consider splitting it into smaller pieces."
+          },
+          "ruleId": "detekt.complexity.LargeClass"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "semver-core/common/test/kotlin/com/javiersc/semver/VersionTest.kt",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "endColumn": 30,
+                  "endLine": 100,
+                  "startColumn": 9,
+                  "startLine": 100
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "The function stage_name_comparator appears to be too complex based on Cyclomatic Complexity (complexity: 17). Defined complexity threshold for methods is set to '15'"
+          },
+          "ruleId": "detekt.complexity.CyclomaticComplexMethod"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "semver-core/common/test/kotlin/com/javiersc/semver/VersionTest.kt",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
                   "endColumn": 54,
-                  "endLine": 88,
+                  "endLine": 108,
                   "startColumn": 17,
-                  "startLine": 83
+                  "startLine": 103
                 }
               }
             }
@@ -66,9 +112,9 @@
                 },
                 "region": {
                   "endColumn": 56,
-                  "endLine": 107,
+                  "endLine": 140,
                   "startColumn": 17,
-                  "startLine": 99
+                  "startLine": 132
                 }
               }
             }

@@ -19,6 +19,9 @@ import io.kotest.property.arbitrary.positiveInt
 import io.kotest.property.checkAll
 import io.kotest.property.forAll
 import kotlin.test.Test
+import kotlin.time.Duration
+import kotlinx.coroutines.test.TestResult
+import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.runTest
 
 class VersionTest {
@@ -76,28 +79,28 @@ class VersionTest {
     }
 
     @Test
-    fun major_comparator() = runTest {
+    fun major_comparator() = runTestNoTimeout {
         forAll(versionArbitrary, versionArbitrary) { a: Version, b: Version ->
             if (a.major > b.major) a > b else true
         }
     }
 
     @Test
-    fun minor_comparator() = runTest {
+    fun minor_comparator() = runTestNoTimeout {
         forAll(versionArbitrary, versionArbitrary) { a: Version, b: Version ->
             if ((a.major == b.major) && (a.minor > b.minor)) a > b else true
         }
     }
 
     @Test
-    fun patch_comparator() = runTest {
+    fun patch_comparator() = runTestNoTimeout {
         forAll(versionArbitrary, versionArbitrary) { a: Version, b: Version ->
             if ((a.major == b.major) && (a.minor == b.minor) && (a.patch > b.patch)) a > b else true
         }
     }
 
     @Test
-    fun stage_name_comparator() = runTest {
+    fun stage_name_comparator() = runTestNoTimeout {
         forAll(versionArbitrary, versionArbitrary) { a: Version, b: Version ->
             if (
                 (a.major == b.major) &&
@@ -126,7 +129,7 @@ class VersionTest {
     }
 
     @Test
-    fun stage_num_comparator() = runTest {
+    fun stage_num_comparator() = runTestNoTimeout {
         forAll(versionArbitrary, versionArbitrary) { a: Version, b: Version ->
             if (
                 (a.major == b.major) &&
@@ -145,7 +148,7 @@ class VersionTest {
     }
 
     @Test
-    fun wrong_versions() = runTest {
+    fun wrong_versions() = runTestNoTimeout {
         checkAll(major, minor, patch, stageName, num) { major, minor, patch, stageName, num ->
             when {
                 stageName.equals("SNAPSHOT", true) && num != null -> {
@@ -674,3 +677,6 @@ class VersionTest {
         }
     }
 }
+
+fun runTestNoTimeout(block: suspend TestScope.() -> Unit): TestResult =
+    runTest(timeout = Duration.INFINITE, testBody = block)

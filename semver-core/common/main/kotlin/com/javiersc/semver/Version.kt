@@ -195,7 +195,9 @@ public class Version private constructor(public val value: String) : Comparable<
 
     public sealed interface Increase {
         public object Major : Increase
+
         public object Minor : Increase
+
         public object Patch : Increase
     }
 }

@@ -72,8 +72,7 @@ public class Version private constructor(public val value: String) : Comparable<
                     invoke(major, minor, patch.inc(), stageName, incNum)
                 }
                 else -> null
-            }
-                ?: semverError("There were an error configuring the version")
+            } ?: semverError("There were an error configuring the version")
 
         if (nextVersion < this) {
             semverError("Next version ($nextVersion) should be higher than the current one ($this)")

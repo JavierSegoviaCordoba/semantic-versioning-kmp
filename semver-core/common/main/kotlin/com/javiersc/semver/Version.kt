@@ -92,8 +92,7 @@ public class Version private constructor(public val value: String) : Comparable<
             minor = minor,
             patch = patch,
             stageName = stageName,
-            stageNum = if (stageName.equals("SNAPSHOT", ignoreCase = true)) null else stageNum
-        )
+            stageNum = if (stageName.equals("SNAPSHOT", ignoreCase = true)) null else stageNum)
 
     override fun equals(other: Any?): Boolean {
         val otherVersion = other as? Version

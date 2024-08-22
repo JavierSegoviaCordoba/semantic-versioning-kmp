@@ -36,12 +36,9 @@ class VersionTest {
             Arb.constant("rc"),
             Arb.constant("SNAPSHOT"),
             Arb.constant("zasca"),
-            Arb.constant(null))
-    private val num =
-        Arb.choice(
-            Arb.positiveInt(11),
             Arb.constant(null),
         )
+    private val num = Arb.choice(Arb.positiveInt(11), Arb.constant(null))
 
     private val versionArbitrary: Arb<Version> = arbitrary {
         val major = major.bind()
@@ -101,12 +98,14 @@ class VersionTest {
     @Test
     fun stage_name_comparator() = runTestNoTimeout {
         forAll(versionArbitrary, versionArbitrary) { a: Version, b: Version ->
-            if ((a.major == b.major) &&
-                (a.minor == b.minor) &&
-                (a.patch == b.patch) &&
-                (a.stage?.name != null) &&
-                (b.stage?.name != null) &&
-                (a.stage!!.name > b.stage!!.name)) {
+            if (
+                (a.major == b.major) &&
+                    (a.minor == b.minor) &&
+                    (a.patch == b.patch) &&
+                    (a.stage?.name != null) &&
+                    (b.stage?.name != null) &&
+                    (a.stage!!.name > b.stage!!.name)
+            ) {
                 if (a.stage!!.name.lowercase() > b.stage!!.name.lowercase()) a > b else b > a
             } else true
         }
@@ -128,15 +127,17 @@ class VersionTest {
     @Test
     fun stage_num_comparator() = runTestNoTimeout {
         forAll(versionArbitrary, versionArbitrary) { a: Version, b: Version ->
-            if ((a.major == b.major) &&
-                (a.minor == b.minor) &&
-                (a.patch == b.patch) &&
-                (a.stage?.name != null) &&
-                (b.stage?.name != null) &&
-                (a.stage!!.name == b.stage!!.name) &&
-                (a.stage?.num != null) &&
-                (b.stage?.num != null) &&
-                (a.stage!!.num!! > b.stage!!.num!!))
+            if (
+                (a.major == b.major) &&
+                    (a.minor == b.minor) &&
+                    (a.patch == b.patch) &&
+                    (a.stage?.name != null) &&
+                    (b.stage?.name != null) &&
+                    (a.stage!!.name == b.stage!!.name) &&
+                    (a.stage?.num != null) &&
+                    (b.stage?.num != null) &&
+                    (a.stage!!.num!! > b.stage!!.num!!)
+            )
                 a > b
             else true
         }

@@ -15,6 +15,7 @@ hubdle {
         multiplatform {
             features {
                 coroutines()
+                kotest()
             }
 
             common {
